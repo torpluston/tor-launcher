@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015, The Tor Project, Inc.
+ * Copyright (c) 2017, The Tor Project, Inc.
  * See LICENSE for licensing information.
  *
  * vim: set sw=2 sts=2 ts=8 et syntax=css:
@@ -18,14 +18,14 @@ dialog.os-windows {
 
 wizard {
   width: 45em;
-  height: 35em;
+  height: 36em;
   font: -moz-dialog;
   padding-top: 0px;
 }
 
 wizard.os-windows {
   width: 49em;
-  height: 41em;
+  height: 42em;
 }
 
 .wizard-page-box {
@@ -57,9 +57,14 @@ wizard radiogroup {
   margin-bottom: 0px;
 }
 
+.firstResponses label {
+  text-align: center;
+  margin-top: 1.2em;
+}
+
 .firstResponses button {
   min-width: 85px;
-  margin-top: 9px;
+  margin: 9px 40px;
 }
 
 separator.tall {
@@ -71,31 +76,17 @@ separator.tall {
   font-weight: bold;
 }
 
-.questionHelp {
-  margin: 0px 0px 12px 20px;
-}
-
-.instructions {
-  margin-bottom: 8px;
-}
-
 button.firstAnswer {
   margin-top: 0px;
 }
 
-.tbb-logo-box {
-  height: 80px;
-}
-
 .tbb-logo {
-  list-style-image: url("chrome://torlauncher/skin/tbb-logo.png");
-  width: 115px;
-  height: 80px;
-  margin-right: 20px;
+  list-style-image: url("chrome://torlauncher/skin/tbb-logo.svg");
+  width: 40em;
+  height: 60px;
 }
 
-wizard[tor_hide_browser_logo="true"] .tbb-logo,
-wizard[tor_hide_browser_logo="true"] .tbb-logo-separator {
+wizard[tor_hide_browser_logo="true"] .tbb-logo {
   display: none;
 }
 
@@ -104,9 +95,12 @@ wizard#TorLauncherLocalePicker button[dlgtype="next"] {
   display: none;
 }
 
-.tbb-wizardpage-title {
-  font-size: 115%;
-  font-weight: bold;
+/* Show menulist placeholder text in gray. */
+#defaultBridgeType:not([value]) .menulist-label,
+#defaultBridgeType[value=""] .menulist-label,
+#proxyType:not([value]) .menulist-label,
+#proxyType[value=""] .menulist-label {
+  color: #777;
 }
 
 #bridgeNote,
@@ -118,6 +112,49 @@ wizard#TorLauncherLocalePicker button[dlgtype="next"] {
 dialog.os-mac #bridgeList,
 wizard.os-mac #bridgeList {
   font-size: 90%;
+}
+
+/* reuse Mozilla's help button from the Firefox hamburger menu */
+.helpButton {
+  list-style-image: url(chrome://browser/skin/menuPanel-help.png);
+  -moz-image-region: rect(0, 16px, 16px, 0);
+  -moz-appearance: none;
+  height: 16px;
+  width: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.helpButton .button-box {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.helpButton:hover {
+  -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+
+.helpButton:hover:active {
+  -moz-image-region: rect(0, 48px, 16px, 32px);
+}
+
+@media (min-resolution: 8.1dppx) {
+  .helpButton {
+    list-style-image: url(chrome://browser/skin/menuPanel-help@2x.png);
+    -moz-image-region: rect(0, 32px, 32px, 0);
+  }
+
+  .helpButton:hover {
+    -moz-image-region: rect(0, 64px, 32px, 32px);
+  }
+
+  .helpButton:hover:active {
+    -moz-image-region: rect(0, 96px, 32px, 64px);
+  }
 }
 
 wizardpage[pageid="startingTor"] description,

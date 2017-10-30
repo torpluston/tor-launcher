@@ -95,7 +95,7 @@ TorProcessService.prototype =
 
       if (TorLauncherUtil.shouldOnlyConfigureTor)
       {
-        this._controlTor();
+        this._controlTor(true, false);
       }
       else if (TorLauncherUtil.shouldStartAndOwnTor)
       {
@@ -111,8 +111,7 @@ TorProcessService.prototype =
           TorLauncherUtil.setIntPref(kTorrcFixupPref, kTorrcFixupVersion);
         }
 
-        this._startTor();
-        this._controlTor();
+        this.TorStartAndControlTor(false);
       }
     }
     else if ("quit-application-granted" == aTopic)
@@ -195,8 +194,7 @@ TorProcessService.prototype =
         if (TorLauncherUtil.showConfirm(null, s, defaultBtnLabel, cancelBtnLabel)
             && !this.mIsQuitting)
         {
-          this._startTor();
-          this._controlTor();
+          this.TorStartAndControlTor(false);
         }
       }
     }
@@ -301,6 +299,13 @@ TorProcessService.prototype =
     return this.mBootstrapErrorOccurred;
   },
 
+  TorStartAndControlTor: function(aForceDisableNetwork)
+  {
+    this._startTor(aForceDisableNetwork);
+    let isRunningTor = (this.mTorProcessStatus == this.kStatusStarting) ||
+                       (this.mTorProcessStatus == this.kStatusRunning);
+    this._controlTor(isRunningTor, aForceDisableNetwork);
+  },
 
   TorClearBootstrapError: function()
   {
@@ -328,7 +333,7 @@ TorProcessService.prototype =
 
 
   // Private Methods /////////////////////////////////////////////////////////
-  _startTor: function()
+  _startTor: function(aForceDisableNetwork)
   {
     this.mTorProcessStatus = this.kStatusUnknown;
 
@@ -457,7 +462,8 @@ TorProcessService.prototype =
         TorLauncherUtil.showAlert(null, err);
       }
 
-      if (TorLauncherUtil.shouldShowNetworkSettings || defaultBridgeType)
+      if (aForceDisableNetwork || TorLauncherUtil.shouldShowNetworkSettings ||
+          defaultBridgeType)
       {
         args.push("DisableNetwork");
         args.push("1");
@@ -511,7 +517,7 @@ TorProcessService.prototype =
     return "unix:" + this.mProtocolSvc.TorEscapeString(aIPCFile.path);
   },
 
-  _controlTor: function()
+  _controlTor: function(aIsRunningTor, aIsNetworkForceDisabled)
   {
     // Optionally prompt for locale.  Blocks until dialog is closed.
     if (TorLauncherUtil.shouldPromptForLocale)
@@ -526,7 +532,8 @@ TorProcessService.prototype =
 
     try
     {
-      this._monitorTorProcessStartup();
+      if (aIsRunningTor)
+        this._monitorTorProcessStartup();
 
       var bridgeConfigIsBad = (this._defaultBridgesStatus ==
                                this.kDefaultBridgesStatus_BadConfig);
@@ -535,14 +542,16 @@ TorProcessService.prototype =
         if (this.mProtocolSvc)
         {
           // Show network settings wizard.  Blocks until dialog is closed.
-          var panelID = (bridgeConfigIsBad) ? "bridgeSettings" : undefined;
+          var panelID = (bridgeConfigIsBad) ? "configureSettings" : undefined;
           this._openNetworkSettings(true, panelID);
         }
       }
       else if (this._networkSettingsWindow != null)
       {
-        // If network settings is open, open progress dialog via notification.
-        if (this.mObsSvc)
+        // The network settings window is open, which means the user asked
+        // for tor to be restarted. If networking is enabled, show the
+        // progress panel (since bootstrapping is underway).
+        if (!aIsNetworkForceDisabled && this.mObsSvc)
           this.mObsSvc.notifyObservers(null, "TorOpenProgressDialog", null);
       }
       else if (!this.TorIsBootstrapDone)

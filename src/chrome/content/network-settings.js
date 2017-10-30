@@ -1,4 +1,4 @@
-// Copyright (c) 2016, The Tor Project, Inc.
+// Copyright (c) 2017, The Tor Project, Inc.
 // See LICENSE for licensing information.
 //
 // vim: set sw=2 sts=2 ts=8 et syntax=javascript:
@@ -19,6 +19,7 @@ const kPrefPromptForLocale = "extensions.torlauncher.prompt_for_locale";
 const kPrefLocale = "general.useragent.locale";
 const kPrefMatchOSLocale = "intl.locale.matchOS";
 
+// The recommended type is listed first in the dropdown menu.
 const kPrefDefaultBridgeRecommendedType =
                    "extensions.torlauncher.default_bridge_recommended_type";
 const kPrefDefaultBridgeType = "extensions.torlauncher.default_bridge_type";
@@ -33,9 +34,6 @@ const kTorProcessDidNotStartTopic = "TorProcessDidNotStart";
 const kTorOpenProgressTopic = "TorOpenProgressDialog";
 const kTorBootstrapErrorTopic = "TorBootstrapError";
 const kTorLogHasWarnOrErrTopic = "TorLogHasWarnOrErr";
-
-const kWizardProxyRadioGroup = "proxyRadioGroup";
-const kWizardUseBridgesRadioGroup = "useBridgesRadioGroup";
 
 const kWizardFirstPageID = "first";
 
@@ -67,17 +65,16 @@ const kTorConfKeyBridgeList = "Bridge";
 var gProtocolSvc = null;
 var gTorProcessService = null;
 var gObsService = null;
-var gHasQuitButton = false;
 var gIsInitialBootstrap = false;
+var gInitialPanelID = undefined;
 var gIsBootstrapComplete = false;
 var gRestoreAfterHelpPanelID = null;
+var gIsPostRestartBootstrapNeeded = false;
 var gActiveTopics = [];  // Topics for which an observer is currently installed.
 
 
 function initDialogCommon(aHasQuitButton)
 {
-  gHasQuitButton = aHasQuitButton;
-
   gObsService = Cc["@mozilla.org/observer-service;1"]
                   .getService(Ci.nsIObserverService);
 
@@ -140,9 +137,8 @@ function initDialog()
   gIsInitialBootstrap = window.arguments[0];
   initDialogCommon(gIsInitialBootstrap);
 
-  var startAtPanel;
   if (window.arguments.length > 1)
-    startAtPanel = window.arguments[1];
+    gInitialPanelID = window.arguments[1];
 
   if (gIsInitialBootstrap)
   {
@@ -187,22 +183,12 @@ function initDialog()
       showCopyLogButton(true);
     }
 
-    // Use "Connect" as the finish button label (on the last wizard page)..
+    // Use "Connect" as the finish button label (on the last wizard page).
     var finishBtn = document.documentElement.getButton("finish");
     if (finishBtn)
-      finishBtn.label = TorLauncherUtil.getLocalizedString("connect");
-
-    // Add label and access key to Help button.
-    var helpBtn = document.documentElement.getButton("help");
-    if (helpBtn)
     {
-      var strBundle = Cc["@mozilla.org/intl/stringbundle;1"]
-                    .getService(Ci.nsIStringBundleService)
-                    .createBundle("chrome://global/locale/dialog.properties");
-      helpBtn.setAttribute("label", strBundle.GetStringFromName("button-help"));
-      var accessKey = strBundle.GetStringFromName("accesskey-help");
-      if (accessKey)
-        helpBtn.setAttribute("accesskey", accessKey);
+      finishBtn.label = TorLauncherUtil.getLocalizedString("connect");
+      finishBtn.removeAttribute("default"); // We do not want a default button.
     }
 
     // Set Discard Settings back button label to match the wizard Back button.
@@ -232,12 +218,14 @@ function initDialog()
   }
   else
   {
-    readTorSettings();
+    onTorStarted();
+  }
 
-    if (startAtPanel)
-      advanceToWizardPanel(startAtPanel);
-    else
-      showPanel();
+  if (haveWizard)
+  {
+    onWizardPageShow();
+    document.addEventListener("pageshow",
+                              aEvent => { onWizardPageShow(); }, false);
   }
 
   resizeDialogToFitContent();
@@ -368,7 +356,7 @@ function maxWidthOfContent()
 
   // Show all buttons so we can get an accurate width measurement.
   // They will be hidden, as necessary, by the wizard.
-  let buttons = "back,next,cancel,extra2,help".split(',');
+  let buttons = "back,next,cancel,extra2".split(',');
   for (let i = 0; i < buttons.length; ++i)
     showOrHideButton(buttons[i], true, false);
 
@@ -382,6 +370,28 @@ function maxWidthOfContent()
   restoreCopyLogVisibility();
 
   return Math.ceil((2 * r.left) + r.width + kWarningIconWidth);
+}
+
+
+function onWizardPageShow()
+{
+  let wizardElem = getWizard();
+  // Update page title.
+  let title = wizardElem.currentPage.getAttribute("windowtitle");
+  if (!title)
+    title = wizardElem.getAttribute("defaulttitle");
+  document.title = title;
+
+  // Hide or show navigation buttons as appropriate.
+  // setTimeout() is needed for the first panel that is displayed.
+  let val = wizardElem.currentPage.getAttribute("torShowNavButtons");
+  setTimeout(function() {
+      showOrHideButton("back", (val == "true"), false);
+
+      // The "next" button is only used by the bridgeHelp wizard panel.
+      let isShowingHelp = (wizardElem.currentPage.pageid == "helpPanel");
+      showOrHideButton("next", isShowingHelp, false);
+  }, 0);
 }
 
 
@@ -415,62 +425,7 @@ function removeSettingsAndConnect()
 
 function onWizardConfigure()
 {
-  getWizard().advance("bridges");
-}
-
-
-function onWizardProxyNext(aWizPage)
-{
-  if (aWizPage)
-  {
-    var hasProxy = getElemValue("proxyRadioYes", false);
-    aWizPage.next = (hasProxy) ? "proxyYES" : "";
-  }
-
-  return true;
-}
-
-
-function onWizardUseProxyRadioChange()
-{
-  var wizard = getWizard();
-  if (wizard && wizard.currentPage)
-  {
-    var hasProxy = getElemValue("proxyRadioYes", false);
-    wizard.setAttribute("lastpage", !hasProxy);
-    wizard._wizardButtons.onPageChange();
-  }
-}
-
-
-function onWizardProxySettingsShow()
-{
-  var wizard = getWizard();
-  if (wizard)
-  {
-    wizard.setAttribute("lastpage", true);
-    wizard._wizardButtons.onPageChange();
-  }
-}
-
-
-function onWizardUseBridgesNext(aWizPage)
-{
-  if (aWizPage)
-  {
-    var useBridges = getElemValue("bridgesRadioYes", false);
-    aWizPage.next = (useBridges) ? "bridgeSettings" : "proxy";
-  }
-
-  return true;
-}
-
-
-function onWizardBridgeSettingsShow()
-{
-  var btn = document.documentElement.getButton("next");
-  if (btn)
-    btn.focus();
+  getWizard().advance("configureSettings");
 }
 
 
@@ -486,19 +441,12 @@ function onCustomBridgesTextInput()
 function onBridgeTypeRadioChange()
 {
   var useCustom = getElemValue(kCustomBridgesRadio, false);
-  enableElemWithLabel(kDefaultBridgeTypeMenuList, !useCustom);
-  enableElemWithLabel(kBridgeList + "Label", useCustom);
+  setBoolAttrForElemWithLabel(kDefaultBridgeTypeMenuList, "hidden", useCustom);
+  setBoolAttrForElemWithLabel(kBridgeList, "hidden", !useCustom);
   var focusElemID = (useCustom) ? kBridgeList : kDefaultBridgeTypeMenuList;
   var elem = document.getElementById(focusElemID);
   if (elem)
     elem.focus();
-}
-
-
-function showWizardNavButtons(aShowBtns)
-{
-  showOrHideButton("back", aShowBtns, false);
-  showOrHideButton("next", aShowBtns, false);
 }
 
 
@@ -516,11 +464,7 @@ var gObserver = {
     {
       removeObserver(kTorProcessReadyTopic);
       removeObserver(kTorProcessDidNotStartTopic);
-      var haveWizard = (getWizard() != null);
-      showPanel();
-      if (haveWizard)
-        showWizardNavButtons(true);
-      readTorSettings();
+      onTorStarted();
     }
     else if (kTorProcessDidNotStartTopic == aTopic)
     {
@@ -577,7 +521,7 @@ function readTorSettings()
   TorLauncherLogger.log(2, "readTorSettings " +
                             "----------------------------------------------");
 
-  var didSucceed = false;
+  let didSucceed = false;
   try
   {
     // TODO: retrieve > 1 key at one time inside initProxySettings() et al.
@@ -593,15 +537,28 @@ function readTorSettings()
 
     setTimeout(function()
         {
-          var details = TorLauncherUtil.getLocalizedString(
+          let details = TorLauncherUtil.getLocalizedString(
                                           "ensure_tor_is_running");
-          var s = TorLauncherUtil.getFormattedLocalizedString(
+          let s = TorLauncherUtil.getFormattedLocalizedString(
                                       "failed_to_get_settings", [details], 1);
           TorLauncherUtil.showAlert(window, s);
           close();
         }, 0);
   }
-  TorLauncherLogger.log(2, "readTorSettings done");
+
+  TorLauncherLogger.log(2, "readTorSettings done; didSucceed: " + didSucceed);
+  return didSucceed;
+}
+
+
+function onTorStarted()
+{
+  if (readTorSettings())
+  {
+    showPanel();
+    if (gInitialPanelID)
+      advanceToWizardPanel(gInitialPanelID);
+  }
 }
 
 
@@ -617,9 +574,6 @@ function showPanel(aPanelID)
     deckElem.selectedPanel = document.getElementById(aPanelID);
   else if (wizard.currentPage.pageid != aPanelID)
     wizard.goTo(aPanelID);
-
-  if (wizard && (aPanelID == kWizardFirstPageID))
-    setTimeout( function() { showWizardNavButtons(false); }, 0);
 
   showOrHideButton("accept", (aPanelID == "settings"), true);
 }
@@ -648,10 +602,6 @@ function advanceToWizardPanel(aPanelID)
 
 function showStartingTorPanel()
 {
-  var haveWizard = (getWizard() != null);
-  if (haveWizard)
-    showWizardNavButtons(false);
-
   showPanel("startingTor");
 }
 
@@ -692,10 +642,6 @@ function showErrorMessage(aTorExited, aErrorMsg, aShowReconfigButton)
   }
 
   showPanel("errorPanel");
-
-  var haveWizard = (getWizard() != null);
-  if (haveWizard)
-    showWizardNavButtons(false);
 
   var haveErrorOrWarning = (gTorProcessService.TorBootstrapErrorOccurred ||
                             gProtocolSvc.TorLogHasWarnOrErr)
@@ -775,8 +721,8 @@ function setButtonAttr(aID, aAttr, aValue)
 }
 
 
-// Enables / disables aID as well as optional aID+"Label" element.
-function enableElemWithLabel(aID, aEnable)
+// Sets or removes aAttr for aID as well as optional aID+"Label" element.
+function setBoolAttrForElemWithLabel(aID, aAttr, aValue)
 {
   if (!aID)
     return;
@@ -785,21 +731,28 @@ function enableElemWithLabel(aID, aEnable)
   if (elem)
   {
     var label = document.getElementById(aID + "Label");
-    if (aEnable)
+    if (aValue)
     {
       if (label)
-        label.removeAttribute("disabled");
+        label.setAttribute(aAttr, true);
 
-      elem.removeAttribute("disabled");
+      elem.setAttribute(aAttr, true);
     }
     else
     {
       if (label)
-        label.setAttribute("disabled", true);
+        label.removeAttribute(aAttr);
 
-      elem.setAttribute("disabled", true);
+      elem.removeAttribute(aAttr);
     }
   }
+}
+
+
+// Enables / disables aID as well as optional aID+"Label" element.
+function enableElemWithLabel(aID, aEnable)
+{
+  setBoolAttrForElemWithLabel(aID, "disabled", !aEnable);
 }
 
 
@@ -821,6 +774,19 @@ function enableTextBox(aID, aEnable)
       textbox.setAttribute("origPlaceholder", textbox.placeholder);
       textbox.removeAttribute("placeholder");
     }
+  }
+}
+
+
+function showMenuListPlaceholderText(aElemID)
+{
+  let menu = document.getElementById(aElemID);
+  if (menu)
+  {
+    menu.selectedItem = undefined;
+    let placeholder = menu.getAttribute("placeholder");
+    if (placeholder)
+      menu.setAttribute("label", placeholder);
   }
 }
 
@@ -889,8 +855,11 @@ function onRestartTor()
   addObserver(kTorProcessDidNotStartTopic);
   addObserver(kTorProcessExitedTopic);
 
-  gTorProcessService._startTor();
-  gTorProcessService._controlTor();
+  // Start tor with networking disabled so that the user has a chance to
+  // make configuration changes before bootstrapping begins.
+  gIsPostRestartBootstrapNeeded = true;
+  showStartingTorPanel();
+  gTorProcessService.TorStartAndControlTor(true);
 }
 
 
@@ -898,10 +867,6 @@ function onWizardReconfig()
 {
   showPanel(kWizardFirstPageID);
   onWizardConfigure();
-  // Because a similar delayed call is used to hide the buttons when the
-  // first wizard page is displayed, we use setTimeout() here to ensure
-  // that the navigation buttons are visible.
-  window.setTimeout(function() { showWizardNavButtons(true); }, 0);
 }
 
 
@@ -913,12 +878,34 @@ function onCancel()
     return false;
   }
 
-  if (gHasQuitButton) try
+  // If this is a wizard (initial config or locale picker), the cancel
+  // button is "Quit"
+  if (getWizard())
   {
-    gObsService.notifyObservers(null, "TorUserRequestedQuit", null);
-  } catch (e) {}
+    try
+    {
+      gObsService.notifyObservers(null, "TorUserRequestedQuit", null);
+    } catch (e) {}
+  }
+  else if (gIsPostRestartBootstrapNeeded)
+  {
+    useSettings();
+    return false;
+  }
 
   return true;
+}
+
+
+function onNetworkSettingsFinish()
+{
+  if (gRestoreAfterHelpPanelID) // Is help open?
+  {
+    closeHelp();
+    return false;
+  }
+
+  return applySettings(false);
 }
 
 
@@ -931,14 +918,13 @@ function onCopyLog()
   chSvc.copyString(gProtocolSvc.TorGetLog(countObj));
 
   // Display a feedback popup that fades away after a few seconds.
-  let forAssistance = document.getElementById("forAssistance");
+  let copyLogBtn = document.documentElement.getButton("extra2");
   let panel = document.getElementById("copyLogFeedbackPanel");
-  if (forAssistance && panel)
+  if (copyLogBtn && panel)
   {
     panel.firstChild.textContent = TorLauncherUtil.getFormattedLocalizedString(
                                      "copiedNLogMessages", [countObj.value], 1);
-    let rectObj = forAssistance.getBoundingClientRect();
-    panel.openPopup(null, null, rectObj.left, rectObj.top, false, false);
+    panel.openPopup(copyLogBtn, "before_start", 0, 0, false, false);
   }
 }
 
@@ -951,7 +937,7 @@ function closeCopyLogFeedbackPanel()
 }
 
 
-function onOpenHelp()
+function onOpenHelp(aHelpContentID)
 {
   if (gRestoreAfterHelpPanelID) // Already open?
     return;
@@ -962,7 +948,11 @@ function onOpenHelp()
   else
     gRestoreAfterHelpPanelID = getWizard().currentPage.pageid;
 
-  showPanel("bridgeHelp");
+  let contentElem = document.getElementById(aHelpContentID);
+  if (contentElem)
+    contentElem.removeAttribute("hidden");
+
+  showPanel("helpPanel");
 
   showOrHideButton("extra2", false, false); // Hide "Copy Tor Log To Clipboard"
 
@@ -971,6 +961,7 @@ function onOpenHelp()
     showOrHideButton("cancel", false, false);
     showOrHideButton("back", false, false);
     overrideButtonLabel("next", "done");
+    showOrHideButton("next", true, false);
     var forAssistance = document.getElementById("forAssistance");
     if (forAssistance)
       forAssistance.setAttribute("hidden", true);
@@ -989,30 +980,41 @@ function closeHelp()
 
   restoreCopyLogVisibility();
 
-  if (getWizard())
+  let helpPanel;
+  let wizardElem = getWizard();
+  if (wizardElem)
   {
     showOrHideButton("cancel", true, false);
     showOrHideButton("back", true, false);
+    showOrHideButton("next", false, false);
     restoreButtonLabel("next");
     var forAssistance = document.getElementById("forAssistance");
     if (forAssistance)
       forAssistance.removeAttribute("hidden");
+    helpPanel = wizardElem.currentPage;
   }
   else
   {
     restoreButtonLabel("cancel");
+    helpPanel = document.getElementById("helpPanel");
   }
 
   showPanel(gRestoreAfterHelpPanelID);
   gRestoreAfterHelpPanelID = null;
+
+  for (let childElem = helpPanel.firstChild; childElem;
+       childElem = childElem.nextSibling)
+  {
+    childElem.setAttribute("hidden", true);
+  }
 }
 
 
 // Returns true if successful.
 function initProxySettings()
 {
-  var proxyType, proxyAddrPort, proxyUsername, proxyPassword;
-  var reply = gProtocolSvc.TorGetConfStr(kTorConfKeySocks4Proxy, null);
+  let proxyType, proxyAddrPort, proxyUsername, proxyPassword;
+  let reply = gProtocolSvc.TorGetConfStr(kTorConfKeySocks4Proxy, null);
   if (!gProtocolSvc.TorCommandSucceeded(reply))
     return false;
 
@@ -1023,7 +1025,7 @@ function initProxySettings()
   }
   else
   {
-    var reply = gProtocolSvc.TorGetConfStr(kTorConfKeySocks5Proxy, null);
+    reply = gProtocolSvc.TorGetConfStr(kTorConfKeySocks5Proxy, null);
     if (!gProtocolSvc.TorCommandSucceeded(reply))
       return false;
 
@@ -1031,14 +1033,12 @@ function initProxySettings()
     {
       proxyType = "SOCKS5";
       proxyAddrPort = reply.retVal;
-      var reply = gProtocolSvc.TorGetConfStr(kTorConfKeySocks5ProxyUsername,
-                                             null);
+      reply = gProtocolSvc.TorGetConfStr(kTorConfKeySocks5ProxyUsername, null);
       if (!gProtocolSvc.TorCommandSucceeded(reply))
         return false;
 
       proxyUsername = reply.retVal;
-      var reply = gProtocolSvc.TorGetConfStr(kTorConfKeySocks5ProxyPassword,
-                                             null);
+      reply = gProtocolSvc.TorGetConfStr(kTorConfKeySocks5ProxyPassword, null);
       if (!gProtocolSvc.TorCommandSucceeded(reply))
         return false;
 
@@ -1046,7 +1046,7 @@ function initProxySettings()
     }
     else
     {
-      var reply = gProtocolSvc.TorGetConfStr(kTorConfKeyHTTPSProxy, null);
+      reply = gProtocolSvc.TorGetConfStr(kTorConfKeyHTTPSProxy, null);
       if (!gProtocolSvc.TorCommandSucceeded(reply))
         return false;
 
@@ -1054,28 +1054,30 @@ function initProxySettings()
       {
         proxyType = "HTTP";
         proxyAddrPort = reply.retVal;
-        var reply = gProtocolSvc.TorGetConfStr(
+        reply = gProtocolSvc.TorGetConfStr(
                                    kTorConfKeyHTTPSProxyAuthenticator, null);
         if (!gProtocolSvc.TorCommandSucceeded(reply))
           return false;
 
-        var values = parseColonStr(reply.retVal);
+        let values = parseColonStr(reply.retVal);
         proxyUsername = values[0];
         proxyPassword = values[1];
       }
     }
   }
 
-  var haveProxy = (proxyType != undefined);
-  setYesNoRadioValue(kWizardProxyRadioGroup, haveProxy);
+  let haveProxy = (proxyType != undefined);
   setElemValue(kUseProxyCheckbox, haveProxy);
   setElemValue(kProxyTypeMenulist, proxyType);
+  if (!proxyType)
+    showMenuListPlaceholderText(kProxyTypeMenulist);
+
   onProxyTypeChange();
 
-  var proxyAddr, proxyPort;
+  let proxyAddr, proxyPort;
   if (proxyAddrPort)
   {
-    var values = parseColonStr(proxyAddrPort);
+    let values = parseColonStr(proxyAddrPort);
     proxyAddr = values[0];
     proxyPort = values[1];
   }
@@ -1128,24 +1130,26 @@ function initFirewallSettings()
 // Returns true if successful.
 function initBridgeSettings()
 {
-  var typeList = TorLauncherUtil.defaultBridgeTypes;
-  var canUseDefaultBridges = (typeList && (typeList.length > 0));
-  var defaultType = TorLauncherUtil.getCharPref(kPrefDefaultBridgeType);
-  var useDefault = canUseDefaultBridges && !!defaultType;
+  let typeList = TorLauncherUtil.defaultBridgeTypes;
+  let canUseDefaultBridges = (typeList && (typeList.length > 0));
+  let defaultType = TorLauncherUtil.getCharPref(kPrefDefaultBridgeType);
+  let useDefault = canUseDefaultBridges && !!defaultType;
 
   // If not configured to use a default set of bridges, get UseBridges setting
   // from tor.
-  var useBridges = useDefault;
+  let useBridges = useDefault;
   if (!useDefault)
   {
-    var reply = gProtocolSvc.TorGetConfBool(kTorConfKeyUseBridges, false);
+    showMenuListPlaceholderText(kDefaultBridgeTypeMenuList);
+
+    let reply = gProtocolSvc.TorGetConfBool(kTorConfKeyUseBridges, false);
     if (!gProtocolSvc.TorCommandSucceeded(reply))
       return false;
 
     useBridges = reply.retVal;
 
     // Get bridge list from tor.
-    var bridgeReply = gProtocolSvc.TorGetConf(kTorConfKeyBridgeList);
+    let bridgeReply = gProtocolSvc.TorGetConf(kTorConfKeyBridgeList);
     if (!gProtocolSvc.TorCommandSucceeded(bridgeReply))
       return false;
 
@@ -1159,21 +1163,16 @@ function initBridgeSettings()
   }
 
   setElemValue(kUseBridgesCheckbox, useBridges);
-  setYesNoRadioValue(kWizardUseBridgesRadioGroup, useBridges);
 
   if (!canUseDefaultBridges)
   {
-    var label = document.getElementById("bridgeSettingsPrompt");
-    if (label)
-      label.setAttribute("hidden", true);
-
     var radioGroup = document.getElementById("bridgeTypeRadioGroup");
     if (radioGroup)
       radioGroup.setAttribute("hidden", true);
   }
 
-  var radioID = (useDefault) ? "bridgeRadioDefault" : "bridgeRadioCustom";
-  var radio = document.getElementById(radioID);
+  let radioID = (useDefault) ? "bridgeRadioDefault" : "bridgeRadioCustom";
+  let radio = document.getElementById(radioID);
   if (radio)
     radio.control.selectedItem = radio;
   onBridgeTypeRadioChange();
@@ -1212,6 +1211,8 @@ function useSettings()
   let didApply = setConfAndReportErrors(settings, null);
   if (!didApply)
     return;
+
+  gIsPostRestartBootstrapNeeded = false;
 
   gProtocolSvc.TorSendCommand("SAVECONF");
   gTorProcessService.TorClearBootstrapError();
@@ -1272,7 +1273,7 @@ function applyProxySettings(aUseDefaults)
   if (!settings)
     return false;
 
-  return setConfAndReportErrors(settings, "proxyYES");
+  return setConfAndReportErrors(settings, "configureSettings");
 }
 
 
@@ -1344,8 +1345,7 @@ function getAndValidateProxySettings()
 
 function isProxyConfigured()
 {
-  return (getWizard()) ? getYesNoRadioValue(kWizardProxyRadioGroup)
-                       : getElemValue(kUseProxyCheckbox, false);
+  return getElemValue(kUseProxyCheckbox, false);
 }
 
 
@@ -1451,34 +1451,44 @@ function constructFirewallSettings(aAllowedPorts)
 
 function initDefaultBridgeTypeMenu()
 {
-  var menu = document.getElementById(kDefaultBridgeTypeMenuList);
+  let menu = document.getElementById(kDefaultBridgeTypeMenuList);
   if (!menu)
     return;
 
   menu.removeAllItems();
 
-  var typeArray = TorLauncherUtil.defaultBridgeTypes;
+  let typeArray = TorLauncherUtil.defaultBridgeTypes;
   if (!typeArray || typeArray.length == 0)
     return;
 
-  var recommendedType = TorLauncherUtil.getCharPref(
+  // Move the recommended type to the top of the list.
+  let recommendedType = TorLauncherUtil.getCharPref(
                                       kPrefDefaultBridgeRecommendedType, null);
-  var selectedType = TorLauncherUtil.getCharPref(kPrefDefaultBridgeType, null);
-  if (!selectedType)
-    selectedType = recommendedType;
-
-  for (var i=0; i < typeArray.length; i++)
+  if (recommendedType)
   {
-    var bridgeType = typeArray[i];
-
-    var menuItemLabel = bridgeType;
-    if (bridgeType == recommendedType)
+    for (let i = 0; i < typeArray.length; i++)
     {
-      const key = "recommended_bridge";
-      menuItemLabel += " " + TorLauncherUtil.getLocalizedString(key);
+      if (typeArray[i] == recommendedType)
+      {
+        typeArray.splice(i, 1);             // remove
+        typeArray.unshift(recommendedType); // add to the beginning
+        break;
+      }
     }
+  }
 
-    var mi = menu.appendItem(menuItemLabel, bridgeType);
+  // Build the popup menu.
+  let selectedType = TorLauncherUtil.getCharPref(kPrefDefaultBridgeType, null);
+  for (let i = 0; i < typeArray.length; i++)
+  {
+    let bridgeType = typeArray[i];
+    let menuItemLabel = bridgeType;
+    let key = "bridge_suffix." + bridgeType;
+    let suffix = TorLauncherUtil.getLocalizedString(key);
+    if (suffix != key)
+      menuItemLabel += " " + suffix;
+
+    let mi = menu.appendItem(menuItemLabel, bridgeType);
     if (bridgeType == selectedType)
       menu.selectedItem = mi;
   }
@@ -1496,7 +1506,7 @@ function applyBridgeSettings(aUseDefaults)
   if (aUseDefaults)
     TorLauncherUtil.setCharPref(kPrefDefaultBridgeType, "");
 
-  return setConfAndReportErrors(settings, "bridgeSettings");
+  return setConfAndReportErrors(settings, "configureSettings");
 }
 
 
@@ -1561,8 +1571,7 @@ function getAndValidateBridgeSettings()
 
 function isBridgeConfigured()
 {
-  return (getWizard()) ? getElemValue("bridgesRadioYes", false)
-                       : getElemValue(kUseBridgesCheckbox, false);
+  return getElemValue(kUseBridgesCheckbox, false);
 }
 
 
@@ -1715,34 +1724,20 @@ function getElemValue(aID, aDefaultValue)
 }
 
 
-// This assumes that first radio button is yes.
-function setYesNoRadioValue(aGroupID, aIsYes)
-{
-  var elem = document.getElementById(aGroupID);
-  if (elem)
-    elem.selectedIndex = (aIsYes) ? 0 : 1;
-}
-
-
-// This assumes that first radio button is yes.
-function getYesNoRadioValue(aGroupID)
-{
-  var elem = document.getElementById(aGroupID);
-  return (elem) ? (0 == elem.selectedIndex) : false;
-}
-
-
+// Hide and show groupbox based on aElem's checked state. aElem may be a
+// checkbox or radio element.
 function toggleElemUI(aElem)
 {
   if (!aElem)
     return;
 
-  var gbID = aElem.getAttribute("groupboxID");
+  let gbID = aElem.getAttribute("groupboxID");
   if (gbID)
   {
-    var gb = document.getElementById(gbID);
+    let isOn = getElemValue(aElem.id, false);
+    let gb = document.getElementById(gbID);
     if (gb)
-      gb.hidden = !aElem.checked;
+      gb.hidden = !isOn;
   }
 }
 
