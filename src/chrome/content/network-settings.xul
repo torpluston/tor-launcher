@@ -29,7 +29,7 @@
   <script type="application/x-javascript"
           src="chrome://torlauncher/content/network-settings.js"/>
 
-  <deck id="deck">
+  <deck id="deck" onselect="onDeckSelect();">
     <vbox id="settings">
       <vbox id="bridgeSettings"/>
       <separator orient="horizontal" class="thin"/>
@@ -50,6 +50,9 @@
         <spring flex="1" />
       </hbox>
       <spring flex="1" />
+    </vbox>
+    <vbox id="progressPanel">
+      <vbox id="progressContent"/>
     </vbox>
     <vbox id="errorPanel">
       <spring flex="1" />

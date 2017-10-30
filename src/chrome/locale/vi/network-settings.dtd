@@ -73,3 +73,6 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, or https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Thông qua Help Desk">
 <!ENTITY torsettings.bridgeHelp4 "Như là phương thức cuối cùng, bạn có thể yêu cầu địa chỉ cầu nối bằng cách gửi một email lịch sự tới help@rt.torproject.org.&#160; Vui lòng lưu ý rằng một người cần phải phản hồi tới từng yêu cầu.">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Vui lòng chờ trong khi chúng tôi thiết lập kết nối tới mạng lưới Tor.&#160; Việc này có thể mất một vài phút.">

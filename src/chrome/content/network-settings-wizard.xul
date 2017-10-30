@@ -19,7 +19,7 @@
         windowtype="TorLauncher:NetworkSettings"
         persist="screenX screenY"
         buttonlabelextra2="&torsettings.copyLog;"
-        onwizardfinish="return applySettings(false);"
+        onwizardfinish="return onWizardFinish();"
         onwizardcancel="return onCancel();"
         onload="initDialog();"
         onunload="deinitDialog();">
@@ -50,10 +50,22 @@
   <wizardpage pageid="configureSettings" onextra2="onCopyLog();"
               windowtitle="&torsettings.wizard.title.configure;"
               torShowNavButtons="true">
-    <separator class="tall"/>
-    <vbox id="bridgeSettings"/>
-    <separator/>
-    <vbox id="proxySettings"/>
+    <stack flex="1">
+      <vbox>
+        <separator class="tall"/>
+        <vbox id="bridgeSettings"/>
+        <separator/>
+        <vbox id="proxySettings"/>
+      </vbox>
+    </stack>
+  </wizardpage>
+
+  <wizardpage pageid="progress" onextra2="onCopyLog();"
+              windowtitle="&torsettings.wizard.title.connecting;"
+              torShowNavButtons="false"
+              onpageshow="onShowProgressPanel();"
+              onpagehide="return resetProgressNavButtons();">
+    <vbox id="progressContent"/>
   </wizardpage>
 
   <wizardpage pageid="startingTor" next="notUsed" torShowNavButtons="false">
@@ -69,22 +81,21 @@
     <spring flex="1" />
   </wizardpage>
 
-  <wizardpage pageid="errorPanel" next="notUsed" torShowNavButtons="false"
-              onextra2="onCopyLog();">
+  <wizardpage pageid="restartPanel" next="notUsed"
+              pack="center" torShowNavButtons="false" onextra2="onCopyLog();">
+    <vbox id="restartContent"/>
+  </wizardpage>
+
+  <wizardpage pageid="errorPanel" next="notUsed"
+              torShowNavButtons="false" onextra2="onCopyLog();">
     <spring flex="1" />
-    <hbox>
-      <spring flex="1" />
-      <description id="errorPanelMessage" flex="1" />
-      <spring flex="1" />
+    <hbox pack="center">
+      <description errorElemId="message" flex="1"/>
     </hbox>
     <separator/>
-    <hbox>
-      <spring flex="1" />
-      <button id="restartTorButton" label="&torsettings.restartTor;"
-              hidden="true" oncommand="onRestartTor()" />
-      <button id="reconfigTorButton" label="&torsettings.reconfigTor;"
+    <hbox pack="center">
+      <button errorElemId="reconfigButton" label="&torsettings.reconfigTor;"
               hidden="true" oncommand="onWizardReconfig()" />
-      <spring flex="1" />
     </hbox>
     <spring flex="1" />
   </wizardpage>

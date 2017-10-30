@@ -77,3 +77,6 @@ https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4 "כמוצא אחרון, תוכל לבקש רשימת גשרים באמצעות פנייה מנומסת בדואל לכתובת הבאה: 
 help@rt.torproject.org
 אנא זכור שבן אנוש ייאלץ להשיב באופן אישי לכל בקשה שכזו.">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

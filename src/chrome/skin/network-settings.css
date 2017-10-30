@@ -229,3 +229,16 @@ dialog .help {
 .torWarning .button-icon {
   display: inline !important;
 }
+
+#progressContent > vbox {
+  margin-top: 70px;
+}
+
+#progressPleaseWait {
+  margin-bottom: 30px;
+}
+
+#progressDesc {
+  height: 48px;
+  margin: 20px 30px;
+}

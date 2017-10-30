@@ -73,3 +73,6 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, alebo https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Cez Help Desk">
 <!ENTITY torsettings.bridgeHelp4 "Ako poslednú možnosť si môžete vyžiadať adresy mostov zaslaním zdvorilého emailu na adresu help@rt.torproject.org.&#160; Prosíme berte na vedomie, že príslušná osoba musí odpovedať na každú jednu podobnú žiadosť.">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

@@ -73,3 +73,6 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, eller https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Via supporten">
 <!ENTITY torsettings.bridgeHelp4 "Som en sista utväg kan du skicka ett artigt e-post meddelande på engelska till help@rt.torproject.org, och fråga efter bryggadresser.&#160; Tänk på att en person måste svara på varje sådan förfrågan.">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Vänligen vänta medan vi sätter upp en anslutning till Tor-nätverket.&#160; Detta kan ta flera minuter.">

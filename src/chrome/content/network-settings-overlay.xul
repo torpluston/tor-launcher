@@ -128,6 +128,18 @@
     <description>&torsettings.bridgeHelp2;</description>
   </vbox>
 
+  <vbox id="progressContent">
+    <hbox class="tbb-header" pack="center">
+      <image class="tbb-logo"/>
+    </hbox>
+    <vbox flex="1">
+      <description id="progressPleaseWait"
+                   hidden="true">&torprogress.pleaseWait;</description>
+      <progressmeter id="progressMeter" mode="determined" value="0"/>
+      <description id="progressDesc"/>
+    </vbox>
+  </vbox>
+
   <panel id="copyLogFeedbackPanel" type="arrow" fade="slow"
          onclick="closeCopyLogFeedbackPanel()">
      <description flex="1" />

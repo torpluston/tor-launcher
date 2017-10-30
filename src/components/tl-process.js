@@ -35,6 +35,8 @@ TorProcessService.prototype =
   kPrefPromptAtStartup: "extensions.torlauncher.prompt_at_startup",
   kPrefDefaultBridgeType: "extensions.torlauncher.default_bridge_type",
 
+  kWizardProgressPageID: "progress",
+
   kInitialControlConnDelayMS: 25,
   kMaxControlConnRetryMS: 500,
   kControlConnTimeoutMS: 30000, // Wait at most 30 seconds for tor to start.
@@ -130,8 +132,8 @@ TorProcessService.prototype =
         // but that caused hangs upon exit in the Firefox 24.x based browser.
         // Apparently, Firefox does not like to process socket I/O while
         // quitting if the browser did not finish starting up (e.g., when
-        // someone presses the Quit button on our Network Settings or progress
-        // window during startup).
+        // someone presses the Quit button on our Network Settings window
+        // during startup).
         TorLauncherLogger.log(4, "Disconnecting from tor process (pid "
                                    + this.mTorProcess.pid + ")");
         this.mProtocolSvc.TorCleanupConnection();
@@ -552,16 +554,11 @@ TorProcessService.prototype =
         // for tor to be restarted. If networking is enabled, show the
         // progress panel (since bootstrapping is underway).
         if (!aIsNetworkForceDisabled && this.mObsSvc)
-          this.mObsSvc.notifyObservers(null, "TorOpenProgressDialog", null);
+          this.mObsSvc.notifyObservers(null, "TorShowProgressPanel", null);
       }
       else if (!this.TorIsBootstrapDone)
       {
-        this._openProgressDialog();
-
-        // Assume that the "Open Settings" button was pressed if Quit was
-        // not pressed and bootstrapping did not finish.
-        if (!this.mQuitSoon && !this.TorIsBootstrapDone)
-          this._openNetworkSettings(true);
+        this._openNetworkSettings(false, this.kWizardProgressPageID);
       }
 
       // If the user pressed "Quit" within settings/progress, exit.
@@ -640,6 +637,7 @@ TorProcessService.prototype =
           // Notify others that an error will be displayed.
           this.mObsSvc.notifyObservers(null, "TorBootstrapError", reason);
 
+// TODO2017: "route" error message to wizard or settings dialog if it is open
           var msg = TorLauncherUtil.getLocalizedString("tor_bootstrap_failed");
           TorLauncherUtil.showAlert(null, msg + "\n\n" + details);
         }
@@ -722,7 +720,8 @@ TorProcessService.prototype =
     var winFeatures = "chrome,dialog=yes,modal,all";
     var argsArray = this._createOpenWindowArgsArray(aIsInitialBootstrap,
                                                     aStartAtWizardPanel);
-    var url = (aIsInitialBootstrap) ? kWizardURL : kSettingsURL;
+    let isProgress = (this.kWizardProgressPageID == aStartAtWizardPanel);
+    let url = (aIsInitialBootstrap || isProgress) ? kWizardURL : kSettingsURL;
     wwSvc.openWindow(null, url, "_blank", winFeatures, argsArray);
   },
 
@@ -731,16 +730,6 @@ TorProcessService.prototype =
     var wm = Cc["@mozilla.org/appshell/window-mediator;1"]
                .getService(Ci.nsIWindowMediator);
     return wm.getMostRecentWindow("TorLauncher:NetworkSettings");
-  },
-
-  _openProgressDialog: function()
-  {
-    var chromeURL = "chrome://torlauncher/content/progress.xul";
-    var wwSvc = Cc["@mozilla.org/embedcomp/window-watcher;1"]
-                  .getService(Ci.nsIWindowWatcher);
-    var winFeatures = "chrome,dialog=yes,modal,all";
-    var argsArray = this._createOpenWindowArgsArray(true);
-    wwSvc.openWindow(null, chromeURL, "_blank", winFeatures, argsArray);
   },
 
   _createOpenWindowArgsArray: function(aArg1, aArg2)

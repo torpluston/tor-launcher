@@ -73,3 +73,6 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, or https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Laguntza mahaiaren bidez">
 <!ENTITY torsettings.bridgeHelp4 "Azken aukera bezala, zubi erreleak eska ditzakezu mezu adeitsu bat help@rt.torproject.org-era bidaliz.&#160; Mesedez, kontuan izan pertsona batek eskarea bakoitza erantzun beharko duela.">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Mesedez itxaron Tor sarera konexioa ezartzen dugun bitartean.&#160; Honek minutu batzuk har litzake.">

@@ -31,11 +31,15 @@ const kSupportURL = "torproject.org/about/contact.html#support";
 const kTorProcessReadyTopic = "TorProcessIsReady";
 const kTorProcessExitedTopic = "TorProcessExited";
 const kTorProcessDidNotStartTopic = "TorProcessDidNotStart";
-const kTorOpenProgressTopic = "TorOpenProgressDialog";
+const kTorShowProgressPanelTopic = "TorShowProgressPanel";
+const kTorBootstrapStatusTopic = "TorBootstrapStatus";
 const kTorBootstrapErrorTopic = "TorBootstrapError";
 const kTorLogHasWarnOrErrTopic = "TorLogHasWarnOrErr";
 
 const kWizardFirstPageID = "first";
+const kWizardDiscardSettingsPageID = "discardSettings";
+const kWizardProgressPageID = "progress";                 // wizard
+const kNetworkSettingsProgressPanelID = "progressPanel";  // non wizard
 
 const kLocaleList = "localeList";
 const kUseProxyCheckbox = "useProxy";
@@ -65,15 +69,17 @@ const kTorConfKeyBridgeList = "Bridge";
 var gProtocolSvc = null;
 var gTorProcessService = null;
 var gObsService = null;
+var gCancelLabelStr = undefined;
 var gIsInitialBootstrap = false;
 var gInitialPanelID = undefined;
-var gIsBootstrapComplete = false;
+var gShowProgressTimer = undefined;
 var gRestoreAfterHelpPanelID = null;
 var gIsPostRestartBootstrapNeeded = false;
+var gIsWindowScheduledToClose = false;
 var gActiveTopics = [];  // Topics for which an observer is currently installed.
 
 
-function initDialogCommon(aHasQuitButton)
+function initDialogCommon()
 {
   gObsService = Cc["@mozilla.org/observer-service;1"]
                   .getService(Ci.nsIObserverService);
@@ -91,18 +97,20 @@ function initDialogCommon(aHasQuitButton)
                                         "forAssistance2", [kSupportURL], 1);
   }
 
-  if (aHasQuitButton)
+  let wizardElem = getWizard();
+  let haveWizard = (wizardElem != null);
+
+  let cancelBtn = document.documentElement.getButton("cancel");
+  if (cancelBtn)
   {
-    let cancelBtn = document.documentElement.getButton("cancel");
-    if (cancelBtn)
+    gCancelLabelStr = cancelBtn.label;
+    if (haveWizard)
     {
       let quitKey = isWindows ? "quit_win" : "quit";
       cancelBtn.label = TorLauncherUtil.getLocalizedString(quitKey);
     }
   }
 
-  let wizardElem = getWizard();
-  let haveWizard = (wizardElem != null);
   if (haveWizard)
   {
     // Hide the Tor Browser logo and associated separator element if the
@@ -135,21 +143,14 @@ function resizeDialogToFitContent()
 function initDialog()
 {
   gIsInitialBootstrap = window.arguments[0];
-  initDialogCommon(gIsInitialBootstrap);
+  initDialogCommon();
 
   if (window.arguments.length > 1)
     gInitialPanelID = window.arguments[1];
 
-  if (gIsInitialBootstrap)
-  {
-    var okBtn = document.documentElement.getButton("accept");
-    if (okBtn)
-      okBtn.label = TorLauncherUtil.getLocalizedString("connect");
-  }
-
   try
   {
-    var svc = Cc["@torproject.org/torlauncher-protocol-service;1"]
+    let svc = Cc["@torproject.org/torlauncher-protocol-service;1"]
                 .getService(Ci.nsISupports);
     gProtocolSvc = svc.wrappedJSObject;
   }
@@ -157,22 +158,27 @@ function initDialog()
 
   try
   {
-    var svc = Cc["@torproject.org/torlauncher-process-service;1"]
+    let svc = Cc["@torproject.org/torlauncher-process-service;1"]
                 .getService(Ci.nsISupports);
     gTorProcessService = svc.wrappedJSObject;
   }
   catch (e) { dump(e + "\n"); }
 
-  var wizardElem = getWizard();
-  var haveWizard = (wizardElem != null);
+  let wizardElem = getWizard();
+  let haveWizard = (wizardElem != null);
   if (haveWizard)
   {
+    // Relabel the accept button to be "Connect"
+    let okBtn = document.documentElement.getButton("accept");
+    if (okBtn)
+      okBtn.label = TorLauncherUtil.getLocalizedString("connect");
+
     // Set "Copy Tor Log" label and move it after the Quit (cancel) button.
-    var copyLogBtn = document.documentElement.getButton("extra2");
+    let copyLogBtn = document.documentElement.getButton("extra2");
     if (copyLogBtn)
     {
       copyLogBtn.label = wizardElem.getAttribute("buttonlabelextra2");
-      var cancelBtn = document.documentElement.getButton("cancel");
+      let cancelBtn = document.documentElement.getButton("cancel");
       if (cancelBtn && TorLauncherUtil.isMac)
         cancelBtn.parentNode.insertBefore(copyLogBtn, cancelBtn.nextSibling);
     }
@@ -184,7 +190,7 @@ function initDialog()
     }
 
     // Use "Connect" as the finish button label (on the last wizard page).
-    var finishBtn = document.documentElement.getButton("finish");
+    let finishBtn = document.documentElement.getButton("finish");
     if (finishBtn)
     {
       finishBtn.label = TorLauncherUtil.getLocalizedString("connect");
@@ -200,12 +206,13 @@ function initDialog()
 
   initDefaultBridgeTypeMenu();
 
+  addObserver(kTorBootstrapStatusTopic);
   addObserver(kTorBootstrapErrorTopic);
   addObserver(kTorLogHasWarnOrErrTopic);
   addObserver(kTorProcessExitedTopic);
-  addObserver(kTorOpenProgressTopic);
+  addObserver(kTorShowProgressPanelTopic);
 
-  var status = gTorProcessService.TorProcessStatus;
+  let status = gTorProcessService.TorProcessStatus;
   if (TorLauncherUtil.shouldStartAndOwnTor &&
      (status != gTorProcessService.kStatusRunning))
   {
@@ -236,7 +243,7 @@ function initDialog()
 
 function initLocaleDialog()
 {
-  initDialogCommon(true);
+  initDialogCommon();
 
   // Replace the finish button's label ("Done") with the next button's
   // label ("Next" or "Continue").
@@ -395,6 +402,20 @@ function onWizardPageShow()
 }
 
 
+function isShowingProgress()
+{
+  let wizardElem = getWizard();
+  if (wizardElem)
+    return (kWizardProgressPageID == wizardElem.currentPage.pageid);
+
+  let deckElem = document.getElementById("deck");
+  if (deckElem)
+    return (kNetworkSettingsProgressPanelID == deckElem.selectedPanel.id);
+
+  return false;
+}
+
+
 function getWizard()
 {
   let elem = document.getElementById("TorNetworkSettings");
@@ -409,7 +430,7 @@ function onWizardFirstPanelConnect()
   // If the user configured bridge or proxy settings, prompt before
   // discarding their data.
   if (isBridgeConfigured() || isProxyConfigured())
-    showPanel("discardSettings");
+    showPanel(kWizardDiscardSettingsPageID);
   else
     removeSettingsAndConnect()
 }
@@ -418,7 +439,7 @@ function onWizardFirstPanelConnect()
 function removeSettingsAndConnect()
 {
   applySettings(true);  // Use default settings.
-  if (!gIsBootstrapComplete)
+  if (!gTorProcessService.TorIsBootstrapDone)
     readTorSettings();  // Ensure UI matches the settings that were used.
 }
 
@@ -450,6 +471,49 @@ function onBridgeTypeRadioChange()
 }
 
 
+function onDeckSelect()
+{
+  let deckElem = document.getElementById("deck");
+  if (kNetworkSettingsProgressPanelID == deckElem.id)
+    onShowProgressPanel();
+}
+
+
+function onShowProgressPanel()
+{
+  if (gTorProcessService.TorIsBootstrapDone)
+  {
+    close();
+    return;
+  }
+
+  // Set up navigation buttons.
+  // setTimeout() is needed because this panel may be shown first.
+  // Because resetProgressNavButtons() is called without delay, it may
+  // be called before this timer fires. Therefore we store a reference
+  // to it so that we can cancel it inside resetProgressNavButtons().
+  gShowProgressTimer = setTimeout(function() {
+      gShowProgressTimer = undefined;
+      showOrHideButton("cancel", false, false); // hide quit button
+      overrideButtonLabel("finish", gCancelLabelStr);
+  }, 0);
+}
+
+
+function resetProgressNavButtons()
+{
+  if (gShowProgressTimer)
+  {
+    clearTimeout(gShowProgressTimer);
+    gShowProgressTimer = undefined;
+  }
+
+  restoreButtonLabel("finish");
+  showOrHideButton("cancel", true, false);
+  return true;
+}
+
+
 var gObserver = {
   observe: function(aSubject, aTopic, aData)
   {
@@ -477,9 +541,13 @@ var gObserver = {
       removeObserver(kTorProcessExitedTopic);
       showErrorMessage(true, null, false);
     }
-    else if (kTorOpenProgressTopic == aTopic)
+    else if (kTorShowProgressPanelTopic == aTopic)
     {
-      openProgressDialog();
+      showProgressPanel();
+    }
+    else if (kTorBootstrapStatusTopic == aTopic)
+    {
+      updateBootstrapProgress(aSubject.wrappedJSObject);
     }
   }
 };
@@ -513,6 +581,44 @@ function removeAllObservers()
     gObsService.removeObserver(gObserver, gActiveTopics[i]);
 
   gActiveTopics = [];
+}
+
+
+function updateBootstrapProgress(aStatusObj)
+{
+  if (!isShowingProgress())
+    return;
+
+  let labelText =
+            TorLauncherUtil.getLocalizedBootstrapStatus(aStatusObj, "TAG");
+  let percentComplete = (aStatusObj.PROGRESS) ? aStatusObj.PROGRESS : 0;
+
+  let meter = document.getElementById("progressMeter");
+  if (meter)
+  {
+    meter.value = percentComplete;
+    showProgressMeterIfNoError();
+  }
+
+  if (percentComplete >= 100)
+  {
+    // To ensure that 100% progress is displayed, wait a short while before
+    // closing this window... but first, hide the cancel button to avoid a
+    // race where the user clicks Cancel when bootstrapping has already
+    // finished (and this window is scheduled to close in 250ms). Use CSS
+    // visibility=hidden instead of XUL hidden=true so that the "For
+    // Assistance" text does not move.
+    let btnID = getWizard() ? "finish" : "cancel";
+    let btn = document.documentElement.getButton(btnID);
+    if (btn)
+      btn.style.visibility = "hidden";
+    window.setTimeout(function() { close(); }, 250);
+    gIsWindowScheduledToClose = true;
+  }
+
+  let desc = document.getElementById("progressDesc");
+  if (labelText && desc)
+    desc.textContent = labelText;
 }
 
 
@@ -571,11 +677,21 @@ function showPanel(aPanelID)
 
   var deckElem = document.getElementById("deck");
   if (deckElem)
+  {
     deckElem.selectedPanel = document.getElementById(aPanelID);
+  }
   else if (wizard.currentPage.pageid != aPanelID)
+  {
+    if (kWizardProgressPageID == wizard.currentPage.pageid)
+      resetProgressNavButtons(); // goTo() does not generate pagehide events.
     wizard.goTo(aPanelID);
+  }
 
-  showOrHideButton("accept", (aPanelID == "settings"), true);
+  if (!wizard)
+  {
+    // Ensure that the OK button is only shown on the main settings panel.
+    showOrHideButton("accept", (aPanelID == "settings"), true);
+  }
 }
 
 
@@ -585,6 +701,12 @@ function advanceToWizardPanel(aPanelID)
   var wizard = getWizard();
   if (!wizard)
     return;
+
+  if (kWizardProgressPageID == aPanelID)
+  {
+    showProgressPanel();
+    return;
+  }
 
   onWizardConfigure(); // Equivalent to pressing "Configure"
 
@@ -791,14 +913,21 @@ function showMenuListPlaceholderText(aElemID)
 }
 
 
-function overrideButtonLabel(aID, aLabelKey)
+function overrideButtonLabel(aID, aLabel)
 {
-  var btn = document.documentElement.getButton(aID);
+  let btn = document.documentElement.getButton(aID);
   if (btn)
   {
     btn.setAttribute("origLabel", btn.label);
-    btn.label = TorLauncherUtil.getLocalizedString(aLabelKey);
+    btn.label = aLabel;
   }
+}
+
+
+function overrideButtonLabelWithKey(aID, aLabelKey)
+{
+  let label = TorLauncherUtil.getLocalizedString(aLabelKey);
+  overrideButtonLabel(aID, label);
 }
 
 
@@ -872,6 +1001,9 @@ function onWizardReconfig()
 
 function onCancel()
 {
+  if (gIsWindowScheduledToClose)
+    return false;     // Ignore cancel in this case.
+
   if (gRestoreAfterHelpPanelID) // Is help open?
   {
     closeHelp();
@@ -894,6 +1026,22 @@ function onCancel()
   }
 
   return true;
+}
+
+
+function onWizardFinish()
+{
+  if (isShowingProgress())
+  {
+    // When the progress panel is showing, the finish button is "Cancel"
+    stopTorBootstrap();
+    getWizard().rewind();
+    return false;
+  }
+  else
+  {
+    return applySettings(false);
+  }
 }
 
 
@@ -942,7 +1090,7 @@ function onOpenHelp(aHelpContentID)
   if (gRestoreAfterHelpPanelID) // Already open?
     return;
 
-  var deckElem = document.getElementById("deck");
+  let deckElem = document.getElementById("deck");
   if (deckElem)
     gRestoreAfterHelpPanelID = deckElem.selectedPanel.id;
   else
@@ -960,15 +1108,15 @@ function onOpenHelp(aHelpContentID)
   {
     showOrHideButton("cancel", false, false);
     showOrHideButton("back", false, false);
-    overrideButtonLabel("next", "done");
+    overrideButtonLabelWithKey("next", "done");
     showOrHideButton("next", true, false);
-    var forAssistance = document.getElementById("forAssistance");
+    let forAssistance = document.getElementById("forAssistance");
     if (forAssistance)
       forAssistance.setAttribute("hidden", true);
   }
   else
   {
-    overrideButtonLabel("cancel", "done");
+    overrideButtonLabelWithKey("cancel", "done");
   }
 }
 
@@ -1217,25 +1365,20 @@ function useSettings()
   gProtocolSvc.TorSendCommand("SAVECONF");
   gTorProcessService.TorClearBootstrapError();
 
-  // If we are not responsible for starting tor we do not monitor bootstrap
-  // status, so just close this dialog and return rather than opening the
-  // progress dialog (which will make no progress).
-  if (!TorLauncherUtil.shouldStartAndOwnTor)
+  // If bootstrapping has finished or we are not responsible for starting
+  // tor, close this window and return (no need to show the progress bar).
+  if (gTorProcessService.TorIsBootstrapDone ||
+      !TorLauncherUtil.shouldStartAndOwnTor)
   {
     close();
     return;
   }
 
-  gIsBootstrapComplete = gTorProcessService.TorIsBootstrapDone;
-  if (!gIsBootstrapComplete)
-    openProgressDialog();
+  showProgressPanel();
 
+/* TODO2017: is this needed? Used to be after modal progress dlog was displayed
   let wizardElem = getWizard();
-  if (gIsBootstrapComplete)
-  {
-    close();
-  }
-  else if (wizardElem)
+  if (!gTorProcessService.TorIsBootstrapDone && wizardElem)
   {
     // If the user went down the "Configure" path and another error (e.g.,
     // Tor Exited) has not already been shown, display a generic message
@@ -1247,21 +1390,82 @@ function useSettings()
       showErrorMessage(false, msg, true);
     }
   }
+*/
 }
 
 
-function openProgressDialog()
+function stopTorBootstrap()
 {
-  var chromeURL = "chrome://torlauncher/content/progress.xul";
-  var features = "chrome,dialog=yes,modal=yes,dependent=yes";
-  window.openDialog(chromeURL, "_blank", features,
-                    gIsInitialBootstrap, onProgressDialogClose);
+  // Tell tor to disable use of the network; this should stop the bootstrap
+  // process.
+  const kErrorPrefix = "Setting DisableNetwork=1 failed: ";
+  try
+  {
+    let settings = {};
+    settings["DisableNetwork"] = true;
+    let errObj = {};
+    if (!gProtocolSvc.TorSetConfWithReply(settings, errObj))
+      TorLauncherLogger.log(5, kErrorPrefix + errObj.details);
+  }
+  catch(e)
+  {
+    TorLauncherLogger.log(5, kErrorPrefix + e);
+  }
 }
 
 
-function onProgressDialogClose(aBootstrapCompleted)
+function showProgressPanel()
 {
-  gIsBootstrapComplete = aBootstrapCompleted;
+  if (gIsInitialBootstrap)
+  {
+    let pleaseWait = document.getElementById("progressPleaseWait");
+    if (pleaseWait)
+      pleaseWait.removeAttribute("hidden");
+  }
+
+  // Clear the description to avoid displaying any old messages.
+  let desc = document.getElementById("progressDesc");
+  if (desc)
+    desc.textContent = "";
+
+  // To avoid showing an incorrect progress value, we hide the progress bar
+  // until the first TorBootstrapStatus notification is received.
+  let meter = document.getElementById("progressMeter");
+  if (meter)
+  {
+    meter.value = 0;
+    meter.style.visibility = "hidden";
+  }
+
+  // Show the correct wizard page or Network Settings panel.
+  let wizardElem = getWizard();
+  if (wizardElem)
+  {
+    if (kWizardDiscardSettingsPageID == wizardElem.currentPage.pageid)
+      showPanel();  // Remove discard settings page from the flow.
+
+    wizardElem.advance(kWizardProgressPageID);
+  }
+  else
+  {
+    showPanel(kNetworkSettingsProgressPanelID);
+  }
+
+  // Request the most recent bootstrap status info so that a
+  // TorBootstrapStatus notification is generated as soon as possible.
+  gProtocolSvc.TorRetrieveBootstrapStatus();
+
+  // Also start a fail-safe timer to ensure that the progress bar is displayed
+  // within 2 seconds in all cases.
+  window.setTimeout(function() { showProgressMeterIfNoError(); }, 2000);
+}
+
+
+function showProgressMeterIfNoError()
+{
+  let meter = document.getElementById("progressMeter");
+  if (meter && !gTorProcessService.TorBootstrapErrorOccurred)
+    meter.style.visibility = "visible";
 }
 
 
