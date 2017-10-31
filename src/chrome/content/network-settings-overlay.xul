@@ -83,7 +83,7 @@
     <hbox align="center">
       <label value="&torsettings.firewall.allowedPorts;"
              control="firewallAllowedPorts"/>
-      <textbox id="firewallAllowedPorts" value="80,443" />
+      <textbox id="firewallAllowedPorts" value="80,443"/>
     </hbox>
   </groupbox>
 
@@ -136,13 +136,37 @@
       <description id="progressPleaseWait"
                    hidden="true">&torprogress.pleaseWait;</description>
       <progressmeter id="progressMeter" mode="determined" value="0"/>
-      <description id="progressDesc"/>
+      <description id="progressDesc" errorElemId="message"/>
+      <label id="progressReconfigureLabel" hidden="true"
+             value="&torsettings.reconfigTor;"/>
     </vbox>
+  </vbox>
+
+  <vbox id="restartContent">
+    <hbox pack="center">
+      <description id="restartPanelMessage" flex="1"/>
+    </hbox>
+    <separator/>
+    <hbox pack="center">
+      <button id="restartTorButton" label="&torsettings.restartTor;"
+              oncommand="onRestartTor()"/>
+    </hbox>
+  </vbox>
+
+  <vbox id="errorOverlayContent">
+    <hbox pack="center">
+      <description errorElemId="message" flex="1"/>
+    </hbox>
+    <separator/>
+    <hbox pack="center">
+      <button errorElemId="dismissButton" default="true"
+              oncommand="onDismissErrorOverlay()"/>
+    </hbox>
   </vbox>
 
   <panel id="copyLogFeedbackPanel" type="arrow" fade="slow"
          onclick="closeCopyLogFeedbackPanel()">
-     <description flex="1" />
+     <description flex="1"/>
   </panel>
 </overlay>
 

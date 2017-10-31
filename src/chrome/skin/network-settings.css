@@ -157,14 +157,29 @@ wizard.os-mac #bridgeList {
   }
 }
 
-wizardpage[pageid="startingTor"] description,
-wizardpage[pageid="errorPanel"] description,
-#errorPanel description,
-#startingTor description {
+#progressContent[isShowingReconfigure] description,
+.messagePanel description {
+  margin: 20px;
   font-size: 120%;
   font-weight: bold;
   white-space: pre-wrap;
   text-align: center;
+}
+
+wizardpage[pageid="restartPanel"] description,
+#restartPanel description {
+  text-align: start;
+}
+
+#errorOverlayContent {
+  margin: 50px;
+  min-height: 12em;
+  background-color: rgba(251,251,251,1.0);
+  box-shadow: 0px 0px 50px rgba(0,0,0,0.9);
+}
+
+#errorOverlayContent button[errorElemId="dismissButton"] {
+  margin-bottom: 20px;
 }
 
 #restartButton {

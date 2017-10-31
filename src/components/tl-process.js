@@ -50,6 +50,9 @@ TorProcessService.prototype =
   kDefaultBridgesStatus_InUse: 1,
   kDefaultBridgesStatus_BadConfig: 2,
 
+  kTorProcessDidNotStartTopic: "TorProcessDidNotStart",
+  kTorBootstrapErrorTopic: "TorBootstrapError",
+
   // nsISupports implementation.
   QueryInterface: function(aIID)
   {
@@ -227,9 +230,8 @@ TorProcessService.prototype =
         else if ((Date.now() - this.mTorProcessStartTime)
                  > this.kControlConnTimeoutMS)
         {
-          var s = TorLauncherUtil.getLocalizedString("tor_controlconn_failed");
-          this.mObsSvc.notifyObservers(null, "TorProcessDidNotStart", s);
-          TorLauncherUtil.showAlert(null, s);
+          let s = TorLauncherUtil.getLocalizedString("tor_controlconn_failed");
+          this._notifyUserOfError(s, null, this.kTorProcessDidNotStartTopic);
           TorLauncherLogger.log(4, s);
         }
         else
@@ -373,7 +375,7 @@ TorProcessService.prototype =
         var key = "unable_to_start_tor";
         var err = TorLauncherUtil.getFormattedLocalizedString(key,
                                                                 [details], 1);
-        TorLauncherUtil.showAlert(null, err);
+        this._notifyUserOfError(err, null, this.kTorProcessDidNotStartTopic);
         return;
       }
 
@@ -461,7 +463,7 @@ TorProcessService.prototype =
         var key = "error_bridge_bad_default_type";
         var err = TorLauncherUtil.getFormattedLocalizedString(key,
                                                      [defaultBridgeType], 1);
-        TorLauncherUtil.showAlert(null, err);
+        this._notifyUserOfError(err, null, null);
       }
 
       if (aForceDisableNetwork || TorLauncherUtil.shouldShowNetworkSettings ||
@@ -506,7 +508,7 @@ TorProcessService.prototype =
     {
       this.mTorProcessStatus = this.kStatusExited;
       var s = TorLauncherUtil.getLocalizedString("tor_failed_to_start");
-      TorLauncherUtil.showAlert(null, s);
+      this._notifyUserOfError(s, null, this.kTorProcessDidNotStartTopic);
       TorLauncherLogger.safelog(4, "_startTor error: ", e);
     }
   }, // _startTor()
@@ -569,7 +571,7 @@ TorProcessService.prototype =
     {
       this.mTorProcessStatus = this.kStatusExited;
       var s = TorLauncherUtil.getLocalizedString("tor_control_failed");
-      TorLauncherUtil.showAlert(null, s);
+      this._notifyUserOfError(s, null, null);
       TorLauncherLogger.safelog(4, "_controlTor error: ", e);
     }
   }, // controlTor()
@@ -619,11 +621,11 @@ TorProcessService.prototype =
       {
         this.mBootstrapErrorOccurred = true;
         TorLauncherUtil.setBoolPref(this.kPrefPromptAtStartup, true);
-        var phase = TorLauncherUtil.getLocalizedBootstrapStatus(aStatusObj,
+        let phase = TorLauncherUtil.getLocalizedBootstrapStatus(aStatusObj,
                                                                 "TAG");
-        var reason = TorLauncherUtil.getLocalizedBootstrapStatus(aStatusObj,
+        let reason = TorLauncherUtil.getLocalizedBootstrapStatus(aStatusObj,
                                                                  "REASON");
-        var details = TorLauncherUtil.getFormattedLocalizedString(
+        let details = TorLauncherUtil.getFormattedLocalizedString(
                           "tor_bootstrap_failed_details", [phase, reason], 2);
         TorLauncherLogger.log(5, "Tor bootstrap error: [" + aStatusObj.TAG +
                                  "/" + aStatusObj.REASON + "] " + details);
@@ -634,12 +636,8 @@ TorProcessService.prototype =
           this.mLastTorWarningPhase = aStatusObj.TAG;
           this.mLastTorWarningReason = aStatusObj.REASON;
 
-          // Notify others that an error will be displayed.
-          this.mObsSvc.notifyObservers(null, "TorBootstrapError", reason);
-
-// TODO2017: "route" error message to wizard or settings dialog if it is open
-          var msg = TorLauncherUtil.getLocalizedString("tor_bootstrap_failed");
-          TorLauncherUtil.showAlert(null, msg + "\n\n" + details);
+          let msg = TorLauncherUtil.getLocalizedString("tor_bootstrap_failed");
+          this._notifyUserOfError(msg, details, this.kTorBootstrapErrorTopic);
         }
       }
     }
@@ -684,9 +682,14 @@ TorProcessService.prototype =
     }
 
     if (didSucceed)
+    {
       this.mProtocolSvc.TorSendCommand("SAVECONF");
+    }
     else
-      TorLauncherUtil.showSaveSettingsAlert(null, errObj.details);
+    {
+      let msg = TorLauncherUtil.getSaveSettingsErrorMessage(errObj.details);
+      this._notifyUserOfError(msg, null, null);
+    }
   },
 
   _openLocalePicker: function()
@@ -750,6 +753,30 @@ TorProcessService.prototype =
     }
 
     return argsArray;
+  },
+
+  _notifyUserOfError: function(aMessage, aDetails, aNotifyTopic)
+  {
+    let errorObj = { handled: false, message: aMessage };
+    if (aDetails)
+      errorObj.details = aDetails;
+
+    if (aNotifyTopic)
+    {
+      // Give other code an opportunity to handle this error, e.g., if the
+      // network settings window is open, errors are displayed using an
+      // overlaid XUL element.
+      errorObj.wrappedJSObject = errorObj;
+      this.mObsSvc.notifyObservers(errorObj, aNotifyTopic, null);
+    }
+
+    if (!errorObj.handled)
+    {
+      let msg = aMessage;
+      if (aDetails)
+        msg += "\n\n" + aDetails;
+      TorLauncherUtil.showAlert(null, msg);
+    }
   },
 
   _getpid: function()

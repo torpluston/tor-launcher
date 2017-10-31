@@ -217,7 +217,7 @@ function initDialog()
      (status != gTorProcessService.kStatusRunning))
   {
     if (status == gTorProcessService.kStatusExited)
-      showErrorMessage(true, null, false);
+      showRestartPanel();
     else
       showStartingTorPanel();
     addObserver(kTorProcessReadyTopic);
@@ -395,7 +395,7 @@ function onWizardPageShow()
   setTimeout(function() {
       showOrHideButton("back", (val == "true"), false);
 
-      // The "next" button is only used by the bridgeHelp wizard panel.
+      // The "next" button is only used by the help wizard panel.
       let isShowingHelp = (wizardElem.currentPage.pageid == "helpPanel");
       showOrHideButton("next", isShowingHelp, false);
   }, 0);
@@ -500,6 +500,8 @@ function onShowProgressPanel()
 }
 
 
+// resetProgressNavButtons() is called when moving away from the progress
+// panel entirely, and when an error is displayed within the progress panel.
 function resetProgressNavButtons()
 {
   if (gShowProgressTimer)
@@ -521,6 +523,11 @@ var gObserver = {
          (kTorLogHasWarnOrErrTopic == aTopic))
     {
       showCopyLogButton(true);
+      if (kTorBootstrapErrorTopic == aTopic)
+      {
+        stopTorBootstrap();
+        showErrorMessage(aSubject.wrappedJSObject, true);
+      }
       return;
     }
 
@@ -534,12 +541,12 @@ var gObserver = {
     {
       removeObserver(kTorProcessReadyTopic);
       removeObserver(kTorProcessDidNotStartTopic);
-      showErrorMessage(false, aData, false);
+      showErrorMessage(aSubject.wrappedJSObject, false);
     }
     else if (kTorProcessExitedTopic == aTopic)
     {
       removeObserver(kTorProcessExitedTopic);
-      showErrorMessage(true, null, false);
+      showRestartPanel();
     }
     else if (kTorShowProgressPanelTopic == aTopic)
     {
@@ -639,17 +646,11 @@ function readTorSettings()
   if (!didSucceed)
   {
     // Unable to communicate with tor.  Hide settings and display an error.
-    showErrorMessage(false, null, false);
-
-    setTimeout(function()
-        {
-          let details = TorLauncherUtil.getLocalizedString(
-                                          "ensure_tor_is_running");
-          let s = TorLauncherUtil.getFormattedLocalizedString(
-                                      "failed_to_get_settings", [details], 1);
-          TorLauncherUtil.showAlert(window, s);
-          close();
-        }, 0);
+    let details = TorLauncherUtil.getLocalizedString("ensure_tor_is_running");
+    let s = TorLauncherUtil.getFormattedLocalizedString(
+                                "failed_to_get_settings", [details], 1);
+    let errorObj = { message: s };
+    showErrorMessage(errorObj, false);
   }
 
   TorLauncherLogger.log(2, "readTorSettings done; didSucceed: " + didSucceed);
@@ -728,46 +729,145 @@ function showStartingTorPanel()
 }
 
 
-function showErrorMessage(aTorExited, aErrorMsg, aShowReconfigButton)
+function showErrorMessage(aErrorObj, aShowReconfigButton)
 {
-  var elem = document.getElementById("errorPanelMessage");
-  var btn = document.getElementById("restartTorButton");
-  if (aTorExited)
-  {
-    // Show "Tor exited" message and "Restart Tor" button.
-    aErrorMsg = TorLauncherUtil.getLocalizedString("tor_exited")
-                + "\n\n" + TorLauncherUtil.getLocalizedString("tor_exited2");
+  if (aErrorObj && aErrorObj.handled)
+    return;
 
-    if (btn)
-      btn.removeAttribute("hidden");
-    if (elem)
-      elem.style.textAlign = "start";
-  }
+  // Determine our strategy for displaying this error message.
+  const kShowErrorInErrorPanel = 1;
+  const kShowErrorUsingErrorOverlay = 2;
+  const kShowErrorInProgressPanel = 3;
+  let errorStrategy = kShowErrorInErrorPanel;
+
+  let wizard = getWizard();
+  if (isShowingProgress() && aShowReconfigButton)
+    errorStrategy = kShowErrorInProgressPanel;
+  else if (!wizard || (wizard.currentPage.pageid == "configureSettings"))
+    errorStrategy = kShowErrorUsingErrorOverlay;
+
+  let errorContainer;
+  if (errorStrategy == kShowErrorUsingErrorOverlay)
+    errorContainer = getErrorOverlay();
+  else if (errorStrategy == kShowErrorInProgressPanel)
+    errorContainer = document.getElementById("progressContent");
   else
+    errorContainer = wizard.getPageById("errorPanel");
+  if (!errorContainer)
+    return;
+
+  let messageElem = getFirstElementByErrorOverlayID(errorContainer, "message");
+  if (messageElem)
   {
-    if (btn)
-      btn.setAttribute("hidden", true);
-    if (elem)
-      elem.style.textAlign = "center";
+    let msg = "";
+    if (aErrorObj && aErrorObj.message)
+    {
+      msg = aErrorObj.message;
+      if (aErrorObj.details)
+        msg += "\n\n" + aErrorObj.details;
+      aErrorObj.handled = true;
+    }
+    messageElem.textContent = msg;
   }
 
-  if (elem)
-    elem.textContent = (aErrorMsg) ? aErrorMsg : "";
-
-  let reconfigBtn = document.getElementById("reconfigTorButton");
-  if (reconfigBtn)
+  if (errorStrategy == kShowErrorUsingErrorOverlay)
   {
-    if (aShowReconfigButton)
-      reconfigBtn.removeAttribute("hidden");
-    else
-      reconfigBtn.setAttribute("hidden", true);
+    showOrHideDialogButtons(false);
+
+    let dismissBtn = getFirstElementByErrorOverlayID(errorContainer,
+                                                     "dismissButton");
+    let bundle = Cc["@mozilla.org/intl/stringbundle;1"]
+             .getService(Ci.nsIStringBundleService)
+             .createBundle("chrome://global/locale/commonDialogs.properties");
+    dismissBtn.label = bundle.GetStringFromName("OK");
+    errorContainer.removeAttribute("hidden");
+    if (dismissBtn)
+      dismissBtn.focus();
+  }
+  else if (errorStrategy == kShowErrorInProgressPanel)
+  {
+    // In this case, we always show a "Reconfigure" button.
+    errorContainer.setAttribute("isShowingReconfigure", "true");
+    let btnLabel = document.getElementById("progressReconfigureLabel");
+    if (wizard)
+    {
+      showOrHideElemById("progressPleaseWait", false);
+      resetProgressNavButtons();  // Show Quit and clear "show progress" timer.
+      overrideButtonLabel("finish", btnLabel.value);
+    }
+    else if (btnLabel)
+    {
+      // Network Settings window (non-wizard) case.
+      overrideButtonLabel("cancel", btnLabel.value);
+    }
+  }
+  else // if (errorStrategy == kShowErrorInErrorPanel)
+  {
+    let reconfigBtn = getFirstElementByErrorOverlayID(errorContainer,
+                                                      "reconfigButton");
+    if (reconfigBtn)
+    {
+      if (aShowReconfigButton)
+        reconfigBtn.removeAttribute("hidden");
+      else
+        reconfigBtn.setAttribute("hidden", true);
+    }
+
+    // Navigate to the wizard error panel.
+    showPanel("errorPanel");
   }
 
-  showPanel("errorPanel");
-
-  var haveErrorOrWarning = (gTorProcessService.TorBootstrapErrorOccurred ||
+  let haveErrorOrWarning = (gTorProcessService.TorBootstrapErrorOccurred ||
                             gProtocolSvc.TorLogHasWarnOrErr)
   showCopyLogButton(haveErrorOrWarning);
+}
+
+
+function getErrorOverlay()
+{
+  return document.getElementById(getWizard() ? "configErrorOverlay"
+                                             : "errorOverlay");
+}
+
+
+function getFirstElementByErrorOverlayID(aContainer, aID)
+{
+  let nodeList = aContainer.getElementsByAttribute("errorElemId", aID);
+  return (nodeList && (nodeList.length > 0)) ? nodeList[0] : undefined;
+}
+
+
+function showRestartPanel()
+{
+  let elem = document.getElementById("restartPanelMessage");
+  if (elem)
+  {
+    elem.textContent = TorLauncherUtil.getLocalizedString("tor_exited")
+                + "\n\n" + TorLauncherUtil.getLocalizedString("tor_exited2");
+  }
+
+  showPanel("restartPanel");
+
+  let haveErrorOrWarning = (gTorProcessService.TorBootstrapErrorOccurred ||
+                            gProtocolSvc.TorLogHasWarnOrErr)
+  showCopyLogButton(haveErrorOrWarning);
+}
+
+
+function onDismissErrorOverlay()
+{
+  let errorOverlay = getErrorOverlay();
+  if (errorOverlay)
+    errorOverlay.setAttribute("hidden", true);
+
+  showOrHideDialogButtons(true);
+}
+
+
+function isShowingErrorOverlay()
+{
+  let errorOverlay = getErrorOverlay();
+  return errorOverlay && !errorOverlay.hasAttribute("hidden");
 }
 
 
@@ -809,6 +909,29 @@ function restoreCopyLogVisibility()
 }
 
 
+// Show or hide all of the buttons that are in the "footer" of the wizard or
+// Network Settings window.
+function showOrHideDialogButtons(aShow)
+{
+  let buttonContainer = document.getAnonymousElementByAttribute(
+                             document.documentElement, "anonid", "buttons");
+  if (!buttonContainer)
+  {
+    // The wizard uses "Buttons" (capital 'B').
+    buttonContainer = document.getAnonymousElementByAttribute(
+                             document.documentElement, "anonid", "Buttons");
+  }
+
+  if (buttonContainer)
+  {
+    if (aShow)
+      buttonContainer.removeAttribute("hidden");
+    else
+      buttonContainer.hidden = true;
+  }
+}
+
+
 function showOrHideButton(aID, aShow, aFocus)
 {
   var btn = setButtonAttr(aID, "hidden", !aShow);
@@ -840,6 +963,19 @@ function setButtonAttr(aID, aAttr, aValue)
   }
 
   return btn;
+}
+
+
+function showOrHideElemById(aID, aShow)
+{
+  let elem = document.getElementById(aID);
+  if (elem)
+  {
+    if (aShow)
+      elem.removeAttribute("hidden");
+    else
+      elem.setAttribute("hidden", true);
+  }
 }
 
 
@@ -1010,9 +1146,22 @@ function onCancel()
     return false;
   }
 
+  if (isShowingErrorOverlay())
+  {
+    onDismissErrorOverlay();
+    return false;
+  }
+
+  let wizard = getWizard();
+  if (!wizard && isShowingProgress())
+  {
+    onProgressCancelOrReconfigure(undefined);
+    return false;
+  }
+
   // If this is a wizard (initial config or locale picker), the cancel
   // button is "Quit"
-  if (getWizard())
+  if (wizard)
   {
     try
     {
@@ -1031,11 +1180,15 @@ function onCancel()
 
 function onWizardFinish()
 {
+  if (isShowingErrorOverlay())
+  {
+    onDismissErrorOverlay();
+    return false;
+  }
+
   if (isShowingProgress())
   {
-    // When the progress panel is showing, the finish button is "Cancel"
-    stopTorBootstrap();
-    getWizard().rewind();
+    onProgressCancelOrReconfigure(getWizard());
     return false;
   }
   else
@@ -1053,7 +1206,36 @@ function onNetworkSettingsFinish()
     return false;
   }
 
+  if (isShowingErrorOverlay())
+  {
+    onDismissErrorOverlay();
+    return false;
+  }
+
   return applySettings(false);
+}
+
+
+// When the progress panel is open, cancel stops bootstrapping... unless
+// we are showing an error, in which case the action is "Reconfigure".
+function onProgressCancelOrReconfigure(aWizard)
+{
+  let progressContent = document.getElementById("progressContent");
+  if (!progressContent ||
+      !progressContent.hasAttribute("isShowingReconfigure"))
+  {
+    stopTorBootstrap();
+  }
+
+  if (aWizard)
+  {
+    aWizard.rewind();
+  }
+  else
+  {
+    restoreButtonLabel("cancel");
+    showPanel(undefined); // return to the Network Settings main panel.
+  }
 }
 
 
@@ -1107,12 +1289,8 @@ function onOpenHelp(aHelpContentID)
   if (getWizard())
   {
     showOrHideButton("cancel", false, false);
-    showOrHideButton("back", false, false);
     overrideButtonLabelWithKey("next", "done");
-    showOrHideButton("next", true, false);
-    let forAssistance = document.getElementById("forAssistance");
-    if (forAssistance)
-      forAssistance.setAttribute("hidden", true);
+    showOrHideElemById("forAssistance", false);
   }
   else
   {
@@ -1133,12 +1311,8 @@ function closeHelp()
   if (wizardElem)
   {
     showOrHideButton("cancel", true, false);
-    showOrHideButton("back", true, false);
-    showOrHideButton("next", false, false);
     restoreButtonLabel("next");
-    var forAssistance = document.getElementById("forAssistance");
-    if (forAssistance)
-      forAssistance.removeAttribute("hidden");
+    showOrHideElemById("forAssistance", true);
     helpPanel = wizardElem.currentPage;
   }
   else
@@ -1312,12 +1486,7 @@ function initBridgeSettings()
 
   setElemValue(kUseBridgesCheckbox, useBridges);
 
-  if (!canUseDefaultBridges)
-  {
-    var radioGroup = document.getElementById("bridgeTypeRadioGroup");
-    if (radioGroup)
-      radioGroup.setAttribute("hidden", true);
-  }
+  showOrHideElemById("bridgeTypeRadioGroup", canUseDefaultBridges);
 
   let radioID = (useDefault) ? "bridgeRadioDefault" : "bridgeRadioCustom";
   let radio = document.getElementById(radioID);
@@ -1375,22 +1544,6 @@ function useSettings()
   }
 
   showProgressPanel();
-
-/* TODO2017: is this needed? Used to be after modal progress dlog was displayed
-  let wizardElem = getWizard();
-  if (!gTorProcessService.TorIsBootstrapDone && wizardElem)
-  {
-    // If the user went down the "Configure" path and another error (e.g.,
-    // Tor Exited) has not already been shown, display a generic message
-    // with a "Reconfigure" button.
-    let pageid = wizardElem.currentPage.pageid;
-    if ((pageid != kWizardFirstPageID) && (pageid != "errorPanel"))
-    {
-      let msg = TorLauncherUtil.getLocalizedString("tor_bootstrap_failed");
-      showErrorMessage(false, msg, true);
-    }
-  }
-*/
 }
 
 
@@ -1416,12 +1569,12 @@ function stopTorBootstrap()
 
 function showProgressPanel()
 {
+  let progressContent = document.getElementById("progressContent");
+  if (progressContent)
+    progressContent.removeAttribute("isShowingReconfigure");
+
   if (gIsInitialBootstrap)
-  {
-    let pleaseWait = document.getElementById("progressPleaseWait");
-    if (pleaseWait)
-      pleaseWait.removeAttribute("hidden");
-  }
+    showOrHideElemById("progressPleaseWait", true);
 
   // Clear the description to avoid displaying any old messages.
   let desc = document.getElementById("progressDesc");
@@ -1555,7 +1708,7 @@ function isProxyConfigured()
 
 function reportValidationError(aStrKey)
 {
-  showSaveSettingsAlert(TorLauncherUtil.getLocalizedString(aStrKey));
+  showSaveSettingsError(TorLauncherUtil.getLocalizedString(aStrKey));
 }
 
 
@@ -1828,18 +1981,17 @@ function setConfAndReportErrors(aSettingsObj, aShowOnErrorPanelID)
       } catch (e) {}
     }
 
-    showSaveSettingsAlert(errObj.details);
+    showSaveSettingsError(errObj.details);
   }
 
   return didSucceed;
 }
 
 
-function showSaveSettingsAlert(aDetails)
+function showSaveSettingsError(aDetails)
 {
-  TorLauncherUtil.showSaveSettingsAlert(window, aDetails);
-  showOrHideButton("extra2", true, false);
-  gWizIsCopyLogBtnShowing = true;
+  let msg = TorLauncherUtil.getSaveSettingsErrorMessage(aDetails);
+  showErrorMessage({ message: msg }, true);
 }
 
 

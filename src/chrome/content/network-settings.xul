@@ -5,7 +5,7 @@
    - vim: set sw=2 sts=2 ts=8 et syntax=xml:
   -->
 
-<?xml-stylesheet href="chrome://global/skin/" type="text/css"?> 
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <?xml-stylesheet href="chrome://torlauncher/skin/network-settings.css"
                  type="text/css"?>
 
@@ -29,53 +29,53 @@
   <script type="application/x-javascript"
           src="chrome://torlauncher/content/network-settings.js"/>
 
-  <deck id="deck" onselect="onDeckSelect();">
-    <vbox id="settings">
-      <vbox id="bridgeSettings"/>
-      <separator orient="horizontal" class="thin"/>
-      <vbox id="proxySettings"/>
+  <stack flex="1">
+    <vbox>
+      <deck id="deck" onselect="onDeckSelect();">
+        <vbox id="settings">
+          <vbox id="bridgeSettings"/>
+          <separator orient="horizontal" class="thin"/>
+          <vbox id="proxySettings"/>
+          <vbox>
+            <checkbox id="useFirewallPorts"
+                      groupboxID="firewallSpecificSettings"
+                      label="&torsettings.firewall.checkbox;"
+                      oncommand="toggleElemUI(this)"/>
+            <groupbox id="firewallSpecificSettings"/>
+          </vbox>
+        </vbox>
 
-      <vbox>
-        <checkbox id="useFirewallPorts" groupboxID="firewallSpecificSettings"
-                  label="&torsettings.firewall.checkbox;"
-                  oncommand="toggleElemUI(this)"/>
-        <groupbox id="firewallSpecificSettings" />
-      </vbox>
+        <vbox id="startingTor" class="messagePanel">
+          <spring flex="1"/>
+          <hbox>
+            <spring flex="1"/>
+            <description>&torsettings.startingTor;</description>
+            <spring flex="1"/>
+          </hbox>
+          <spring flex="1"/>
+        </vbox>
+
+        <vbox id="progressPanel">
+          <vbox id="progressContent"/>
+        </vbox>
+
+        <vbox id="helpPanel" class="help">
+          <vbox id="bridgeHelpContent" hidden="true"/>
+          <vbox id="proxyHelpContent" hidden="true"/>
+        </vbox>
+
+        <vbox id="restartPanel" class="messagePanel" pack="center">
+          <vbox id="restartContent"/>
+        </vbox>
+      </deck>
+
+      <spring flex="1"/>
+      <label id="forAssistance"/>
+      <panel id="copyLogFeedbackPanel"/>
     </vbox>
-    <vbox id="startingTor">
-      <spring flex="1" />
-      <hbox>
-        <spring flex="1" />
-        <description>&torsettings.startingTor;</description>
-        <spring flex="1" />
-      </hbox>
-      <spring flex="1" />
+
+    <vbox id="errorOverlay" class="messagePanel" pack="center" hidden="true">
+      <vbox id="errorOverlayContent"/>
     </vbox>
-    <vbox id="progressPanel">
-      <vbox id="progressContent"/>
-    </vbox>
-    <vbox id="errorPanel">
-      <spring flex="1" />
-      <hbox>
-        <spring flex="1" />
-        <description id="errorPanelMessage" flex="1" />
-        <spring flex="1" />
-      </hbox>
-      <separator/>
-      <hbox>
-        <spring flex="1" />
-        <button id="restartTorButton" label="&torsettings.restartTor;" hidden="true"
-                oncommand="onRestartTor()" />
-        <spring flex="1" />
-      </hbox>
-      <spring flex="1" />
-    </vbox>
-    <vbox id="helpPanel" class="help">
-      <vbox id="bridgeHelpContent" hidden="true"/>
-      <vbox id="proxyHelpContent" hidden="true"/>
-    </vbox>
-  </deck>
-  <spring flex="1" />
-  <label id="forAssistance" />
-  <panel id="copyLogFeedbackPanel" />
+  </stack>
 </dialog>

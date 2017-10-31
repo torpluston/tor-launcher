@@ -29,7 +29,7 @@
     <hbox class="tbb-header" pack="center">
       <image class="tbb-logo"/>
     </hbox>
-    <separator />
+    <separator/>
     <vbox>
       <label class="question">&torlauncher.localePicker.prompt;</label>
       <separator/>
@@ -38,6 +38,6 @@
   </wizardpage>
 
   <hbox pack="start">
-    <label id="forAssistance" />
+    <label id="forAssistance"/>
   </hbox>
 </wizard>

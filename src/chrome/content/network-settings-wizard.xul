@@ -57,6 +57,10 @@
         <separator/>
         <vbox id="proxySettings"/>
       </vbox>
+      <vbox id="configErrorOverlay" class="messagePanel" pack="center"
+            hidden="true">
+        <vbox id="errorOverlayContent"/>
+      </vbox>
     </stack>
   </wizardpage>
 
@@ -68,36 +72,37 @@
     <vbox id="progressContent"/>
   </wizardpage>
 
-  <wizardpage pageid="startingTor" next="notUsed" torShowNavButtons="false">
+  <wizardpage pageid="startingTor" class="messagePanel" next="notUsed"
+              torShowNavButtons="false">
     <hbox class="tbb-header" pack="center">
       <image class="tbb-logo"/>
     </hbox>
-    <spring flex="1" />
+    <spring flex="1"/>
     <hbox>
-      <spring flex="1" />
+      <spring flex="1"/>
       <description>&torsettings.startingTor;</description>
-      <spring flex="1" />
+      <spring flex="1"/>
     </hbox>
-    <spring flex="1" />
+    <spring flex="1"/>
   </wizardpage>
 
-  <wizardpage pageid="restartPanel" next="notUsed"
+  <wizardpage pageid="restartPanel" class="messagePanel" next="notUsed"
               pack="center" torShowNavButtons="false" onextra2="onCopyLog();">
     <vbox id="restartContent"/>
   </wizardpage>
 
-  <wizardpage pageid="errorPanel" next="notUsed"
+  <wizardpage pageid="errorPanel" class="messagePanel" next="notUsed"
               torShowNavButtons="false" onextra2="onCopyLog();">
-    <spring flex="1" />
+    <spring flex="1"/>
     <hbox pack="center">
       <description errorElemId="message" flex="1"/>
     </hbox>
     <separator/>
     <hbox pack="center">
       <button errorElemId="reconfigButton" label="&torsettings.reconfigTor;"
-              hidden="true" oncommand="onWizardReconfig()" />
+              hidden="true" oncommand="onWizardReconfig()"/>
     </hbox>
-    <spring flex="1" />
+    <spring flex="1"/>
   </wizardpage>
 
   <wizardpage pageid="discardSettings" next="notUsed" torShowNavButtons="false"
@@ -105,7 +110,7 @@
     <hbox class="tbb-header" pack="center">
       <image class="tbb-logo"/>
     </hbox>
-    <spring flex="1" />
+    <spring flex="1"/>
     <hbox pack="center">
       <description flex="1">&torsettings.discardSettings.prompt;</description>
     </hbox>
@@ -114,9 +119,9 @@
       <button id="discardSettingsGoBack" oncommand="showPanel();"/>
       <separator/>
       <button label="&torsettings.discardSettings.proceed;"
-              oncommand="removeSettingsAndConnect()" />
+              oncommand="removeSettingsAndConnect()"/>
     </hbox>
-    <spring flex="1" />
+    <spring flex="1"/>
   </wizardpage>
 
   <wizardpage class="help" pageid="helpPanel" next="notUsed"
@@ -126,7 +131,7 @@
   </wizardpage>
 
   <hbox pack="start">
-    <label id="forAssistance" />
+    <label id="forAssistance"/>
   </hbox>
-  <panel id="copyLogFeedbackPanel" />
+  <panel id="copyLogFeedbackPanel"/>
 </wizard>

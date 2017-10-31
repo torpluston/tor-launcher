@@ -465,7 +465,7 @@ TorProtocolService.prototype =
     //  250 OK
     reply = this._parseReply(cmd, key, reply);
     if (reply.lineArray)
-      this._parseBootstrapStatus(reply.lineArray[0]);
+      this._parseBootstrapStatus(reply.lineArray[0], true);
   },
 
   // If successful, returns a JS object with these fields:
@@ -479,8 +479,10 @@ TorProtocolService.prototype =
   //   status.RECOMMENDATION  -- string (optional)
   //   status.HOSTADDR        -- string (optional)
   // A "TorBootstrapStatus" notification is also sent.
+  // If aSuppressErrors is true, errors are ignored. This is used when we
+  // are handling the response to a "GETINFO status/bootstrap-phase" command.
   // Returns null upon failure.
-  _parseBootstrapStatus: function(aStatusMsg)
+  _parseBootstrapStatus: function(aStatusMsg, aSuppressErrors)
   {
     if (!aStatusMsg || (0 == aStatusMsg.length))
       return null;
@@ -531,7 +533,8 @@ TorProtocolService.prototype =
     }
 
     // this._dumpObj("BootstrapStatus", statusObj);
-    statusObj._errorOccurred = (("NOTICE" != statusObj.TYPE) &&
+    statusObj._errorOccurred = (!aSuppressErrors &&
+                                ("NOTICE" != statusObj.TYPE) &&
                                 ("warn" == statusObj.RECOMMENDATION));
 
     // Notify observers.
@@ -1519,7 +1522,7 @@ TorProtocolService.prototype =
           }
           break;
         case "STATUS_CLIENT":
-          this._parseBootstrapStatus(msg);
+          this._parseBootstrapStatus(msg, false);
           break;
         default:
           this._dumpObj(eventType + "_event", aReply);

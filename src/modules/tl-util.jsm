@@ -50,9 +50,18 @@ let TorLauncherUtil =  // Public
       {
         var wm = Cc["@mozilla.org/appshell/window-mediator;1"]
                    .getService(Ci.nsIWindowMediator);
-        aParentWindow = wm.getMostRecentWindow("TorLauncher:NetworkSettings");
-        if (!aParentWindow)
-          aParentWindow = wm.getMostRecentWindow("navigator:browser");
+        let settingsWindow =
+                          wm.getMostRecentWindow("TorLauncher:NetworkSettings");
+        if (TLUtilInternal._isWindowVisible(settingsWindow))
+        {
+          aParentWindow = settingsWindow;
+        }
+        else
+        {
+          let browserWindow = wm.getMostRecentWindow("navigator:browser");
+          if (TLUtilInternal._isWindowVisible(browserWindow))
+            aParentWindow = browserWindow;
+        }
       }
 
       var ps = Cc["@mozilla.org/embedcomp/prompt-service;1"]
@@ -106,14 +115,13 @@ let TorLauncherUtil =  // Public
     return false;
   },
 
-  showSaveSettingsAlert: function(aParentWindow, aDetails)
+  getSaveSettingsErrorMessage: function(aDetails)
   {
     if (!aDetails)
       aDetails = TorLauncherUtil.getLocalizedString("ensure_tor_is_running");
 
-    var s = TorLauncherUtil.getFormattedLocalizedString(
+    return TorLauncherUtil.getFormattedLocalizedString(
                                   "failed_to_save_settings", [aDetails], 1);
-    this.showAlert(aParentWindow, s);
   },
 
   // Localized Strings
@@ -845,6 +853,20 @@ let TLUtilInternal =  // Private
                                    + aBasePath + ": ", e);
       return null;
     }
+  },
+
+  _isWindowVisible: function(aWindow)
+  {
+    if (!aWindow)
+      return false;
+
+    try {
+      let winUtils = aWindow.QueryInterface(Ci.nsIInterfaceRequestor)
+                            .getInterface(Ci.nsIDOMWindowUtils);
+      return winUtils.isParentWindowMainWidgetVisible;
+    } catch(e) {}
+
+    return false;
   },
 };
 
