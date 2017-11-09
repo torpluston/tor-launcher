@@ -73,3 +73,6 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net 、 https://mail.google.com 或 https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "透過服務台">
 <!ENTITY torsettings.bridgeHelp4 "最後方法係：寄電郵到 help@rt.torproject.org。&#160; 請注意，此類郵件我哋須一封封手動回覆。">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "我哋正在建立通往Tor洋蔥路由網絡嘅連線，請稍候，&#160;呢樣可能會需要幾分鐘時間。">

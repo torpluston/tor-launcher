@@ -73,3 +73,6 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, or https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Përmes Help Desk-ut">
 <!ENTITY torsettings.bridgeHelp4 "Si mjet të fundit, ju mund të kërkoni adresat urë, duke dërguar një mesazh e-poste me politesë tek help@rt.torproject.org.&#160; Ju lutemi vini re se një person do të duhet t'i përgjigjet çdo kërkese.">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Ju lutemi prisni derisa të vendosim një lidhje me rrjetin e Tor.&#160; Kjo mund të kërkojë disa minuta.">

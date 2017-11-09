@@ -74,3 +74,6 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, or https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Μέσω της Υποστήριξης">
 <!ENTITY torsettings.bridgeHelp4 "Αν όλα τα άλλα αποτύχουν, μπορείτε να ζητήσετε διευθύνσεις γεφυρών στέλνοντας ένα ευγενικό email στο help@rt.torproject.org.&#160; Σημείωση: Κάποιος εθελοντής θα πρέπει να απαντήσει χειροκίνητα (συνεπώς η απάντηση ίσως αργήσει).">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Παρακαλώ περιμένετε καθώς δημιουργήστε σύνδεση στο δίκτυο Tor.&#160; Αυτό μπορεί να πάρει μερικά λεπτά.">

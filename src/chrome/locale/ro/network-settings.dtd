@@ -73,3 +73,6 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, sau https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Prin Help Desk">
 <!ENTITY torsettings.bridgeHelp4 "Ca o ultimă soluție, puteți cere adrese de punți trimițînd un email politicos la help@rt.torproject.org.&#160; Remarcați că o persoană trebuie să răspundă la fiecare cerere.">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Vă rugăm așteptați în timp ce stabilim o conexiune la rețeaua Tor.&#160; Acest proces poate dura câteva minute.">

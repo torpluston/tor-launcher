@@ -73,3 +73,6 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com vai https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Caur Palīdzības Centru">
 <!ENTITY torsettings.bridgeHelp4 "Pēdējās instances palīdzība tiltu adrešu pieprasījumiem ir sūtīt pieklājīgu e-pasta adresi uz help@rt.torproject.org.&#160; Lūdzu, ņemiet vērā, ka ikvienu pieprasījumu izskata cilvēks.">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Lūdzu pagaidiet kamēr mēs izveidojam savienojumu ar tīklu Tor.&#160; tam var būt nepieciešamas vairākas minūtes.">

@@ -75,3 +75,6 @@ s Tor mrežom?">
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com ili https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Pomoću Help Deska">
 <!ENTITY torsettings.bridgeHelp4 "Na kraju, možete zatražiti adrese mostova tako što će te poslati pristojan email na help@rt.torproject.org.&#160; Imajte na umu da će na svaki zahtjev morati odgovoriti osoba.">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Molimo pričekajte dok ne uspostavimo vezu s Tor mrežom.&#160; To bi moglo potrajati nekoliko minuta.">

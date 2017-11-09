@@ -73,3 +73,6 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, или https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "През бюрото за помощ">
 <!ENTITY torsettings.bridgeHelp4 "Като последна стъпка, вие може да изисквате адреси чрез пращане на учтив имейл до help@rt.torproject.org.&#160; Моля обърнете внимание, че на всяка молба за bridge се отговаря персонално.">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Моля изчакайте, докато установим връзка с Тор мрежата..&#160; Toва може да отнеме няколко минути.">

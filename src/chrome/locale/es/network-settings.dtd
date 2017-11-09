@@ -74,3 +74,6 @@
 <!ENTITY torsettings.bridgeHelp4Heading "Mediante el soporte de usuario">
 <!ENTITY torsettings.bridgeHelp4 "Como último recurso, puedes pedir direcciones de repetidores puente enviando un mensaje de correo amable a help@rt.torproject.org .&#160;
 Por favor ten en cuenta que es una persona la que tendrá que responder a cada petición.">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Por favor, espere a que establezcamos una conexión a la red Tor.&#160; Esto puede llevar varios minutos.">

@@ -73,3 +73,6 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, atau https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Melalui Help Desk">
 <!ENTITY torsettings.bridgeHelp4 "Sebagai pilihan terakhir anda dapat meminta alamat bridge dengan mengirimkan pesan email dengan sopan ke help@rt.torproject.org.&#160; Silakan catat bahwa petugas akan merespon masing-masing permintaan">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Mohon tunggu sementara kami menyambung ke jaringan Tor.&#160; Ini mungkin memakan waktu beberapa menit.">

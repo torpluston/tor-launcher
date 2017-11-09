@@ -73,3 +73,6 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, nebo https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Přes zákaznickou linku">
 <!ENTITY torsettings.bridgeHelp4 "Jako poslední řešení si můžete vyžádat adresy síťových mostů tak, že zašlete slušný e-mail na help@rt.torproject.org.&#160; Vezměte v úvahu si prosím, že na každý požadavek musí odpovědět člověk.">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Prosím čekejte zatímco se připojuji do Tor sítě.&#160; Toto může trvat několik minut.">
