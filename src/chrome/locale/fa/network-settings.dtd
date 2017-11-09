@@ -74,6 +74,3 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, یا https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "از طریق واحد کمک رسانی">
 <!ENTITY torsettings.bridgeHelp4 "اگر از طریق هیچ کدام از راه حل های فوق به نتیجه نرسیدید، یک درخواست مودبانه به آدرس help@rt.torproject.org ارسال کنید.&#160; در نظر داشته باشید که یک نفر باید ایمیل شما را بخواند و به آن پاسخ دهد. پس صبور باشید.">
-
-<!-- Progress -->
-<!ENTITY torprogress.pleaseWait "لطفا صبر کنید. در حال برقراری ارتباط با شبکه تٌر.&amp;160; این پروسه ممکن است چند دقیقه به طول بینجامد.">

@@ -73,6 +73,3 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, və ya https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Dəstək Masası Vasitəsilə">
 <!ENTITY torsettings.bridgeHelp4 "Son çarə olaraq körpü ünvanlarını help@rt.torproject.org ünvanına mədəni tələb emaili göndərməklə əldə edə bilərsən.&#160; Lütfən, unutma ki, yazdığın insan hər bir tələbə ayrı ayrı cavab yazacaq.">
-
-<!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

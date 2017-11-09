@@ -73,6 +73,3 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "ヘルプデスク経由">
 <!ENTITY torsettings.bridgeHelp4 "最後の頼みの綱として、 help@rt.torproject.org に丁寧なメールメッセージを送信して、ブリッジアドレスをリクエストすることができます。&#160; 人間が各リクエストに対応する必要があることにご注意ください。">
-
-<!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Torネットワークへの接続が確立されるまでお待ちください。&#160; これには数分間かかることがあります。">

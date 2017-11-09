@@ -73,6 +73,3 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net او https://mail.google.com, او https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "من خلال مكتب المساعدة">
 <!ENTITY torsettings.bridgeHelp4 "يمكنك طلب عناوين الجسر، كحل أخير، من خلال إرسال رسالة بريد إلكتروني مهذبة إلى help@rt.torproject.org.&#160; يرجى ملاحظة أنه يجب أن يرد شخص ما على كل طلب.">
-
-<!-- Progress -->
-<!ENTITY torprogress.pleaseWait "الرجاء الانتظار حتى نتمكن من تفعيل اتصال الى شبكه &quot;تور&quot; .&#160; قد يستغرق الامر عده دقائق.">

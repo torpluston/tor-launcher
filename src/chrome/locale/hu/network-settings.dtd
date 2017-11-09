@@ -73,6 +73,3 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, vagy https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "A támogatáson keresztül.">
 <!ENTITY torsettings.bridgeHelp4 "Utolsó lehetőségként küldj egy udvarias bridge igénylő emailt ide: help@rt.torproject.org.&#160; Légyszíves vedd figyelembe az adott személynek több emailt kell megválaszolnia.">
-
-<!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Kérlek várj, amíg létrehozunk egy kapcsolatot a Tor hálózathoz.&#160; Ez eltarthat néhány percig.">

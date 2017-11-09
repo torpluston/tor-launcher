@@ -73,6 +73,3 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com tai https:://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Neuvontapisteen läpi">
 <!ENTITY torsettings.bridgeHelp4 "Viimeisenä keinona voit pyytää siltaosoitteita lähettämällä kohteliaan viestin osoitteeseen: help@rt.torproject.org.&#160; Huomioi, että henkilön tulee vastata kuhunkin pyyntöön.">
-
-<!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Odota pieni hetki, kun yhteys TOR-verkostoon luodaan.&#160;

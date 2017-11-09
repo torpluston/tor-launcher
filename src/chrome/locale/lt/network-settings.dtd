@@ -73,6 +73,3 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, ar https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Through the Help Desk">
 <!ENTITY torsettings.bridgeHelp4 "As a last resort, you can request bridge addresses by sending a polite email message to help@rt.torproject.org.&#160; Please note that a person will need to respond to each request.">
-
-<!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Prašome palaukti, kol mes užmegsime ryšį su Tor tinklu.&#160; Tai gali užtrukti kelias minutes.">

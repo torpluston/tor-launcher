@@ -73,6 +73,3 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net，https://mail.google.com 或者 https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "联系客服方式">
 <!ENTITY torsettings.bridgeHelp4 "如果以上方式无法获取所需网桥，作为最后的网桥获取方式，你可以写一封礼貌的邮件发送到 help@rt.torproject.org（中文可发送至 help-zh@rt.torproject.org）。请注意：查看并回复这些邮件的并非机器人而是技术支持人员。">
-
-<!-- Progress -->
-<!ENTITY torprogress.pleaseWait "正在与 Tor 网络建立连接。这可能需要几分钟，请耐心等待。">

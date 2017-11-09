@@ -74,6 +74,3 @@
 <!ENTITY torsettings.bridgeHelp4Heading "Via supporten">
 <!ENTITY torsettings.bridgeHelp4 "Som en siste utvei, kan du be om bro-adresser ved å sende en høflig e-post til help@rt.torproject.org.&#160; 
 Tenk over at en person må svare på hver slik forespørsel.">
-
-<!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Vent mens tilkobling til Tor-nettverket.&#160; opprettes. Dette kan ta flere minutter.">

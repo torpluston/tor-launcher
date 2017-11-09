@@ -1,78 +1,75 @@
-<!ENTITY torsettings.dialog.title "Tor Network Settings">
+<!ENTITY torsettings.dialog.title "Socruithe Líonra Tor">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Tor Browser Language">
-<!ENTITY torlauncher.localePicker.prompt "Please select a language.">
+<!ENTITY torlauncher.localePicker.title "Teanga Bhrabhsálaí Tor">
+<!ENTITY torlauncher.localePicker.prompt "Roghnaigh teanga.">
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torsettings.prompt "Before you connect to the Tor network, you need to provide information about this computer's Internet connection.">
+<!ENTITY torsettings.prompt "Sular féidir leat ceangal a bhunú le líonra Tor, caithfidh tú tuilleadh eolais a sholáthar maidir le ceangal Idirlín an ríomhaire seo.">
 
-<!ENTITY torSettings.yes "Yes">
-<!ENTITY torSettings.no "No">
+<!ENTITY torSettings.yes "Tá">
+<!ENTITY torSettings.no "Níl">
 
-<!ENTITY torSettings.firstQuestion "Which of the following best describes your situation?">
-<!ENTITY torSettings.configurePrompt1 "This computer's Internet connection is censored or proxied.">
-<!ENTITY torSettings.configurePrompt2 "I need to configure bridge or local proxy settings before I connect to the Tor&#160;network.">
-<!ENTITY torSettings.configure "Configure">
-<!ENTITY torSettings.connectPrompt2 "I would like to make a direct connection to the Tor network.">
-<!ENTITY torSettings.connectPrompt3 "This will work in most situations.">
-<!ENTITY torSettings.connect "Connect">
+<!ENTITY torSettings.firstQuestion "Cé acu díobh seo a leanas a dhéanann an cur síos is fearr ar do chás-sa?">
+<!ENTITY torSettings.configurePrompt1 "Úsáideann an ríomhaire seo ceangal Idirlín faoi chinsireacht nó úsáideann sé seachfhreastalaí.">
+<!ENTITY torSettings.configurePrompt2 "Caithfidh mé droichead nó seachfhreastalaí áitiúil a chumrú sula ndéanfaidh mé ceangal le líonra&amp;160;Tor.">
+<!ENTITY torSettings.configure "Cumraigh">
+<!ENTITY torSettings.connectPrompt2 "Ba mhaith liom ceangal go díreach le líonra Tor.">
+<!ENTITY torSettings.connectPrompt3 "Oibreoidh sé seo an chuid is mó den am.">
+<!ENTITY torSettings.connect "Ceangail">
 
-<!ENTITY torSettings.proxyPageTitle "Local Proxy Configuration">
-<!ENTITY torSettings.proxyQuestion "Does this computer need to use a local proxy to access the Internet?">
+<!ENTITY torSettings.proxyPageTitle "Cumraíocht Sheachfhreastalaí Áitiúil">
+<!ENTITY torSettings.proxyQuestion "An bhfuil seachfhreastalaí áitiúil ag teastáil ón ríomhaire seo le ceangal leis an Idirlíon?">
 <!-- see https://www.torproject.org/docs/proxychain.html.en -->
-<!ENTITY torSettings.proxyExplanation1 "In most cases a local proxy is not needed, but it may be required when connecting through a company, school, or university network.">
-<!ENTITY torSettings.proxyExplanation2 "If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a local proxy is needed.">
-<!ENTITY torSettings.enterProxy "Enter the proxy settings.">
-<!ENTITY torSettings.bridgePageTitle "Tor Bridges Configuration">
-<!ENTITY torSettings.bridgeQuestion "Does your Internet Service Provider (ISP) block or otherwise censor connections to the Tor Network?">
-<!ENTITY torSettings.bridgeExplanation1 "If you are not sure how to answer this question, choose No (if you are unable to connect to the Tor network without a bridge, you can add one later).">
-<!ENTITY torSettings.bridgeExplanation2 "If you choose Yes, you will be asked to configure Tor Bridges, which are unlisted relays that make it more difficult to block connections to the Tor Network.">
-<!ENTITY torSettings.bridgeSettingsPrompt "You may use the provided set of bridges or you may obtain and enter a custom set of bridges.">
+<!ENTITY torSettings.proxyExplanation1 "Ní bhíonn seachfhreastalaí áitiúil ag teastáil an chuid is mó den am, ach b'fhéidir go mbeadh gá leis dá mbeifeá ag ceangal trí chomhlacht, scoil, nó ollscoil.">
+<!ENTITY torSettings.proxyExplanation2 "Mura bhfuil tú cinnte faoin fhreagra ba chóir duit a thabhairt, caith súil ar na socruithe Idirlín i mbrabhsálaí eile, nó ar shocruithe líonra do chórais, le fáil amach an bhfuil seachfhreastalaí de dhíth.">
+<!ENTITY torSettings.enterProxy "Cuir isteach socruithe an tseachfhreastalaí.">
+<!ENTITY torSettings.bridgePageTitle "Cumraíocht Droichead Tor">
+<!ENTITY torSettings.bridgeQuestion "An bhfuil do Sholáthraí Seirbhíse Idirlín (ISP) ag cur cosc ar, nó ag déanamh cinsireacht ar Líonra Tor?">
+<!ENTITY torSettings.bridgeExplanation1 "Mura bhfuil tú cinnte faoin fhreagra ba chóir duit a thabhairt, roghnaigh &quot;Níl&quot; (agus mura bhfuil tú in ann ceangal le líonra Tor gan droichead a úsáid, beidh tú ábalta ceann a shocrú ar ball).">
+<!ENTITY torSettings.bridgeExplanation2 "Má roghnaíonn tú &quot;Tá&quot;, iarrfar ort Droichid Tor a chumrú. Tá sé níos deacra cosc a chur ar cheangail le Líonra Tor nuair a úsáideann tú na hathsheachadáin neamhliostaithe seo.">
+<!ENTITY torSettings.bridgeSettingsPrompt "Is féidir leat na droichid ionsuite a úsáid, nó droichid de do chuid féin a fháil agus a chur isteach.">
 
 <!-- Other: -->
 
-<!ENTITY torsettings.startingTor "Waiting for Tor to start…">
-<!ENTITY torsettings.restartTor "Restart Tor">
-<!ENTITY torsettings.reconfigTor "Reconfigure">
+<!ENTITY torsettings.startingTor "An fanacht go dtosóidh Tor...">
+<!ENTITY torsettings.restartTor "Atosaigh Tor">
+<!ENTITY torsettings.reconfigTor "Athchumraigh">
 
-<!ENTITY torsettings.discardSettings.prompt "You have configured Tor bridges or you have entered local proxy settings.&#160; To make a direct connection to the Tor network, these settings must be removed.">
-<!ENTITY torsettings.discardSettings.proceed "Remove Settings and Connect">
+<!ENTITY torsettings.discardSettings.prompt "Chumraigh tú droichid Tor nó shocraigh tú seachfhreastalaí áitiúil roimhe seo.&amp;160; Chun ceangal díreach le líonra Tor a bhunú, caithfidh tú na socruithe seo a scriosadh.">
+<!ENTITY torsettings.discardSettings.proceed "Scrios na Socruithe agus Ceangail">
 
-<!ENTITY torsettings.optional "Optional">
+<!ENTITY torsettings.optional "Roghnach">
 
-<!ENTITY torsettings.useProxy.checkbox "This computer needs to use a local proxy to access the Internet">
-<!ENTITY torsettings.useProxy.type "Proxy Type:">
-<!ENTITY torsettings.useProxy.address "Address:">
-<!ENTITY torsettings.useProxy.address.placeholder "IP address or hostname">
+<!ENTITY torsettings.useProxy.checkbox "Teastaíonn seachfhreastalaí áitiúil ón ríomhaire seo chun ceangal leis an Idirlíon">
+<!ENTITY torsettings.useProxy.type "Cineál an tSeachfhreastalaí:">
+<!ENTITY torsettings.useProxy.address "Seoladh:">
+<!ENTITY torsettings.useProxy.address.placeholder "Seoladh IP nó óstainm">
 <!ENTITY torsettings.useProxy.port "Port:">
-<!ENTITY torsettings.useProxy.username "Username:">
-<!ENTITY torsettings.useProxy.password "Password:">
+<!ENTITY torsettings.useProxy.username "Ainm úsáideora:">
+<!ENTITY torsettings.useProxy.password "Focal faire:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "This computer goes through a firewall that only allows connections to certain ports">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports:">
-<!ENTITY torsettings.useBridges.checkbox "My Internet Service Provider (ISP) blocks connections to the Tor network">
-<!ENTITY torsettings.useBridges.default "Connect with provided bridges">
-<!ENTITY torsettings.useBridges.note "Each type of bridge uses a different method to avoid censorship.&#160; If one bridge does not work, try again using a different one.">
-<!ENTITY torsettings.useBridges.type "Transport type:">
-<!ENTITY torsettings.useBridges.custom "Enter custom bridges">
-<!ENTITY torsettings.useBridges.label "Enter one or more bridge relays (one per line).">
-<!ENTITY torsettings.useBridges.placeholder "type address:port">
+<!ENTITY torsettings.firewall.checkbox "Téann an ríomhaire seo trí bhalla dóiteáin nach gceadaíonn ceangail ach le poirt áirithe">
+<!ENTITY torsettings.firewall.allowedPorts "Poirt Cheadaithe:">
+<!ENTITY torsettings.useBridges.checkbox "Cuireann mo Sholáthraí Seirbhís Idirlín (ISP) cosc ar cheangail le líonra Tor">
+<!ENTITY torsettings.useBridges.default "Ceangail le droichead ionsuite">
+<!ENTITY torsettings.useBridges.note "Úsáideann gach cineál droichid modh difriúil leis an gcinsireacht a sheachaint.&amp;160; Mura n-oibríonn droichead amháín, bain triail as ceann eile.">
+<!ENTITY torsettings.useBridges.type "Cineál iompair:">
+<!ENTITY torsettings.useBridges.custom "Cuir isteach droichid saincheaptha">
+<!ENTITY torsettings.useBridges.label "Cuir isteach droichead nó droichid (ceann amháin ar gach líne).">
+<!ENTITY torsettings.useBridges.placeholder "cineál seoladh:port">
 
-<!ENTITY torsettings.copyLog "Copy Tor Log To Clipboard">
-<!ENTITY torsettings.bridgeHelpTitle "Bridge Relay Help">
-<!ENTITY torsettings.bridgeHelp1 "If you are unable to connect to the Tor network, it could be that your Internet Service Provider (ISP) or another agency is blocking Tor.&#160; Often, you can work around this problem by using Tor Bridges, which are unlisted relays that are more difficult to block.">
-<!ENTITY torsettings.bridgeHelp1B "You may use the preconfigured, provided set of bridge addresses or you may obtain a custom set of addresses by using one of these methods:">
-<!ENTITY torsettings.bridgeHelp2Heading "Through the Web">
-<!ENTITY torsettings.bridgeHelp2 "Use a web browser to visit https://bridges.torproject.org">
-<!ENTITY torsettings.bridgeHelp3Heading "Through the Email Autoresponder">
-<!ENTITY torsettings.bridgeHelp3.emailDesc "Send email to bridges@torproject.org with the line 'get bridges' by itself in the body of the message.&#160; However, to make it harder for an attacker to learn a lot of bridge addresses, you must send this request from one of the following email providers (listed in order of preference):">
-<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, or https://mail.yahoo.com">
-<!ENTITY torsettings.bridgeHelp4Heading "Through the Help Desk">
-<!ENTITY torsettings.bridgeHelp4 "As a last resort, you can request bridge addresses by sending a polite email message to help@rt.torproject.org.&#160; Please note that a person will need to respond to each request.">
-
-<!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torsettings.copyLog "Cóipeáil an Logchomhad Tor go dtí an Ghearrthaisce">
+<!ENTITY torsettings.bridgeHelpTitle "Cabhair le Droichid">
+<!ENTITY torsettings.bridgeHelp1 "Mura bhfuil tú in ann ceangal le líonra Tor, b'fhéidir go bhfuil do Sholáthraí Seirbhíse Idirlín (ISP) nó eagraíocht eile ag cur cosc ar Tor.&amp;160; Go minic, is féidir Droichid Tor a úsáid chun an fhadhb seo a sheachaint, toisc go bhfuil sé níos deacra cosc a chur orthu.">
+<!ENTITY torsettings.bridgeHelp1B "Is féidir leat na droichid ionsuite réamhshocraithe a úsáid, nó seoltaí de do chuid féin a fháil trí cheann de na bealaí seo a leanas:">
+<!ENTITY torsettings.bridgeHelp2Heading "Tríd an nGréasán">
+<!ENTITY torsettings.bridgeHelp2 "Úsáid brabhsálaí Gréasáin chun cuairt a thabhairt ar https://bridges.torproject.org">
+<!ENTITY torsettings.bridgeHelp3Heading "Tríd an Uathfhreagróir Ríomhphoist">
+<!ENTITY torsettings.bridgeHelp3.emailDesc "Seol teachtaireacht ríomhphoist chuig bridges@torproject.org leis an líne amháin 'get bridges' i gcorp na teachtaireachta.&amp;160; Ionas go mbeidh sé níos deacra d'ionsaitheoir go leor seoltaí droichid a fhoghlaim, ní mór duit an t-iarratas seo a sheoladh ó cheann de na soláthraithe rphoist seo a leanas (in ord tosaíochta):">
+<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, nó https://mail.yahoo.com">
+<!ENTITY torsettings.bridgeHelp4Heading "Tríd an Deasc Chabhrach">
+<!ENTITY torsettings.bridgeHelp4 "Mar an rogha dheiridh, is féidir leat seoltaí droichid a iarraidh trí theachtaireacht dhea-bhéasach a sheoladh chuig help@rt.torproject.org.&#160; Tabhair faoi deara gurb é neach daonna a thabharfaidh freagra ar gach iarratas.">

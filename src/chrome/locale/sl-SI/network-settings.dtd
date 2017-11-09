@@ -73,6 +73,3 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, or https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Preko table Pomoči">
 <!ENTITY torsettings.bridgeHelp4 "Kot skrajni ukrep, lahko zahtevate premostitvene naslove s pošiljanjem olikanega e-sporočila na help@rt.torproject.org.&#160; Prosimo, upoštevajte, da dotična oseba odgovarja na vsako zahtevo.">
-
-<!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

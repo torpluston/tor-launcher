@@ -73,6 +73,3 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com eller https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Via vores Help Desk">
 <!ENTITY torsettings.bridgeHelp4 "Som en sidste mulighed kan du bede om at få en bro adresse tilsendt ved at sende en venlig e-mail to help@rt.torproject.org.&#160; Bemærk venligst at alle e-mails besvares manuelt.">
-
-<!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Vent venligst mens vi etablerer en forbindelse til Tor-netværket.&#160; Det kan tage flere minutter.">

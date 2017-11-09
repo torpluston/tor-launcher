@@ -73,6 +73,3 @@
 <!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, o https://mail.yahoo.com">
 <!ENTITY torsettings.bridgeHelp4Heading "Attraverso l'Help Desk">
 <!ENTITY torsettings.bridgeHelp4 "Come ultima spiaggia, puoi richiedere un indirizzo bridge mandando una cortese mail a help@rt.torproject.org.&#160; Tieni conto che una persona dovrà rispondere ad ogni singola richiesta.">
-
-<!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Per favore attendere finchè non verrà stabilita una connessione alla rete Tor.&#160; Potrebbero essere necessari alcuni minuti.">
