@@ -1,4 +1,7 @@
 <!ENTITY torsettings.dialog.title "Tor tīkla iestatījumi">
+<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Pārlūka Tor valoda">
@@ -6,30 +9,10 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torsettings.prompt "Pirms pievienojaties pie tīkla Tor, Jums jānorāda informācija par šī datora interneta savienojumu.">
-
-<!ENTITY torSettings.yes "Jā">
-<!ENTITY torSettings.no "Nē">
-
-<!ENTITY torSettings.firstQuestion "Kura situācija vislabāk atbilst jūsējai?">
-<!ENTITY torSettings.configurePrompt1 "Datora savienojums ar internetu ir cenzēts vai starpniekots.">
-<!ENTITY torSettings.configurePrompt2 "Man jānokonfigurē tiltu vai vietējo starpniekserveru iestatījumi pirms es izveidoju savienojumu ar tīklu Tor&#160;.">
+<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Konfigurēt">
-<!ENTITY torSettings.connectPrompt2 "Es vēlos izveidot tiešu savienojumu ar tīklu Tor.">
-<!ENTITY torSettings.connectPrompt3 "Šis strādās vairumā gadījumu.">
 <!ENTITY torSettings.connect "Veidot savienojumu">
-
-<!ENTITY torSettings.proxyPageTitle "Lokālā starpniekservera konfigurēšana">
-<!ENTITY torSettings.proxyQuestion "Vai šim datoram jāizmanto lokālais starpniekserveris, lai piekļūtu internetam?">
-<!-- see https://www.torproject.org/docs/proxychain.html.en -->
-<!ENTITY torSettings.proxyExplanation1 "Vairumā gadījumu nav nepieciešams vietējais starpniekserveris, bet tas var būt nepieciešams, ja savienojumu veido caur uzņēmuma, skolas vai universitātes tīklu.">
-<!ENTITY torSettings.proxyExplanation2 "Ja īsti nezināt kā atbildēt uz šo jautājumu, ieskatieties cita pārlūka interneta iestatījumos vai pārbaudiet Jūsu sistēmas tīkla iestatījumus, lai redzētu vai ir nepieciešams vietējais starpniekserveris. ">
-<!ENTITY torSettings.enterProxy "Ievadiet starpnieka iestatījumus.">
-<!ENTITY torSettings.bridgePageTitle "Tor tiltu konfigurēšana">
-<!ENTITY torSettings.bridgeQuestion "Vai Jūsu interneta pakalpojumu sniedzējs (ISP) bloķē vai savādāk cenzē savienojumus ar tīklu Tor?">
-<!ENTITY torSettings.bridgeExplanation1 "Ja īsti nezināt kā atbildēt uz šo jautājumu, izvēlieties Nē (ja bez tilta nevarat izveidot savienojumu ar tīklu Tor, varēsit tiltu pievienot vēlāk).">
-<!ENTITY torSettings.bridgeExplanation2 "Ja izvēlēsities Jā, Jums lūgs konfigurēt Tor tiltus, kas ir sarakstos neiekļauti retranslatori, kas padara grūtāku savienojumu bloķēšanu ar tīklu Tor.">
-<!ENTITY torSettings.bridgeSettingsPrompt "Jūs varat izmantot piedāvāto tiltu kopumu vai varat ievadīt tiltu pielāgotu sarakstu. ">
 
 <!-- Other: -->
 
@@ -42,8 +25,9 @@
 
 <!ENTITY torsettings.optional "Neobligāts">
 
-<!ENTITY torsettings.useProxy.checkbox "Šajā datorā interneta piekļuvei ir jāizmanto lokālais starpniekserveris.">
+<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!ENTITY torsettings.useProxy.type "Starpnieka tips:">
+<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "Adrese:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adrese vai resursdatora nosaukums">
 <!ENTITY torsettings.useProxy.port "Ports:">
@@ -54,25 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Šis dators iet caur ugunsmūri, kurš atļauj tikai savienojumus ar noteiktiem portiem.">
 <!ENTITY torsettings.firewall.allowedPorts "Atļautie porti:">
-<!ENTITY torsettings.useBridges.checkbox "Mans interneta pakalpojumu sniedzējs (IPS) bloķē savienojumu izveidošanu ar tīklu Tor">
-<!ENTITY torsettings.useBridges.default "Veidot savienojumu ar piedāvātajiem tiltiem">
-<!ENTITY torsettings.useBridges.note "Katrs tilta veids lieto citu cenzūras apiešanas metodi.&#160; ja kāds tilts nestrādā, mēģiniet vēlreiz ar citu.">
-<!ENTITY torsettings.useBridges.type "Transporta veids:">
-<!ENTITY torsettings.useBridges.custom "Ievadiet pielāgotus tiltus">
-<!ENTITY torsettings.useBridges.label "Ievadiet vienu vai vairākus tilta retranslatorus (vienu rindā).">
-<!ENTITY torsettings.useBridges.placeholder "rakstīt address:port">
+<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
+<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
 <!ENTITY torsettings.copyLog "Kopēt Tor žurnālu starpliktuvē">
+
+<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+
 <!ENTITY torsettings.bridgeHelpTitle "Palīdzība par tiltu retranslatoriem">
-<!ENTITY torsettings.bridgeHelp1 "Ja nevarat izveidot savienojumu ar tīklu Tor, tad, iespējams, ka Jūsu interneta pakalpojumu sniedzējs (ISP) vai cita iestāde bloķē Tor.&#160; Bieži, šo problemu var apiet izmantojot Tor tiltus jeb Tor Bridges, proti, neuzskaitītus retranslatorus, kurus grūtāk bloķēt.">
-<!ENTITY torsettings.bridgeHelp1B "Jūs varat izmantot piedāvāto, iepriekš nokonfigurēto tiltu adrešu kopumu vai varat saņemt pielāgotu adrešu kopumu, lietojot kādu no šīm metodēm:">
-<!ENTITY torsettings.bridgeHelp2Heading "Caur tīmekli">
-<!ENTITY torsettings.bridgeHelp2 "Izmanto pārlūkprogrammu, lai apmeklētu https://bridges.torproject.org">
-<!ENTITY torsettings.bridgeHelp3Heading "Caur E-pasta Auto-atbildētāju">
-<!ENTITY torsettings.bridgeHelp3.emailDesc "Sūtiet e-pastu uz bridges@torproject.org ar rindu 'get bridges' ziņojuma tekstā.&#160; Taču, lai uzbrucējam būtu sarežģītāk uzzināt daudz tiltu adrešu, Jums jāsūta šis pieprasījums no kāda no šo e-pasta pakalpojumu sniedzēju e-pastiem (uzskaitītiem vēlamās izvēles kārtībā):">
-<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com vai https://mail.yahoo.com">
-<!ENTITY torsettings.bridgeHelp4Heading "Caur Palīdzības Centru">
-<!ENTITY torsettings.bridgeHelp4 "Pēdējās instances palīdzība tiltu adrešu pieprasījumiem ir sūtīt pieklājīgu e-pasta adresi uz help@rt.torproject.org.&#160; Lūdzu, ņemiet vērā, ka ikvienu pieprasījumu izskata cilvēks.">
+<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Lūdzu pagaidiet kamēr mēs izveidojam savienojumu ar tīklu Tor.&#160; tam var būt nepieciešamas vairākas minūtes.">
+<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

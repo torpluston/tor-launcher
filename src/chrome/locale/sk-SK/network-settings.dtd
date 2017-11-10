@@ -1,4 +1,7 @@
 <!ENTITY torsettings.dialog.title "Nastavenia Tor Network">
+<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Jazyk Tor Browser">
@@ -6,30 +9,10 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torsettings.prompt "Pred tým, než sa pripojíte k sieti Tor, je potrebné poskytnúť informácie o pripojení tohto počítača na Internet.">
-
-<!ENTITY torSettings.yes "Áno">
-<!ENTITY torSettings.no "Nie">
-
-<!ENTITY torSettings.firstQuestion "Ktorá z nasledujúcich situácií najlepšie popisuje vašu?">
-<!ENTITY torSettings.configurePrompt1 "Pripojenie tohto počítača je cenzurované, filtrované alebo vedené cez proxy.">
-<!ENTITY torSettings.configurePrompt2 "Musím nastaviť premostenie alebo miestne proxy nastavenie pred pripojením do  Tor&#160;siete.">
+<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Konfigurovať">
-<!ENTITY torSettings.connectPrompt2 "Rád by som sa pripojil priamo do siete Tor.">
-<!ENTITY torSettings.connectPrompt3 "Toto by vo väčšine prípadov malo fungovať.">
 <!ENTITY torSettings.connect "Pripojiť">
-
-<!ENTITY torSettings.proxyPageTitle "Miestne proxy nastavenia">
-<!ENTITY torSettings.proxyQuestion "Potrebuje tento počítač použiť proxy pre prístup na internet?">
-<!-- see https://www.torproject.org/docs/proxychain.html.en -->
-<!ENTITY torSettings.proxyExplanation1 "Vo väčšine prípadov nie je lokálne proxy potrebné, ale môže byť vyžadované pri pripájaní sa cez firemnú, školskú alebo univerzitnú sieť.">
-<!ENTITY torSettings.proxyExplanation2 "Ak si nie ste istý ako zodpovedať túto otázky, pozrite si nastavenia internetu v inom prehliadači, alebo skontrolujte Vaše systémové sieťové nastavenia, či je miestne proxy potrebné.">
-<!ENTITY torSettings.enterProxy "Zadajte nastavenia proxy.">
-<!ENTITY torSettings.bridgePageTitle "Konfigurácia premostenia Tor">
-<!ENTITY torSettings.bridgeQuestion "Blokuje váš poskytovateľ internetového pripojenia (ISP) alebo inak cenzuruje pripojenia do siete Tor Network?">
-<!ENTITY torSettings.bridgeExplanation1 "Ak si nie ste istý ako zodpovedať túto otázku, zvoľte Nie (ak sa nedokážete pripojiť k sieti Tor bez premostenia, môžete ho pridať neskôr).">
-<!ENTITY torSettings.bridgeExplanation2 "Ak zvolíte Áno, budete vyzvaný na nastavenie Tor premostení. Premostenia sú v zozname neuvedené prenosy, ktoré sťažujú blokovanie pripojení do siete Tor.">
-<!ENTITY torSettings.bridgeSettingsPrompt "Môžete použiť dodanú sadu premostení alebo si môžete zaobstarať a zadať vlastnú sadu premostení.">
 
 <!-- Other: -->
 
@@ -42,8 +25,9 @@
 
 <!ENTITY torsettings.optional "Voliteľné">
 
-<!ENTITY torsettings.useProxy.checkbox "Tento počítač potrebuje pre prístup na Internet použiť proxy">
+<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!ENTITY torsettings.useProxy.type "Typ proxy:">
+<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "Adresa:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adresa alebo názov hostiteľa">
 <!ENTITY torsettings.useProxy.port "Port:">
@@ -54,25 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Tento počítač prechádza cez firewall, ktorý povoľuje spojenie len k určitým portom.">
 <!ENTITY torsettings.firewall.allowedPorts "Povolené porty:">
-<!ENTITY torsettings.useBridges.checkbox "Môj poskytovateľ internetového pripojenia blokuje spojenie do siete Tor">
-<!ENTITY torsettings.useBridges.default "Pripojiť sa cez dodané premostenia">
-<!ENTITY torsettings.useBridges.note "Každý typ premostení používa inú metódu na vyhýbanie sa cenzúre.&#160; Ak jedno premostenie nefunguje, skúste iné.">
-<!ENTITY torsettings.useBridges.type "Typ transportu:">
-<!ENTITY torsettings.useBridges.custom "Zadajte vlastné premostenia">
-<!ENTITY torsettings.useBridges.label "Zadaj jedno alebo viac premostení relé (jedno na riadok).">
-<!ENTITY torsettings.useBridges.placeholder "Typ adresy:port">
+<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
+<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
 <!ENTITY torsettings.copyLog "Kopírovať log Toru do schránky">
+
+<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+
 <!ENTITY torsettings.bridgeHelpTitle "Pomocník pre premostenia relé">
-<!ENTITY torsettings.bridgeHelp1 "Ak nie ste schopní sa pripojiť do siete Tor, je možné, že váš poskytovateľ internetového pripojenia (ISP) alebo iný správny orgán blokuje Tor.&#160; Väčšinou je možné tento problém obísť použitím Tor Bridges, čo sú nikde nezapísané relé, ktoré je obtiažne blokovať.">
-<!ENTITY torsettings.bridgeHelp1B "Môžete použiť prednastavené, vopred poskytnuté adresy premostení alebo môžete získať vlastný set adries použitím jednej z nasledujúcich metód:">
-<!ENTITY torsettings.bridgeHelp2Heading "Prostredníctvom internetu">
-<!ENTITY torsettings.bridgeHelp2 "Navštívte https://bridges.torproject.org pomocou webového prehliadača">
-<!ENTITY torsettings.bridgeHelp3Heading "Cez automatickú emailovú odpoveď">
-<!ENTITY torsettings.bridgeHelp3.emailDesc "Pošlite email na bridges@torproject.org len s textom 'get bridges'  v tele správy.&#160; Bohužiaľ, aby sa zabránilo útočníkom získať množstvo adries premostení, musíte požiadavku poslať z emailu nasledovných poskytovateľov (zoradené podľa preferencií): ">
-<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, or https://mail.yahoo.com">
-<!ENTITY torsettings.bridgeHelp4Heading "Prostredníctvom Help Desk">
-<!ENTITY torsettings.bridgeHelp4 "Ako posledné východisko, môžete poslať milý e-mail na help@rt.torproject.org a požiadať o adresy premostenia.&#160; Berte, prosím, na vedomie, že niekto bude musieť na každú požiadavku samostatne reagovať.">
+<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Prosím počkajte na vytvorenie pripojenia do siete Tor.&#160; Môže to trvať niekoľko minút. ">
+<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

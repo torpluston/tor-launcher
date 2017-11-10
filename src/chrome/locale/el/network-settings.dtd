@@ -1,4 +1,7 @@
 <!ENTITY torsettings.dialog.title "Tor Ρυθμίσεις Δικτύου ">
+<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Γλώσσα του Tor Browser">
@@ -6,31 +9,10 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torsettings.prompt "Πριν συνδεθείτε στο δίκτυο Tor, θα χρειαστούμε λίγες πληροφορίες για το πώς συνδέεστε στο Internet.">
-
-<!ENTITY torSettings.yes "Ναι">
-<!ENTITY torSettings.no "Οχι">
-
-<!ENTITY torSettings.firstQuestion "Ποιο από τα παρακάτω περιγράφει καλύτερα την κατάστασή σας;">
-<!ENTITY torSettings.configurePrompt1 "Σύνδεση στο Internet αυτού του υπολογιστή λογοκρίνεται ή προσεγγίζεται">
-<!ENTITY torSettings.configurePrompt2 "Πριν συνδεθώ στο δίκτυο&#160;Tor πρέπει να προσαρμοσθούν οι γέφυρες ή οι ρυθμίσεις του τοπικού ενδιάμεσου.">
+<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Ρύθμιση ">
-<!ENTITY torSettings.connectPrompt2 "Θέλω να συνδεθώ απ'ευθείας στο δίκτυο Tor.">
-<!ENTITY torSettings.connectPrompt3 "Αυτό θα λειτουργήσει στις περισσότερες περιπτώσεις.">
 <!ENTITY torSettings.connect "Σύνδεση">
-
-<!ENTITY torSettings.proxyPageTitle "Τοπική διαμόρφωση Proxy">
-<!ENTITY torSettings.proxyQuestion "Μήπως αυτός ο υπολογιστής πρέπει να χρησιμοποιήσει ένα τοπικό proxy για την πρόσβαση στο Διαδίκτυο;">
-<!-- see https://www.torproject.org/docs/proxychain.html.en -->
-<!ENTITY torSettings.proxyExplanation1 "Στις περισσότερες περιπτώσεις δε χρειάζεται κάποιος τοπικός ενδιάμεσος διακομιστής, ίσως όμως είναι αναγκαίος όταν συνδέεστε μέσω κάποιας εταιρίας, σχολείου ή πανεπιστημιακού δικτύου.">
-<!ENTITY torSettings.proxyExplanation2 "Αν δεν είστε βέβαιοι/ες για την απάντηση σε αυτό το ερώτημα και για να διαπιστώσετε αν είναι αναγκαίος ένας τοπικός ενδιάμεσος, ελέγξτε τις ρυθμίσεις Διαδικτύου σε κάποιον άλλο περιηγητή ή τις ρυθμίσεις δικτύωσης του υπολογιστή σας .">
-<!ENTITY torSettings.enterProxy "Εισάγωγη των ρυθμίσεων διακομιστή μεσολάβησης.">
-<!ENTITY torSettings.bridgePageTitle "Διαμόρφωση Γεφυρών Tor">
-<!ENTITY torSettings.bridgeQuestion "Γνωρίζετε αν ο πάροχος (ISP) σας μπλοκάρει ή με οποιοδήποτε τρόπο ελέγχει συνδέσεις
-στο δίκτυο Tor?">
-<!ENTITY torSettings.bridgeExplanation1 "Αν δεν γνωρίζετε πως να απαντήσετε σε αυτή την ερώτηση, επιλέξτε Όχι (αν δεν μπορείτε να συνδεθείτε στο δίκτυο Tor χωρίς την χρήση κάποιας γέφυρας, μπορείτε να προσθέσετε αργότερα μια).">
-<!ENTITY torSettings.bridgeExplanation2 "Αν επιλέξετε Ναι θα σας ζητηθεί να ρυθμίσετε τις Γέφυρες Tor, οι οποίες είναι ακαταχώριστοι αναμεταδότες που δυσκολεύουν την παρεμπόδιση σύνδεσης στο Δίκτυο Tor.">
-<!ENTITY torSettings.bridgeSettingsPrompt "Μπορείτε να χρησιμοποιήσετε τις προκαθορισμένες γέφυρες, ή να αποκτήσετε και εισάγετε νέες διευθύνσεις γεφυρών.">
 
 <!-- Other: -->
 
@@ -43,8 +25,9 @@
 
 <!ENTITY torsettings.optional "Προεραιτικα">
 
-<!ENTITY torsettings.useProxy.checkbox "Αυτός ο υπολογιστής χρειάζεται να χρησιμοποιήσει ένα τοπικό proxy για την πρόσβαση στο Internet">
+<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!ENTITY torsettings.useProxy.type "Τύπος διακομιστή μεσολάβησης:">
+<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "Διεύθυνση:">
 <!ENTITY torsettings.useProxy.address.placeholder "Διεύθυνση ΙΡ η όνομα υπολογιστή ">
 <!ENTITY torsettings.useProxy.port "Θύρα συστήματος:">
@@ -55,25 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Το τείχος προστασίας μου με αφήνει να συνδέομαι μόνο σε συγκεκριμένες θύρες συστήματος">
 <!ENTITY torsettings.firewall.allowedPorts "Επιτρεπόμενες Θύρες:">
-<!ENTITY torsettings.useBridges.checkbox "Ο πάροχος διαδικτυου (ISP) μπλοκάρει τις συνδέσεις στο δίκτυο του Tor">
-<!ENTITY torsettings.useBridges.default "Σύνδεση με προκαθορισμένες γέφυρες">
-<!ENTITY torsettings.useBridges.note "Κάθε τύπος γέφυρας χρησιμοποιεί διαφορετική μέθοδο αποφυγής της λογοκρισίας.&#160; Αν δεν λειτουργεί κάποια γέφυρα, προσπαθήστε και πάλι χρησιμοποιώντας κάποια άλλη, διαφορετική.">
-<!ENTITY torsettings.useBridges.type "Τύπος μεταφοράς:">
-<!ENTITY torsettings.useBridges.custom "Εισαγωγή άλλων γεφυρών">
-<!ENTITY torsettings.useBridges.label "Εισάγετε μια ή περισσότερες διευθύνσεις γεφυρών (μία ανά γραμμή).">
-<!ENTITY torsettings.useBridges.placeholder "τύπος διεύθυνση:πόρτα">
+<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
+<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
 <!ENTITY torsettings.copyLog "Αντιγραφή στο πρόχειρο">
+
+<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+
 <!ENTITY torsettings.bridgeHelpTitle "Γεφυρες αναμεταδοτων Βοηθεια">
-<!ENTITY torsettings.bridgeHelp1 "Αν δε μπορείτε να συνδεθείτε στο δίκτυο Tor, ίσως ο πάροχός (ISP) σας ή κάποιος τρίτος μπλοκάρει το Tor .&#160; Αυτό το πρόβλημα συνήθως λύνεται με τη χρήση Tor Bridges (γέφυρες), που είναι μη δημοσιευμένες διευθύνσεις από τις οποίες μπορείτε να μπείτε στο δίκτυο Tor, συνεπώς πιο δύσκολο να μπλοκαριστούν.">
-<!ENTITY torsettings.bridgeHelp1B "Μπορείτε να χρησιμοποιήσετε το  προδιαμορφωμένο παρεχόμενο σετ διευθύνσεων γ'έφυρων ή να  με την προϋπόθεση σύνολο των διευθύνσεων γέφυρας ή να αποκτήσετε ένα προσαρμοσμένο σύνολο διευθύνσεων, χρησιμοποιώντας μία από αυτές τις μεθόδους:">
-<!ENTITY torsettings.bridgeHelp2Heading "Μέσω του Διαδικτύου">
-<!ENTITY torsettings.bridgeHelp2 "Χρησιμοποιήστε έναν φυλλομετρητή για να επισκεφτείτε το https://bridges.torproject.org">
-<!ENTITY torsettings.bridgeHelp3Heading "Μέσω της Αυτοματοποιημένης Απάντησης Email">
-<!ENTITY torsettings.bridgeHelp3.emailDesc "Αποστολή email στο bridges@torproject.org με τη γραμμή «λήψη γεφυρών» από μόνη της στο σώμα του μηνύματος.&#160; Ωστόσο, για να γίνει πιο δύσκολο για έναν εισβολέα να μάθει πολλά από τις διευθύνσεις γεφυρών, θα πρέπει να στείλετε αυτό το αίτημα από ένα από τους επόμενους πάροχους υπηρεσιών ηλεκτρονικού ταχυδρομείου (αναφέρονται κατά σειρά προτίμησης):">
-<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, or https://mail.yahoo.com">
-<!ENTITY torsettings.bridgeHelp4Heading "Μέσω της Υποστήριξης">
-<!ENTITY torsettings.bridgeHelp4 "Αν όλα τα άλλα αποτύχουν, μπορείτε να ζητήσετε διευθύνσεις γεφυρών στέλνοντας ένα ευγενικό email στο help@rt.torproject.org.&#160; Σημείωση: Κάποιος εθελοντής θα πρέπει να απαντήσει χειροκίνητα (συνεπώς η απάντηση ίσως αργήσει).">
+<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Παρακαλώ περιμένετε καθώς δημιουργήστε σύνδεση στο δίκτυο Tor.&#160; Αυτό μπορεί να πάρει μερικά λεπτά.">
+<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

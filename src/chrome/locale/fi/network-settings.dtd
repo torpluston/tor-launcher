@@ -1,4 +1,7 @@
 <!ENTITY torsettings.dialog.title "Tor-verkkoasetukset">
+<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Tor-selaimen kieli">
@@ -6,30 +9,10 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torsettings.prompt "Ennen kuin voit yhdistää Tor-verkkoon, sinun on annettava tietoja tietokoneesi internet-yhteydestä.">
-
-<!ENTITY torSettings.yes "Kyllä">
-<!ENTITY torSettings.no "Ei">
-
-<!ENTITY torSettings.firstQuestion "Mikä seuraavista kuvailee parhaiten tilannettasi?">
-<!ENTITY torSettings.configurePrompt1 "Tämän tietokoneen internet-yhteys on sensuroitu tai kulkee välityspalvelimen kautta.">
-<!ENTITY torSettings.configurePrompt2 "Minun täytyy configuroida joko silta- tai paikallinen välityspalvelimen asetukset ennen kuin yhdistän Tor&#160;verkkoon.">
+<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Määritä">
-<!ENTITY torSettings.connectPrompt2 "Haluan tehdä suoran yhteyden Tor-verkkoon.">
-<!ENTITY torSettings.connectPrompt3 "Tämä toimii useimmissa tilanteissa.">
 <!ENTITY torSettings.connect "Yhdistä">
-
-<!ENTITY torSettings.proxyPageTitle "Paikallisen välityspalvelimen määritys">
-<!ENTITY torSettings.proxyQuestion "Tarvitseeko tämän tietokoneen käyttää paikallista välityspalvelinta Internet-pääsyyn?">
-<!-- see https://www.torproject.org/docs/proxychain.html.en -->
-<!ENTITY torSettings.proxyExplanation1 "Yleensä paikallista välityspalvelinta ei tarvita mutta se voidaan tarvia jos yhdistetään yrityksen, koulun tai yliopistpjen verkon kautta.">
-<!ENTITY torSettings.proxyExplanation2 "Jos et ole varma, kuinka vastata tähän kysymykseen, katso toisen selaimen Internet-asetuksista tai järjestelmäsi verkkoasetuksista, tarvitaanko paikallista välityspalvelinta.">
-<!ENTITY torSettings.enterProxy "Kirjoita välityspalvelinasetukset.">
-<!ENTITY torSettings.bridgePageTitle "Tor-siltojen määritys">
-<!ENTITY torSettings.bridgeQuestion "Sensuroiko tai estääkö sinun operaattorisi (ISP) yhteydet Tor-verkkoon?">
-<!ENTITY torSettings.bridgeExplanation1 "Jos et ole varma, kuinka vastata tähän kysymykseen, valitse Ei (jos et voi yhdistää Tor-verkkoon ilman siltaa, voit lisätä sellaisen myöhemmin).">
-<!ENTITY torSettings.bridgeExplanation2 "Jos valitset Kyllä, sinua pyydetään määrittämään Tor-sillat, jotka ovat listaamattomia välityspalvelimia, jotta yhteyksiä olisi vaikeampi estää Tor-verkkoon yhdistettäessä.">
-<!ENTITY torSettings.bridgeSettingsPrompt "Voit käyttää tarjottua siltajoukkoa tai voit hankkia ja kirjoittaa oman siltojen joukon.">
 
 <!-- Other: -->
 
@@ -42,8 +25,9 @@
 
 <!ENTITY torsettings.optional "Vaihtoehtoinen">
 
-<!ENTITY torsettings.useProxy.checkbox "Tämä tietokone tarvitsee paikallisen välityspalvelimen Internet-pääsyyn">
+<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!ENTITY torsettings.useProxy.type "Välityspalvelintyyppi:">
+<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "Osoite:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-osoite tai palvelinnimi">
 <!ENTITY torsettings.useProxy.port "Portti:">
@@ -54,25 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Tämän tietokoneen palomuuri sallii yhteydet vain tiettyjen porttien kautta">
 <!ENTITY torsettings.firewall.allowedPorts "Sallitut portit:">
-<!ENTITY torsettings.useBridges.checkbox "Minun internet-yhteyden tarjoajani (ISP) estää yhteydet Tor-verkkoon">
-<!ENTITY torsettings.useBridges.default "Yhdistä tarjotuilla silloilla">
-<!ENTITY torsettings.useBridges.note "Jokainen siltatyyppi käyttää eri tapaa sensuurin välttämiseksi.&#160; Jos yksi silta ei toimi, kokeile uudelleen käyttäen toista siltaa.">
-<!ENTITY torsettings.useBridges.type "Siirtotyyppi:">
-<!ENTITY torsettings.useBridges.custom "Kirjoita omat sillat">
-<!ENTITY torsettings.useBridges.label "Kirjoita yksi tai useampi siltavälityspalvelin (yksi per rivi).">
-<!ENTITY torsettings.useBridges.placeholder "kirjoita osoite:portti">
+<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
+<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
 <!ENTITY torsettings.copyLog "Kopioi Tor-loki leikepöydälle">
+
+<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+
 <!ENTITY torsettings.bridgeHelpTitle "Siltavälityspalvelinopaste">
-<!ENTITY torsettings.bridgeHelp1 "Jos et pysty yhdistämään Tor-verkkoon, syy voi olla, että Internet palveluntarjoajasi (ISP) tai muu taho estää Tor-sovelluksen.&#160; Usein voit kiertää tämän ongelman käyttämällä Tor-siltoja, jotka ovat listaamattomia välityspalvelimia, joita on vaikeampi estää.">
-<!ENTITY torsettings.bridgeHelp1B "Voit käyttää ennalta määritettyä, tarjottua siltajoukkoa tai voit hankkia oman osoitejoukon jollakin näistä tavoista:">
-<!ENTITY torsettings.bridgeHelp2Heading "Verkon yli">
-<!ENTITY torsettings.bridgeHelp2 "Käytä internet-selainta vieraillaksesi osoitteessa: https://bridges.torproject.org">
-<!ENTITY torsettings.bridgeHelp3Heading "Sähköpostin automaattivastaajan läpi">
-<!ENTITY torsettings.bridgeHelp3.emailDesc "Lähetä sähköpostia osoitteeseen bridges@torproject.org käyttäen viestissä tekstiä 'get bridges' pelkästään viestin rungossa.&#160; Jotta hyökkääjälle olisi kuitenkin vaikeampaa monien siltaosoiteiden oppiminen, sinun on lähetettävä pyyntö yhden seuraavan sähköpostitarjoajan kautta (lueteltu suosion mukaisessa järjestyksessä):">
-<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com tai https:://mail.yahoo.com">
-<!ENTITY torsettings.bridgeHelp4Heading "Neuvontapisteen läpi">
-<!ENTITY torsettings.bridgeHelp4 "Viimeisenä keinona voit pyytää siltaosoitteita lähettämällä kohteliaan viestin osoitteeseen: help@rt.torproject.org.&#160; Huomioi, että henkilön tulee vastata kuhunkin pyyntöön.">
+<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Odota pieni hetki, kun yhteys TOR-verkostoon luodaan.&#160;
+<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

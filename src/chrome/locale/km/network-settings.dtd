@@ -1,4 +1,7 @@
 <!ENTITY torsettings.dialog.title "ការ​កំណត់​បណ្ដាញ Tor">
+<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Tor Browser Language">
@@ -6,30 +9,10 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torsettings.prompt "មុន​ពេល​អ្នកភ្ជាប់​ទៅបណ្ដាញ Tor អ្នកត្រូវ​ផ្ដល់​ព័ត៌មាន​អំពី​ការ​ភ្ជាប់​អ៊ីនធឺណិត​កុំព្យូទ័រ​នេះ។">
-
-<!ENTITY torSettings.yes "បាទ/ចាស">
-<!ENTITY torSettings.no "ទេ">
-
-<!ENTITY torSettings.firstQuestion "តើ​ការ​ពណ៌នា​ណា​មួយ​​​ដូច​ខា​ងក្រោម​នេះ​ល្អ​បំផុត​សម្រាប់ស្ថានភាព​របស់​អ្នក?">
-<!ENTITY torSettings.configurePrompt1 "This computer's Internet connection is censored or proxied.">
-<!ENTITY torSettings.configurePrompt2 "I need to configure bridge or local proxy settings before I connect to the Tor&#160;network.">
+<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "កំណត់រចនាសម្ព័ន្ធ">
-<!ENTITY torSettings.connectPrompt2 "I would like to make a direct connection to the Tor network.">
-<!ENTITY torSettings.connectPrompt3 "វា​នឹង​ដំណើរការ​ក្នុងស្ថានភាព​ភាគ​ច្រើន។">
 <!ENTITY torSettings.connect "តភ្ជាប់">
-
-<!ENTITY torSettings.proxyPageTitle "Local Proxy Configuration">
-<!ENTITY torSettings.proxyQuestion "Does this computer need to use a local proxy to access the Internet?">
-<!-- see https://www.torproject.org/docs/proxychain.html.en -->
-<!ENTITY torSettings.proxyExplanation1 "In most cases a local proxy is not needed, but it may be required when connecting through a company, school, or university network.">
-<!ENTITY torSettings.proxyExplanation2 "If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a local proxy is needed.">
-<!ENTITY torSettings.enterProxy "បញ្ចូល​ការ​កំណត់​ប្រូកស៊ី។">
-<!ENTITY torSettings.bridgePageTitle "Tor Bridges Configuration">
-<!ENTITY torSettings.bridgeQuestion "តើ​ក្រុមហ៊ុន​ផ្ដល់​អ៊ីនធឺណិត​របស់​អ្នក (ISP) ទប់ស្កាត់ ឬ​បើ​មិន​ដូច្នេះ​ទេ​ការ​ភ្ជាប់​ឧបករណ៍​ចាប់​សញ្ញាទៅ​បណ្ដាញ Tor ?">
-<!ENTITY torSettings.bridgeExplanation1 "If you are not sure how to answer this question, choose No (if you are unable to connect to the Tor network without a bridge, you can add one later).">
-<!ENTITY torSettings.bridgeExplanation2 "If you choose Yes, you will be asked to configure Tor Bridges, which are unlisted relays that make it more difficult to block connections to the Tor Network.">
-<!ENTITY torSettings.bridgeSettingsPrompt "អ្នកអាច​ប្រើ​ការកំណត់ប៊្រីត​ដែល​បានផ្ដល់ ឬ​អ្នក​អាច​យក​ និង​បញ្ចូល​ការ​កំណត់ប៊្រីត​ផ្ទាល់​ខ្លួន។">
 
 <!-- Other: -->
 
@@ -42,8 +25,9 @@
 
 <!ENTITY torsettings.optional "ជា​ជម្រើស">
 
-<!ENTITY torsettings.useProxy.checkbox "This computer needs to use a local proxy to access the Internet">
+<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!ENTITY torsettings.useProxy.type "ប្រភេទ​ប្រូកស៊ី៖">
+<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "អាយដ្ឋាន៖">
 <!ENTITY torsettings.useProxy.address.placeholder "អាសយដ្ឋាន IP ឬ​ឈ្មោះ​ម៉ាស៊ីន">
 <!ENTITY torsettings.useProxy.port "ច្រក៖">
@@ -54,25 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "កុំព្យូទ័រ​នេះ​ឆ្លង​កាត់ជញ្ជាំង​ភ្លើង​ដែល​អនុញ្ញាត​តែ​ការ​​ភ្ជាប់ទៅ​ច្រកជាក់លាក់">
 <!ENTITY torsettings.firewall.allowedPorts "ច្រក​បាន​អនុញ្ញាត៖">
-<!ENTITY torsettings.useBridges.checkbox "ក្រុមហ៊ុន​ផ្ដល់​សេវាកម្ម​អ៊ីនធឺណិត (ISP)​ របស់​ខ្ញុំ​ទប់ស្កាត់ការភ្ជាប់​ទៅ​បណ្ដាញ Tor ។">
-<!ENTITY torsettings.useBridges.default "ភ្ជាប់​ជា​មួយ​ប៊្រីត​បាន​ផ្ដល់">
-<!ENTITY torsettings.useBridges.note "Each type of bridge uses a different method to avoid censorship.&#160; If one bridge does not work, try again using a different one.">
-<!ENTITY torsettings.useBridges.type "ប្រភេទ​បញ្ជូន៖">
-<!ENTITY torsettings.useBridges.custom "បញ្ចូល​ប៊្រីត​ផ្ទាល់​ខ្លួន">
-<!ENTITY torsettings.useBridges.label "បញ្ចូល​ការ​បញ្ជូន​ប្រ៊ីត​បន្ត​មួយ ឬ​ច្រើន (មួយ​ក្នុង​មួយ​ជួរ)។">
-<!ENTITY torsettings.useBridges.placeholder "បញ្ចូល address:port">
+<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
+<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
 <!ENTITY torsettings.copyLog "ចម្លង​កំណត់ហេតុ Tor ទៅ​ក្ដារ​តម្បៀតខ្ទាស់">
+
+<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+
 <!ENTITY torsettings.bridgeHelpTitle "ជំនួយ​បញ្ជូន​ប្រ៊ីត​បន្ត">
-<!ENTITY torsettings.bridgeHelp1 "បើ​អ្នក​មិន​អាច​ភ្ជាប់​ទៅបណ្ដាញ Tor វា​អាច​មកពី​ក្រុមហ៊ុន​ផ្ដល់សេវាកម្ម​អ៊ីនធឺណិត (ISP) ឬ​ភ្នាក់ងារ​ផ្សេង​​កំពុង​ទប់ស្កាត់ Tor ។ &#160; ជា​រឿយៗ​អ្នក​អាច​ស្វែងយល់​ពី​បញ្ហា​នេះ ដោយ​ប្រើ​ប៊្រីត Tor ដែល​ត្រូវ​បាន​លាក់​ការ​បញ្ជូន​បន្ត​ដែល​ពិបាក​ទប់ស្កាត់។">
-<!ENTITY torsettings.bridgeHelp1B "You may use the preconfigured, provided set of bridge addresses or you may obtain a custom set of addresses by using one of these methods:">
-<!ENTITY torsettings.bridgeHelp2Heading "តាម​រយៈ​បណ្ដាញ">
-<!ENTITY torsettings.bridgeHelp2 "ប្រើ​កម្មវិធីរុករកបណ្ដាញ ដើម្បីមើល https://bridges.torproject.org">
-<!ENTITY torsettings.bridgeHelp3Heading "តាមរយៈ​ការឆ្លើយតប​ដោយ​ស្វ័យ​ប្រវត្តិ​របស់​អ៊ីមែល">
-<!ENTITY torsettings.bridgeHelp3.emailDesc "Send email to bridges@torproject.org with the line 'get bridges' by itself in the body of the message.&#160; However, to make it harder for an attacker to learn a lot of bridge addresses, you must send this request from one of the following email providers (listed in order of preference):">
-<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, or https://mail.yahoo.com">
-<!ENTITY torsettings.bridgeHelp4Heading "តាមរយៈ​ជំនួយ​">
-<!ENTITY torsettings.bridgeHelp4 "នៅ​ជម្រើស​ចុងក្រោយ អ្នក​អាច​ស្នើ​​អាសយដ្ឋាន​ប៊្រីត​ដោយ​ផ្ញើ​សារ​អ៊ីមែល​គួរសម​ទៅ help@rt.torproject.org.&#160; សូម​ចំណាំ​ថា មនុស្ស​​ម្នាក់​នឹង​ត្រូវ​ឆ្លើយតប​ទៅ​សំណើ​នីមួយៗ។">
+<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

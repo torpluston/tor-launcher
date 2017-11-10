@@ -1,4 +1,7 @@
 <!ENTITY torsettings.dialog.title "Nätverksinställningar för Tor">
+<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Språk i Tor-webbläsare">
@@ -6,30 +9,10 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torsettings.prompt "Innan du ansluter till Tor-nätverket så behöver du lämna information om den här datorns internetanslutning.">
-
-<!ENTITY torSettings.yes "Ja">
-<!ENTITY torSettings.no "Nej">
-
-<!ENTITY torSettings.firstQuestion "Vilket av följande beskriver bäst din situation?">
-<!ENTITY torSettings.configurePrompt1 "Den här datorns Internetanslutning är censorerad eller går genom en proxy.">
-<!ENTITY torSettings.configurePrompt2 "Jag behöver konfigurera en brygga eller inställningar för lokal proxy innan jag ansluter till Tor-nätverket.">
+<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Konfigurera">
-<!ENTITY torSettings.connectPrompt2 "Jag vill göra en direktanslutning till Tor-nätverket.">
-<!ENTITY torSettings.connectPrompt3 "Detta fungerar i de flesta situationer.">
 <!ENTITY torSettings.connect "Anslut">
-
-<!ENTITY torSettings.proxyPageTitle "Lokal proxy-konfiguration">
-<!ENTITY torSettings.proxyQuestion "Behöver den här datorn använda en lokal proxy för att ansluta till Internet?">
-<!-- see https://www.torproject.org/docs/proxychain.html.en -->
-<!ENTITY torSettings.proxyExplanation1 "I de flesta fallen behövs ingen lokal proxy, men det kan behövas om du ansluter via ett nätverk på ett företag, en skola eller ett universitet.">
-<!ENTITY torSettings.proxyExplanation2 "Om du är osäker på hur du ska svara på den här frågan, titta på internetinställningarna i en annan webbläsare eller kontrollera ditt systems nätverksinställningar för att se om en lokal proxy behövs.">
-<!ENTITY torSettings.enterProxy "Ange proxyinställningarna.">
-<!ENTITY torSettings.bridgePageTitle "Konfiguration av Tor-bryggor">
-<!ENTITY torSettings.bridgeQuestion "Blockerar eller censurerar din internetleverantör anslutningar till Tor-nätverket?">
-<!ENTITY torSettings.bridgeExplanation1 "Om du är osäker på hur du ska besvara den här frågan, välj Nej (om du inte kan ansluta till Tor-nätverket utan en brygga så kan du lägga till en senare).">
-<!ENTITY torSettings.bridgeExplanation2 "Om du väljer Ja kommer du att tillfrågas om att konfigurera Tor-bryggor, vilka är olistade reläer som gör det svårare att blockera anslutningarna till Tor-nätverket.">
-<!ENTITY torSettings.bridgeSettingsPrompt "Du kan använda de förkonfigurerade bryggorna, eller skaffa och ange bryggor själv.">
 
 <!-- Other: -->
 
@@ -42,8 +25,9 @@
 
 <!ENTITY torsettings.optional "Valfri">
 
-<!ENTITY torsettings.useProxy.checkbox "Den här datorn behöver använda en lokal proxy för att ansluta till Internet">
+<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!ENTITY torsettings.useProxy.type "Typ av proxy:">
+<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "Adress:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-adress eller värdnamn">
 <!ENTITY torsettings.useProxy.port "Port:">
@@ -54,25 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Denna dator går genom en brandvägg som bara tillåter anslutningar på vissa specifika portar.">
 <!ENTITY torsettings.firewall.allowedPorts "Tillåtna portar:">
-<!ENTITY torsettings.useBridges.checkbox "Min internetleverantör blockerar anslutningar till Tor-nätverket">
-<!ENTITY torsettings.useBridges.default "Anslut med tillgängliga bryggor">
-<!ENTITY torsettings.useBridges.note "Varje typ av brygga använder en egen metod för att undvika censur.&#160; Om en brygga inte fungerar, försök igen genom att använda en annan.">
-<!ENTITY torsettings.useBridges.type "Transport-typ:">
-<!ENTITY torsettings.useBridges.custom "Ange egna bryggor">
-<!ENTITY torsettings.useBridges.label "Ange en eller flera Tor-bryggor (en per rad).">
-<!ENTITY torsettings.useBridges.placeholder "typ adress:port">
+<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
+<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
 <!ENTITY torsettings.copyLog "Kopiera Tor-loggen till urklippet">
+
+<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+
 <!ENTITY torsettings.bridgeHelpTitle "Hjälp om bryggor">
-<!ENTITY torsettings.bridgeHelp1 "Om du inte kan ansluta till Tor-nätverket är det möjligt att din internetleverantör eller annan myndighet blockerar Tor.&#160; Ofta kan du kringgå detta problem genom att använda Tor-bryggor, vilka är olistade reläer som är mer svårblockerade.">
-<!ENTITY torsettings.bridgeHelp1B "Du kan använda de förinställda adresserna till bryggor, eller hämta egna adresser genom att använda en av dessa metoder:">
-<!ENTITY torsettings.bridgeHelp2Heading "Via nätet">
-<!ENTITY torsettings.bridgeHelp2 "Använd en webbläsare för att besöka https://bridges.torproject.org">
-<!ENTITY torsettings.bridgeHelp3Heading "Via e-post autosvar">
-<!ENTITY torsettings.bridgeHelp3.emailDesc "Skicka ett e-postmeddelande till bridges@torproject.org med bara &quot;get bridges&quot; i texten.&#160; Men för att göra det svårare för en angripare att få tag på många adresser till bryggor så måste du skicka meddelandet från någon av följande epostleverantörer (listan är sorterad på vilka vi föredrar):">
-<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, eller https://mail.yahoo.com">
-<!ENTITY torsettings.bridgeHelp4Heading "Via supporten">
-<!ENTITY torsettings.bridgeHelp4 "Som en sista utväg kan du skicka ett artigt e-post meddelande på engelska till help@rt.torproject.org, och fråga efter bryggadresser.&#160; Tänk på att en person måste svara på varje sådan förfrågan.">
+<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Vänligen vänta medan vi sätter upp en anslutning till Tor-nätverket.&#160; Detta kan ta flera minuter.">
+<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

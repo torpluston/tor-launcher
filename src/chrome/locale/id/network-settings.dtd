@@ -1,4 +1,7 @@
 <!ENTITY torsettings.dialog.title "Pengaturan Jaringan Tor">
+<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Bahasa Peramban Tor">
@@ -6,30 +9,10 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torsettings.prompt "Sebelum Anda terhubung ke jaringan Tor, Anda perlu memberikan informasi tentang koneksi internet komputer ini.">
-
-<!ENTITY torSettings.yes "Ya">
-<!ENTITY torSettings.no "Tidak">
-
-<!ENTITY torSettings.firstQuestion "Mana dari yang berikut ini tepat menjelaskan situasi Anda?">
-<!ENTITY torSettings.configurePrompt1 "Koneksi Internet komputer ini disensor atau terproksi.">
-<!ENTITY torSettings.configurePrompt2 "Saya perlu untuk mengatur jembatan atau pengaturan proksi lokal sebelum saya terkoneksi ke jaringan&#160;Tor.">
+<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Konfigur">
-<!ENTITY torSettings.connectPrompt2 "Saya ingin membuat koneksi langsung ke jaringan Tor.">
-<!ENTITY torSettings.connectPrompt3 "Ini akan bekerja dalam kebanyakan situasi.">
 <!ENTITY torSettings.connect "Sambung">
-
-<!ENTITY torSettings.proxyPageTitle "Konfigurasi Proksi Lokal">
-<!ENTITY torSettings.proxyQuestion "Apakah komputer ini memerlukan proksi lokal untuk dapat mengakses Internet?">
-<!-- see https://www.torproject.org/docs/proxychain.html.en -->
-<!ENTITY torSettings.proxyExplanation1 "Dalam banyak kasus proksi lokal tidah dibutuhkan, tapi mungkin dibutuhkan ketika menghubungkan lewat jaringan perusahaan, sekolah, atau universitas.">
-<!ENTITY torSettings.proxyExplanation2 "Jika anda tidak yakin bagaimana untuk menjawab pertanyaan ini, lihat dipengaturan Internet diperamban lainnya atau periksa pengaturan sistem jaringan anda untuk melihat apakah proksi lokal dibutuhkan.">
-<!ENTITY torSettings.enterProxy "Masuk ke pengaturan proksi.">
-<!ENTITY torSettings.bridgePageTitle "Konfigurasi Jembatan Tor">
-<!ENTITY torSettings.bridgeQuestion "Apakah Penyedia Layanan Internet (ISP) Anda memblokir atau menyensor sambungan ke Jaringan Tor?">
-<!ENTITY torSettings.bridgeExplanation1 "Jika anda tidak yakin bagaimana untuk menjawab pertanyaan ini, pilih Tidak (jika anda tidak dapat menyambungkan ke jaringan Tor tanpa jembatan, anda dapat menambahkannya nanti).">
-<!ENTITY torSettings.bridgeExplanation2 "Jika anda pilih Ya, anda akan ditanyakan untuk mengatur Tor Bridges, dimana relai tak terdaftar yang membuatnya lebih susah untuk menghalangi koneksi ke Tor Network.">
-<!ENTITY torSettings.bridgeSettingsPrompt "Anda dapat menggunakan setelan jembatan yang disediakan atau Anda dapat memperoleh dan memasukkan setelan jembatan ubahsuai.">
 
 <!-- Other: -->
 
@@ -42,8 +25,9 @@
 
 <!ENTITY torsettings.optional "Opsional">
 
-<!ENTITY torsettings.useProxy.checkbox "Komputer ini perlu menggunakan proksi lokal untuk mengakses Internet">
+<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!ENTITY torsettings.useProxy.type "Tipe Proksi:">
+<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "Alamat:">
 <!ENTITY torsettings.useProxy.address.placeholder "alamat IP atau nama host">
 <!ENTITY torsettings.useProxy.port "Port:">
@@ -54,25 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Komputer ini pergi melalui firewall yang hanya mengizinkan koneksi untuk beberapa port">
 <!ENTITY torsettings.firewall.allowedPorts "Port yang diizinkan:">
-<!ENTITY torsettings.useBridges.checkbox "Internet Service Provider (ISP) saya memblokir koneksi ke jaringan Tor">
-<!ENTITY torsettings.useBridges.default "Terhubung dengan bridge yang disediakan">
-<!ENTITY torsettings.useBridges.note "Setiap tipe jembatan menggunakan metode berbeda untuk menghindari penyaringan.&#160; Jika satu jembatan tidak dapat bekerja, coba gunakan lagi jembatan lainnya.">
-<!ENTITY torsettings.useBridges.type "Jenis Transport :">
-<!ENTITY torsettings.useBridges.custom "Masukkan bridge yang biasa digunakan">
-<!ENTITY torsettings.useBridges.label "Masukkan satu atau beberapa jembatan penyambung (satu per baris).">
-<!ENTITY torsettings.useBridges.placeholder "ketik address:port">
+<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
+<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
 <!ENTITY torsettings.copyLog "Salin Log Tor Ke Clipboard">
+
+<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+
 <!ENTITY torsettings.bridgeHelpTitle "Bantuan Bridge Relay">
-<!ENTITY torsettings.bridgeHelp1 "Jika Anda tidak dapat terhubung ke jaringan Tor, bisa jadi Provider Layanan Internet (ISP) atau lembaga lain yang menghalangi Tor. &#160; Sering kali, Anda dapat mengatasi masalah ini dengan menggunakan Tor Bridges, yang relai terdaftar yang lebih sulit untuk memblokir.">
-<!ENTITY torsettings.bridgeHelp1B "Anda dapat menggunakan prakonfigurasi, disediakan alamat-alamat jembatan atau anda dapat mendapat barisan khusus dari alamat-alamat dengan menggunakan satu dari metode berikut:">
-<!ENTITY torsettings.bridgeHelp2Heading "Lewat web">
-<!ENTITY torsettings.bridgeHelp2 "Menggunakan applikasi penjelajah interet untuk mengunjungi https://bridges.torproject.org">
-<!ENTITY torsettings.bridgeHelp3Heading "Melalui Email Autoresponder">
-<!ENTITY torsettings.bridgeHelp3.emailDesc "Kieim email ke  bridges@torproject.org dengan jalur  'get bridges' itu sendiri di bodi dari pesan &#160; Walau bagaimana , untuk membuatnya lebih keras bagi para penyerang untuk mempelajari beberapa alamat  bridge , anda harus mengirim permintaan ini dari salah satu Provider-provider email berikut  (terdaftar di urutan preferensi):">
-<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, atau https://mail.yahoo.com">
-<!ENTITY torsettings.bridgeHelp4Heading "Melalui Help Desk">
-<!ENTITY torsettings.bridgeHelp4 "Sebagai pilihan terakhir anda dapat meminta alamat bridge dengan mengirimkan pesan email dengan sopan ke help@rt.torproject.org.&#160; Silakan catat bahwa petugas akan merespon masing-masing permintaan">
+<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Mohon tunggu sementara kami menyambung ke jaringan Tor.&#160; Ini mungkin memakan waktu beberapa menit.">
+<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

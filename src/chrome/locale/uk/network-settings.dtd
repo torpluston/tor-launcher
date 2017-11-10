@@ -1,4 +1,7 @@
 <!ENTITY torsettings.dialog.title "Налаштування мережі Tor">
+<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Мова Tor Browser">
@@ -6,30 +9,10 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torsettings.prompt "Перед тим, як підключитися до мережі Tor, необхідно надати інформацію про підключення до Інтернету Вашого комп'ютера.">
-
-<!ENTITY torSettings.yes "Так">
-<!ENTITY torSettings.no "Ні">
-
-<!ENTITY torSettings.firstQuestion "Яке з наступних тверджень найкраще описує Вашу ситуацію?">
-<!ENTITY torSettings.configurePrompt1 "Мережеве з'єднання цього комп'ютера цензурується або йде через проксі-сервер.">
-<!ENTITY torSettings.configurePrompt2 "Мені потрібно налаштувати міст або локальний проксі перед під'єданням до мережі&#160;Tor.">
+<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Налаштування">
-<!ENTITY torSettings.connectPrompt2 "Я бажаю підключитися до мережі Tor напряму.">
-<!ENTITY torSettings.connectPrompt3 "Це має працювати у більшості ситуацій.">
 <!ENTITY torSettings.connect "З'єднатися">
-
-<!ENTITY torSettings.proxyPageTitle "Локальна конфігурація проксі-сервера">
-<!ENTITY torSettings.proxyQuestion "Чи потрібно цьому комп'ютеру використовувати локальний проксі для доступу в Інтернет?">
-<!-- see https://www.torproject.org/docs/proxychain.html.en -->
-<!ENTITY torSettings.proxyExplanation1 "У більшості випадків локальний проксі не потрібний, але він може вимагатися при підключенні через мережу компанії, школи чи університету.">
-<!ENTITY torSettings.proxyExplanation2 "Якщо Ви не впевнені, як відповісти на це запитання, подивіться налаштування Інтернету в іншому браузері або мережні налаштування Вашої системи, щоб побачити чи потрібне використання проксі.">
-<!ENTITY torSettings.enterProxy "Задати параметри проксі">
-<!ENTITY torSettings.bridgePageTitle "Конфігурації Tor-мостів">
-<!ENTITY torSettings.bridgeQuestion "Ваш Інтернет-провайдер (ISP) блокує чи яким-небудь чином цензурує підключення до Tor мережі?">
-<!ENTITY torSettings.bridgeExplanation1 "Якщо Ви не впевнені, як відповісти на це запитання, виберіть Ні. (Якщо Ви не можете під'єднатися до мережі Tor без моста, його можна додати пізніше).">
-<!ENTITY torSettings.bridgeExplanation2 "Якщо Ви виберете Так, Вам буде запропоновано налаштувати мости Tor, які є приватними трансляторами, що ускладнюють блокування з'єднань з мережею Tor.">
-<!ENTITY torSettings.bridgeSettingsPrompt "Ви можете використати визначений перелік мостів або можете отримати і ввести набір мостів вручну.">
 
 <!-- Other: -->
 
@@ -42,8 +25,9 @@
 
 <!ENTITY torsettings.optional "Додатково">
 
-<!ENTITY torsettings.useProxy.checkbox "Цей комп'ютер повинен використовувати локальний проксі для доступу в Інтернет">
+<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!ENTITY torsettings.useProxy.type "Тип проксі:">
+<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "Адреса:">
 <!ENTITY torsettings.useProxy.address.placeholder "ІР адреса або ім'я хосту">
 <!ENTITY torsettings.useProxy.port "Порт:">
@@ -54,25 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Мій брандмауер дозволяє підключення тільки до певних портів">
 <!ENTITY torsettings.firewall.allowedPorts "Дозволенні порти:">
-<!ENTITY torsettings.useBridges.checkbox "Мій провайдер блокує доступ до мережі Tor">
-<!ENTITY torsettings.useBridges.default "Підключитися з визначеними мостами">
-<!ENTITY torsettings.useBridges.note "Кожен тип мостів викорисовує інший метод уникнення цензури.&#160; Якщо один міст не працює, спробуйте ще раз через інший.">
-<!ENTITY torsettings.useBridges.type "Тип транспорту:">
-<!ENTITY torsettings.useBridges.custom "Ввести мости вручну">
-<!ENTITY torsettings.useBridges.label "Введіть один або кілька ретрансляторів типу міст (по одному в рядок).">
-<!ENTITY torsettings.useBridges.placeholder "введіть адресу:порт">
+<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
+<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
 <!ENTITY torsettings.copyLog "Скопіювати журнал Tor до буферу обміну">
+
+<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+
 <!ENTITY torsettings.bridgeHelpTitle "Допомога по ретрансляторам типу міст">
-<!ENTITY torsettings.bridgeHelp1 "Якщо Ви не можете підключитися до мережі Tor, може бути, що Ваш інтернет-провайдер (ISP) або інша організація блокує Tor.&#160; Часто можна обійти цю проблему за допомогою Tor мостів, що є приватними трансляторами, які важче заблокувати.">
-<!ENTITY torsettings.bridgeHelp1B "Ви можете використати заздалегідь визначений перелік адрес мостів або можете отримати і ввести набір мостів вручну.">
-<!ENTITY torsettings.bridgeHelp2Heading "Через Веб">
-<!ENTITY torsettings.bridgeHelp2 "Відвідайте сторінку https://bridges.torproject.org">
-<!ENTITY torsettings.bridgeHelp3Heading "Через автовідповідач електронної пошти">
-<!ENTITY torsettings.bridgeHelp3.emailDesc "Надішліть повідомлення на адресу bridges@torproject.org із рядком &quot;get bridges&quot; у тілі повідомлення.&#160; Проте, для того, щоб ускладнити визначення великої кількості адрес мостів зловмисниками, необхідно відправити цей запит від поштової скриньки одного з наступних постачальників (перераховано у порядку пріоритетності):">
-<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com або https://mail.yahoo.com">
-<!ENTITY torsettings.bridgeHelp4Heading "Через допомогу">
-<!ENTITY torsettings.bridgeHelp4 "У крайньому випадку, Ви можете отримати адресу мосту, відправивши ввічливе повідомлення на адресу  help@rt.torproject.org.&#160; Зверніть увагу на те, що кожен запит обробляється людиною.">
+<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Будь ласка, зачекайте, поки ми підключаємося до мережі Tor.&#160; Це може зайняти кілька хвилин.">
+<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

@@ -1,4 +1,7 @@
 <!ENTITY torsettings.dialog.title "Postavke Tor mreže">
+<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Jezik Tor Browsera">
@@ -6,32 +9,10 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torsettings.prompt "Prije nego se spojite na Tor mrežu, trebate dati informacije o
-internetskoj vezi ovog računala.">
-
-<!ENTITY torSettings.yes "Da">
-<!ENTITY torSettings.no "Ne">
-
-<!ENTITY torSettings.firstQuestion "Koje od sljedećeg najbolje opisuje Vašu situaciju?">
-<!ENTITY torSettings.configurePrompt1 "Veza ovog računala s Internetom je cenzurirana ili iza proxya.">
-<!ENTITY torSettings.configurePrompt2 "Trebam konfigurirati postavke mosta ili lokalnog proxya prije nego se spojim na Tor&#160;mrežu.">
+<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Podesi">
-<!ENTITY torSettings.connectPrompt2 "Želim direktnu vezu s Tor mrežom.">
-<!ENTITY torSettings.connectPrompt3 "Ovo će raditi u većini slučajeva.">
 <!ENTITY torSettings.connect "Spoji">
-
-<!ENTITY torSettings.proxyPageTitle "Konfiguracija lokalnog proxya">
-<!ENTITY torSettings.proxyQuestion "Treba li ovo računalo koristiti lokalni proxy da pristupi Internetu?">
-<!-- see https://www.torproject.org/docs/proxychain.html.en -->
-<!ENTITY torSettings.proxyExplanation1 "U većini slučaja lokalni proxy nije potreban, ali može biti kad se spajate kroz mrežu tvrtke, škole ili fakulteta.">
-<!ENTITY torSettings.proxyExplanation2 "Ako niste sigurni kako odgovoriti na ovo pitanje, pogledajte Internet postavke u drugom pregledniku ili provjerite mrežne postavke Vašeg sustava kako bi vidjeli da li je potreban lokalni proxy.">
-<!ENTITY torSettings.enterProxy "Unesite postavke proxya.">
-<!ENTITY torSettings.bridgePageTitle "Konfiguracija Tor mostova">
-<!ENTITY torSettings.bridgeQuestion "Blokira li Vaš davetelj Internet usluge (ISP) ili drugačije cenzurira veze
-s Tor mrežom?">
-<!ENTITY torSettings.bridgeExplanation1 "Ako niste sigurni kako odgovoriti na ovo pitanje, odaberite Ne (ako se ne možete spojiti na Tor mrežu bez mosta, možete kasnije dodati jedan).">
-<!ENTITY torSettings.bridgeExplanation2 "Ako odaberete Da, od Vas će se tražiti da konfigurirate Tor mostove, koji su nepopisani releji koji otežavaju blokiranje veza na Tor mrežu.">
-<!ENTITY torSettings.bridgeSettingsPrompt "Možete koristiti osigurani set adresa mostova ili možete unijeti vlasiti set mostova.">
 
 <!-- Other: -->
 
@@ -44,8 +25,9 @@ s Tor mrežom?">
 
 <!ENTITY torsettings.optional "Opcionalno">
 
-<!ENTITY torsettings.useProxy.checkbox "Ovo računalo treba koristiti lokalni proxy za pristup Internetu.">
+<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!ENTITY torsettings.useProxy.type "Tip proxya:">
+<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "Adresa:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adresa ili hostname">
 <!ENTITY torsettings.useProxy.port "Port:">
@@ -56,25 +38,21 @@ s Tor mrežom?">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Ovo računalo je iza vatrozida koji dopušta spajanje samo na određene portove">
 <!ENTITY torsettings.firewall.allowedPorts "Dozvoljeni portovi:">
-<!ENTITY torsettings.useBridges.checkbox "Moj pružatelj internetskih usluga (ISP) blokira veze prema Tor mreži">
-<!ENTITY torsettings.useBridges.default "Spoji se s osiguranim mostovima">
-<!ENTITY torsettings.useBridges.note "Svaka vrsta mosta koristi drugačiju metodu kako bi izbjegla cenzuru.&amp;#160: Ako jedan most ne radi, probajte koristiti drugi.">
-<!ENTITY torsettings.useBridges.type "Tip transporta:">
-<!ENTITY torsettings.useBridges.custom "Unesi vlastite mostove">
-<!ENTITY torsettings.useBridges.label "Unesite jedan ili više mostova (jedan po retku).">
-<!ENTITY torsettings.useBridges.placeholder "unesite adresa:port">
+<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
+<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
 <!ENTITY torsettings.copyLog "Kopiraj Tor zapisnik u međuspremnik">
+
+<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+
 <!ENTITY torsettings.bridgeHelpTitle "Pomoć za releje mostove">
-<!ENTITY torsettings.bridgeHelp1 "Ako se ne možete spojiti na Tor mrežu, to može biti zato što Vaš pružatelj Internet usluge (ISP) ili druga agencija blokira Tor.&#160; Najčešće možete zaobići ovaj problem koristeći Tor mostove, koji su neizlistani releji koje je teže blokirati.">
-<!ENTITY torsettings.bridgeHelp1B "Možete koristiti unaprijed konfigurirane setove adresa mostova ili možete dobiti prilagođene setove korištenjem jedne od ovih metoda:">
-<!ENTITY torsettings.bridgeHelp2Heading "Kroz web">
-<!ENTITY torsettings.bridgeHelp2 "Koristite web preglednik kako bi posjetili https://bridges.torproject.org">
-<!ENTITY torsettings.bridgeHelp3Heading "Kroz email Autoresponder">
-<!ENTITY torsettings.bridgeHelp3.emailDesc "Pošaljite email na bridges@torproject.org tako što će te u poruku napisati samo 'get bridges'.&#160; Kako bilo, da bi otežali napadaču da nauči puno adresa mostova, morate poslati taj zahtjev koristeći jednog od sljedećih davatelja email usluge (poredano po preferabilnosti):">
-<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com ili https://mail.yahoo.com">
-<!ENTITY torsettings.bridgeHelp4Heading "Pomoću Help Deska">
-<!ENTITY torsettings.bridgeHelp4 "Na kraju, možete zatražiti adrese mostova tako što će te poslati pristojan email na help@rt.torproject.org.&#160; Imajte na umu da će na svaki zahtjev morati odgovoriti osoba.">
+<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Molimo pričekajte dok ne uspostavimo vezu s Tor mrežom.&#160; To bi moglo potrajati nekoliko minuta.">
+<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

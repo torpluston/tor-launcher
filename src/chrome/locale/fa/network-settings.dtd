@@ -1,4 +1,7 @@
 <!ENTITY torsettings.dialog.title "تنظیمات شبکه تور">
+<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "زبان مرورگر تور">
@@ -6,30 +9,10 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torsettings.prompt "قبل از اتصال به شبکه تور، باید اطلاعاتی از نحوه اتصال این کامپیوتر به اینترنت فراهم کنید.">
-
-<!ENTITY torSettings.yes "بله">
-<!ENTITY torSettings.no "نه">
-
-<!ENTITY torSettings.firstQuestion "کدام یک از موارد زیر وضعیت شما را بهتر بیان می‌کند؟">
-<!ENTITY torSettings.configurePrompt1 "اتصال به اینترنت این کامپیوتر یا فیلترینگ شدید دارد و یا پراکسی دارد.">
-<!ENTITY torSettings.configurePrompt2 "نیاز به تنظیم bridge یا پروکسی داخلی پیش از ارتباط با شبکه تٌر&#160; دارم.">
+<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "پیکربندی">
-<!ENTITY torSettings.connectPrompt2 "می خواهم اتصال مستقیم با شبکه تٌر برقرار کنم.">
-<!ENTITY torSettings.connectPrompt3 "این در بیشتر مواقع کار خواهد کرد.">
 <!ENTITY torSettings.connect "اتصال">
-
-<!ENTITY torSettings.proxyPageTitle "پیکربندی پراکسی محلی">
-<!ENTITY torSettings.proxyQuestion "آیا این کامپیوتر نیاز به استفاده از یک پروکسی محلی برای دسترسی به اینترنت دارد؟">
-<!-- see https://www.torproject.org/docs/proxychain.html.en -->
-<!ENTITY torSettings.proxyExplanation1 "در بیشتر موارد نیازی به پروکسی محلی نمی باشد. با این حال ممکن است برای اتصال از طریق شبکه شرکت، مدرسه، یا دانشگاه مورد نیاز باشد.">
-<!ENTITY torSettings.proxyExplanation2 "اگر مطمئن نیستید چگونه به این سوال پاسخ دهید، به تنظیمات اینترنت خود در مرورگر دیگری و یا تنظیمات شبکه کامپیوتر خود رجوع کنید تا ببینید آیا به پروکسی محلی نیاز دارید یا خیر.">
-<!ENTITY torSettings.enterProxy "تنظیمات پراکسی را وارد کنید.">
-<!ENTITY torSettings.bridgePageTitle "پیکربندی پل تور">
-<!ENTITY torSettings.bridgeQuestion "آیا شرکتی که از آن اینترنت گرفته اید (ISP)، دسترسی به شبکه تور را فیلتر، سانسور و یا مسدود می کند؟">
-<!ENTITY torSettings.bridgeExplanation1 "اگر مطمئن نیستید چگونه به این سوال پاسخ دهید، گزینه 'نه' را انتخاب کنید (در صورتی که نتوانستید بدون استفاده از یک bridge به شبکه تٌر متصل شویدِ، می توانید در هر زمان یک bridge اضافه کنید).">
-<!ENTITY torSettings.bridgeExplanation2 "در صورتی که 'بله' را انتخاب کنید، از شما درخواست خواهد شد که bridge های تٌر را تنظیم کنید. bridge ها رله هایی هستند که در هیچ کجا لیست نشده و به همین جهت مسدود کردن ارتباط با شبکه تٌر را سخت تر می کنند.">
-<!ENTITY torSettings.bridgeSettingsPrompt "شما می‌توانید از مجموعه‌ای از پل‌های آماده و یا پل‌های شخصی خودتان استفاده کنید.">
 
 <!-- Other: -->
 
@@ -42,8 +25,9 @@
 
 <!ENTITY torsettings.optional "اختیاری">
 
-<!ENTITY torsettings.useProxy.checkbox "این کامپیوتر نیاز به استفاده از یک پروکسی محلی برای دسترسی به اینترنت دارد">
+<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!ENTITY torsettings.useProxy.type "نوع پراکسی:">
+<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "آدرس:">
 <!ENTITY torsettings.useProxy.address.placeholder "آدرس آی‌پی یا نام میزبان">
 <!ENTITY torsettings.useProxy.port "پورت:">
@@ -54,26 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "به نظر می رسد شبکه ارتباطی شما به اینترنت، از یک فایروال استفاده می کند. یعنی فقط اجازه اتصال از یک سری درگاه های به خصوص را می دهد.">
 <!ENTITY torsettings.firewall.allowedPorts "پورت های مجاز:">
-<!ENTITY torsettings.useBridges.checkbox "‫سرویس دهنده اینترنت (ISP) من اتصال به شبکه تور را مسدود می‌کند.">
-<!ENTITY torsettings.useBridges.default "اتصال از طریق پل‌های انتخاب شده">
-<!ENTITY torsettings.useBridges.note "هر یک از انواع bridge از روشی متفاوت برای دورزدن سانسور اینترنت استفاده می کنند.&#160; اگر یکی از bridge ها برای شما کار نکرد، bridge دیگری را انتخاب کنید و دوباره سعی کنید.">
-<!ENTITY torsettings.useBridges.type "نوع انتقال:">
-<!ENTITY torsettings.useBridges.custom "پل‌های شخصی را وارد کنید">
-<!ENTITY torsettings.useBridges.label "یک یا چند پل ارتباطی را وارد نمایید. (در هر خط یکی)">
-<!ENTITY torsettings.useBridges.placeholder "آدرس آی‌پی:پورت را وارد کنید">
+<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
+<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
 <!ENTITY torsettings.copyLog "کپی گزارش وقایع تور">
+
+<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+
 <!ENTITY torsettings.bridgeHelpTitle "کمک برای پل ارتباطی">
-<!ENTITY torsettings.bridgeHelp1 "اگر نمی توانید به شبکه تور متصل شوید، ممکن است به این دلیل باشد که شرکت ارایه کننده اینترنت شما(ISP) و یا سازمان های دیگر شبکه تور را بسته اند.&#160;
-غالباً می توانید این محدودیت را با استفاده از «پل» های تور دور بزنید. پل ها مسیرهای اضافی دور زدن فیلتر هستند که لیست آن در دسترس نیست و فیلتر کردن آن ها بسیار مشکل است.">
-<!ENTITY torsettings.bridgeHelp1B "شما می توانید از مجموعه فراهم شده و از پیش تنظیم شده آدرسهای bridge ها استفاده کنید و یا می توانید یک مجموعه آدرس سفارشی با استفاده از یکی از این روشهای تهیه کنید:">
-<!ENTITY torsettings.bridgeHelp2Heading "از طریق اینترنت">
-<!ENTITY torsettings.bridgeHelp2 "با استفاده از یک مرورگر به آدرس https://bridges.torproject.org بروید.">
-<!ENTITY torsettings.bridgeHelp3Heading "از طریق آدرس ایمیل پاسخگوی خودکار">
-<!ENTITY torsettings.bridgeHelp3.emailDesc "یک ایمیل حاوی عبارت 'get bridges' به آدرس bridges@torproject.org ارسال کنید.&#160; هر چند ، برای اینکه بتوانیم یادگیری آدرس بسیاری از پل‌ها را برای مهاجم سخت‌تر کنیم ، می‌بایست این درخواست را از یکی از سرویس دهنده‌های ایمیل زیر بفرستید ( ذکر شده به ترتیب اولویت ) :">
-<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, یا https://mail.yahoo.com">
-<!ENTITY torsettings.bridgeHelp4Heading "از طریق واحد کمک رسانی">
-<!ENTITY torsettings.bridgeHelp4 "اگر از طریق هیچ کدام از راه حل های فوق به نتیجه نرسیدید، یک درخواست مودبانه به آدرس help@rt.torproject.org ارسال کنید.&#160; در نظر داشته باشید که یک نفر باید ایمیل شما را بخواند و به آن پاسخ دهد. پس صبور باشید.">
+<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "لطفا صبر کنید. در حال برقراری ارتباط با شبکه تٌر.&amp;160; این پروسه ممکن است چند دقیقه به طول بینجامد.">
+<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

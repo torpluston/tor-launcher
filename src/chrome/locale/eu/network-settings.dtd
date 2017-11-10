@@ -1,4 +1,7 @@
 <!ENTITY torsettings.dialog.title "Tor sare ezarpenak">
+<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Tor nabigatzailearen hizkuntza">
@@ -6,30 +9,10 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torsettings.prompt "Tor sarera konektatu baino lehen, ordenagailu honen Interneteko konexioari buruzko informazioa eman behar duzu.">
-
-<!ENTITY torSettings.yes "Bai">
-<!ENTITY torSettings.no "Ez">
-
-<!ENTITY torSettings.firstQuestion "Hurrengoetako zeinek deskribatzen du zure egoera hobekien?">
-<!ENTITY torSettings.configurePrompt1 "Ordenagailu honen Interneteko konexioa zentsuratuta dago edo proxy batetik igarotzen da.">
-<!ENTITY torSettings.configurePrompt2 "Zubi edo proxy lokalaren ezarpenak konfiguratu behar ditut Tor sarera konektatu baino lehen.">
+<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Konfiguratu">
-<!ENTITY torSettings.connectPrompt2 "Tor sarera zuzenean konektatu nahiko nuke.">
-<!ENTITY torSettings.connectPrompt3 "Hau egoera gehienetan funtzionatuko du.">
 <!ENTITY torSettings.connect "Konektatu">
-
-<!ENTITY torSettings.proxyPageTitle "Proxy lokalaren konfigurazioa">
-<!ENTITY torSettings.proxyQuestion "Ordenagailu honek Internetera sartzeko proxy lokalen bat erabili behar al du?">
-<!-- see https://www.torproject.org/docs/proxychain.html.en -->
-<!ENTITY torSettings.proxyExplanation1 "In most cases a local proxy is not needed, but it may be required when connecting through a company, school, or university network.">
-<!ENTITY torSettings.proxyExplanation2 "If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a local proxy is needed.">
-<!ENTITY torSettings.enterProxy "Sartu proxy ezarpenak.">
-<!ENTITY torSettings.bridgePageTitle "Tor Bridges Configuration">
-<!ENTITY torSettings.bridgeQuestion "Zure Interneteko Zerbitzu Hornitzaileak (ISP ingeleraz) Tor sarera doazen konexioak blokeatu edo zentsuratu egiten ditu?">
-<!ENTITY torSettings.bridgeExplanation1 "If you are not sure how to answer this question, choose No (if you are unable to connect to the Tor network without a bridge, you can add one later).">
-<!ENTITY torSettings.bridgeExplanation2 "If you choose Yes, you will be asked to configure Tor Bridges, which are unlisted relays that make it more difficult to block connections to the Tor Network.">
-<!ENTITY torSettings.bridgeSettingsPrompt "Emandako zubi taldea erabili dezakezu edo zubi talde pertsonalizatua eskuratu eta sar dezakezu.">
 
 <!-- Other: -->
 
@@ -42,8 +25,9 @@
 
 <!ENTITY torsettings.optional "Hautazkoa">
 
-<!ENTITY torsettings.useProxy.checkbox "Ordenagailu honek proxy lokal bat erabili behar du Internetera sartzeko">
+<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!ENTITY torsettings.useProxy.type "Proxy mota:">
+<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "Helbidea:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP helbide edo ostalari izena">
 <!ENTITY torsettings.useProxy.port "Ataka:">
@@ -54,25 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Ordenagailu honek ataka zehatz batzuetara bakarrik konektatzea baimentzen duen sueten baten zehar doa">
 <!ENTITY torsettings.firewall.allowedPorts "Baimendutako atakak:">
-<!ENTITY torsettings.useBridges.checkbox "Nire Internet Zerbitzu Hornitzaileak (ISP ingeleraz) Tor sarera konektatzea blokeatzen dit.">
-<!ENTITY torsettings.useBridges.default "Emandako zubiekin konektatu">
-<!ENTITY torsettings.useBridges.note "Each type of bridge uses a different method to avoid censorship.&#160; If one bridge does not work, try again using a different one.">
-<!ENTITY torsettings.useBridges.type "Garraio mota:">
-<!ENTITY torsettings.useBridges.custom "Sartu zubi pertsonalizatuak">
-<!ENTITY torsettings.useBridges.label "Sartu zubi errele bat edo gehiago (bat lerro bakoitzeko).">
-<!ENTITY torsettings.useBridges.placeholder "helbidea:ataka">
+<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
+<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
 <!ENTITY torsettings.copyLog "Kopiatu Tor erregistroa arbelera">
+
+<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+
 <!ENTITY torsettings.bridgeHelpTitle "Zubi errele laguntza">
-<!ENTITY torsettings.bridgeHelp1 "Tor sarera konektatu ezin bazara, baliteke zure Internet Zerbitzu Hornitzaileak (ISP ingeleraz) edo beste agentziaren batek Tor blokeatzen egotea.&#160; Askotan, arazo honen inguruan Tor zubiak, ezkutatuta dauden eta blokeatzeko zailagoak diren erreleak erabiliz lan egin dezakezu.">
-<!ENTITY torsettings.bridgeHelp1B "You may use the preconfigured, provided set of bridge addresses or you may obtain a custom set of addresses by using one of these methods:">
-<!ENTITY torsettings.bridgeHelp2Heading "Webean bidez">
-<!ENTITY torsettings.bridgeHelp2 "Erabili ezazu web nabigatzaile bat https://bridges.torproject.org bisitatzeko">
-<!ENTITY torsettings.bridgeHelp3Heading "Email erantzule automatikoaren bidez">
-<!ENTITY torsettings.bridgeHelp3.emailDesc "Bidali ezazu mezu bat bridges@torproject.org-era mezuaren gorputzean 'get bridges' esaldiarekin.&#160; Hala ere, erasotzaile batentzat zubi helbide asko ikastea zailago izan dadin, eskakizun hau hurrengo domeinuetako eposta helbide batetik bidali behar duzu (lehentasunaren arabera zerrendatuta):">
-<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com, or https://mail.yahoo.com">
-<!ENTITY torsettings.bridgeHelp4Heading "Laguntza mahaiaren bidez">
-<!ENTITY torsettings.bridgeHelp4 "Azken aukera bezala, zubi erreleak eska ditzakezu mezu adeitsu bat help@rt.torproject.org-era bidaliz.&#160; Mesedez, kontuan izan pertsona batek eskarea bakoitza erantzun beharko duela.">
+<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Mesedez itxaron Tor sarera konexioa ezartzen dugun bitartean.&#160; Honek minutu batzuk har litzake.">
+<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">

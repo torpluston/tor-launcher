@@ -1,4 +1,7 @@
 <!ENTITY torsettings.dialog.title "Configuración de la red Tor">
+<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Idioma del Navegador Tor">
@@ -6,30 +9,10 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torsettings.prompt "Antes de que se conecte a la red Tor, necesita proporcionar información sobre la conexión a Internet de este equipo.">
-
-<!ENTITY torSettings.yes "Si">
-<!ENTITY torSettings.no "No">
-
-<!ENTITY torSettings.firstQuestion "¿Cuál de las siguientes opciones describe mejor su situación?">
-<!ENTITY torSettings.configurePrompt1 "La conexión a Internet de este equipo está censurada o proxificada.">
-<!ENTITY torSettings.configurePrompt2 "Necesito configurar puentes de red o proxy local antes de conectar a la red Tor. ">
+<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Configurar">
-<!ENTITY torSettings.connectPrompt2 "Me gustaría conectar directamente a la red Tor.">
-<!ENTITY torSettings.connectPrompt3 "Esto funcionará en la mayoría de las situaciones.">
 <!ENTITY torSettings.connect "Conectar">
-
-<!ENTITY torSettings.proxyPageTitle "Configuración del proxy local">
-<!ENTITY torSettings.proxyQuestion "¿Necesita mi computadora utilizar un proxy local para acceder a Internet?">
-<!-- see https://www.torproject.org/docs/proxychain.html.en -->
-<!ENTITY torSettings.proxyExplanation1 "En la mayoría de los casos no se requiere un proxy (interpuesto) local, pero puede ser necesario al realizar una conexión a través de una red de empresa, de escuela, o universitaria. ">
-<!ENTITY torSettings.proxyExplanation2 "Si no estás seguro de cómo responder a esta pregunta mira la configuración de Internet en otro navegador o comprueba la configuración de red de tu sistema para ver si necesitas un proxy local.">
-<!ENTITY torSettings.enterProxy "Introduce los ajustes del proxy.">
-<!ENTITY torSettings.bridgePageTitle "Configuración de puentes de red Tor">
-<!ENTITY torSettings.bridgeQuestion "Su proveedor de servicios de Internet (ISP) bloquea o censura de alguna forma las conexiones hacia la red Tor?">
-<!ENTITY torSettings.bridgeExplanation1 "Si no estás seguro de cómo responder a esta pregunta elige No (si no puedes conectarte a la red Tor sin un puente de red o bridge, puedes añadir uno más adelante).">
-<!ENTITY torSettings.bridgeExplanation2 "Si eliges Sí se te pedirá que configures los puentes de red (bridges) de Tor, que son repetidores no listados que dificultan el bloqueo de conexiones hacia la red Tor.">
-<!ENTITY torSettings.bridgeSettingsPrompt "Puedes utilizar el grupo de puentes de red (bridges) proporcionado, o puedes obtener e introducir un grupo de puentes propio.">
 
 <!-- Other: -->
 
@@ -42,8 +25,9 @@
 
 <!ENTITY torsettings.optional "Opcional">
 
-<!ENTITY torsettings.useProxy.checkbox "Esta computadora necesita utilizar un proxy local para acceder a Internet">
+<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!ENTITY torsettings.useProxy.type "Tipo de proxy:">
+<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "Dirección:">
 <!ENTITY torsettings.useProxy.address.placeholder "Dirección IP o nombre de máquina (host)">
 <!ENTITY torsettings.useProxy.port "Puerto:">
@@ -54,26 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Esta computadora va a través de un cortafuegos(firewall) que sólo permite conexiones a ciertos puertos">
 <!ENTITY torsettings.firewall.allowedPorts "Puertos permitidos:">
-<!ENTITY torsettings.useBridges.checkbox "Mi Proveedor de Servicios de Internet (ISP) bloquea las conexiones a la red Tor">
-<!ENTITY torsettings.useBridges.default "Conectar con los puentes proporcionados">
-<!ENTITY torsettings.useBridges.note "Cada tipo de puente de red usa un método diferente para evitar la censura.&#160; Si un puente no funciona, inténtalo de nuevo utilizando otro.">
-<!ENTITY torsettings.useBridges.type "Tipo de transporte:">
-<!ENTITY torsettings.useBridges.custom "Introducir puentes personalizados">
-<!ENTITY torsettings.useBridges.label "Introduzca uno o más repetidores puente(uno por línea).">
-<!ENTITY torsettings.useBridges.placeholder "introduzca dirección:puerto">
+<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
+<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
 <!ENTITY torsettings.copyLog "Copiar el registro de mensajes(log) de Tor al portapapeles">
+
+<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+
 <!ENTITY torsettings.bridgeHelpTitle "Ayuda de repetidores puente ('bridge relays')">
-<!ENTITY torsettings.bridgeHelp1 "Si no puede conectarse a la red Tor, podría ser que su proveedor de servicios de Internet (ISP) u otra agencia, esté bloqueando Tor.&#160; A menudo, puede evitar este problema usando puentes ('bridges') de Tor, que son repetidores ('relays') de salida de la red Tor que no son públicos, y es más difícil que sean bloqueados.">
-<!ENTITY torsettings.bridgeHelp1B "Puedes usar grupo de direcciones de puentes de red proporcionado aquí, o puedes obtener un nuevo grupo de direcciones usando uno de estos métodos:">
-<!ENTITY torsettings.bridgeHelp2Heading "Mediante la web">
-<!ENTITY torsettings.bridgeHelp2 "Use un navegador web para visitar https://bridges.torproject.org">
-<!ENTITY torsettings.bridgeHelp3Heading "Mediante el correo electrónico automático">
-<!ENTITY torsettings.bridgeHelp3.emailDesc "Envía un correo electrónico a bridges@torproject.org únicamente con la línea 'get bridges' en el cuerpo del mensaje.&#160; Para que sea más difícil para un atacante adquirir muchas direcciones de puentes, tienes que enviar esta petición desde uno de los siguientes proveedores de correo electrónico (listados en orden de preferencia):">
-<!ENTITY torsettings.bridgeHelp3.emailList "https://www.riseup.net, https://mail.google.com o https://mail.yahoo.com">
-<!ENTITY torsettings.bridgeHelp4Heading "Mediante el soporte de usuario">
-<!ENTITY torsettings.bridgeHelp4 "Como último recurso, puedes pedir direcciones de repetidores puente enviando un mensaje de correo amable a help@rt.torproject.org .&#160;
-Por favor ten en cuenta que es una persona la que tendrá que responder a cada petición.">
+<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Por favor, espere a que establezcamos una conexión a la red Tor.&#160; Esto puede llevar varios minutos.">
+<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
