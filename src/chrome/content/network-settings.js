@@ -596,6 +596,13 @@ function updateBootstrapProgress(aStatusObj)
   if (!isShowingProgress())
     return;
 
+  // Ignore status updates if the Reconfigure button is showing because this
+  // means that we are currently displaying an error message, and we do not
+  // want the error to be replaced by a generic progress message.
+  let progressContent = document.getElementById("progressContent");
+  if (progressContent && progressContent.hasAttribute("isShowingReconfigure"))
+    return;
+
   let labelText =
             TorLauncherUtil.getLocalizedBootstrapStatus(aStatusObj, "TAG");
   let percentComplete = (aStatusObj.PROGRESS) ? aStatusObj.PROGRESS : 0;
