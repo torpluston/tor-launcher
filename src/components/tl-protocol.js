@@ -1351,7 +1351,7 @@ TorProtocolService.prototype =
 
   _read_authentication_cookie: function(aPath)
   {
-    var file = Cc['@mozilla.org/file/local;1'].createInstance(Ci.nsILocalFile);
+    var file = Cc['@mozilla.org/file/local;1'].createInstance(Ci.nsIFile);
     file.initWithPath(aPath);
     var fileStream = Cc["@mozilla.org/network/file-input-stream;1"]
                        .createInstance(Ci.nsIFileInputStream);
