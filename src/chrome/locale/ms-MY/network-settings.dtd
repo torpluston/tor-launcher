@@ -1,58 +1,58 @@
 <!ENTITY torsettings.dialog.title "Tetapan Rangkaian Tor">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
-<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.default "Sambung denganTor">
+<!ENTITY torsettings.wizard.title.configure "Tetapan Rangkaian Tor">
+<!ENTITY torsettings.wizard.title.connecting "Menjalinkan Sambungan">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Tor Browser Language">
-<!ENTITY torlauncher.localePicker.prompt "Please select a language.">
+<!ENTITY torlauncher.localePicker.title "Bahasa Pelayar Tor">
+<!ENTITY torlauncher.localePicker.prompt "Sila pilih satu bahasa.">
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
-<!ENTITY torSettings.configure "Konfigurasi">
-<!ENTITY torSettings.connect "Menyambung">
+<!ENTITY torSettings.connectPrompt "Klik &quot;Sambung&quot; untuk bersambung dengan Tor.">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.configure "Konfigur">
+<!ENTITY torSettings.connect "Sambung">
 
 <!-- Other: -->
 
 <!ENTITY torsettings.startingTor "Menunggu Tor untuk dimulakan...">
-<!ENTITY torsettings.restartTor "Restart Tor">
-<!ENTITY torsettings.reconfigTor "Reconfigure">
+<!ENTITY torsettings.restartTor "Mula Semula Tor">
+<!ENTITY torsettings.reconfigTor "Konfigur Semula">
 
-<!ENTITY torsettings.discardSettings.prompt "You have configured Tor bridges or you have entered local proxy settings.&#160; To make a direct connection to the Tor network, these settings must be removed.">
-<!ENTITY torsettings.discardSettings.proceed "Remove Settings and Connect">
+<!ENTITY torsettings.discardSettings.prompt "Anda telah mengkonfigur titi Tor atau telah memasukkan tetapan proksi setempat.&#160; Untuk membuat sambungan terus dengan rangkaian Tor. tetapan ini mesti dibuang.">
+<!ENTITY torsettings.discardSettings.proceed "Buang Tetapan dan Sambung">
 
-<!ENTITY torsettings.optional "Optional">
+<!ENTITY torsettings.optional "Pilihan">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
+<!ENTITY torsettings.useProxy.checkbox "Saya guna proksi untuk bersambung dengan Internet">
 <!ENTITY torsettings.useProxy.type "Jenis Proksi:">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
+<!ENTITY torsettings.useProxy.type.placeholder "pilih sejenis proksi">
 <!ENTITY torsettings.useProxy.address "Alamat:">
-<!ENTITY torsettings.useProxy.address.placeholder "Alamat IP atau nama host">
+<!ENTITY torsettings.useProxy.address.placeholder "Alamat IP atau nama hos">
 <!ENTITY torsettings.useProxy.port "Port:">
-<!ENTITY torsettings.useProxy.username "Kata pengguna:">
-<!ENTITY torsettings.useProxy.password "Kata laluan:">
+<!ENTITY torsettings.useProxy.username "Nama Pengguna:">
+<!ENTITY torsettings.useProxy.password "Kata Laluan:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "Komputer ini melalui firewall yang hanya membenarkan sambungan ke port tertentu">
-<!ENTITY torsettings.firewall.allowedPorts "Port yang dibenarkan:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.firewall.checkbox "Komputer ini melalui tembok api yang hanya membolehkan sambungan ke port tertentu">
+<!ENTITY torsettings.firewall.allowedPorts "Port Dibenarkan:">
+<!ENTITY torsettings.useBridges.checkbox "Tor dilarang penggunaannya di negara saya">
+<!ENTITY torsettings.useBridges.default "Pilih satu titi terbina-dalam">
+<!ENTITY torsettings.useBridges.default.placeholder "pilih satu titi">
+<!ENTITY torsettings.useBridges.custom "Sediakan satu titi yang saya tahu">
+<!ENTITY torsettings.useBridges.label "Masukkan maklumat titi dari sumber yang dipercayai.">
+<!ENTITY torsettings.useBridges.placeholder "taip alamat:port (satu per baris)">
 
-<!ENTITY torsettings.copyLog "Salin log Tor ke clipboard">
+<!ENTITY torsettings.copyLog "Salin log Tor ke Papan Keratan">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+<!ENTITY torsettings.proxyHelpTitle "Bantuan Proksi">
+<!ENTITY torsettings.proxyHelp1 "Satu proksi setempat diperlukan semasa menyambung dengan rangkaian syarikat, sekolah, atau universiti.&#160;Jika anda tidak pasti bagaimana untuk menjawab soalan ini, lihat tetapan Internet dalam pelayar yang lain atau periksa tetapan rangkaian sistem anda untuk melihat sama ada proksi diperlukan.">
 
-<!ENTITY torsettings.bridgeHelpTitle "Bantuan Bridge Relay">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelpTitle "Bantuan Geganti Titi">
+<!ENTITY torsettings.bridgeHelp1 "Titi adalah geganti tidak tersenarai yang menjadikannya lebih sukar menyekat sambungan dengan Rangkaian Tor.&#160; Setiap jenis titi menggunakan kaedah berbeza untuk menghindari sekatan.&#160; Obf menjadikan trafik anda seakan-akan hingar rawak, dan paling teruk menjadikan trafik anda kelihatan mahu bersambung dengan perkhidmatan lain selain dari Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Oleh kerana terdapat beberapa negara menyekat Tor, sesetengah titi berfungsi di negara tertentu tetapi tidak pada negar lain.&#160; Jika anda tidak pasti titi yang manakah sesuai untuk negara anda, sila lawati torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torprogress.pleaseWait "Tunggu sebentar sementara kami menjalinkan sambungan dengan rangkaian Tor.&#160; Ia mengambil masa beberapa minit.">

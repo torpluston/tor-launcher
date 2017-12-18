@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "Tor 网络设置">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
-<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.default "已连接到 Tor 网络">
+<!ENTITY torsettings.wizard.title.configure "Tor 网络设置">
+<!ENTITY torsettings.wizard.title.connecting "正在建立连接">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Tor Browser 语言">
@@ -9,8 +9,8 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.connectPrompt "请点击“连接”以连接至 Tor 网络。">
+<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "配置">
 <!ENTITY torSettings.connect "连接">
 
@@ -25,9 +25,9 @@
 
 <!ENTITY torsettings.optional "可选">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
+<!ENTITY torsettings.useProxy.checkbox "使用代理访问互联网">
 <!ENTITY torsettings.useProxy.type "代理类型：">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
+<!ENTITY torsettings.useProxy.type.placeholder "选择代理类型">
 <!ENTITY torsettings.useProxy.address "地址：">
 <!ENTITY torsettings.useProxy.address.placeholder "IP 地址或主机名">
 <!ENTITY torsettings.useProxy.port "端口：">
@@ -38,21 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "该计算机的防火墙仅允许特定端口的互联网连接">
 <!ENTITY torsettings.firewall.allowedPorts "允许的端口：">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.useBridges.checkbox "我所在国家对 Tor 进行了封锁">
+<!ENTITY torsettings.useBridges.default "选择内置网桥">
+<!ENTITY torsettings.useBridges.default.placeholder "选择网桥">
+<!ENTITY torsettings.useBridges.custom "输入获取的网桥">
+<!ENTITY torsettings.useBridges.label "输入可信来源提供的网桥：">
+<!ENTITY torsettings.useBridges.placeholder "输入地址:端口（每行一个）">
 
 <!ENTITY torsettings.copyLog "点击复制 Tor 日志">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+<!ENTITY torsettings.proxyHelpTitle "代理帮助">
+<!ENTITY torsettings.proxyHelp1 "从公司或学校网络连接互联网时，有时需使用本地代理。&#160;如果不确定如何回答该问题，请查看其他浏览器的互联网设置，或者查看系统网络设置是否需要代理。">
 
 <!ENTITY torsettings.bridgeHelpTitle "网桥中继帮助">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelp1 "网桥指未公开的 Tor 节点，通过这种节点连接 Tor 网络时更难以封锁。每种网桥使用不同的方式来突破审查。obfs 类型的网桥使通信看起来像随机信号，而 meek 网桥看起来像连接到相应的服务而不是 Tor 网络。">
+<!ENTITY torsettings.bridgeHelp2 "由于封锁方式不同，某种网桥在一些国家可用，但其他国家可能不可用。如果无法确定您应该使用哪种网桥，请访问 torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torprogress.pleaseWait "正在连接 Tor 网络，可能需几分钟，请稍等。">

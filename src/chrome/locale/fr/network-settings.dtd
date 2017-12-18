@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "Paramètres du réseau Tor">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
-<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.default "Se connecter à Tor">
+<!ENTITY torsettings.wizard.title.configure "Paramètres du réseau Tor">
+<!ENTITY torsettings.wizard.title.connecting "Établissement d’une connexion">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Langue du navigateur Tor">
@@ -9,8 +9,8 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.connectPrompt "Cliquez sur « Se connecter » pour vous connecter à Tor.">
+<!ENTITY torSettings.configurePrompt "Cliquez sur « Configurer » pour ajuster les paramètres du réseau si vous êtes dans un pays qui censure Tor (tel que la Chine, l’Iran, la Turquie) ou si vous vous connectez d’un réseau privé qui exige un mandataire.">
 <!ENTITY torSettings.configure "Configurer">
 <!ENTITY torSettings.connect "Se connecter">
 
@@ -20,14 +20,14 @@
 <!ENTITY torsettings.restartTor "Redémarrer Tor">
 <!ENTITY torsettings.reconfigTor "Reconfigurer">
 
-<!ENTITY torsettings.discardSettings.prompt "Vous avez configuré des ponts Tor (Bridges) ou vous avez saisi des paramètres de mandataire local.&#160; Pour établir une connexion directe vers le réseau Tor, ces paramètres doivent être supprimés.">
+<!ENTITY torsettings.discardSettings.prompt "Vous avez configuré des ponts Tor ou vous avez saisi des paramètres de mandataire local.&#160; Pour établir une connexion directe vers le réseau Tor, ces paramètres doivent être supprimés.">
 <!ENTITY torsettings.discardSettings.proceed "Supprimer les paramètres et se connecter">
 
 <!ENTITY torsettings.optional "Facultatif">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
+<!ENTITY torsettings.useProxy.checkbox "J’utilise un mandataire pour accéder à Internet">
 <!ENTITY torsettings.useProxy.type "Type de mandataire :">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
+<!ENTITY torsettings.useProxy.type.placeholder "sélectionner un type de mandataire">
 <!ENTITY torsettings.useProxy.address "Adresse :">
 <!ENTITY torsettings.useProxy.address.placeholder "Adresse IP ou nom d’hôte">
 <!ENTITY torsettings.useProxy.port "Port :">
@@ -38,21 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Cet ordinateur passe par un pare-feu qui n’autorise que les connexions à certains ports">
 <!ENTITY torsettings.firewall.allowedPorts "Ports autorisés :">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.useBridges.checkbox "Tor est censuré dans mon pays">
+<!ENTITY torsettings.useBridges.default "Sélectionner un pont intégré">
+<!ENTITY torsettings.useBridges.default.placeholder "sélectionner un pont">
+<!ENTITY torsettings.useBridges.custom "Fournir un pont que je connais">
+<!ENTITY torsettings.useBridges.label "Saisir des informations de pont provenant d’une source fiable">
+<!ENTITY torsettings.useBridges.placeholder "type adresse:port (un par ligne)">
 
 <!ENTITY torsettings.copyLog "Copier le journal de Tor dans le presse-papiers">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+<!ENTITY torsettings.proxyHelpTitle "Aide sur les mandataires">
+<!ENTITY torsettings.proxyHelp1 "Un mandataire local est requis lors d’une connexion par un réseau d’entreprise, d’école ou d’université.&#160;Si vous n’êtes pas certain de savoir comment répondre à cette question, vérifiez les paramètres Internet d’un autre navigateur ou les paramètres réseau de votre système pour voir si un mandataire est requis.">
 
-<!ENTITY torsettings.bridgeHelpTitle "Aide sur les relais-ponts ((Bridges Relays)">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelpTitle "Aide sur les relais-ponts">
+<!ENTITY torsettings.bridgeHelp1 "Les ponts sont des relais non référencés qui rendent les connexions au Tor réseau plus difficile à bloquer.&#160; Chaque type de pont utilise un moyen différent pour éviter la censure.&#160; Avec les ponts obfs, votre trafic ressemble à du bruit aléatoire et avec les ponts meek, il semble que votre trafic se connecte à ce service plutôt qu’à Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Dans la mesure où certains pays essaient de bloquer Tor, certains ponts fonctionnent dans certains pays, mais pas dans d’autres.&#160; Si vous ne savez pas quels ponts fonctionnent dans votre pays, visitez torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torprogress.pleaseWait "Veuillez patienter pendant que nous établissons une connexion vers le réseau Tor.&#160; Cela pourrait prendre plusieurs minutes.">

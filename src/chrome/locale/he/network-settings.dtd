@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "הגדרות רשת Tor">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
-<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.default "התחבר אל Tor">
+<!ENTITY torsettings.wizard.title.configure "הגדרות רשת Tor">
+<!ENTITY torsettings.wizard.title.connecting "מקים חיבור">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "שפת דפדפן Tor">
@@ -9,8 +9,8 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as China, Iran, Syria) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.connectPrompt "לחץ על “התחבר“ כדי להתחבר אל Tor.">
+<!ENTITY torSettings.configurePrompt "לחץ על “הגדר“ כדי להתאים הגדרות רשת אם אתה במדינה שמצנזרת את Tor (למשל מצרים, סין וטורקיה) או אם אתה מתחבר מרשת פרטית הדורשת ייפוי-כוח.">
 <!ENTITY torSettings.configure "הגדר">
 <!ENTITY torSettings.connect "התחבר">
 
@@ -25,9 +25,9 @@
 
 <!ENTITY torsettings.optional "רשותי">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
+<!ENTITY torsettings.useProxy.checkbox "אני משתמש בייפוי-כוח כדי להתחבר לאינטרנט">
 <!ENTITY torsettings.useProxy.type "סוג ייפוי-כוח:">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
+<!ENTITY torsettings.useProxy.type.placeholder "בחר סוג ייפוי-כוח">
 <!ENTITY torsettings.useProxy.address "כתובת:">
 <!ENTITY torsettings.useProxy.address.placeholder "כתובת IP או שם מארח">
 <!ENTITY torsettings.useProxy.port "פתחה:">
@@ -38,21 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "מחשב זה עובר דרך חומת אש המתירה חיבורים רק אל פתחות מסוימות">
 <!ENTITY torsettings.firewall.allowedPorts "פתחות מותרות:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.useBridges.checkbox "Tor מצונזר במדינה שלי">
+<!ENTITY torsettings.useBridges.default "בחר גשר מובנה">
+<!ENTITY torsettings.useBridges.default.placeholder "בחר גשר">
+<!ENTITY torsettings.useBridges.custom "סַפֵּק גשר שאני מכיר">
+<!ENTITY torsettings.useBridges.label "הכנס מידע גשר ממקור מהימן.">
+<!ENTITY torsettings.useBridges.placeholder "הכנס כתובת:פתחה (אחד לשורה)">
 
 <!ENTITY torsettings.copyLog "העתק את יומן Tor ללוח החיתוך">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+<!ENTITY torsettings.proxyHelpTitle "עזרת ייפוי-כוח">
+<!ENTITY torsettings.proxyHelp1 "ייפוי-כוח מקומי נדרש בעת התחברות דרך רשת של חברה, בית-ספר או אוניברסיטה.&#160;אם אינך בטוח כיצד לענות על שאלה זו, הבט בהגדרות האינטרנט בדפדפן אחר או בדוק בהגדרות הרשת של מערכתך כדי לראות האם ייפוי-כוח מקומי נחוץ.">
 
 <!ENTITY torsettings.bridgeHelpTitle "עזרת ממסרי גשר">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelp1 "גשרים הם ממסרים לא ברשימה אשר מקשים לחסום חיבורים אל רשת Tor.&#160; כל סוג של גשר משתמש בשיטה שונה כדי למנוע צינזור&#160; ה-obfs גורם לתעבורה שלך להיראות כרעש אקראי, וה-meek גורם לתעבורה שלך להיראות כאילו היא מתחברת אל שירות זה במקום אל Tor.">
+<!ENTITY torsettings.bridgeHelp2 "מפאת כיצד מדינות מסוימות מנסות לחסום את Tor, גשרים מסוימים עובדים במדינות מסוימות אבל לא באחרות.&#160; אם אינך בטוח לגבי אילו גשרים עובדים במדינתך, בקר ב-torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torprogress.pleaseWait "אנא המתן בזמן שאנחנו מקימים חיבור אל רשת Tor.&#160; זה עשוי לקחת מספר דקות.">
