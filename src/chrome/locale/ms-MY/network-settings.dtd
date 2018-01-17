@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "Klik &quot;Sambung&quot; untuk bersambung dengan Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.configurePrompt ".Klik &quot;Konfigur&quot; untuk laraskan tetapan rangkaian jika anda berada di negara yang melarang penggunaan Tor (seperti Mesir, China, Turki) atau jika anda menyambung dengan rangkaian persendirian yang memerlukan proksi">
 <!ENTITY torSettings.configure "Konfigur">
 <!ENTITY torSettings.connect "Sambung">
 

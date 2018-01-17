@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "洋蔥路由網路設定">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
-<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.default "連結 Tor">
+<!ENTITY torsettings.wizard.title.configure "Tor 網路設定">
+<!ENTITY torsettings.wizard.title.connecting "建立 Tor 連線">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "洋蔥路由瀏覽器之語言">
@@ -9,8 +9,8 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.connectPrompt "點擊&quot;連接&quot;來連上 Tor ">
+<!ENTITY torSettings.configurePrompt "如果您處於會監視tor網絡的國家（例如埃及，中國，土耳其）或者您位於私人網絡中，需要代理訪問互聯網。請點擊“配置”更改網絡設置。">
 <!ENTITY torSettings.configure "設定">
 <!ENTITY torSettings.connect "連接">
 
@@ -25,9 +25,9 @@
 
 <!ENTITY torsettings.optional "選用">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
+<!ENTITY torsettings.useProxy.checkbox "使用代理服務連線到網際網路">
 <!ENTITY torsettings.useProxy.type "代理伺服器類型：">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
+<!ENTITY torsettings.useProxy.type.placeholder "選擇代理伺服器類型">
 <!ENTITY torsettings.useProxy.address "位址：">
 <!ENTITY torsettings.useProxy.address.placeholder "IP 位址或主機名稱">
 <!ENTITY torsettings.useProxy.port "連接埠：">
@@ -38,21 +38,21 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "這台電腦通過某個只允許連接至特定連線埠的防火牆">
 <!ENTITY torsettings.firewall.allowedPorts "允許的連接埠：">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.useBridges.checkbox "我的國家中 Tor 受到審查">
+<!ENTITY torsettings.useBridges.default "選擇內建的橋接">
+<!ENTITY torsettings.useBridges.default.placeholder "選擇網橋">
+<!ENTITY torsettings.useBridges.custom "提供一個認識的橋接 ">
+<!ENTITY torsettings.useBridges.label "從信任的來源輸入橋接資訊">
+<!ENTITY torsettings.useBridges.placeholder "種類地址:端口 (一行一個)">
 
 <!ENTITY torsettings.copyLog "將洋蔥路由的訊息記錄複製到剪貼簿">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+<!ENTITY torsettings.proxyHelpTitle "代理協助">
+<!ENTITY torsettings.proxyHelp1 "當您通過公司，學校或者大學網絡進行連接時，您需要一個本地代理。如果您不確定如何回答這個問題，請參考其他瀏覽器的網絡設置或者系統網絡設置，來決定是否需要本地代理。">
 
 <!ENTITY torsettings.bridgeHelpTitle "橋接中繼器之說明">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelp1 "網橋是未位於列表的中繼，可以使得tor網絡更難被屏蔽。&#160;不同類別的網橋使用不同方法規避審查。.&#160; obfs使您的通訊類似隨機發出的雜音，meek使您的通訊看起來是訪問他們的服務而不是tor。">
+<!ENTITY torsettings.bridgeHelp2 "因為某些國家嘗試屏蔽tor，一些特定的網橋只能在特定的國家生效在其他地區則會失活。&#160;如果您不確定哪些網橋在您的國家生效，請訪問torproject.org/about/contact.html#support。">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torprogress.pleaseWait "請耐心等候，我們正在建立tor網絡。&#160;這個過程將會需要幾分鐘的時間。">

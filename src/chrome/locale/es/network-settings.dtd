@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "Pincha en &quot;Connect&quot; para conectar con Tor">
-<!ENTITY torSettings.configurePrompt "Pulse &quot;Configurar&quot; para ajustar la configuración de red si está en un país que censura Tor (como Egipto, China, Turquía) o si está conectando desde una red privada que requiere un proxy.">
+<!ENTITY torSettings.configurePrompt "Pulsa &quot;Configurar&quot; para ajustar la configuración de red si estás en un país que censura Tor (como Egipto, China, Turquía) o si estás conectando desde una red privada que requiera un proxy.">
 <!ENTITY torSettings.configure "Configurar">
 <!ENTITY torSettings.connect "Conectar">
 

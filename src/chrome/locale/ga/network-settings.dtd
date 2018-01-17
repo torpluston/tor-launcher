@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "Cliceáil “Ceangail” chun ceangal a bhunú le Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.configurePrompt "Cliceáil “Cumraigh” chun na socruithe líonra a athrú má tá tú i do chónaí i dtír a dhéanann cinsireacht ar Tor (mar shampla san Éigipt, sa tSín, nó sa Tuirc), nó má tá tú ag ceangal ó líonra príobháideach a úsáideann seachfhreastalaí.">
 <!ENTITY torSettings.configure "Cumraigh">
 <!ENTITY torSettings.connect "Ceangail">
 

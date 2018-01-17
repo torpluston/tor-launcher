@@ -55,4 +55,4 @@
 <!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torprogress.pleaseWait "กรุณรอระหว่างที่เรากำลังสร้างการเชื่อมต่อไปยังเครือข่าย Tor &#160; นี่อาจจะใช้เวลาสักสองสามนาที">

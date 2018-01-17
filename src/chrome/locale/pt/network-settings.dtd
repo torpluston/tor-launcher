@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "Configurações da Rede Tor">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
-<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.default "Ligar ao Tor">
+<!ENTITY torsettings.wizard.title.configure "Definições da Rede Tor">
+<!ENTITY torsettings.wizard.title.connecting "A Estabelecer a Ligação">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Idioma do Navegador Tor">
@@ -9,7 +9,7 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.connectPrompt "Clique em 'Ligar' para se ligar ao Tor.">
 <!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Configurar">
 <!ENTITY torSettings.connect "Ligar">
@@ -25,9 +25,9 @@
 
 <!ENTITY torsettings.optional "Opcional">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
+<!ENTITY torsettings.useProxy.checkbox "Eu utilizo um proxy para ligar à Internet">
 <!ENTITY torsettings.useProxy.type "Tipo de proxy:">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
+<!ENTITY torsettings.useProxy.type.placeholder "selecionar um tipo de proxy">
 <!ENTITY torsettings.useProxy.address "Endereço:">
 <!ENTITY torsettings.useProxy.address.placeholder "Endereço de IP ou nome do hospedeiro">
 <!ENTITY torsettings.useProxy.port "Porta:">
@@ -38,7 +38,7 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Este computador liga através de uma firewall que só permite ligações para determinadas portas.">
 <!ENTITY torsettings.firewall.allowedPorts "Portas permitidas:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.checkbox "Tor é censurado no meu país">
 <!ENTITY torsettings.useBridges.default "Select a built-in bridge">
 <!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
 <!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
@@ -47,7 +47,7 @@
 
 <!ENTITY torsettings.copyLog "Copiar o Registo do Tor para a Área de Transferência">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelpTitle "Ajuda de Proxy">
 <!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Ajuda da Retransmissão de Ponte">

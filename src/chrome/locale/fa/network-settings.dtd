@@ -1,6 +1,6 @@
 <!ENTITY torsettings.dialog.title "تنظیمات شبکه تور">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
-<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.default "اتصال به تور">
+<!ENTITY torsettings.wizard.title.configure "تنظیمات شبکه Tor">
 <!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
@@ -47,7 +47,7 @@
 
 <!ENTITY torsettings.copyLog "کپی گزارش وقایع تور">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelpTitle "کمک پروکسی">
 <!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
 
 <!ENTITY torsettings.bridgeHelpTitle "کمک برای پل ارتباطی">
