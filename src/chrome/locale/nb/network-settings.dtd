@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "Klikk &quot;koble til&quot; for å koble til Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.configurePrompt "Klikk &quot;Sett opp&quot; for å justere nettverksinnstillinger hvis du er i et land som sensurerer Tor (som Egypt, Kina, Tyrkia,) eller hvis du kobler til fra et privat nettverk som krever en mellomtjener.">
 <!ENTITY torSettings.configure "Sett opp">
 <!ENTITY torSettings.connect "Koble til">
 
