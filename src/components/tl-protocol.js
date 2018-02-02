@@ -1,4 +1,4 @@
-// Copyright (c) 2017, The Tor Project, Inc.
+// Copyright (c) 2018, The Tor Project, Inc.
 // See LICENSE for licensing information.
 // TODO: Some code came from torbutton.js (pull in copyright and license?)
 //
@@ -1046,8 +1046,8 @@ TorProtocolService.prototype =
   // Returns the new string.
   _strEscape: function(aStr)
   {
-    // Just return if all characters are printable ASCII excluding SP and "
-    const kSafeCharRE = /^[\x21\x23-\x7E]*$/;
+    // Just return if all characters are printable ASCII excluding SP, ", and #
+    const kSafeCharRE = /^[\x21\x24-\x7E]*$/;
     if (!aStr || kSafeCharRE.test(aStr))
       return aStr;
 
