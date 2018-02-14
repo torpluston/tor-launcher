@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-   - Copyright (c) 2017, The Tor Project, Inc.
+   - Copyright (c) 2018, The Tor Project, Inc.
    - See LICENSE for licensing information.
    - vim: set sw=2 sts=2 ts=8 et syntax=xml:
   -->
@@ -93,11 +93,11 @@
                 oncommand="toggleElemUI(this);"/>
     <groupbox id="bridgeSpecificSettings">
       <hbox align="end" pack="end">
-        <radiogroup id="bridgeTypeRadioGroup" flex="1" style="margin: 0px"
-                    oncommand="onBridgeTypeRadioChange()">
-          <hbox align="center">
+        <radiogroup id="bridgeTypeRadioGroup" flex="1" style="margin: 0px">
+          <hbox class="bridgeRadioContainer">
             <radio id="bridgeRadioDefault"
-                   label="&torsettings.useBridges.default;" selected="true"/>
+                   label="&torsettings.useBridges.default;" selected="true"
+                   oncommand="onBridgeTypeRadioChange()"/>
             <button class="helpButton"
                     oncommand="onOpenHelp('bridgeHelpContent')"/>
             <spacer style="width: 3em"/>
@@ -108,8 +108,24 @@
             <spring/>
           </hbox>
 
-          <radio align="start" id="bridgeRadioCustom"
-                 label="&torsettings.useBridges.custom;"/>
+          <vbox id="bridgeDBSettings">
+            <hbox class="bridgeRadioContainer">
+              <radio id="bridgeRadioBridgeDB"
+                     label="&torsettings.useBridges.bridgeDB;"
+                     oncommand="onBridgeTypeRadioChange()"/>
+            </hbox>
+            <vbox id="bridgeDBContainer" align="start">
+              <description id="bridgeDBResult"/>
+              <button id="bridgeDBRequestButton"
+                      oncommand="onOpenBridgeDBRequestPrompt()"/>
+            </vbox>
+          </vbox>
+
+          <hbox class="bridgeRadioContainer">
+            <radio align="start" id="bridgeRadioCustom"
+                   label="&torsettings.useBridges.custom;"
+                   oncommand="onBridgeTypeRadioChange()"/>
+          </hbox>
         </radiogroup>
       </hbox>
       <vbox id="bridgeCustomEntry">
@@ -151,6 +167,36 @@
       <button id="restartTorButton" label="&torsettings.restartTor;"
               oncommand="onRestartTor()"/>
     </hbox>
+  </vbox>
+
+  <vbox id="bridgeDBRequestOverlayContent" align="center">
+    <vbox>
+      <label id="bridgeDBPrompt"/>
+      <image id="bridgeDBCaptchaImage"/>
+      <hbox>
+        <spacer id="bridgeDBReloadSpacer"/>
+        <spacer flex="1"/>
+        <textbox id="bridgeDBCaptchaSolution" size="35"
+          placeholder="&torsettings.useBridges.captchaSolution.placeholder;"
+          oninput="onCaptchaSolutionChange()"/>
+        <spacer flex="1"/>
+        <deck id="bridgeDBReloadDeck">
+          <button id="bridgeDBReloadCaptchaButton"
+                  tooltiptext="&torsettings.useBridges.reloadCaptcha.tooltip;"
+                  oncommand="onReloadCaptcha()"/>
+          <image id="bridgeDBNetworkActivity"/>
+        </deck>
+      </hbox>
+      <label id="bridgeDBCaptchaError"/>
+      <separator/>
+      <hbox pack="center">
+        <button id="bridgeDBCancelButton"
+                oncommand="onCancelBridgeDBRequestPrompt()"/>
+        <button id="bridgeDBSubmitButton" disabled="true"
+                label="&torsettings.useBridges.captchaSubmit;"
+                oncommand="onCaptchaSolutionSubmit()"/>
+      </hbox>
+    </vbox>
   </vbox>
 
   <vbox id="errorOverlayContent">

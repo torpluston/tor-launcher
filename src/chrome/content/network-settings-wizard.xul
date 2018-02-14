@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-   - Copyright (c) 2017, The Tor Project, Inc.
+   - Copyright (c) 2018, The Tor Project, Inc.
    - See LICENSE for licensing information.
    - vim: set sw=2 sts=2 ts=8 et syntax=xml:
   -->
@@ -33,7 +33,6 @@
       <image class="tbb-logo"/>
     </hbox>
 
-    <separator class="tall"/>
     <vbox class="firstResponses" align="center">
       <label>&torSettings.connectPrompt;</label>
       <label>&torSettings.configurePrompt;</label>
@@ -52,10 +51,12 @@
               torShowNavButtons="true">
     <stack flex="1">
       <vbox>
-        <separator class="tall"/>
         <vbox id="bridgeSettings"/>
-        <separator/>
         <vbox id="proxySettings"/>
+      </vbox>
+      <vbox id="bridgeDBRequestOverlay" class="messagePanel" pack="center"
+            hidden="true">
+        <vbox id="bridgeDBRequestOverlayContent"/>
       </vbox>
       <vbox id="configErrorOverlay" class="messagePanel" pack="center"
             hidden="true">

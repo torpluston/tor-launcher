@@ -1,4 +1,4 @@
-// Copyright (c) 2017, The Tor Project, Inc.
+// Copyright (c) 2018, The Tor Project, Inc.
 // See LICENSE for licensing information.
 //
 // vim: set sw=2 sts=2 ts=8 et syntax=javascript:
@@ -12,8 +12,10 @@ let EXPORTED_SYMBOLS = [ "TorLauncherUtil" ];
 const Cc = Components.classes;
 const Ci = Components.interfaces;
 const Cu = Components.utils;
+const Cr = Components.results;
 const kPropBundleURI = "chrome://torlauncher/locale/torlauncher.properties";
 const kPropNamePrefix = "torlauncher.";
+const kPrefBranchDefaultBridge = "extensions.torlauncher.default_bridge.";
 
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "TorLauncherLogger",
@@ -161,6 +163,24 @@ let TorLauncherUtil =  // Public
     return aStringName;
   },
 
+  getLocalizedStringForError: function(aNSResult)
+  {
+    for (let prop in Cr)
+    {
+      if (Cr[prop] == aNSResult)
+      {
+        let key = "nsresult." + prop;
+        let rv = this.getLocalizedString(key);
+        if (rv !== key)
+          return rv;
+
+        return prop;  // As a fallback, return the NS_ERROR... name.
+      }
+    }
+
+    return undefined;
+  },
+
   getLocalizedBootstrapStatus: function(aStatusObj, aKeyword)
   {
     if (!aStatusObj || !aKeyword)
@@ -276,6 +296,13 @@ let TorLauncherUtil =  // Public
     } catch (e) {}
   },
 
+  getPrefBranch: function(aBranchName)
+  {
+    return Cc["@mozilla.org/preferences-service;1"]
+             .getService(Ci.nsIPrefService)
+             .getBranch(aBranchName);
+  },
+
   // Currently, this returns a random permutation of an array, bridgeArray.
   // Later, we might want to change this function to weight based on the
   // bridges' bandwidths.
@@ -361,9 +388,7 @@ let TorLauncherUtil =  // Public
   {
     try
     {
-      var prefBranch = Cc["@mozilla.org/preferences-service;1"]
-                           .getService(Ci.nsIPrefService)
-                           .getBranch("extensions.torlauncher.default_bridge.");
+      var prefBranch = this.getPrefBranch(kPrefBranchDefaultBridge);
       var childPrefs = prefBranch.getChildList("", []);
       var typeArray = [];
       for (var i = 0; i < childPrefs.length; ++i)
@@ -390,9 +415,7 @@ let TorLauncherUtil =  // Public
 
     try
     {
-      var prefBranch = Cc["@mozilla.org/preferences-service;1"]
-                           .getService(Ci.nsIPrefService)
-                           .getBranch("extensions.torlauncher.default_bridge.");
+      var prefBranch = this.getPrefBranch(kPrefBranchDefaultBridge);
       var childPrefs = prefBranch.getChildList("", []);
       var bridgeArray = [];
       // The pref service seems to return the values in reverse order, so
@@ -430,11 +453,13 @@ let TorLauncherUtil =  // Public
 
     let isRelativePath = false;
     let isUserData = (aTorFileType != "tor") &&
+                     (aTorFileType != "pt-startup-dir") &&
                      (aTorFileType != "torrc-defaults");
     let isControlIPC = ("control_ipc" == aTorFileType);
     let isSOCKSIPC = ("socks_ipc" == aTorFileType);
     let isIPC = isControlIPC || isSOCKSIPC;
     let checkIPCPathLen = true;
+    let useAppDir = false;
 
     const kControlIPCFileName = "control.socket";
     const kSOCKSIPCFileName = "socks.socket";
@@ -523,6 +548,8 @@ let TorLauncherUtil =  // Public
         {
           if ("tor" == aTorFileType)
             path = "TorBrowser\\Tor\\tor.exe";
+          else if ("pt-startup-dir" == aTorFileType)
+            useAppDir = true;
           else if ("torrc-defaults" == aTorFileType)
             path = "TorBrowser\\Tor\\torrc-defaults";
           else if ("torrc" == aTorFileType)
@@ -534,6 +561,8 @@ let TorLauncherUtil =  // Public
         {
           if ("tor" == aTorFileType)
             path = "Contents/Resources/TorBrowser/Tor/tor";
+          else if ("pt-startup-dir" == aTorFileType)
+            path = "Contents/MacOS/Tor";
           else if ("torrc-defaults" == aTorFileType)
             path = "Contents/Resources/TorBrowser/Tor/torrc-defaults";
           else if ("torrc" == aTorFileType)
@@ -547,6 +576,8 @@ let TorLauncherUtil =  // Public
         {
           if ("tor" == aTorFileType)
             path = "TorBrowser/Tor/tor";
+          else if ("pt-startup-dir" == aTorFileType)
+            useAppDir = true;
           else if ("torrc-defaults" == aTorFileType)
             path = "TorBrowser/Tor/torrc-defaults";
           else if ("torrc" == aTorFileType)
@@ -562,6 +593,8 @@ let TorLauncherUtil =  // Public
         // This block is used for the non-TorBrowser-Data/ case.
         if ("tor" == aTorFileType)
           path = "Tor\\tor.exe";
+        else if ("pt-startup-dir" == aTorFileType)
+          useAppDir = true;
         else if ("torrc-defaults" == aTorFileType)
           path = "Data\\Tor\\torrc-defaults";
         else if ("torrc" == aTorFileType)
@@ -574,6 +607,8 @@ let TorLauncherUtil =  // Public
         // This block is also used for the non-TorBrowser-Data/ case.
         if ("tor" == aTorFileType)
           path = "Tor/tor";
+        else if ("pt-startup-dir" == aTorFileType)
+          useAppDir = true;
         else if ("torrc-defaults" == aTorFileType)
           path = "Data/Tor/torrc-defaults";
         else if ("torrc" == aTorFileType)
@@ -584,13 +619,17 @@ let TorLauncherUtil =  // Public
           path = "Data/Tor/" + ipcFileName;
       }
 
-      if (!path)
+      if (!path && !useAppDir)
         return null;
     }
 
     try
     {
-      if (path)
+      if (useAppDir)
+      {
+        torFile = TLUtilInternal._appDir.clone();
+      }
+      else if (path)
       {
         if (isRelativePath)
         {

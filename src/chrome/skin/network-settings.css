@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017, The Tor Project, Inc.
+ * Copyright (c) 2018, The Tor Project, Inc.
  * See LICENSE for licensing information.
  *
  * vim: set sw=2 sts=2 ts=8 et syntax=css:
@@ -18,14 +18,14 @@ dialog.os-windows {
 
 wizard {
   width: 45em;
-  height: 36em;
+  height: 38em;
   font: -moz-dialog;
   padding-top: 0px;
 }
 
 wizard.os-windows {
   width: 49em;
-  height: 42em;
+  height: 44em;
 }
 
 .wizard-page-box {
@@ -67,8 +67,15 @@ wizard radiogroup {
   margin: 9px 40px;
 }
 
-separator.tall {
-  height: 2.1em;
+.firstResponses,
+wizard #bridgeSettings,
+wizard #proxySettings {
+  margin-top: 15px;
+}
+
+.bridgeRadioContainer {
+  min-height: 30px; /* ensure no height change when dropdown menu is hidden */
+  vertical-align: middle;
 }
 
 .help .heading,
@@ -105,6 +112,7 @@ wizard#TorLauncherLocalePicker button[dlgtype="next"] {
 
 #bridgeNote,
 #bridgeDefaultEntry,
+#bridgeDBContainer,
 #bridgeCustomEntry {
   margin-left: 1.8em;
 }
@@ -112,6 +120,15 @@ wizard#TorLauncherLocalePicker button[dlgtype="next"] {
 dialog.os-mac #bridgeList,
 wizard.os-mac #bridgeList {
   font-size: 90%;
+}
+
+#bridgeDBResult {
+  font-size: 90%;
+  white-space: pre;
+}
+
+#bridgeDBResult[value=""] {
+  display: none;
 }
 
 /* reuse Mozilla's help button from the Firefox hamburger menu */
@@ -171,11 +188,68 @@ wizardpage[pageid="restartPanel"] description,
   text-align: start;
 }
 
+#bridgeDBRequestOverlayContent,
 #errorOverlayContent {
   margin: 50px;
   min-height: 12em;
   background-color: rgba(251,251,251,1.0);
   box-shadow: 0px 0px 50px rgba(0,0,0,0.9);
+}
+
+#bridgeDBRequestOverlayContent > vbox {
+  margin: 20px;
+}
+
+#bridgeDBPrompt {
+  text-align: center;
+}
+
+#bridgeDBCaptchaImage {
+  margin: 16px 0px;
+  width: 400px;
+  /* height is set via code so it can be animated. */
+}
+
+#bridgeDBReloadSpacer {
+  width: 20px;  /* matches the width of #bridgeDBReloadCaptchaButton */
+}
+
+#bridgeDBReloadCaptchaButton {
+  list-style-image: url("chrome://torlauncher/skin/reload.svg");
+  -moz-appearance: none;
+  width: 20px;  /* matches the width of #bridgeDBReloadSpacer */
+  height: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  margin: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+#bridgeDBNetworkActivity {
+  list-style-image: url("chrome://torlauncher/skin/activity.svg");
+  width: 20px;
+  height: 20px;
+}
+
+#bridgeDBCaptchaError {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Hide BridgeDB overlay elements based on the state attribute. */
+#bridgeDBRequestOverlay[state="fetchingCaptcha"] #bridgeDBReloadCaptchaButton,
+#bridgeDBRequestOverlay[state="checkingSolution"] #bridgeDBReloadCaptchaButton,
+#bridgeDBRequestOverlay[state="fetchingCaptcha"] #bridgeDBCaptchaSolution {
+  visibility: hidden;
+}
+
+#bridgeDBRequestOverlay[state="fetchingCaptcha"] #bridgeDBCaptchaError,
+#bridgeDBRequestOverlay[state="fetchingCaptcha"] #bridgeDBSubmitButton,
+#bridgeDBRequestOverlay[state="checkingSolution"] #bridgeDBSubmitButton {
+  display: none;
 }
 
 #errorOverlayContent button[errorElemId="dismissButton"] {

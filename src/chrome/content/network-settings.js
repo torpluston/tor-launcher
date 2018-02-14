@@ -1,4 +1,4 @@
-// Copyright (c) 2017, The Tor Project, Inc.
+// Copyright (c) 2018, The Tor Project, Inc.
 // See LICENSE for licensing information.
 //
 // vim: set sw=2 sts=2 ts=8 et syntax=javascript:
@@ -8,12 +8,15 @@
 const Cc = Components.classes;
 const Ci = Components.interfaces;
 const Cu = Components.utils;
+const Cr = Components.results;
 
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "TorLauncherUtil",
                           "resource://torlauncher/modules/tl-util.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "TorLauncherLogger",
                           "resource://torlauncher/modules/tl-logger.jsm");
+XPCOMUtils.defineLazyModuleGetter(this, "TorLauncherBridgeDB",
+                          "resource://torlauncher/modules/tl-bridgedb.jsm");
 
 const kPrefPromptForLocale = "extensions.torlauncher.prompt_for_locale";
 const kPrefLocale = "general.useragent.locale";
@@ -23,6 +26,14 @@ const kPrefMatchOSLocale = "intl.locale.matchOS";
 const kPrefDefaultBridgeRecommendedType =
                    "extensions.torlauncher.default_bridge_recommended_type";
 const kPrefDefaultBridgeType = "extensions.torlauncher.default_bridge_type";
+
+// The type of bridges to request from BridgeDB via Moat.
+const kPrefBridgeDBType = "extensions.torlauncher.bridgedb_bridge_type";
+
+// The bridges that we receive from BridgeDB via Moat are stored as
+// extensions.torlauncher.bridgedb_bridge.0,
+// extensions.torlauncher.bridgedb_bridge.1, and so on.
+const kPrefBranchBridgeDBBridge = "extensions.torlauncher.bridgedb_bridge.";
 
 // As of April 2016, no one is responding to help desk email. Hopefully this will change soon.
 //const kSupportAddr = "help@rt.torproject.org";
@@ -51,10 +62,34 @@ const kProxyPassword = "proxyPassword";
 const kUseFirewallPortsCheckbox = "useFirewallPorts";
 const kFirewallAllowedPorts = "firewallAllowedPorts";
 const kUseBridgesCheckbox = "useBridges";
+const kDefaultBridgesRadio = "bridgeRadioDefault";
 const kDefaultBridgeTypeMenuList = "defaultBridgeType";
+const kBridgeDBBridgesRadio = "bridgeRadioBridgeDB";
+const kBridgeDBContainer = "bridgeDBContainer";
+const kBridgeDBRequestButton = "bridgeDBRequestButton";
+const kBridgeDBResult = "bridgeDBResult";
 const kCustomBridgesRadio = "bridgeRadioCustom";
 const kBridgeList = "bridgeList";
+const kCopyLogFeedbackPanel = "copyLogFeedbackPanel";
 
+// BridgeDB Moat request overlay (for interaction with a CAPTCHA challenge).
+const kBridgeDBRequestOverlay = "bridgeDBRequestOverlay";
+const kBridgeDBPrompt = "bridgeDBPrompt";
+const kBridgeDBCaptchaImage = "bridgeDBCaptchaImage";
+const kCaptchaImageTransition = "height 250ms ease-in-out";
+const kBridgeDBCaptchaSolution = "bridgeDBCaptchaSolution";
+const kBridgeDBCaptchaError = "bridgeDBCaptchaError";
+const kBridgeDBSubmitButton = "bridgeDBSubmitButton";
+const kBridgeDBCancelButton = "bridgeDBCancelButton";
+const kBridgeDBReloadCaptchaButton = "bridgeDBReloadCaptchaButton";
+const kBridgeDBNetworkActivity = "bridgeDBNetworkActivity";
+
+// Custom event types.
+const kCaptchaSubmitEventType = "TorLauncherCaptchaSubmitEvent";
+const kCaptchaCancelEventType = "TorLauncherCaptchaCancelEvent";
+const kCaptchaReloadEventType = "TorLauncherCaptchaReloadEvent";
+
+// Tor SETCONF keywords.
 const kTorConfKeyDisableNetwork = "DisableNetwork";
 const kTorConfKeySocks4Proxy = "Socks4Proxy";
 const kTorConfKeySocks5Proxy = "Socks5Proxy";
@@ -77,6 +112,8 @@ var gRestoreAfterHelpPanelID = null;
 var gIsPostRestartBootstrapNeeded = false;
 var gIsWindowScheduledToClose = false;
 var gActiveTopics = [];  // Topics for which an observer is currently installed.
+var gBridgeDBBridges = undefined; // Array of bridge lines.
+var gBridgeDBRequestEventListeners = [];
 
 
 function initDialogCommon()
@@ -461,13 +498,215 @@ function onCustomBridgesTextInput()
 
 function onBridgeTypeRadioChange()
 {
-  var useCustom = getElemValue(kCustomBridgesRadio, false);
-  setBoolAttrForElemWithLabel(kDefaultBridgeTypeMenuList, "hidden", useCustom);
+  let useBridgeDB = getElemValue(kBridgeDBBridgesRadio, false);
+  let useCustom = getElemValue(kCustomBridgesRadio, false);
+  let useDefault = !useBridgeDB && !useCustom;
+  setBoolAttrForElemWithLabel(kDefaultBridgeTypeMenuList, "hidden",
+                              !useDefault);
+  setBoolAttrForElemWithLabel(kBridgeDBContainer, "hidden", !useBridgeDB);
   setBoolAttrForElemWithLabel(kBridgeList, "hidden", !useCustom);
-  var focusElemID = (useCustom) ? kBridgeList : kDefaultBridgeTypeMenuList;
-  var elem = document.getElementById(focusElemID);
+
+  let focusElemID;
+  if (useBridgeDB)
+    focusElemID = kBridgeDBRequestButton;
+  else if (useCustom)
+    focusElemID = kBridgeList;
+  else
+    focusElemID = kDefaultBridgeTypeMenuList;
+
+  let elem = document.getElementById(focusElemID);
   if (elem)
     elem.focus();
+}
+
+
+function onOpenBridgeDBRequestPrompt()
+{
+  // Obtain the meek client path and args from the tor configuration.
+  let reply = gProtocolSvc.TorGetConf("ClientTransportPlugin");
+  if (!gProtocolSvc.TorCommandSucceeded(reply))
+    return;
+
+  let meekClientPath;
+  let meekClientArgs;
+  reply.lineArray.forEach(aLine =>
+  {
+    let tokens = aLine.split(' ');
+    if ((tokens.length > 2) && (tokens[0] == "meek") && (tokens[1] == "exec"))
+    {
+      meekClientPath = tokens[2];
+      meekClientArgs = tokens.slice(3);
+    }
+  });
+
+  if (!meekClientPath)
+  {
+    reportMoatError(TorLauncherUtil.getLocalizedString("no_meek"));
+    return;
+  }
+
+  let proxySettings;
+  if (isProxyConfigured())
+  {
+    proxySettings = getAndValidateProxySettings(true);
+    if (!proxySettings)
+      return;
+  }
+
+  let overlay = document.getElementById(kBridgeDBRequestOverlay);
+  if (overlay)
+  {
+    let cancelBtn = document.getElementById(kBridgeDBCancelButton);
+    if (cancelBtn)
+      cancelBtn.setAttribute("label", gCancelLabelStr);
+
+    showOrHideDialogButtons(false);
+    resetBridgeDBRequestPrompt();
+    setBridgeDBRequestState("fetchingCaptcha");
+    overlay.hidden = false;
+    requestMoatCaptcha(proxySettings, meekClientPath, meekClientArgs);
+  }
+}
+
+
+// When aState is anything other than undefined, a network request is
+// in progress.
+function setBridgeDBRequestState(aState)
+{
+  let overlay = document.getElementById(kBridgeDBRequestOverlay);
+  if (overlay)
+  {
+    if (aState)
+      overlay.setAttribute("state", aState);
+    else
+      overlay.removeAttribute("state");
+  }
+
+  let key = (aState) ? "contacting_bridgedb" : "captcha_prompt";
+  setElemValue(kBridgeDBPrompt, TorLauncherUtil.getLocalizedString(key));
+
+  let textBox = document.getElementById(kBridgeDBCaptchaSolution);
+  if (textBox)
+  {
+    if (aState)
+      textBox.setAttribute("disabled", "true");
+    else
+      textBox.removeAttribute("disabled");
+  }
+
+  // Show the network activity spinner or the reload button, as appropriate.
+  let deckElem = document.getElementById("bridgeDBReloadDeck");
+  if (deckElem)
+  {
+    let panelID = aState ? kBridgeDBNetworkActivity
+                         : kBridgeDBReloadCaptchaButton;
+    deckElem.selectedPanel = document.getElementById(panelID);
+  }
+}
+
+
+function onDismissBridgeDBRequestPrompt()
+{
+  let overlay = document.getElementById(kBridgeDBRequestOverlay);
+  if (overlay)
+  {
+    overlay.hidden = true;
+    showOrHideDialogButtons(true);
+  }
+
+  setBridgeDBRequestState(undefined);
+}
+
+
+function onCancelBridgeDBRequestPrompt()
+{
+  // If an event listener is installed, the cancel of pending Moat requests
+  // and other necessary cleanup is handled in a cancel event listener.
+  if (gBridgeDBRequestEventListeners.length > 0)
+    document.dispatchEvent(new CustomEvent(kCaptchaCancelEventType, {}));
+  else
+    onDismissBridgeDBRequestPrompt();
+}
+
+
+function resetBridgeDBRequestPrompt()
+{
+  let textBox = document.getElementById(kBridgeDBCaptchaSolution);
+  if (textBox)
+    textBox.value = "";
+
+  let image = document.getElementById(kBridgeDBCaptchaImage);
+  if (image)
+  {
+    image.removeAttribute("src");
+    image.style.transition = "";
+    image.style.height = "0px";
+  }
+
+  onCaptchaSolutionChange();
+}
+
+
+function onCaptchaSolutionChange()
+{
+  let val = getElemValue(kBridgeDBCaptchaSolution, undefined);
+  enableButton(kBridgeDBSubmitButton, val && (val.length > 0));
+  setElemValue(kBridgeDBCaptchaError, undefined); // clear error
+}
+
+
+function onReloadCaptcha()
+{
+  document.dispatchEvent(new CustomEvent(kCaptchaReloadEventType, {}));
+}
+
+
+function onCaptchaSolutionSubmit()
+{
+  let val = getElemValue(kBridgeDBCaptchaSolution, undefined);
+  if (val)
+    document.dispatchEvent(new CustomEvent(kCaptchaSubmitEventType, {}));
+}
+
+
+function isShowingBridgeDBRequestPrompt()
+{
+  let overlay = document.getElementById(kBridgeDBRequestOverlay);
+  return overlay && !overlay.hasAttribute("hidden");
+}
+
+
+function showBridgeDBBridges()
+{
+  // Truncate the bridge info for display.
+  const kMaxLen = 65;
+  let val;
+  if (gBridgeDBBridges)
+  {
+    gBridgeDBBridges.forEach(aBridgeLine =>
+      {
+        let line;
+        if (aBridgeLine.length <= kMaxLen)
+          line = aBridgeLine;
+        else
+          line = aBridgeLine.substring(0, kMaxLen) + "\u2026"; // ellipsis;
+        if (val)
+          val += "\n" + line;
+        else
+          val = line;
+      });
+  }
+
+  setElemValue(kBridgeDBResult, val);
+
+  // Update the "Get a Bridge" button label.
+  let btn = document.getElementById(kBridgeDBRequestButton);
+  if (btn)
+  {
+    let btnLabelKey = val ? "request_a_new_bridge"
+                          : "request_a_bridge";
+    btn.label = TorLauncherUtil.getLocalizedString(btnLabelKey);
+  }
 }
 
 
@@ -960,7 +1199,9 @@ function setButtonAttr(aID, aAttr, aValue)
   if (!aID || !aAttr)
     return null;
 
-  var btn = document.documentElement.getButton(aID);
+  let btn = document.documentElement.getButton(aID);  // dialog buttons
+  if (!btn)
+    btn = document.getElementById(aID);               // other buttons
   if (btn)
   {
     if (aValue)
@@ -1159,6 +1400,12 @@ function onCancel()
     return false;
   }
 
+  if (isShowingBridgeDBRequestPrompt())
+  {
+    onCancelBridgeDBRequestPrompt();
+    return false;
+  }
+
   let wizard = getWizard();
   if (!wizard && isShowingProgress())
   {
@@ -1193,15 +1440,19 @@ function onWizardFinish()
     return false;
   }
 
+  if (isShowingBridgeDBRequestPrompt())
+  {
+    onCaptchaSolutionSubmit();
+    return false;
+  }
+
   if (isShowingProgress())
   {
     onProgressCancelOrReconfigure(getWizard());
     return false;
   }
-  else
-  {
-    return applySettings(false);
-  }
+
+  return applySettings(false);
 }
 
 
@@ -1216,6 +1467,12 @@ function onNetworkSettingsFinish()
   if (isShowingErrorOverlay())
   {
     onDismissErrorOverlay();
+    return false;
+  }
+
+  if (isShowingBridgeDBRequestPrompt())
+  {
+    onCaptchaSolutionSubmit();
     return false;
   }
 
@@ -1256,7 +1513,7 @@ function onCopyLog()
 
   // Display a feedback popup that fades away after a few seconds.
   let copyLogBtn = document.documentElement.getButton("extra2");
-  let panel = document.getElementById("copyLogFeedbackPanel");
+  let panel = document.getElementById(kCopyLogFeedbackPanel);
   if (copyLogBtn && panel)
   {
     panel.firstChild.textContent = TorLauncherUtil.getFormattedLocalizedString(
@@ -1268,7 +1525,7 @@ function onCopyLog()
 
 function closeCopyLogFeedbackPanel()
 {
-  let panel = document.getElementById("copyLogFeedbackPanel");
+  let panel = document.getElementById(kCopyLogFeedbackPanel);
   if (panel && (panel.state =="open"))
     panel.hidePopup();
 }
@@ -1463,6 +1720,9 @@ function initBridgeSettings()
   let canUseDefaultBridges = (typeList && (typeList.length > 0));
   let defaultType = TorLauncherUtil.getCharPref(kPrefDefaultBridgeType);
   let useDefault = canUseDefaultBridges && !!defaultType;
+  let isMoatConfigured = TorLauncherBridgeDB.isMoatConfigured;
+
+  showOrHideElemById("bridgeDBSettings", isMoatConfigured);
 
   // If not configured to use a default set of bridges, get UseBridges setting
   // from tor.
@@ -1477,25 +1737,72 @@ function initBridgeSettings()
 
     useBridges = reply.retVal;
 
-    // Get bridge list from tor.
+    // Get the list of configured bridges from tor.
     let bridgeReply = gProtocolSvc.TorGetConf(kTorConfKeyBridgeList);
     if (!gProtocolSvc.TorCommandSucceeded(bridgeReply))
       return false;
 
-    if (!setBridgeListElemValue(bridgeReply.lineArray))
+    let configuredBridges = [];
+    if (bridgeReply.lineArray)
     {
-      if (canUseDefaultBridges)
-        useDefault = true;  // We have no custom values... back to default.
-      else
-        useBridges = false; // No custom or default bridges are available.
+      bridgeReply.lineArray.forEach(aLine =>
+        {
+          let val = aLine.trim();
+          if (val.length > 0)
+            configuredBridges.push(val);
+        });
+    }
+
+    gBridgeDBBridges = undefined;
+
+    let prefBranch = TorLauncherUtil.getPrefBranch(kPrefBranchBridgeDBBridge);
+    if (isMoatConfigured)
+    {
+      // Determine if we are using a set of bridges that was obtained via Moat.
+      // This is done by checking each of the configured bridge lines against
+      // the values stored under the extensions.torlauncher.bridgedb_bridge.
+      // pref branch. The algorithm used here assumes there are no duplicate
+      // values.
+      let childPrefs = prefBranch.getChildList("", []);
+
+      let bridgeCount = configuredBridges.length;
+      if ((bridgeCount > 0) && (bridgeCount == childPrefs.length))
+      {
+        let foundCount = 0;
+        childPrefs.forEach(aChild =>
+          {
+            if (configuredBridges.indexOf(prefBranch.getCharPref(aChild)) >= 0)
+              ++foundCount;
+          });
+
+        if (foundCount == bridgeCount)
+          gBridgeDBBridges = configuredBridges;
+      }
+    }
+
+    if (!gBridgeDBBridges)
+    {
+      // The stored bridges do not match what is now in torrc. Clear
+      // the stored info and treat the configured bridges as a set of
+      // custom bridges.
+      prefBranch.deleteBranch("");
+      if (!setBridgeListElemValue(configuredBridges))
+      {
+        if (canUseDefaultBridges)
+          useDefault = true;  // We have no custom values... back to default.
+        else
+          useBridges = false; // No custom or default bridges are available.
+      }
     }
   }
 
   setElemValue(kUseBridgesCheckbox, useBridges);
+  showBridgeDBBridges();
 
   showOrHideElemById("bridgeTypeRadioGroup", canUseDefaultBridges);
 
-  let radioID = (useDefault) ? "bridgeRadioDefault" : "bridgeRadioCustom";
+  let radioID = (useDefault) ? kDefaultBridgesRadio
+           : (gBridgeDBBridges) ? kBridgeDBBridgesRadio : kCustomBridgesRadio;
   let radio = document.getElementById(radioID);
   if (radio)
     radio.control.selectedItem = radio;
@@ -1535,6 +1842,18 @@ function useSettings()
   let didApply = setConfAndReportErrors(settings, null);
   if (!didApply)
     return;
+
+  // Record the new BridgeDB bridge values in preferences so later we
+  // can detect that the bridges were received from BridgeDB via Moat.
+  TorLauncherUtil.getPrefBranch(kPrefBranchBridgeDBBridge).deleteBranch("");
+  if (isUsingBridgeDBBridges())
+  {
+    for (let i = 0; i < gBridgeDBBridges.length; ++i)
+    {
+      TorLauncherUtil.setCharPref(kPrefBranchBridgeDBBridge + i,
+                                  gBridgeDBBridges[i].trim());
+    }
+  }
 
   gIsPostRestartBootstrapNeeded = false;
 
@@ -1633,7 +1952,7 @@ function showProgressMeterIfNoError()
 function applyProxySettings(aUseDefaults)
 {
   let settings = aUseDefaults ? getDefaultProxySettings()
-                              : getAndValidateProxySettings();
+                              : getAndValidateProxySettings(false);
   if (!settings)
     return false;
 
@@ -1655,7 +1974,7 @@ function getDefaultProxySettings()
 
 
 // Return a settings object if successful and null if not.
-function getAndValidateProxySettings()
+function getAndValidateProxySettings(aIsForMoat)
 {
   var settings = getDefaultProxySettings();
 
@@ -1666,7 +1985,11 @@ function getAndValidateProxySettings()
     proxyType = getElemValue(kProxyTypeMenulist, null);
     if (!proxyType)
     {
-      reportValidationError("error_proxy_type_missing");
+      let key = "error_proxy_type_missing";
+      if (aIsForMoat)
+        reportMoatError(TorLauncherUtil.getLocalizedString(key));
+      else
+        reportValidationError(key);
       return null;
     }
 
@@ -1674,7 +1997,11 @@ function getAndValidateProxySettings()
                                    getElemValue(kProxyPort, null));
     if (!proxyAddrPort)
     {
-      reportValidationError("error_proxy_addr_missing");
+      let key = "error_proxy_addr_missing";
+      if (aIsForMoat)
+        reportMoatError(TorLauncherUtil.getLocalizedString(key));
+      else
+        reportValidationError(key);
       return null;
     }
 
@@ -1886,16 +2213,27 @@ function getDefaultBridgeSettings()
 // Return a settings object if successful and null if not.
 function getAndValidateBridgeSettings()
 {
-  var settings = getDefaultBridgeSettings();
-  var useBridges = isBridgeConfigured();
-  var defaultBridgeType;
-  var bridgeList;
+  let settings = getDefaultBridgeSettings();
+  let useBridges = isBridgeConfigured();
+  let defaultBridgeType;
+  let bridgeList;
   if (useBridges)
   {
-    var useCustom = getElemValue(kCustomBridgesRadio, false);
-    if (useCustom)
+    if (getElemValue(kBridgeDBBridgesRadio, false))
     {
-      var bridgeStr = getElemValue(kBridgeList, null);
+      if (gBridgeDBBridges)
+      {
+        bridgeList = gBridgeDBBridges;
+      }
+      else
+      {
+        reportValidationError("error_bridgedb_bridges_missing");
+        return null;
+      }
+    }
+    else if (getElemValue(kCustomBridgesRadio, false))
+    {
+      let bridgeStr = getElemValue(kBridgeList, null);
       bridgeList = parseAndValidateBridges(bridgeStr);
       if (!bridgeList)
       {
@@ -1936,6 +2274,13 @@ function getAndValidateBridgeSettings()
 function isBridgeConfigured()
 {
   return getElemValue(kUseBridgesCheckbox, false);
+}
+
+
+function isUsingBridgeDBBridges()
+{
+  return isBridgeConfigured() && getElemValue(kBridgeDBBridgesRadio, false) &&
+         gBridgeDBBridges;
 }
 
 
@@ -2028,7 +2373,14 @@ function setElemValue(aID, aValue)
         // fallthru
       case "menulist":
       case "listbox":
+      case "label":
         elem.value = (val) ? val : "";
+        break;
+      case "description":
+        while (elem.firstChild)
+          elem.removeChild(elem.firstChild);
+        if (val)
+          elem.appendChild(document.createTextNode(val));
         break;
     }
   }
@@ -2139,4 +2491,220 @@ function createColonStr(aStr1, aStr2)
   }
 
   return rv;
+}
+
+
+function requestMoatCaptcha(aProxySettings, aMeekClientPath, aMeekClientArgs)
+{
+  function cleanup(aMoatRequestor, aErr)
+  {
+    if (aMoatRequestor)
+      aMoatRequestor.close();
+    removeAllBridgeDBRequestEventListeners();
+    onDismissBridgeDBRequestPrompt();
+    if (aErr && (aErr != Cr.NS_ERROR_ABORT))
+    {
+      let details;
+      if (aErr.message)
+      {
+        details = aErr.message;
+      }
+      else if (aErr.code)
+      {
+        if (aErr.code < 1000)
+          details = aErr.code;                     // HTTP status code
+        else
+          details = "0x" + aErr.code.toString(16); // nsresult
+      }
+
+      reportMoatError(details);
+    }
+  }
+
+  let moatRequestor = TorLauncherBridgeDB.createMoatRequestor();
+
+  let cancelListener = function(aEvent) {
+    if (!moatRequestor.cancel())
+      cleanup(moatRequestor, undefined); // There was no network request to cancel.
+  };
+  addBridgeDBRequestEventListener(kCaptchaCancelEventType, cancelListener);
+
+  moatRequestor.init(proxyURLFromSettings(aProxySettings),
+                     aMeekClientPath, aMeekClientArgs)
+    .then(()=>
+    {
+      let bridgeType = TorLauncherUtil.getCharPref(kPrefBridgeDBType);
+      moatRequestor.fetchBridges([bridgeType])
+      .then(aCaptchaInfo =>
+      {
+        return waitForCaptchaResponse(moatRequestor, aCaptchaInfo);
+      })
+      .then(aBridgeInfo =>
+      {
+        // Success! Keep and display the received bridge information.
+        cleanup(moatRequestor, undefined);
+        gBridgeDBBridges = aBridgeInfo.bridges;
+        showBridgeDBBridges();
+      })
+      .catch(aErr =>
+      {
+        cleanup(moatRequestor, aErr);
+      });
+    })
+    .catch(aErr =>
+    {
+      cleanup(moatRequestor, aErr);
+    });
+} // requestMoatCaptcha
+
+
+function reportMoatError(aDetails)
+{
+  if (!aDetails)
+    aDetails = "";
+
+  let msg = TorLauncherUtil.getFormattedLocalizedString("unable_to_get_bridge",
+                                                        [aDetails], 1);
+  showErrorMessage({ message: msg }, false);
+}
+
+
+function proxyURLFromSettings(aProxySettings)
+{
+  if (!aProxySettings)
+    return undefined;
+
+  let proxyURL;
+  if (aProxySettings[kTorConfKeySocks4Proxy])
+  {
+    proxyURL = "socks4a://" + aProxySettings[kTorConfKeySocks4Proxy];
+  }
+  else if (aProxySettings[kTorConfKeySocks5Proxy])
+  {
+    proxyURL = "socks5://";
+    if (aProxySettings[kTorConfKeySocks5ProxyUsername])
+    {
+      proxyURL += createColonStr(
+                      aProxySettings[kTorConfKeySocks5ProxyUsername],
+                      aProxySettings[kTorConfKeySocks5ProxyPassword]);
+      proxyURL += "@";
+    }
+    proxyURL += aProxySettings[kTorConfKeySocks5Proxy];
+  }
+  else if (aProxySettings[kTorConfKeyHTTPSProxy])
+  {
+    proxyURL = "http://";
+    if (aProxySettings[kTorConfKeyHTTPSProxyAuthenticator])
+    {
+      proxyURL += aProxySettings[kTorConfKeyHTTPSProxyAuthenticator];
+      proxyURL += "@";
+    }
+    proxyURL += aProxySettings[kTorConfKeyHTTPSProxy];
+  }
+
+  return proxyURL;
+} // proxyURLFromSettings
+
+
+// Returns a promise that is resolved with a bridge info object that includes
+// a bridges property, which is an array of bridge configuration lines.
+function waitForCaptchaResponse(aMoatRequestor, aCaptchaInfo)
+{
+  let mCaptchaInfo;
+
+  function displayCaptcha(aCaptchaInfoArg)
+  {
+    mCaptchaInfo = aCaptchaInfoArg;
+    let image = document.getElementById(kBridgeDBCaptchaImage);
+    if (image)
+    {
+      image.setAttribute("src", mCaptchaInfo.captchaImage);
+      image.style.transition = kCaptchaImageTransition;
+      image.style.height = "125px";
+    }
+
+    setBridgeDBRequestState(undefined);
+    focusCaptchaSolutionTextbox();
+  }
+
+  displayCaptcha(aCaptchaInfo);
+
+  return new Promise((aResolve, aReject) =>
+  {
+    let reloadListener = function(aEvent) {
+      // Reset the UI and request a new CAPTCHA.
+      resetBridgeDBRequestPrompt();
+      setBridgeDBRequestState("fetchingCaptcha");
+      aMoatRequestor.fetchBridges([mCaptchaInfo.transport])
+      .then(aCaptchaInfoArg =>
+      {
+        displayCaptcha(aCaptchaInfoArg);
+      })
+      .catch(aErr =>
+      {
+        aReject(aErr);
+      });
+    };
+
+    let submitListener = function(aEvent) {
+      mCaptchaInfo.solution = getElemValue(kBridgeDBCaptchaSolution);
+      setBridgeDBRequestState("checkingSolution");
+      aMoatRequestor.finishFetch(mCaptchaInfo.transport,
+                               mCaptchaInfo.challenge, mCaptchaInfo.solution)
+      .then(aBridgeInfo =>
+      {
+        setBridgeDBRequestState(undefined);
+        aResolve(aBridgeInfo);
+      })
+      .catch(aErr =>
+      {
+        setBridgeDBRequestState(undefined);
+        if ((aErr instanceof TorLauncherBridgeDB.error) &&
+            (aErr.code == TorLauncherBridgeDB.errorCodeBadCaptcha))
+        {
+          // Incorrect solution was entered. Allow the user to try again.
+          let s = TorLauncherUtil.getLocalizedString("bad_captcha_solution");
+          setElemValue(kBridgeDBCaptchaError, s);
+          focusCaptchaSolutionTextbox();
+        }
+        else
+        {
+          aReject(aErr);
+        }
+      });
+    };
+
+    addBridgeDBRequestEventListener(kCaptchaReloadEventType, reloadListener);
+    addBridgeDBRequestEventListener(kCaptchaSubmitEventType, submitListener);
+  });
+} // waitForCaptchaResponse
+
+
+function addBridgeDBRequestEventListener(aEventType, aListener)
+{
+  document.addEventListener(aEventType, aListener, false);
+  gBridgeDBRequestEventListeners.push({type: aEventType, listener: aListener});
+}
+
+
+function removeAllBridgeDBRequestEventListeners()
+{
+  for (let i = gBridgeDBRequestEventListeners.length - 1; i >= 0; --i)
+  {
+      document.removeEventListener(gBridgeDBRequestEventListeners[i].type,
+                          gBridgeDBRequestEventListeners[i].listener, false);
+  }
+
+  gBridgeDBRequestEventListeners = [];
+}
+
+
+function focusCaptchaSolutionTextbox()
+{
+  let textBox = document.getElementById(kBridgeDBCaptchaSolution);
+  if (textBox)
+  {
+    textBox.focus();
+    textBox.select();
+  }
 }

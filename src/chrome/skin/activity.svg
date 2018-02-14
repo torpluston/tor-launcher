@@ -1,0 +1,17 @@
+<!-- Based on http://goo.gl/7AJzbL  By Sam Herbert -->
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" stroke="#000">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(1 1)" stroke-width="6">
+            <circle stroke-opacity=".4" cx="18" cy="18" r="16"/>
+            <path d="M34 18c0-9.94-8.06-18-18-16">
+                <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 18 18"
+                    to="360 18 18"
+                    dur="1s"
+                    repeatCount="indefinite"/>
+            </path>
+        </g>
+    </g>
+</svg>
