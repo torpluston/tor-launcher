@@ -11,7 +11,7 @@
 
 <!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
 <!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
-<!ENTITY torSettings.configure "Configure">
+<!ENTITY torSettings.configure "Kefluniañ">
 <!ENTITY torSettings.connect "Connect">
 
 <!-- Other: -->

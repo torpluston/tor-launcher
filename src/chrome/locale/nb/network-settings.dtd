@@ -45,7 +45,7 @@
 <!ENTITY torsettings.useBridges.label "Skriv inn broinformasjon fra en betrodd kilde.">
 <!ENTITY torsettings.useBridges.placeholder "type addresse:port (én per linje)">
 
-<!ENTITY torsettings.copyLog "Kopier Torloggen til Utklippstavlen">
+<!ENTITY torsettings.copyLog "Kopier Tor-loggen til utklippstavlen">
 
 <!ENTITY torsettings.proxyHelpTitle "Mellomtjenerhjelp">
 <!ENTITY torsettings.proxyHelp1 "En lokal mellomtjener trengs når du kobler til fra et bedrifts-, skole-, eller universitets-nettverk.&#160;Hvis du ikke er sikker på hvordan du besvarer dette spørsmålet, sjekk internettinnstillingene i en annen nettleser, eller sjekk nettverksinnstillingene på systemet ditt for å se hvorvidt en mellomtjener behøves.">

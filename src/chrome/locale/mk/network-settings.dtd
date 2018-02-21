@@ -1,18 +1,18 @@
 <!ENTITY torsettings.dialog.title "Tor мрежни поставки">
 <!ENTITY torsettings.wizard.title.default "Поврзи се на Tor">
 <!ENTITY torsettings.wizard.title.configure "Tor мрежни поставки">
-<!ENTITY torsettings.wizard.title.connecting "Воспоставување на врска">
+<!ENTITY torsettings.wizard.title.connecting "Воспоставување на конекција">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Tor Прелистувач јазик">
+<!ENTITY torlauncher.localePicker.title "Tor Browser јазик">
 <!ENTITY torlauncher.localePicker.prompt "Одберете јазик.">
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Кликнете &quot;Поврзи&quot; да се поврзете на Tor.">
+<!ENTITY torSettings.connectPrompt "Кликнете &quot;Конектирај&quot; да се конектирате на Tor.">
 <!ENTITY torSettings.configurePrompt "Кликни на &quot;Постави&quot; да ги поставите мрежните поставки ако сте во земја која го цензурира Tor (како Египет, Кина, Турција) или ако се поврзувате од приватна мрежа која бара прокси.">
 <!ENTITY torSettings.configure "Постави">
-<!ENTITY torSettings.connect "Поврзи">
+<!ENTITY torSettings.connect "Конектирај">
 
 <!-- Other: -->
 
@@ -21,7 +21,7 @@
 <!ENTITY torsettings.reconfigTor "Промени поставки">
 
 <!ENTITY torsettings.discardSettings.prompt "Имате поставено Tor мостови или имате внесено локални прокси поставки.&#160; Директно да се поврзете на Tor мрежата, овие поставки мораат да бидат избришани.">
-<!ENTITY torsettings.discardSettings.proceed "Избриши ги поставките и Поврзи се">
+<!ENTITY torsettings.discardSettings.proceed "Избриши ги поставките и конектирај се">
 
 <!ENTITY torsettings.optional "Опционално">
 
@@ -36,22 +36,22 @@
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "Овој компјутер оди преку огнен ѕид кој дозволува конекции до одредени порти">
+<!ENTITY torsettings.firewall.checkbox "Овој компјутер оди преку заштитен ѕид кој дозволува конекции до одредени порти">
 <!ENTITY torsettings.firewall.allowedPorts "Дозволени порти:">
 <!ENTITY torsettings.useBridges.checkbox "Tor е цензуриран во мојата држава">
 <!ENTITY torsettings.useBridges.default "Одбери вграден мост">
-<!ENTITY torsettings.useBridges.default.placeholder "селектирај мост">
+<!ENTITY torsettings.useBridges.default.placeholder "одбери мост">
 <!ENTITY torsettings.useBridges.custom "Обезбеди мост кој го знам">
 <!ENTITY torsettings.useBridges.label "Внесете информации за мост од доверлив извор.">
 <!ENTITY torsettings.useBridges.placeholder "внеси адреса:порта (по една во секој ред)">
 
-<!ENTITY torsettings.copyLog "Внеси го Tor логот за залепување">
+<!ENTITY torsettings.copyLog "Копирај го Tor логот за залепување">
 
 <!ENTITY torsettings.proxyHelpTitle "Прокси помош">
-<!ENTITY torsettings.proxyHelp1 "Локален прокси е потребен кога се приклучувате преку компанија, училиште, или универзитетска морежа.&#160; Ако не сте сигурни како да одговорите на ова прашање, погледнете во Интернет поставките во друг Интернет прелистувач или проверете ги вашите системски мрежни поставки да видите дали е потребен прокси.">
+<!ENTITY torsettings.proxyHelp1 "Локален прокси е потребен кога се приклучувате преку компанија, училиште, или универзитетска мрежа.&#160; Ако не сте сигурни како да одговорите на ова прашање, погледнете во Интернет поставките во друг Интернет прелистувач или проверете ги вашите системски мрежни поставки да видите дали е потребен прокси.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Мост јазол помош">
-<!ENTITY torsettings.bridgeHelp1 "Мостовите се инеизлистани јазли кои го прават потешко блокирањето на врските кон Tor мрежата.&#160; Секој тип на мост користи различен метод за избегнување на цензурирањето.&#160; obfs мостот го прави протокот на информации да изгледа нормален, како од е од некој стандарден прелистувач наместо од Tor.">
+<!ENTITY torsettings.bridgeHelp1 "Мостовите се неизлистани јазли кои го прават потешко блокирањето на врските кон Tor мрежата.&#160; Секој тип на мост користи различен метод за избегнување на цензурирањето.&#160; obfs мостот го прави протокот на информации да изгледа нормален, како да е од некој стандарден прелистувач наместо од Tor.">
 <!ENTITY torsettings.bridgeHelp2 "Поради колку конкретно државите се обидуваат да го блокираат Tor, конкретни мостови работат во едни конкретни држави но не и во други.&#160; Ако не си сигурен кои мостови работат во твојата држава, посети torproject.org/about/contact.html#support">
 
 <!-- Progress -->

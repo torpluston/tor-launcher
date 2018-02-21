@@ -1,6 +1,6 @@
 <!ENTITY torsettings.dialog.title "Tor 네트워크 설정">
 <!ENTITY torsettings.wizard.title.default "Connect to Tor">
-<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.configure "Tor 네트워크 설정">
 <!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
@@ -55,4 +55,4 @@
 <!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torprogress.pleaseWait "Tor 네트워크에 연결할 때까지 기다려주십시오.&#160; 몇 분 정도 소요될 수 있습니다.">

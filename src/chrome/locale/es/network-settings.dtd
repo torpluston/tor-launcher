@@ -51,8 +51,8 @@
 <!ENTITY torsettings.proxyHelp1 "Se necesita un proxy local cuando se conecta a través de una red de empresa, escuela o universidad. Si no estás seguro de cómo responder a esta pregunta, consulta la configuración de Internet en otro navegador o consulta la configuración de red de tu sistema para ver si se necesita un proxy.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Ayuda de repetidores puente ('bridge relays')">
-<!ENTITY torsettings.bridgeHelp1 "Los puentes son transmisores no listados que dificultan el bloqueo de las conexiones a la red Tor&amp;#160. Cada tipo de puente utiliza un método diferente para evitar la censura&amp;#160. Los obfs hacen que tu tráfico parezca ruido aleatorio, y los modestos hacen que tu tráfico parezca que se está conectando a ese servicio en lugar de a Tor.">
+<!ENTITY torsettings.bridgeHelp1 "Los puentes son transmisores no listados que dificultan el bloqueo de las conexiones a la red Tor.&#160; Cada tipo de puente utiliza un método diferente para evitar la censura.&#160; Los obfs hacen que tu tráfico parezca ruido aleatorio, y los modestos hacen que tu tráfico parezca que se está conectando a ese servicio en lugar de a Tor.">
 <!ENTITY torsettings.bridgeHelp2 "Debido a la forma en que ciertos países intentan bloquear a Tor, ciertos puentes funcionan en algunos países pero no en otros. Si no estás segura de qué puentes funcionan en tu país, visita torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Espera mientras establecemos una conexión a la red To.&amp;#160r. Esto puede durar varios minutos.">
+<!ENTITY torprogress.pleaseWait "Espera mientras establecemos una conexión a la red Tor.&#160; Esto puede durar varios minutos.">

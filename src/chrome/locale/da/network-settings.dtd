@@ -1,10 +1,10 @@
-<!ENTITY torsettings.dialog.title "Tor netværksindstillinger">
+<!ENTITY torsettings.dialog.title "Tor-netværksindstillinger">
 <!ENTITY torsettings.wizard.title.default "Opret forbindelse til Tor">
-<!ENTITY torsettings.wizard.title.configure "Tor netværksindstillinger">
+<!ENTITY torsettings.wizard.title.configure "Tor-netværksindstillinger">
 <!ENTITY torsettings.wizard.title.connecting "Etablerer en forbindelse">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Tor Browser sprog">
+<!ENTITY torlauncher.localePicker.title "Tor Browser-sprog">
 <!ENTITY torlauncher.localePicker.prompt "Vælg venligst et sprog.">
 
 <!-- For "first run" wizard: -->
@@ -26,7 +26,7 @@
 <!ENTITY torsettings.optional "Valgfri">
 
 <!ENTITY torsettings.useProxy.checkbox "Jeg bruger en proxy til at oprette forbindelse til internettet">
-<!ENTITY torsettings.useProxy.type "Proxy type:">
+<!ENTITY torsettings.useProxy.type "Proxytype:">
 <!ENTITY torsettings.useProxy.type.placeholder "vælg en proxytype">
 <!ENTITY torsettings.useProxy.address "Adresse:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adresse eller værtsnavn">
@@ -36,7 +36,7 @@
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP/HTTPS">
-<!ENTITY torsettings.firewall.checkbox "Denne computer går gennem en firewall som kun tillader forbindelse til specifikke porte">
+<!ENTITY torsettings.firewall.checkbox "Computeren går gennem en firewall som kun tillader forbindelse til specifikke porte">
 <!ENTITY torsettings.firewall.allowedPorts "Tilladte Porte:">
 <!ENTITY torsettings.useBridges.checkbox "Tor er censureret i mit land">
 <!ENTITY torsettings.useBridges.default "Vælg en indbygget bro">
@@ -45,7 +45,7 @@
 <!ENTITY torsettings.useBridges.label "Indtast broinformation fra en betroet kilde.">
 <!ENTITY torsettings.useBridges.placeholder "skriv adresse:port (én pr. linje)">
 
-<!ENTITY torsettings.copyLog "Kopier Tor loggen til udklipsholderen">
+<!ENTITY torsettings.copyLog "Kopiér Tor-loggen til udklipsholderen">
 
 <!ENTITY torsettings.proxyHelpTitle "Hjælp til proxy">
 <!ENTITY torsettings.proxyHelp1 "Det er nødvendigt med en lokal proxy når der oprettes forbindelse gennem et firma-, skole- eller universitetsnetværk.&#160;Hvis du i tvivl om hvordan du skal svarer på sprøgsmålet, så kig i internetindstillingerne i en anden browser eller tjek dit systems netværksindstillinger, for at se om det er nødvendigt med en proxy.">

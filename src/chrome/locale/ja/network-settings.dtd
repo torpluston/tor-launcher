@@ -39,10 +39,10 @@
 <!ENTITY torsettings.firewall.checkbox "このコンピューターは特定のポートへの接続のみ許可するファイアーウォールを通します。">
 <!ENTITY torsettings.firewall.allowedPorts "許可されたポート:">
 <!ENTITY torsettings.useBridges.checkbox "Tor は私の国では検閲されています">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.default "内蔵ブリッジを選択する">
+<!ENTITY torsettings.useBridges.default.placeholder "ブリッジを選択">
+<!ENTITY torsettings.useBridges.custom "知っているブリッジを使う">
+<!ENTITY torsettings.useBridges.label "信頼できる情報源からのブリッジ情報を入力してください。">
 <!ENTITY torsettings.useBridges.placeholder "アドレス:ポート を入力（1行につきひとつ）">
 
 <!ENTITY torsettings.copyLog "Torのログをクリップボードにコピー">
@@ -51,8 +51,8 @@
 <!ENTITY torsettings.proxyHelp1 "会社、学校、大学等のネットワークを通して接続する場合、ローカルプロクシが必要になります。&#160;もしこの質問にどう答えればよいかわからない場合は、他のブラウザのインターネット設定を見るか、システムのネットワーク設定を確認するかして、プロクシが必要であるかを調べてください。">
 
 <!ENTITY torsettings.bridgeHelpTitle "ブリッジリレーのヘルプ">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelp1 "ブリッジとはTorネットワークへの接続をブロックすることを難しくするためのリストされていないリレーです。&#160; それぞれの種類のブリッジは検閲を避けるための異なる手法を利用しています。&#160; obfsのものはあなたのトラフィックをランダムなノイズのように見せかけ，meekのものはあなたのトラフィックをTorではなくそのサービスへの接続であるように見せかけます。">
+<!ENTITY torsettings.bridgeHelp2 "その国がどのようにしてTorをブロックしようと試みているかによって、あるブリッジがある国では機能しても他の国では動かない場合があります。&#160; もしどのブリッジがあなたの国で機能するかわからない場合は torproject.org/about/contact.html#support にアクセスしてください。">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torprogress.pleaseWait "Torネットワークへの接続が確立されるまでお待ちください。&#160; これには数分間かかることがあります。">

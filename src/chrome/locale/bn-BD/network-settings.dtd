@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "টর সাথে সংযোগ করতে &quot;সংযোগ করুন&quot; ক্লিক করুন">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.configurePrompt "আপনি এমন একটি দেশে থাকলে নেটওয়ার্ক সেটিংস সংশোধন করতে &quot;কনফিগার করুন&quot; ক্লিক করুন যা টরকে সেন্সর করে (যেমনঃ মিশর, চীন, তুরস্ক) অথবা যদি আপনি একটি প্রাইভেট নেটওয়ার্ক থেকে সংযোগ করেন যা প্রক্সি প্রয়োজন।">
 <!ENTITY torSettings.configure "কনফিগার করুন">
 <!ENTITY torSettings.connect "সংযোগ করা">
 

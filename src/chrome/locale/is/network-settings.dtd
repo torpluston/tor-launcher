@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "Netkerfisstillingar Tor">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
-<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.default "Tengjast við Tor-netið">
+<!ENTITY torsettings.wizard.title.configure "Netkerfisstillingar Tor">
+<!ENTITY torsettings.wizard.title.connecting "Kem á tengingu">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Tungumál Tor-vafra">
@@ -9,7 +9,7 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
+<!ENTITY torSettings.connectPrompt "Smelltu á &quot;Tengjast&quot; til að tengjast við Tor.">
 <!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Stilla">
 <!ENTITY torSettings.connect "Tengjast">
@@ -25,9 +25,9 @@
 
 <!ENTITY torsettings.optional "Valkvætt">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
+<!ENTITY torsettings.useProxy.checkbox "Ég nota milliþjón (proxy) til að tengjast við internetið">
 <!ENTITY torsettings.useProxy.type "Gerð milliþjóns:">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
+<!ENTITY torsettings.useProxy.type.placeholder "veldu tegund milliþjóns">
 <!ENTITY torsettings.useProxy.address "Vistfang:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-vistfang eða vélarheiti">
 <!ENTITY torsettings.useProxy.port "Gátt:">
@@ -38,16 +38,16 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "This computer goes through a firewall that only allows connections to certain ports">
 <!ENTITY torsettings.firewall.allowedPorts "Leyfðar gáttir:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.checkbox "Tor er ritskoðað í landinu mínu">
+<!ENTITY torsettings.useBridges.default "Veldu innbyggða brú">
+<!ENTITY torsettings.useBridges.default.placeholder "veldu brú">
 <!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
 <!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.useBridges.placeholder "settu inn vistfang:gátt (eitt á hverja línu)">
 
 <!ENTITY torsettings.copyLog "Afrita atvikaskrá Tor á klippispjald">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
+<!ENTITY torsettings.proxyHelpTitle "Hjálp fyrir milliþjóna">
 <!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Hjálp fyrir brúaendurvarpa">
@@ -55,4 +55,4 @@
 <!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torprogress.pleaseWait "Bíddu aðeins á meðan tengingu er komið á við Tor-netið.&#160; Það getur tekið nokkrar mínútur.">

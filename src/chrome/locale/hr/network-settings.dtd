@@ -1,6 +1,6 @@
 <!ENTITY torsettings.dialog.title "Postavke Tor Mreže">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
-<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
+<!ENTITY torsettings.wizard.title.default "Spoji se na Tor">
+<!ENTITY torsettings.wizard.title.configure "Postavke Tor Mreže">
 <!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
 
 <!-- For locale picker: -->
@@ -55,4 +55,4 @@
 <!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torprogress.pleaseWait "Molimo pričekajte dok uspostavljamo vezu sa Tor mrežom. &#160; Ovo može potrajati nekoliko minuta.">
