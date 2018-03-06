@@ -561,6 +561,8 @@ let TorLauncherUtil =  // Public
             path = "Tor\\torrc";
           else if ("tordatadir" == aTorFileType)
             path = "Tor";
+          else if ("pt-profiles-dir" == aTorFileType)
+            path = "Tor\\PluggableTransports";
         }
         else if (this.isMac)
         {
@@ -574,6 +576,8 @@ let TorLauncherUtil =  // Public
             path = "Tor/torrc";
           else if ("tordatadir" == aTorFileType)
             path = "Tor";
+          else if ("pt-profiles-dir" == aTorFileType)
+            path = "Tor/PluggableTransports";
           else if (isIPC)
             path = "Tor/" + ipcFileName;
         }
@@ -589,6 +593,8 @@ let TorLauncherUtil =  // Public
             path = "Tor/torrc";
           else if ("tordatadir" == aTorFileType)
             path = "Tor";
+          else if ("pt-profiles-dir" == aTorFileType)
+            path = "Tor/PluggableTransports";
           else if (isIPC)
             path = "Tor/" + ipcFileName;
         }
@@ -606,7 +612,9 @@ let TorLauncherUtil =  // Public
           path = "Data\\Tor\\torrc";
         else if ("tordatadir" == aTorFileType)
           path = "Data\\Tor";
-      }
+        else if ("pt-profiles-dir" == aTorFileType)
+          path = "Data\\Browser";
+        }
       else // Linux, Mac OS and others.
       {
         // This block is also used for the non-TorBrowser-Data/ case.
@@ -620,6 +628,8 @@ let TorLauncherUtil =  // Public
           path = "Data/Tor/torrc";
         else if ("tordatadir" == aTorFileType)
           path = "Data/Tor";
+        else if ("pt-profiles-dir" == aTorFileType)
+          path = "Data/Browser";
         else if (isIPC)
           path = "Data/Tor/" + ipcFileName;
       }
@@ -662,10 +672,15 @@ let TorLauncherUtil =  // Public
         {
           try
           {
-            if ("tordatadir" == aTorFileType)
+            if (("tordatadir" == aTorFileType) ||
+                ("pt-profiles-dir" == aTorFileType))
+            {
               torFile.create(torFile.DIRECTORY_TYPE, 0o700);
+            }
             else
+            {
               torFile.create(torFile.NORMAL_FILE_TYPE, 0o600);
+            }
           }
           catch (e)
           {
