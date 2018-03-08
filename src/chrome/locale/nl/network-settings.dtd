@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor is geblokkeerd in mijn land.">
 <!ENTITY torsettings.useBridges.default "Selecteer een ingebouwde bridge">
 <!ENTITY torsettings.useBridges.default.placeholder "Kies een bridge">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "Verzenden">
 <!ENTITY torsettings.useBridges.custom "Geef een bridge weer die ik ken">
 <!ENTITY torsettings.useBridges.label "Voer bridge informatie van een vertrouwde bron in.">
 <!ENTITY torsettings.useBridges.placeholder "type adres:poort (een per lijn)">

@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor er sensurert i mitt land">
 <!ENTITY torsettings.useBridges.default "Velg en bro med flere innfartsårer">
 <!ENTITY torsettings.useBridges.default.placeholder "velg en bro">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "Send inn">
 <!ENTITY torsettings.useBridges.custom "Tilby en bro jeg kjenner">
 <!ENTITY torsettings.useBridges.label "Skriv inn broinformasjon fra en betrodd kilde.">
 <!ENTITY torsettings.useBridges.placeholder "type addresse:port (én per linje)">

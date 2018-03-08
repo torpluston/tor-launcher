@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "Manā valstī Tor tiek cenzēts">
 <!ENTITY torsettings.useBridges.default "Izvēlieties iebūvētu tiltu">
 <!ENTITY torsettings.useBridges.default.placeholder "izvēlieties tiltu">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "Iesniegt">
 <!ENTITY torsettings.useBridges.custom "Piedāvāt tiltu, kuru es zinu">
 <!ENTITY torsettings.useBridges.label "Ievadiet uzticama avota sniegtu tilta informāciju.">
 <!ENTITY torsettings.useBridges.placeholder "rakstiet address:port (vienu rindā)">

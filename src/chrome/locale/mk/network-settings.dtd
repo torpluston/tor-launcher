@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor е цензуриран во мојата држава">
 <!ENTITY torsettings.useBridges.default "Одбери вграден мост">
 <!ENTITY torsettings.useBridges.default.placeholder "одбери мост">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "Submit">
 <!ENTITY torsettings.useBridges.custom "Обезбеди мост кој го знам">
 <!ENTITY torsettings.useBridges.label "Внесете информации за мост од доверлив извор.">
 <!ENTITY torsettings.useBridges.placeholder "внеси адреса:порта (по една во секој ред)">

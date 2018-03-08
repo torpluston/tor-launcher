@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor disensor di negara saya">
 <!ENTITY torsettings.useBridges.default "Pilih satu built-in bridge">
 <!ENTITY torsettings.useBridges.default.placeholder "pilih satu bridge">
+<!ENTITY torsettings.useBridges.bridgeDB "Meminta sebuah bridge ke torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Masukkan karakter-karakter dari gambar tesebut.">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Dapatkan tantangan baru">
+<!ENTITY torsettings.useBridges.captchaSubmit "Kirim">
 <!ENTITY torsettings.useBridges.custom "Sediakan sebuah bridge yang saya tahu">
 <!ENTITY torsettings.useBridges.label "Masukkan informasi bridge dari sumber terpercaya">
 <!ENTITY torsettings.useBridges.placeholder "masukkan address:port (satu entri per baris)">

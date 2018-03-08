@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "我所在国家对 Tor 进行了封锁">
 <!ENTITY torsettings.useBridges.default "选择内置网桥">
 <!ENTITY torsettings.useBridges.default.placeholder "选择网桥">
+<!ENTITY torsettings.useBridges.bridgeDB "从torproject.org获取一个网桥">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "请输入图片中出现的字符">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "迎接新的挑战">
+<!ENTITY torsettings.useBridges.captchaSubmit "提交">
 <!ENTITY torsettings.useBridges.custom "输入获取的网桥">
 <!ENTITY torsettings.useBridges.label "输入可信来源提供的网桥：">
 <!ENTITY torsettings.useBridges.placeholder "输入地址:端口（每行一个）">

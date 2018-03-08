@@ -1,5 +1,5 @@
 <!ENTITY torsettings.dialog.title "Configuració de la xarxa Tor">
-<!ENTITY torsettings.wizard.title.default "Connectar a Tor">
+<!ENTITY torsettings.wizard.title.default "Connecta a Tor">
 <!ENTITY torsettings.wizard.title.configure "Configuració de la xarxa Tor">
 <!ENTITY torsettings.wizard.title.connecting "S'està establint connexió">
 
@@ -9,8 +9,8 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Feu clic a &quot;Connectar&quot; per a connectar a Tor.">
-<!ENTITY torSettings.configurePrompt "Feu clic a &quot;Configura&quot; per ajustar la configuració de la xarxa si esteu en un país que censura Tor (com ara Egipte, Xina, Turquia) o si esteu connectant des d'una xarxa privada que requereix un servidor intermediari.">
+<!ENTITY torSettings.connectPrompt "Feu clic a «Connectar» per a connectar a Tor.">
+<!ENTITY torSettings.configurePrompt "Feu clic a «Configura» per a ajustar la configuració de la xarxa si esteu en un país que censura Tor (com ara Egipte, Xina, Turquia) o si us esteu connectant des d'una xarxa privada que requereix un servidor intermediari.">
 <!ENTITY torSettings.configure "Configura">
 <!ENTITY torSettings.connect "Conecta't">
 
@@ -26,9 +26,9 @@
 <!ENTITY torsettings.optional "Opcional
 ">
 
-<!ENTITY torsettings.useProxy.checkbox "Jo utilitzo un proxy per a accedir a Internet">
+<!ENTITY torsettings.useProxy.checkbox "Utilitzo un servidor intermediari per a accedir a Internet">
 <!ENTITY torsettings.useProxy.type "Tipus de servidor intermediari local:">
-<!ENTITY torsettings.useProxy.type.placeholder "seleccioneu un tipus de proxy">
+<!ENTITY torsettings.useProxy.type.placeholder "seleccioneu un tipus de servidor intermediari">
 <!ENTITY torsettings.useProxy.address "Adreça:">
 <!ENTITY torsettings.useProxy.address.placeholder "Adreça IP o nom del host">
 <!ENTITY torsettings.useProxy.port "Port:">
@@ -42,18 +42,22 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor està censurat al meu país">
 <!ENTITY torsettings.useBridges.default "Seleccioneu un pont predefinit">
 <!ENTITY torsettings.useBridges.default.placeholder "seleccioneu un pont">
-<!ENTITY torsettings.useBridges.custom "Proveir un pont conegut">
-<!ENTITY torsettings.useBridges.label "Insertar informació d'un pont d'una font fiable">
-<!ENTITY torsettings.useBridges.placeholder "introduiu adreça:port (un per línia)">
+<!ENTITY torsettings.useBridges.bridgeDB "Sol·licita un pont a torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Introduïu els caràcters de la imatge">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Obtén un repte nou">
+<!ENTITY torsettings.useBridges.captchaSubmit "Tramet">
+<!ENTITY torsettings.useBridges.custom "Proveeix un pont conegut">
+<!ENTITY torsettings.useBridges.label "Introdueix informació d'un pont d'una font fiable.">
+<!ENTITY torsettings.useBridges.placeholder "introduïu adreça:port (un per línia)">
 
 <!ENTITY torsettings.copyLog "Copia el registre de Tor al porta-retalls">
 
-<!ENTITY torsettings.proxyHelpTitle "Ajuda del proxy">
-<!ENTITY torsettings.proxyHelp1 "Un proxy local es necessari quan us connecteu mitjançant la xarxa d'una companyia, escola o universitat.&#160;Si no sabeu com respondre aquesta pregunta, mireu les preferències d'internet d'un altre navegador o reviseu la configuració de xarxa del vostre sistema per veure si cal un servidor intermediari local. ">
+<!ENTITY torsettings.proxyHelpTitle "Ajuda del servidor intermediari">
+<!ENTITY torsettings.proxyHelp1 "Cal un servidor intermediari local en connectar-vos mitjançant la xarxa d'una companyia, escola o universitat.&#160;Si no sabeu com respondre aquesta pregunta, mireu les preferències d'internet d'un altre navegador o reviseu la configuració de xarxa del vostre sistema per a veure si cal un servidor intermediari local.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Ajuda per als repetidors de pont">
-<!ENTITY torsettings.bridgeHelp1 "Els ponts son repetidors no llistats que fan més dificultós el bloqueig de connexions a la xarxa Tor.&#160; Cada tipus de pont usa un diferent mètode per a evitar la censura.&#160; Els tipus OBFS fan passar el seu tràfic com a soroll aleatori, mentre que els meek fan que el seu trafic parega que es connecta a un altre servici diferent a Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Depenent de com el països intenten bloquejar Tor, alguns ponts poden funcionar correctament en certs països però no en altres.&#160; Si no esteu segurs de quins ponts funcionen al vostre país, visiteu torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelp1 "Els ponts són repetidors no llistats que fan més difícil el bloqueig de connexions a la xarxa Tor.&#160; Cada tipus de pont usa un mètode diferent per a evitar la censura.&#160; Els tipus OBFS fan passar el vostre tràfic com a soroll aleatori, mentre que els MEEK fan que paregui que es connecta a un altre servei diferent a Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Depenent de com intente bloquejar Tor cada país, alguns ponts poden funcionar correctament en certs països però no en altres.&#160; Si no esteu segurs de quins ponts funcionen al vostre país, visiteu torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Espereu mentre establim la connexió amb la xarxa Tor.&#160; Això pot tardar uns minuts.">
+<!ENTITY torprogress.pleaseWait "Espereu mentre establim una connexió amb la xarxa Tor.&#160; Això pot tardar uns minuts.">

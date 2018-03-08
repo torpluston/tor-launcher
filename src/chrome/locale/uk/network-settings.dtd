@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "Тор цензується в моїй країні">
 <!ENTITY torsettings.useBridges.default "Виберіть вбудований міст">
 <!ENTITY torsettings.useBridges.default.placeholder "Виберіть міст">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "Надіслати">
 <!ENTITY torsettings.useBridges.custom "Надайте міст, який я знаю">
 <!ENTITY torsettings.useBridges.label "Уведіть інформацію про міст із надійного джерела.">
 <!ENTITY torsettings.useBridges.placeholder "тип адреси: порт (по одному на рядок)">
@@ -51,7 +55,7 @@
 <!ENTITY torsettings.proxyHelp1 "Локальний проксі-сервер потрібен під час підключення через мережу компанії, школи або університету.&#160;Якщо ви не знаєте, як відповісти на це запитання, перегляньте налаштування Інтернету в іншому веб-переглядачі або перевірте ваші мережеві налаштування системи, щоб дізнатися, чи потрібен проксі-сервер.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Допомога по ретрансляторам типу міст">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
+<!ENTITY torsettings.bridgeHelp1 "Мости - це незареєстровані передавачі, що ускладнюють блокування з'єднання з мережею Tor.&#160; Кожен тип мосту використовує інакший метод, щоб уникнути цензури.&#160;  Функції obfs роблять ваш трафік схожим на випадковий шум, а функції meek роблять ваш трафік схожим на те, що він підключається до цієї служби не через Tor.">
 <!ENTITY torsettings.bridgeHelp2 "Через те, як певні країни намагаються заблокувати Tor, деякі мости працюють в деяких країнах, а в інших ні.&#160; Якщо ви не впевнені в тому, які мости працюють у вашій країні, відвідайте torproject.org/about/contact.html#support">
 
 <!-- Progress -->

@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "我的國家中 Tor 受到審查">
 <!ENTITY torsettings.useBridges.default "選擇內建的橋接">
 <!ENTITY torsettings.useBridges.default.placeholder "選擇網橋">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "提交">
 <!ENTITY torsettings.useBridges.custom "提供一個認識的橋接 ">
 <!ENTITY torsettings.useBridges.label "從信任的來源輸入橋接資訊">
 <!ENTITY torsettings.useBridges.placeholder "種類地址:端口 (一行一個)">

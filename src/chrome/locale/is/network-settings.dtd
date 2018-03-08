@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor er ritskoðað í landinu mínu">
 <!ENTITY torsettings.useBridges.default "Veldu innbyggða brú">
 <!ENTITY torsettings.useBridges.default.placeholder "veldu brú">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "Submit">
 <!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
 <!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
 <!ENTITY torsettings.useBridges.placeholder "settu inn vistfang:gátt (eitt á hverja línu)">

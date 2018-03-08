@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor dilarang penggunaannya di negara saya">
 <!ENTITY torsettings.useBridges.default "Pilih satu titi terbina-dalam">
 <!ENTITY torsettings.useBridges.default.placeholder "pilih satu titi">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "Submit">
 <!ENTITY torsettings.useBridges.custom "Sediakan satu titi yang saya tahu">
 <!ENTITY torsettings.useBridges.label "Masukkan maklumat titi dari sumber yang dipercayai.">
 <!ENTITY torsettings.useBridges.placeholder "taip alamat:port (satu per baris)">

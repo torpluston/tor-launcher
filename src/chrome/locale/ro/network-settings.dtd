@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor este cenzurat în țara mea">
 <!ENTITY torsettings.useBridges.default "Selectează o punte integrată">
 <!ENTITY torsettings.useBridges.default.placeholder "selectează o punte">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "A depune">
 <!ENTITY torsettings.useBridges.custom "Furnizează o punte pe care o știu">
 <!ENTITY torsettings.useBridges.label "Introdu informația despre punte dintr-o sursă de încredere">
 <!ENTITY torsettings.useBridges.placeholder "scrie adresă:port (una pe linie)">

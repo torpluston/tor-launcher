@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor je v mé zemi cenzurován">
 <!ENTITY torsettings.useBridges.default "Vyberte vestavěný most">
 <!ENTITY torsettings.useBridges.default.placeholder "vyberte most">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "Předložit">
 <!ENTITY torsettings.useBridges.custom "Znám poskytovatele mostu">
 <!ENTITY torsettings.useBridges.label "Zadejte informace o mostu z důvěryhodného zdroje.">
 <!ENTITY torsettings.useBridges.placeholder "napište adresa:post (jedna položka na řádek)">

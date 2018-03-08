@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "A Tor cenzúrázva van az országomban">
 <!ENTITY torsettings.useBridges.default "Válasszon ki egy beépített hidat">
 <!ENTITY torsettings.useBridges.default.placeholder "Válasszon ki egy hidat">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "Elküld">
 <!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
 <!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
 <!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">

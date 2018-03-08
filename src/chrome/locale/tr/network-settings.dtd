@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "Bulunduğum ülkede Tor engelleniyor">
 <!ENTITY torsettings.useBridges.default "Bir hazır köprü seçin">
 <!ENTITY torsettings.useBridges.default.placeholder "bir köprü seçin">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "Gönder">
 <!ENTITY torsettings.useBridges.custom "Bildiğim bir köprü sağla">
 <!ENTITY torsettings.useBridges.label "Güvenli bir kaynaktan gelen köprü bilgisini yazın.">
 <!ENTITY torsettings.useBridges.placeholder "adres:kapı numarası şeklinde yazın (her satıra bir tane)">

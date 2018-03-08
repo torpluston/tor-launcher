@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "Déantar cinsireacht ar Tor sa tír seo">
 <!ENTITY torsettings.useBridges.default "Roghnaigh droichead ionsuite">
 <!ENTITY torsettings.useBridges.default.placeholder "roghnaigh droichead">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "Submit">
 <!ENTITY torsettings.useBridges.custom "Úsáid droichead ar m'eolas">
 <!ENTITY torsettings.useBridges.label "Cuir isteach eolas faoi dhroichead ó fhoinse iontaofa.">
 <!ENTITY torsettings.useBridges.placeholder "clóscríobh seoladh:port (ceann amháin ar gach líne)">

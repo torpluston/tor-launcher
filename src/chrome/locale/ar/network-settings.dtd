@@ -41,6 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "تور محجوب في بلدي">
 <!ENTITY torsettings.useBridges.default "إختر جسرا مُدمَجا في البرنامج">
 <!ENTITY torsettings.useBridges.default.placeholder "إختر جسرا">
+<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSubmit "إرسال">
 <!ENTITY torsettings.useBridges.custom "إدخال عنوان جسرٍ أعرفه">
 <!ENTITY torsettings.useBridges.label "أدخل معلومات جسر (بريدج) من مصدر موثوق.">
 <!ENTITY torsettings.useBridges.placeholder "اكتب العنوان:المنفذ (واحد لكل سطر)">
