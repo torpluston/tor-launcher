@@ -46,7 +46,7 @@ pref("extensions.torlauncher.torrc_path", "");
 pref("extensions.torlauncher.tordatadir_path", "");
 
 // BridgeDB-related preferences (used for Moat).
-pref("extensions.torlauncher.bridgedb_front", "www.google.com");
+pref("extensions.torlauncher.bridgedb_front", "dontbeevil.appspot.com");
 pref("extensions.torlauncher.bridgedb_reflector", "https://tor-bridges-hyphae-channel.appspot.com");
 pref("extensions.torlauncher.moat_service", "https://bridges.torproject.org/moat");
 pref("extensions.torlauncher.bridgedb_bridge_type", "obfs4");
