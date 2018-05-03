@@ -41,9 +41,9 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor viene censurato nel mio Paese">
 <!ENTITY torsettings.useBridges.default "Seleziona un bridge integrato">
 <!ENTITY torsettings.useBridges.default.placeholder "seleziona un bridge">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.bridgeDB "Richiedi un bridge da torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Inserisci i caratteri dell'immagine">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Carica una nuova verifica">
 <!ENTITY torsettings.useBridges.captchaSubmit "Invia">
 <!ENTITY torsettings.useBridges.custom "Fornisci un bridge che conosco">
 <!ENTITY torsettings.useBridges.label "Inserisci le informazioni del bridge da una fonte fidata.">

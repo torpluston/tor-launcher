@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "Clique em 'Ligar' para ligar ao Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.configurePrompt "Clique em “Configurar” para ajustar as definições de rede se estiver num país que censura o Tor (tal como China, Egito, Turquia) ou se estiver a ligar a partir de uma rede privada que requer um proxy.">
 <!ENTITY torSettings.configure "Configurar">
 <!ENTITY torSettings.connect "Ligar">
 
@@ -39,11 +39,11 @@
 <!ENTITY torsettings.firewall.checkbox "Este computador liga através de uma firewall que só permite ligações para determinadas portas.">
 <!ENTITY torsettings.firewall.allowedPorts "Portas permitidas:">
 <!ENTITY torsettings.useBridges.checkbox "Tor é censurado no meu país">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default "Selecionar um ponte integrada">
 <!ENTITY torsettings.useBridges.default.placeholder "selecionar uma ponte">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.bridgeDB "Solicitar uma ponte a partir de torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Insira os carateres da imagem">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Obter um novo desafio">
 <!ENTITY torsettings.useBridges.captchaSubmit "Submeter">
 <!ENTITY torsettings.useBridges.custom "Fornecer uma ponte que eu conheça">
 <!ENTITY torsettings.useBridges.label "Inserir a informação de ponte de uma fonte confiável">

@@ -42,7 +42,7 @@
 <!ENTITY torsettings.useBridges.default "Válasszon ki egy beépített hidat">
 <!ENTITY torsettings.useBridges.default.placeholder "Válasszon ki egy hidat">
 <!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Adja meg a karaktereket amik a fenti képen láthatóak">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
 <!ENTITY torsettings.useBridges.captchaSubmit "Elküld">
 <!ENTITY torsettings.useBridges.custom "Provide a bridge I know">

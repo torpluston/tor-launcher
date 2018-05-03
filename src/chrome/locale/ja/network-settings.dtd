@@ -41,9 +41,9 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor は私の国では検閲されています">
 <!ENTITY torsettings.useBridges.default "内蔵ブリッジを選択する">
 <!ENTITY torsettings.useBridges.default.placeholder "ブリッジを選択">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.bridgeDB "torproject.orgからブリッジの要求をする">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "画像から文字を入力してください...">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "チャレンジを更新する">
 <!ENTITY torsettings.useBridges.captchaSubmit "生成">
 <!ENTITY torsettings.useBridges.custom "知っているブリッジを使う">
 <!ENTITY torsettings.useBridges.label "信頼できる情報源からのブリッジ情報を入力してください。">

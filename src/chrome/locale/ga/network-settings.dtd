@@ -41,15 +41,15 @@
 <!ENTITY torsettings.useBridges.checkbox "Déantar cinsireacht ar Tor sa tír seo">
 <!ENTITY torsettings.useBridges.default "Roghnaigh droichead ionsuite">
 <!ENTITY torsettings.useBridges.default.placeholder "roghnaigh droichead">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
-<!ENTITY torsettings.useBridges.captchaSubmit "Submit">
+<!ENTITY torsettings.useBridges.bridgeDB "Iarr droichead ó torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Cuir isteach na carachtair a fheiceann tú sa bpictiúr">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Faigh dúshlán nua">
+<!ENTITY torsettings.useBridges.captchaSubmit "Seol">
 <!ENTITY torsettings.useBridges.custom "Úsáid droichead ar m'eolas">
 <!ENTITY torsettings.useBridges.label "Cuir isteach eolas faoi dhroichead ó fhoinse iontaofa.">
 <!ENTITY torsettings.useBridges.placeholder "clóscríobh seoladh:port (ceann amháin ar gach líne)">
 
-<!ENTITY torsettings.copyLog "Cóipeáil an Logchomhad Tor go dtí an Ghearrthaisce">
+<!ENTITY torsettings.copyLog "Cóipeáil Logchomhad Tor go dtí an Ghearrthaisce">
 
 <!ENTITY torsettings.proxyHelpTitle "Cabhair le Seachfhreastalaithe">
 <!ENTITY torsettings.proxyHelp1 "Úsáidtear seachfhreastalaí áitiúil nuair a cheanglaítear ó líonra i gcomhlacht, i scoil, nó in ollscoil.&#160;Mura bhfuil tú cinnte faoin fhreagra ba chóir duit a thabhairt, caith súil ar na socruithe Idirlín i mbrabhsálaí eile, nó ar shocruithe líonra do chórais, le fáil amach an bhfuil seachfhreastalaí de dhíth.">

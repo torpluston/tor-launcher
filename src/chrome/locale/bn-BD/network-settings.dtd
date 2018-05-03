@@ -41,10 +41,10 @@
 <!ENTITY torsettings.useBridges.checkbox "টর আমার দেশে সেন্সর করা হয়">
 <!ENTITY torsettings.useBridges.default "একটি অন্তর্নির্মিত ব্রিজ নির্বাচন করুন">
 <!ENTITY torsettings.useBridges.default.placeholder "একটি ব্রিজ নির্বাচন করুন">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
-<!ENTITY torsettings.useBridges.captchaSubmit "Submit">
+<!ENTITY torsettings.useBridges.bridgeDB "torproject.org থেকে একটি সেতুর জন্য অনুরোধ করুন">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "ইমেজ থেকে অক্ষর লিখুন">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "একটি নতুন চ্যালেঞ্জ পান">
+<!ENTITY torsettings.useBridges.captchaSubmit "জমা  করা">
 <!ENTITY torsettings.useBridges.custom "একটি ব্রিজ প্রদান আমি জানি">
 <!ENTITY torsettings.useBridges.label "বিশ্বস্ত উৎস থেকে ব্রিজ তথ্য প্রবেশ করান।">
 <!ENTITY torsettings.useBridges.placeholder "টাইপ ঠিকানা: পোর্ট (প্রতি লাইন প্রতি)">

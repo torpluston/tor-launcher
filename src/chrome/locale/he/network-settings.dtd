@@ -41,9 +41,9 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor מצונזר במדינה שלי">
 <!ENTITY torsettings.useBridges.default "בחר גשר מובנה">
 <!ENTITY torsettings.useBridges.default.placeholder "בחר גשר">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.bridgeDB "בקש גשר מן torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "הכנס את התווים מהתמונה">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "קבל אתגר חדש">
 <!ENTITY torsettings.useBridges.captchaSubmit "הגש">
 <!ENTITY torsettings.useBridges.custom "סַפֵּק גשר שאני מכיר">
 <!ENTITY torsettings.useBridges.label "הכנס מידע גשר ממקור מהימן.">

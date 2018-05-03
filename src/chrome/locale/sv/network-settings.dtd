@@ -41,9 +41,9 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor är censurerat i mitt land">
 <!ENTITY torsettings.useBridges.default "Välj en inbyggd brygga">
 <!ENTITY torsettings.useBridges.default.placeholder "Välj en brygga">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.bridgeDB "Begär en brygga från torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Ange tecknen från bilden">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Få en ny utmaning">
 <!ENTITY torsettings.useBridges.captchaSubmit "Skicka">
 <!ENTITY torsettings.useBridges.custom "Använd en egen brygga">
 <!ENTITY torsettings.useBridges.label "Ange brygg informationen från en betrodd källa">

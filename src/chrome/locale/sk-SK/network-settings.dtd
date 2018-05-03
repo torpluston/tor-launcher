@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "Nastavenia Tor Network">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.default "Pripojiť k Tor">
 <!ENTITY torsettings.wizard.title.configure "Nastavenia Tor Network">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.connecting "Vytváram spojenie">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Jazyk Tor Browser">
@@ -25,7 +25,7 @@
 
 <!ENTITY torsettings.optional "Voliteľné">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
+<!ENTITY torsettings.useProxy.checkbox "Na pripojenie k internetu používam proxy">
 <!ENTITY torsettings.useProxy.type "Typ proxy:">
 <!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "Adresa:">
@@ -38,7 +38,7 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Tento počítač prechádza cez firewall, ktorý povoľuje spojenie len k určitým portom.">
 <!ENTITY torsettings.firewall.allowedPorts "Povolené porty:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.checkbox "Tor je v mojej krajine cenzurovaný">
 <!ENTITY torsettings.useBridges.default "Select a built-in bridge">
 <!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
 <!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">

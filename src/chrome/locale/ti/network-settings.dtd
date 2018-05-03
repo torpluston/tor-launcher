@@ -12,7 +12,7 @@
 <!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
 <!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Configure">
-<!ENTITY torSettings.connect "Connect">
+<!ENTITY torSettings.connect "ኣራኽብ">
 
 <!-- Other: -->
 
@@ -44,7 +44,7 @@
 <!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
-<!ENTITY torsettings.useBridges.captchaSubmit "Submit">
+<!ENTITY torsettings.useBridges.captchaSubmit "ኣረክብ">
 <!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
 <!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
 <!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
