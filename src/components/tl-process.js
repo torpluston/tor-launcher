@@ -19,6 +19,13 @@ XPCOMUtils.defineLazyModuleGetter(this, "TorLauncherLogger",
 
 function TorProcessService()
 {
+  this.mDefaultPreferencesAreLoaded = TorLauncherUtil.loadDefaultPreferences();
+  if (!this.mDefaultPreferencesAreLoaded)
+  {
+    throw Components.Exception("Setting (some) default preferences failed!",
+                                 Cr.NS_ERROR_NOT_INITIALIZED);
+  }
+
   this.wrappedJSObject = this;
   this.mProtocolSvc = Cc["@torproject.org/torlauncher-protocol-service;1"]
                 .getService(Ci.nsISupports).wrappedJSObject;
@@ -97,6 +104,13 @@ TorProcessService.prototype =
       this.mObsSvc.addObserver(this, kOpenNetworkSettingsTopic, false);
       this.mObsSvc.addObserver(this, kUserQuitTopic, false);
       this.mObsSvc.addObserver(this, kBootstrapStatusTopic, false);
+
+      if (!this.mDefaultPreferencesAreLoaded)
+      {
+        throw Components.Exception("Default preferences not loaded at " +
+                                   "profile-after-change notification!",
+                                     Cr.NS_ERROR_NOT_INITIALIZED);
+      }
 
       if (TorLauncherUtil.shouldOnlyConfigureTor)
       {
@@ -304,6 +318,13 @@ TorProcessService.prototype =
 
   TorStartAndControlTor: function(aForceDisableNetwork)
   {
+    if (!this.mDefaultPreferencesAreLoaded)
+    {
+      throw Components.Exception("TorLauncher is starting Tor but " +
+                                 "the default preferences were not set!",
+                                   Cr.NS_ERROR_NOT_INITIALIZED);
+    }
+
     this._startTor(aForceDisableNetwork);
     let isRunningTor = (this.mTorProcessStatus == this.kStatusStarting) ||
                        (this.mTorProcessStatus == this.kStatusRunning);
@@ -333,7 +354,7 @@ TorProcessService.prototype =
   mQuitSoon: false,     // Quit was requested by the user; do so soon.
   mLastTorWarningPhase: null,
   mLastTorWarningReason: null,
-
+  mDefaultPreferencesAreLoaded: false,
 
   // Private Methods /////////////////////////////////////////////////////////
   _startTor: function(aForceDisableNetwork)
