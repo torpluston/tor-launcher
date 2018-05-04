@@ -13,6 +13,7 @@ const Cr = Components.results;
 const Cu = Components.utils;
 
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
+Cu.import("resource://gre/modules/Services.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "TorLauncherUtil",
                           "resource://torlauncher/modules/tl-util.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "TorLauncherLogger",
@@ -636,10 +637,6 @@ TorProtocolService.prototype =
     let s = "";
     if (this.mTorLog)
     {
-      let dateFmtSvc = Cc["@mozilla.org/intl/scriptabledateformat;1"]
-                      .getService(Ci.nsIScriptableDateFormat);
-      let dateFormat = dateFmtSvc.dateFormatShort;
-      let timeFormat = dateFmtSvc.timeFormatSecondsForce24Hour;
       let eol = (TorLauncherUtil.isWindows) ? "\r\n" : "\n";
       let count = this.mTorLog.length;
       if (aCountObj)
@@ -648,12 +645,16 @@ TorProtocolService.prototype =
       {
         let logObj = this.mTorLog[i];
         let secs = logObj.date.getSeconds();
-        let timeStr = dateFmtSvc.FormatDateTime("", dateFormat, timeFormat,
-                         logObj.date.getFullYear(), logObj.date.getMonth() + 1,
-                             logObj.date.getDate(), logObj.date.getHours(),
-                             logObj.date.getMinutes(), secs);
+
+        let options = { year: '2-digit', month: 'numeric', day: 'numeric',
+                hour: 'numeric', minute: 'numeric', second: 'numeric',
+                hour12: false };
+        let timeStr = new Intl.DateTimeFormat('en-US', options)
+                      .format(logObj.date, options);
+
         if (' ' == timeStr.substr(-1))
           timeStr = timeStr.substr(0, timeStr.length - 1);
+
         let fracSecsStr = "" + logObj.date.getMilliseconds();
         while (fracSecsStr.length < 3)
           fracSecsStr += "0";
