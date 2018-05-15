@@ -53,7 +53,7 @@ function TorProtocolService()
         this.mControlPort = parseInt(env.get("TOR_CONTROL_PORT"), 10);
 
       let useIPC = !isWindows && TorLauncherUtil.getBoolPref(
-                      "extensions.torlauncher.control_port_use_ipc", true);
+                      "extensions.torlauncher.control_port_use_ipc", false);
       if (!this.mControlHost && !this.mControlPort && useIPC)
         this.mControlIPCFile = TorLauncherUtil.getTorFile("control_ipc", false);
       else
@@ -157,7 +157,7 @@ function TorProtocolService()
     if (useIPC === undefined)
     {
       useIPC = !isWindows && TorLauncherUtil.getBoolPref(
-                       "extensions.torlauncher.socks_port_use_ipc", true);
+                       "extensions.torlauncher.socks_port_use_ipc", false);
     }
 
     // Fill in missing SOCKS info from prefs.
@@ -183,6 +183,7 @@ function TorProtocolService()
       {
         let socksPort = TorLauncherUtil.getIntPref("network.proxy.socks_port",
                                                    0);
+        // This pref is set as 0 by default in Firefox, use 9150 if we get 0.
         this.mSOCKSPortInfo.port = (socksPort != 0) ? socksPort : 9150;
       }
     }
@@ -1506,7 +1507,7 @@ TorProtocolService.prototype =
           else
           {
             var maxEntries =
-                    TorLauncherUtil.getIntPref(this.kPrefMaxTorLogEntries, 0);
+                    TorLauncherUtil.getIntPref(this.kPrefMaxTorLogEntries, 1000);
             if ((maxEntries > 0) && (this.mTorLog.length >= maxEntries))
               this.mTorLog.splice(0, 1);
           }

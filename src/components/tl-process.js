@@ -455,7 +455,8 @@ TorProcessService.prototype =
         if (socksPortArg)
         {
           let socksPortFlags = TorLauncherUtil.getCharPref(
-                                  "extensions.torlauncher.socks_port_flags");
+                                  "extensions.torlauncher.socks_port_flags",
+                          "IPv6Traffic PreferIPv6 KeepAliveIsolateSOCKSAuth");
           if (socksPortFlags)
             socksPortArg += ' ' + socksPortFlags;
           args.push("+__SocksPort");

@@ -2533,7 +2533,8 @@ function requestMoatCaptcha(aProxySettings, aMeekClientPath, aMeekClientArgs)
                      aMeekClientPath, aMeekClientArgs)
     .then(()=>
     {
-      let bridgeType = TorLauncherUtil.getCharPref(kPrefBridgeDBType);
+      let bridgeType = TorLauncherUtil.getCharPref(kPrefBridgeDBType,
+                                                   "obfs4");
       moatRequestor.fetchBridges([bridgeType])
       .then(aCaptchaInfo =>
       {
