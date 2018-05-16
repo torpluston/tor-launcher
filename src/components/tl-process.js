@@ -38,8 +38,8 @@ TorProcessService.prototype =
   kWizardProgressPageID: "progress",
 
   kInitialControlConnDelayMS: 25,
-  kMaxControlConnRetryMS: 500,
-  kControlConnTimeoutMS: 30000, // Wait at most 30 seconds for tor to start.
+  kMaxControlConnRetryMS: 2000,     // Retry at least every 2 seconds.
+  kControlConnTimeoutMS: 5*60*1000, // Wait at most 5 minutes for tor to start.
 
   kStatusUnknown: 0, // Tor process status.
   kStatusStarting: 1,
