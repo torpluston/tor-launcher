@@ -13,6 +13,7 @@ const Cr = Components.results;
 const Cu = Components.utils;
 
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
+Cu.import("resource://gre/modules/Services.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "TorLauncherUtil",
                           "resource://torlauncher/modules/tl-util.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "TorLauncherLogger",
@@ -52,7 +53,7 @@ function TorProtocolService()
         this.mControlPort = parseInt(env.get("TOR_CONTROL_PORT"), 10);
 
       let useIPC = !isWindows && TorLauncherUtil.getBoolPref(
-                      "extensions.torlauncher.control_port_use_ipc", true);
+                      "extensions.torlauncher.control_port_use_ipc", false);
       if (!this.mControlHost && !this.mControlPort && useIPC)
         this.mControlIPCFile = TorLauncherUtil.getTorFile("control_ipc", false);
       else
@@ -156,7 +157,7 @@ function TorProtocolService()
     if (useIPC === undefined)
     {
       useIPC = !isWindows && TorLauncherUtil.getBoolPref(
-                       "extensions.torlauncher.socks_port_use_ipc", true);
+                       "extensions.torlauncher.socks_port_use_ipc", false);
     }
 
     // Fill in missing SOCKS info from prefs.
@@ -182,6 +183,7 @@ function TorProtocolService()
       {
         let socksPort = TorLauncherUtil.getIntPref("network.proxy.socks_port",
                                                    0);
+        // This pref is set as 0 by default in Firefox, use 9150 if we get 0.
         this.mSOCKSPortInfo.port = (socksPort != 0) ? socksPort : 9150;
       }
     }
@@ -256,7 +258,6 @@ TorProtocolService.prototype =
   contractID: this.kContractID,
   classDescription: this.kServiceName,
   classID: this.kClassID,
-  implementationLanguage: Ci.nsIProgrammingLanguage.JAVASCRIPT,
   flags: Ci.nsIClassInfo.DOM_OBJECT,
 
   // nsIFactory implementation.
@@ -637,10 +638,6 @@ TorProtocolService.prototype =
     let s = "";
     if (this.mTorLog)
     {
-      let dateFmtSvc = Cc["@mozilla.org/intl/scriptabledateformat;1"]
-                      .getService(Ci.nsIScriptableDateFormat);
-      let dateFormat = dateFmtSvc.dateFormatShort;
-      let timeFormat = dateFmtSvc.timeFormatSecondsForce24Hour;
       let eol = (TorLauncherUtil.isWindows) ? "\r\n" : "\n";
       let count = this.mTorLog.length;
       if (aCountObj)
@@ -649,12 +646,16 @@ TorProtocolService.prototype =
       {
         let logObj = this.mTorLog[i];
         let secs = logObj.date.getSeconds();
-        let timeStr = dateFmtSvc.FormatDateTime("", dateFormat, timeFormat,
-                         logObj.date.getFullYear(), logObj.date.getMonth() + 1,
-                             logObj.date.getDate(), logObj.date.getHours(),
-                             logObj.date.getMinutes(), secs);
+
+        let options = { year: '2-digit', month: 'numeric', day: 'numeric',
+                hour: 'numeric', minute: 'numeric', second: 'numeric',
+                hour12: false };
+        let timeStr = new Intl.DateTimeFormat('en-US', options)
+                      .format(logObj.date, options);
+
         if (' ' == timeStr.substr(-1))
           timeStr = timeStr.substr(0, timeStr.length - 1);
+
         let fracSecsStr = "" + logObj.date.getMilliseconds();
         while (fracSecsStr.length < 3)
           fracSecsStr += "0";
@@ -1506,7 +1507,7 @@ TorProtocolService.prototype =
           else
           {
             var maxEntries =
-                    TorLauncherUtil.getIntPref(this.kPrefMaxTorLogEntries, 0);
+                    TorLauncherUtil.getIntPref(this.kPrefMaxTorLogEntries, 1000);
             if ((maxEntries > 0) && (this.mTorLog.length >= maxEntries))
               this.mTorLog.splice(0, 1);
           }

@@ -1,4 +1,4 @@
-// Copyright (c) 2013, The Tor Project, Inc.
+// Copyright (c) 2018, The Tor Project, Inc.
 // See LICENSE for licensing information.
 // TODO: Based on torbutton-logger.js (pull in copyright and license?)
 //
@@ -108,8 +108,8 @@ let TLLoggerInternal = // Private
   {
     // Register observer
     var prefs = Cc["@mozilla.org/preferences-service;1"]
-                  .getService(Ci.nsIPrefBranchInternal)
-                  .QueryInterface(Ci.nsIPrefBranchInternal);
+                  .getService(Ci.nsIPrefBranch)
+                  .QueryInterface(Ci.nsIPrefBranch);
     prefs.addObserver("extensions.torlauncher", this, false);
 
     this.mLogLevel = TorLauncherUtil.getIntPref(

@@ -226,6 +226,11 @@ let TorLauncherUtil =  // Public
   },
 
   // Preferences
+  loadDefaultPreferences: function()
+  {
+    return TLUtilInternal._loadPreferences();
+  },
+
   getBoolPref: function(aPrefName, aDefaultVal)
   {
     var rv = (undefined != aDefaultVal) ? aDefaultVal : false;
@@ -658,9 +663,9 @@ let TorLauncherUtil =  // Public
           try
           {
             if ("tordatadir" == aTorFileType)
-              torFile.create(torFile.DIRECTORY_TYPE, 0700);
+              torFile.create(torFile.DIRECTORY_TYPE, 0o700);
             else
-              torFile.create(torFile.NORMAL_FILE_TYPE, 0600);
+              torFile.create(torFile.NORMAL_FILE_TYPE, 0o600);
           }
           catch (e)
           {
@@ -749,11 +754,114 @@ let TLUtilInternal =  // Private
   mAppDir: null,        // nsIFile (cached; access via this._appDir)
   mDataDir: null,       // nsIFile (cached; access via this._dataDir)
   mIsFirstIPCPathRequest : true,
+  mNumDefaultPrefsDefined: 0,
+  mNumDefaultPrefsLoaded: 0,
+  mDefaultPreferencesLoaded: false,
 
   _init: function()
   {
     this.mPrefsSvc = Cc["@mozilla.org/preferences-service;1"]
                        .getService(Ci.nsIPrefBranch);
+  },
+
+  _getPrefDefaultBranch: function(aBranchName)
+  {
+    return Cc["@mozilla.org/preferences-service;1"]
+             .getService(Ci.nsIPrefService)
+             .getDefaultBranch(aBranchName);
+  },
+
+  _setPref: function(aSetPrefFunc, aPrefName, aValue)
+  {
+    try
+    {
+      aSetPrefFunc(aPrefName, aValue);
+    }
+    catch(e)
+    {
+      TorLauncherLogger.log(5, "Setting default pref '" + aPrefName +
+           "' threw exception: " + e);
+      return false;
+    }
+
+    return true;
+  },
+
+  pref: function (aPrefName, aValue)
+  {
+    // Increment this counter for each pref() call.
+    this.mNumDefaultPrefsDefined += 1;
+
+    let lastPeriod = aPrefName.lastIndexOf(".");
+    // This pref doesn't contain a period (".")
+    // or the period is the first character.
+    if (lastPeriod == 0 || lastPeriod == -1)
+    {
+      TorLauncherLogger.log(5, "Ignoring invalid pref '" + aPrefName + "'");
+      return;
+    }
+    // This pref has a period at the last character, we can't set
+    // a default value on a pref root.
+    if (aPrefName.length == (lastPeriod + 1))
+    {
+      TorLauncherLogger.log(5,
+            "Ignoring invalid pref ending with a period: '" + aPrefName + "'");
+      return;
+    }
+
+    let prefRoot = aPrefName.substring(0, lastPeriod + 1);
+    let defaultBranch = this._getPrefDefaultBranch(prefRoot);
+    let prefName = aPrefName.substring(lastPeriod + 1);
+    let setPrefFunc;
+    switch (typeof aValue)
+    {
+      case "boolean":
+        setPrefFunc = defaultBranch.setBoolPref;
+        if (!this._setPref(setPrefFunc, prefName, aValue))
+        {
+          return;
+        }
+        break;
+      case "number":
+        setPrefFunc = defaultBranch.setIntPref;
+        if (!this._setPref(setPrefFunc, prefName, aValue))
+        {
+          return;
+        }
+        break;
+      case "string":
+        setPrefFunc = defaultBranch.setCharPref;
+        if (!this._setPref(setPrefFunc, prefName, aValue))
+        {
+          return;
+        }
+        break;
+      default:
+        TorLauncherLogger.log(5, "Cowardly not setting pref '" +
+             aPrefName + "' of type '" + (typeof aValue) + "'");
+        return;
+    }
+
+    // Increment this counter for each pref() call where the default preference
+    // was successfully set.
+    this.mNumDefaultPrefsLoaded += 1;
+  },
+
+  _loadPreferences: function()
+  {
+    if (this.mDefaultPreferencesLoaded)
+    {
+      return this.mDefaultPreferencesLoaded;
+    }
+
+    var loader = Cc["@mozilla.org/moz/jssubscript-loader;1"]
+                       .getService(Ci.mozIJSSubScriptLoader);
+    loader.loadSubScript(
+            "resource://torlauncher/defaults/preferences/prefs.js", this);
+
+    this.mDefaultPreferencesLoaded =
+          (this.mNumDefaultPrefsDefined == this.mNumDefaultPrefsLoaded);
+    return this.mDefaultPreferencesLoaded;
   },
 
   get _stringBundle()
@@ -883,7 +991,7 @@ let TLUtilInternal =  // Private
       let d = Cc['@mozilla.org/file/local;1'].createInstance(Ci.nsIFile);
       d.initWithPath(aBasePath);
       d.append("Tor");
-      d.createUnique(Ci.nsIFile.DIRECTORY_TYPE, 0700);
+      d.createUnique(Ci.nsIFile.DIRECTORY_TYPE, 0o700);
       return d;
     }
     catch (e)

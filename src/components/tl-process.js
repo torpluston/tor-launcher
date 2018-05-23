@@ -1,4 +1,4 @@
-// Copyright (c) 2017, The Tor Project, Inc.
+// Copyright (c) 2018, The Tor Project, Inc.
 // See LICENSE for licensing information.
 //
 // vim: set sw=2 sts=2 ts=8 et syntax=javascript:
@@ -19,6 +19,13 @@ XPCOMUtils.defineLazyModuleGetter(this, "TorLauncherLogger",
 
 function TorProcessService()
 {
+  this.mDefaultPreferencesAreLoaded = TorLauncherUtil.loadDefaultPreferences();
+  if (!this.mDefaultPreferencesAreLoaded)
+  {
+    throw Components.Exception("Setting (some) default preferences failed!",
+                                 Cr.NS_ERROR_NOT_INITIALIZED);
+  }
+
   this.wrappedJSObject = this;
   this.mProtocolSvc = Cc["@torproject.org/torlauncher-protocol-service;1"]
                 .getService(Ci.nsISupports).wrappedJSObject;
@@ -97,6 +104,13 @@ TorProcessService.prototype =
       this.mObsSvc.addObserver(this, kOpenNetworkSettingsTopic, false);
       this.mObsSvc.addObserver(this, kUserQuitTopic, false);
       this.mObsSvc.addObserver(this, kBootstrapStatusTopic, false);
+
+      if (!this.mDefaultPreferencesAreLoaded)
+      {
+        throw Components.Exception("Default preferences not loaded at " +
+                                   "profile-after-change notification!",
+                                     Cr.NS_ERROR_NOT_INITIALIZED);
+      }
 
       if (TorLauncherUtil.shouldOnlyConfigureTor)
       {
@@ -272,7 +286,6 @@ TorProcessService.prototype =
   contractID: this.kContractID,
   classDescription: this.kServiceName,
   classID: this.kClassID,
-  implementationLanguage: Ci.nsIProgrammingLanguage.JAVASCRIPT,
   flags: Ci.nsIClassInfo.DOM_OBJECT,
 
   // nsIFactory implementation.
@@ -305,6 +318,13 @@ TorProcessService.prototype =
 
   TorStartAndControlTor: function(aForceDisableNetwork)
   {
+    if (!this.mDefaultPreferencesAreLoaded)
+    {
+      throw Components.Exception("TorLauncher is starting Tor but " +
+                                 "the default preferences were not set!",
+                                   Cr.NS_ERROR_NOT_INITIALIZED);
+    }
+
     this._startTor(aForceDisableNetwork);
     let isRunningTor = (this.mTorProcessStatus == this.kStatusStarting) ||
                        (this.mTorProcessStatus == this.kStatusRunning);
@@ -334,7 +354,7 @@ TorProcessService.prototype =
   mQuitSoon: false,     // Quit was requested by the user; do so soon.
   mLastTorWarningPhase: null,
   mLastTorWarningReason: null,
-
+  mDefaultPreferencesAreLoaded: false,
 
   // Private Methods /////////////////////////////////////////////////////////
   _startTor: function(aForceDisableNetwork)
@@ -435,7 +455,8 @@ TorProcessService.prototype =
         if (socksPortArg)
         {
           let socksPortFlags = TorLauncherUtil.getCharPref(
-                                  "extensions.torlauncher.socks_port_flags");
+                                  "extensions.torlauncher.socks_port_flags",
+                          "IPv6Traffic PreferIPv6 KeepAliveIsolateSOCKSAuth");
           if (socksPortFlags)
             socksPortArg += ' ' + socksPortFlags;
           args.push("+__SocksPort");
@@ -979,7 +1000,7 @@ TorProcessService.prototype =
       let stream = Cc["@mozilla.org/network/safe-file-output-stream;1"]
                      .createInstance(Ci.nsIFileOutputStream);
       stream.init(aFile, 0x02 | 0x08 | 0x20, /* WRONLY CREATE TRUNCATE */
-                  0600, 0);
+                  0o600, 0);
       stream.write(data, data.length);
       stream.QueryInterface(Ci.nsISafeOutputStream).finish();
     }
