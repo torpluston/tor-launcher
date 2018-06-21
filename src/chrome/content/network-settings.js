@@ -304,10 +304,13 @@ function populateLocaleList(aLangPackAddons)
   let knownLanguages = {
     "en-US" : "English",
     "ar"    : "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+    "bn-BD" : "\u09ac\u09be\u0982\u09b2\u09be",
+    "da"    : "Dansk",
     "de"    : "Deutsch",
     "es-ES" : "Espa\u00f1ol",
     "fa"    : "\u0641\u0627\u0631\u0633\u06cc",
     "fr"    : "Fran\u00e7ais",
+    "he"    : "\u05e2\u05d1\u05e8\u05d9\u05ea",
     "it"    : "Italiano",
     "ja"    : "\u65e5\u672c\u8a9e",
     "ko"    : "\ud55c\uad6d\uc5b4",
@@ -315,9 +318,11 @@ function populateLocaleList(aLangPackAddons)
     "pl"    : "Polski",
     "pt-PT" : "Portugu\u00eas (Europeu)",
     "ru"    : "\u0420\u0443\u0441\u0441\u043a\u0438\u0439",
+    "sv"    : "Svenska",
     "tr"    : "T\u00fcrk\u00e7e",
     "vi"    : "Ti\u1ebfng Vi\u1ec7t",
-    "zh-CN" : "\u7b80\u4f53\u5b57"
+    "zh-CN" : "\u7b80\u4f53\u5b57",
+    "zh-TW" : "\u6b63\u9ad4\u5b57"
   };
 
   // Retrieve the current locale so we can select it within the list by default.
