@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "Tor sare ezarpenak">
 <!ENTITY torsettings.wizard.title.default "Connect to Tor">
 <!ENTITY torsettings.wizard.title.configure "Tor sare ezarpenak">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.connecting "Konexioa Ezartzen">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Tor nabigatzailearen hizkuntza">
@@ -25,9 +25,9 @@
 
 <!ENTITY torsettings.optional "Hautazkoa">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
+<!ENTITY torsettings.useProxy.checkbox "Proxy bat erabiltzen dut Internetera sartzeko">
 <!ENTITY torsettings.useProxy.type "Proxy mota:">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
+<!ENTITY torsettings.useProxy.type.placeholder "proxy mota aukeratu">
 <!ENTITY torsettings.useProxy.address "Helbidea:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP helbide edo ostalari izena">
 <!ENTITY torsettings.useProxy.port "Ataka:">
@@ -38,13 +38,13 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Ordenagailu honek ataka zehatz batzuetara bakarrik konektatzea baimentzen duen sueten baten zehar doa">
 <!ENTITY torsettings.firewall.allowedPorts "Baimendutako atakak:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.checkbox "Tor zentsuratuta dago nire herrialdean">
 <!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
+<!ENTITY torsettings.useBridges.default.placeholder "aukeratu zubia">
 <!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
-<!ENTITY torsettings.useBridges.captchaSubmit "Submit">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Sartu irudian agertzen diren karaktereak">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Lortu erronka berri bat">
+<!ENTITY torsettings.useBridges.captchaSubmit "Bidali">
 <!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
 <!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
 <!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">

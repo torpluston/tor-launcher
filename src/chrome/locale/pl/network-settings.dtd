@@ -38,7 +38,7 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Ten komputer pozwala na połączenie z ustalonymi portami">
 <!ENTITY torsettings.firewall.allowedPorts "Dozwolone porty:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.useBridges.checkbox "Tor jest ocenzurowany w moim kraju">
 <!ENTITY torsettings.useBridges.default "Select a built-in bridge">
 <!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
 <!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">

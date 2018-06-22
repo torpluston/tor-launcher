@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "Configurações da Rede Tor">
 <!ENTITY torsettings.wizard.title.default "Ligar ao Tor">
 <!ENTITY torsettings.wizard.title.configure "Definições da Rede Tor">
-<!ENTITY torsettings.wizard.title.connecting "A Estabelecer a Ligação">
+<!ENTITY torsettings.wizard.title.connecting "Estabelecer uma Ligação">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Idioma do Navegador Tor">
