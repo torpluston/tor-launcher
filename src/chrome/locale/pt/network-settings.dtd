@@ -52,11 +52,11 @@
 <!ENTITY torsettings.copyLog "Copiar o Registo do Tor para a Área de Transferência">
 
 <!ENTITY torsettings.proxyHelpTitle "Ajuda de Proxy">
-<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+<!ENTITY torsettings.proxyHelp1 "é necessário um proxy local quando ligar através de uma rede de empresa, escolar ou universitária. Se não tiver a certeza de como responder a esta questão, verifique as definições da Internet em outro navegador ou verifique as definições de rede do seu sistema para ver se é necessário um proxy.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Ajuda da Retransmissão de Ponte">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelp1 "As pontes são retransmissões não listadas que dificultam o bloqueio de ligações à Rede Tor. Cada tipo de ponte utiliza um método diferente para evitar a censura. Os &quot;obfs&quot; fazem com que o seu tráfego pareça um ruído aleatório, e os pacíficos fazem com que o seu tráfego pareça que está a ligar-se ao serviço, em vez ao Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Por causa de como certos países tentam bloquear o Tor, certas pontes funcionam em certos países, mas não em outros. Se não tiver a certeza sobre quais as pontes que funcionam no seu país, visite torproject.org/about/contact.htmupport">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Por favor, aguarde, enquanto nós estabelecemos uma ligação à rede Tor.&#160;  Isto pode demorar alguns minutos.">
