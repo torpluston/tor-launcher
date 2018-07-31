@@ -98,8 +98,10 @@
             <radio id="bridgeRadioDefault"
                    label="&torsettings.useBridges.default;" selected="true"
                    oncommand="onBridgeTypeRadioChange()"/>
-            <button class="helpButton"
-                    oncommand="onOpenHelp('bridgeHelpContent')"/>
+            <vbox pack="center">
+              <button class="helpButton"
+                      oncommand="onOpenHelp('bridgeHelpContent')"/>
+            </vbox>
             <spacer style="width: 3em"/>
             <menulist id="defaultBridgeType" sizetopopup="always"
                   placeholder="&torsettings.useBridges.default.placeholder;">
