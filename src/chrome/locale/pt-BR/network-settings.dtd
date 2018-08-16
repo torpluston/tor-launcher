@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Copiar o registro do Tor na área de transferência">
 
 <!ENTITY torsettings.proxyHelpTitle "Ajuda com o Proxy">
-<!ENTITY torsettings.proxyHelp1 "Um proxy local é necessário para conectar-se por meio de uma rede de empresa, escola ou universidade.&#160;Se você não tiver certeza se um proxy é necessário no seu caso, verifique as configurações de Internet em um outro navegador ou consulte as suas configurações de sistema de rede. ">
+<!ENTITY torsettings.proxyHelp1 "Um proxy local pode ser necessário ao conectar-se através de uma empresa, escola ou rede universitária.&#160;Se você não tiver certeza se um proxy é necessário, verifique as configurações da Internet em outro navegador ou verifique as configurações de rede do seu sistema.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Ajuda Retransmissor de Ponte">
 <!ENTITY torsettings.bridgeHelp1 "Pontes são retransmissores não listados que dificultam o bloqueio de conexões à Rede Tor.&#160; Cada tipo de ponte usa um método diferente para evitar censura.&#160; Obfs faz com que o seu tráfego online pareca um barulho aleatório, e as de tipo meek fazem o seu tráfego online parecer como se estivesse conectando-se a um outro serviço e não ao Tor.">

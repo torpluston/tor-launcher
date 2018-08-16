@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Copiați jurnalul Tor în Clipboard">
 
 <!ENTITY torsettings.proxyHelpTitle "Ajutor Proxy">
-<!ENTITY torsettings.proxyHelp1 "Un proxy local este necesar la conectarea din rețeaua unei companii, școli sau universități.&#160;Dacă nu ești sigur cum să răspunzi la întrebare, vezi setările pentru Internet în alt navigator web sau verifică setările de rețea pentru a vedea dacă o setare de proxy e necesară.">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Ajutor Bridge Relay">
 <!ENTITY torsettings.bridgeHelp1 "Punțile sunt relee ne-listate care fac mai dificilă blocarea conexiunilor spre Rețeaua Tor. &#160; Fiecare tip de punte folosește o altă metodă pentru a evita cenzura. &#160; Cele obfs fac traficul tău să semene cu zgomot aleatoriu, iar cele meek fac traficul să pară că se conectează la acel serviciu în loc de Tor.">

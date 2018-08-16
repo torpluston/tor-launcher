@@ -1,24 +1,24 @@
-<!ENTITY torsettings.dialog.title "Tor Network Settings">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
-<!ENTITY torsettings.wizard.title.configure "Tor Network Settings">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.dialog.title "ടോർ നെറ്റ്വർക്ക് ക്രമീകരണങ്ങൾ ...">
+<!ENTITY torsettings.wizard.title.default "'ടോർ 'ൽ പ്രവേശിക്കു ...">
+<!ENTITY torsettings.wizard.title.configure "ടോർ നെറ്റ്വർക്ക് ക്രമീകരണങ്ങൾ ...">
+<!ENTITY torsettings.wizard.title.connecting "ബന്ധപ്പെടുന്നു ...">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Tor Browser Language">
-<!ENTITY torlauncher.localePicker.prompt "Please select a language.">
+<!ENTITY torlauncher.localePicker.title "ടോർ ബ്രൗസർ ഭാഷ ">
+<!ENTITY torlauncher.localePicker.prompt "ഒരു ഭാഷ തിരഞ്ഞെടുക്കു ">
 
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
 <!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
-<!ENTITY torSettings.configure "Configure">
+<!ENTITY torSettings.configure "ക്രമപ്പെടുത്തു ">
 <!ENTITY torSettings.connect "Connect">
 
 <!-- Other: -->
 
 <!ENTITY torsettings.startingTor "Waiting for Tor to start…">
 <!ENTITY torsettings.restartTor "Restart Tor">
-<!ENTITY torsettings.reconfigTor "Reconfigure">
+<!ENTITY torsettings.reconfigTor "പുനഃർക്രമീകരിക്കുക ">
 
 <!ENTITY torsettings.discardSettings.prompt "You have configured Tor bridges or you have entered local proxy settings.&#160; To make a direct connection to the Tor network, these settings must be removed.">
 <!ENTITY torsettings.discardSettings.proceed "Remove Settings and Connect">
@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Copy Tor Log To Clipboard">
 
 <!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Bridge Relay Help">
 <!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">

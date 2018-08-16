@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Kopēt Tor žurnālu starpliktuvē">
 
 <!ENTITY torsettings.proxyHelpTitle "Starpniekservera palīdzība">
-<!ENTITY torsettings.proxyHelp1 "Ja veidojat savienojumu caur uzņēmuma, skolas vai universitātes tīklu, ir nepieciešams vietējais starpniekserveris. Ja neesat pārliecināts, kā atbildēt uz šo jautājumu, apskatiet interneta iestatījumus citā pārlūkā vai pārbaudiet savas sistēmas tīkla iestatījumus, lai noskaidrotu vai starpniekserveris ir nepieciešams.">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Palīdzība par tiltu retranslatoriem">
 <!ENTITY torsettings.bridgeHelp1 "Tilti ir neuzskaitīti pārraidītāji, kas padara sareģītāku savienojumu bloķēšanu ar tīklu Tor. Katrs tiltu veids lieto citu cenzūras apiešanas metodi. obfs jeb maskējošie padara Jūsu datu plūsmu līdzīgu nejaušam troksnim, bet meek jeb pielaidīgie padara Jūsu datu plūsmu līdzīgu tādai, kas pievienojas attiecīgajam pkalpojumam nevis Tor.">

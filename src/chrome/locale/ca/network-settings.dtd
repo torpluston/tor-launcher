@@ -53,7 +53,7 @@
 <!ENTITY torsettings.copyLog "Copia el registre de Tor al porta-retalls">
 
 <!ENTITY torsettings.proxyHelpTitle "Ajuda del servidor intermediari">
-<!ENTITY torsettings.proxyHelp1 "Cal un servidor intermediari local en connectar-vos mitjançant la xarxa d'una companyia, escola o universitat.&#160;Si no sabeu com respondre aquesta pregunta, mireu les preferències d'internet d'un altre navegador o reviseu la configuració de xarxa del vostre sistema per a veure si cal un servidor intermediari local.">
+<!ENTITY torsettings.proxyHelp1 "Pot ser necessari un servidor intermediari local quan us connecteu a través de la xarxa d'una empresa, escola o universitat.&#160;Si no esteu segur de necessitar un servidor intermediari, mireu els paràmetres d'un altre navegador o comproveu la configuració de xarxa del vostre sistema.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Ajuda per als repetidors de pont">
 <!ENTITY torsettings.bridgeHelp1 "Els ponts són repetidors no llistats que fan més difícil el bloqueig de connexions a la xarxa Tor.&#160; Cada tipus de pont usa un mètode diferent per a evitar la censura.&#160; Els tipus OBFS fan passar el vostre tràfic com a soroll aleatori, mentre que els MEEK fan que paregui que es connecta a un altre servei diferent a Tor.">

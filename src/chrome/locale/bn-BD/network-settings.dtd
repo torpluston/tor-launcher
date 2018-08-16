@@ -44,7 +44,7 @@
 <!ENTITY torsettings.useBridges.bridgeDB "torproject.org থেকে একটি সেতুর জন্য অনুরোধ করুন">
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "ইমেজ থেকে অক্ষর লিখুন">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "একটি নতুন চ্যালেঞ্জ পান">
-<!ENTITY torsettings.useBridges.captchaSubmit "জমা  করা">
+<!ENTITY torsettings.useBridges.captchaSubmit "জমা  করুন">
 <!ENTITY torsettings.useBridges.custom "একটি ব্রিজ প্রদান আমি জানি">
 <!ENTITY torsettings.useBridges.label "বিশ্বস্ত উৎস থেকে ব্রিজ তথ্য প্রবেশ করান।">
 <!ENTITY torsettings.useBridges.placeholder "টাইপ ঠিকানা: পোর্ট (প্রতি লাইন প্রতি)">
@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "ক্লিপবোর্ডে কপি টর লগ করুন">
 
 <!ENTITY torsettings.proxyHelpTitle "প্রক্সি সাহায্য">
-<!ENTITY torsettings.proxyHelp1 "একটি কোম্পানী, স্কুল বা বিশ্ববিদ্যালয় নেটওয়ার্কের মাধ্যমে সংযোগ স্থাপন করার সময় একটি স্থানীয় প্রক্সি প্রয়োজন। আপনি &#160; যদি এই প্রশ্নটির উত্তর দিতে না পারেন তবে অন্য ব্রাউজারের ইন্টারনেট সেটিংস দেখুন বা আপনার প্রক্সিটির প্রয়োজন কিনা তা দেখতে আপনার সিস্টেমের নেটওয়ার্ক সেটিংস পরীক্ষা করুন।">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "ব্রিজ রিলে সহায়তা">
 <!ENTITY torsettings.bridgeHelp1 "ব্রিজগুলি তালিকাভুক্ত নয় এমন রিলে যা টর নেটওয়ার্ক সংযোগ বন্ধ করে আরও কঠিন করে তোলে। &#160; সেন্সরশিপ এড়ানোর জন্য প্রতিটি ধরনের সেতু একটি ভিন্ন পদ্ধতি ব্যবহার করে। &#160; Obfs আপনার ট্র্যাফিক র্যান্ডম শব্দ মত চেহারা, এবং নিছক টাওয়ার ট্র্যাফিক চেহারা মত এটি টর পরিবর্তে যে পরিষেবা সংযোগ করা হয়।">

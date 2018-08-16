@@ -43,7 +43,7 @@
 <!ENTITY torsettings.useBridges.default.placeholder "Brücke auswählen">
 <!ENTITY torsettings.useBridges.bridgeDB "Brücke von torproject.org anfragen">
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "Geben Sie die Zeichen in dem Bild ein">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Neue Herausforderung bekommen">
 <!ENTITY torsettings.useBridges.captchaSubmit "Übermitteln">
 <!ENTITY torsettings.useBridges.custom "Biete mir eine Brücke an, die ich kenne">
 <!ENTITY torsettings.useBridges.label "Geben Sie Brückeninformationen aus einer vertrauenswürdigen Quelle ein.">
@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Tor-Protokoll in die Zwischenablage kopieren">
 
 <!ENTITY torsettings.proxyHelpTitle "Proxy-Hilfe">
-<!ENTITY torsettings.proxyHelp1 "Ein lokaler Proxy wird verwendet, wenn Sie sich aus einem Unternehmens-, Schul- oder Universitätsnetzwerk heraus verbinden.&#160;Wenn Sie sich nicht sicher sind, wie Sie diese Frage beantworten sollen, sehen Sie sich die Interneteinstellungen in einem anderen Browser an oder überprüfen Sie die Netzwerkeinstellungen des Systems um zu bestimmen, ob sie einen lokalen Proxyserver benötigen.">
+<!ENTITY torsettings.proxyHelp1 "Unter Umständen ist ein lokaler Proxy nötig, um sich von einem eingeschränkten Netzwerk eines Unternehmens, einer Schule oder Universität zu verbinden.&#160;Im Zweifelsfall kann die Einstellung in einem anderen Browser oder die System-Netzwerkeinstellung .verglichen werden.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Hilfe zum Brückenrelais">
 <!ENTITY torsettings.bridgeHelp1 "Brücken sind nicht aufgelistete Vermittler, die es schwieriger machen, Verbindungen zum Tor-Netzwerk zu blockieren.&#160; Jede Art von Brücke verwendet eine andere Methode, um Zensur zu vermeiden.&#160; Die vom Typ obfs lassen Ihren Datenverkehr wie Zufallsrauschen aussehen und die vom Typ meek lassen Ihren Datenverkehr aussehen, als ob Sie eine Verbindung zu diesem jeweiligen Dienst herstellen anstatt zu Tor.">

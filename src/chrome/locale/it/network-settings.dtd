@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Copia il log di Tor negli &quot;appunti&quot; di sistema">
 
 <!ENTITY torsettings.proxyHelpTitle "Aiuto proxy">
-<!ENTITY torsettings.proxyHelp1 "Un proxy locale è necessario quando ti connetti dalla rete di un'azienda, scuola o università.&#160;Se non sei sicuro della risposta alla domanda, guarda le impostazioni internet in un altro browser o controlla le impostazioni di rete del sistema.">
+<!ENTITY torsettings.proxyHelp1 "Potrebbe essere necessario utilizzare un proxy locale quando ci si connette dalla rete di un'azienda, scuola o università.&#160;Se non sei sicuro sulla necessità di utilizzare un proxy, confronta le impostazioni internet in un altro browser o controlla le impostazioni di rete del sistema.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Aiuto per i ponti relé">
 <!ENTITY torsettings.bridgeHelp1 "I bridge sono relay non elencati che rendono più difficile bloccare le connessioni alla rete Tor.&#160; Ogni tipo di bridge usa un metodo diverso per evitare la censura.&#160; Quelli obfs mascherano il tuo traffico come rumore casuale, quelli meek lo mascherano come se si connettesse a quel servizio al posto di Tor.">

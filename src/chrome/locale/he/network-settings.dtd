@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "לחץ על “התחבר“ כדי להתחבר אל Tor.">
-<!ENTITY torSettings.configurePrompt "לחץ על “הגדר“ כדי להתאים הגדרות רשת אם אתה במדינה שמצנזרת את Tor (למשל מצרים, סין וטורקיה) או אם אתה מתחבר מרשת פרטית הדורשת ייפוי-כוח.">
+<!ENTITY torSettings.configurePrompt "לחץ על ”הגדר“ כדי להתאים הגדרות רשת אם אתה במדינה שמצנזרת את Tor (למשל מצרים, סין וטורקיה) או אם אתה מתחבר מרשת פרטית הדורשת ייפוי־כוח.">
 <!ENTITY torSettings.configure "הגדר">
 <!ENTITY torSettings.connect "התחבר">
 
@@ -20,14 +20,14 @@
 <!ENTITY torsettings.restartTor "הפעל מחדש את Tor">
 <!ENTITY torsettings.reconfigTor "הגדר מחדש">
 
-<!ENTITY torsettings.discardSettings.prompt "הגדרת גשרי Tor או הכנסת הגדרות ייפוי-כוח מקומי.&#160; כדי לעשות חיבור ישיר לרשת Tor, הגדרות אלו חייבות להיות מוסרות.">
+<!ENTITY torsettings.discardSettings.prompt "הגדרת גשרי Tor או הכנסת הגדרות ייפוי־כוח מקומי.&#160; כדי לעשות חיבור ישיר לרשת Tor, הגדרות אלו חייבות להיות מוסרות.">
 <!ENTITY torsettings.discardSettings.proceed "הסר הגדרות והתחבר">
 
 <!ENTITY torsettings.optional "רשותי">
 
-<!ENTITY torsettings.useProxy.checkbox "אני משתמש בייפוי-כוח כדי להתחבר לאינטרנט">
-<!ENTITY torsettings.useProxy.type "סוג ייפוי-כוח:">
-<!ENTITY torsettings.useProxy.type.placeholder "בחר סוג ייפוי-כוח">
+<!ENTITY torsettings.useProxy.checkbox "אני משתמש בייפוי־כוח כדי להתחבר לאינטרנט">
+<!ENTITY torsettings.useProxy.type "סוג ייפוי־כוח:">
+<!ENTITY torsettings.useProxy.type.placeholder "בחר סוג ייפוי־כוח">
 <!ENTITY torsettings.useProxy.address "כתובת:">
 <!ENTITY torsettings.useProxy.address.placeholder "כתובת IP או שם מארח">
 <!ENTITY torsettings.useProxy.port "פתחה:">
@@ -51,8 +51,8 @@
 
 <!ENTITY torsettings.copyLog "העתק את יומן Tor ללוח החיתוך">
 
-<!ENTITY torsettings.proxyHelpTitle "עזרת ייפוי-כוח">
-<!ENTITY torsettings.proxyHelp1 "ייפוי-כוח מקומי נדרש בעת התחברות דרך רשת של חברה, בית-ספר או אוניברסיטה.&#160;אם אינך בטוח כיצד לענות על שאלה זו, הבט בהגדרות האינטרנט בדפדפן אחר או בדוק בהגדרות הרשת של מערכתך כדי לראות האם ייפוי-כוח מקומי נחוץ.">
+<!ENTITY torsettings.proxyHelpTitle "עזרת ייפוי־כוח">
+<!ENTITY torsettings.proxyHelp1 "ייפוי־כוח מקומי נדרש בעת התחברות דרך רשת של חברה, בית ספר או אוניברסיטה.&#160;אם אינך בטוח כיצד לענות על שאלה זו, הבט בהגדרות האינטרנט בדפדפן אחר או בדוק בהגדרות הרשת של מערכתך.">
 
 <!ENTITY torsettings.bridgeHelpTitle "עזרת ממסרי גשר">
 <!ENTITY torsettings.bridgeHelp1 "גשרים הם ממסרים לא ברשימה אשר מקשים לחסום חיבורים אל רשת Tor.&#160; כל סוג של גשר משתמש בשיטה שונה כדי למנוע צינזור&#160; ה-obfs גורם לתעבורה שלך להיראות כרעש אקראי, וה-meek גורם לתעבורה שלך להיראות כאילו היא מתחברת אל שירות זה במקום אל Tor.">

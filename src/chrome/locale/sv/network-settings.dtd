@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Kopiera Tor-loggen till urklippet">
 
 <!ENTITY torsettings.proxyHelpTitle "Proxy hjälp">
-<!ENTITY torsettings.proxyHelp1 "En lokal proxy behövs när du ansluter via ett företag, skola eller universitets nätverk. &#160; Om du inte är säker på hur du ska svara på denna frågan, se Internet inställningar i en annan webbläsaren eller kolla ditt systems nätverks inställningar för att se ifall en proxy behövs.">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Hjälp om relä bryggor">
 <!ENTITY torsettings.bridgeHelp1 "Bryggor är olistade reläer som gör det svårare att blockera anslutningar till Tor nätverket. &#160; Var typ av brygga använder sig av olika metoder för att undvika censur. &#160; Obfs gör att din trafik ser ut som brus och meek gör att din trafik ser ut som att du ansluter till tjänsten istället för Tor.">

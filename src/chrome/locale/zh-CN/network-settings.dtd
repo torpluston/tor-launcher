@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "点击复制 Tor 日志">
 
 <!ENTITY torsettings.proxyHelpTitle "代理帮助">
-<!ENTITY torsettings.proxyHelp1 "从公司或学校网络连接互联网时，有时需使用本地代理。&#160;如果不确定如何回答该问题，请查看其他浏览器的互联网设置，或者查看系统网络设置是否需要代理。">
+<!ENTITY torsettings.proxyHelp1 "通过公司，学校或大学的网络连接时可能需要本地代理。&#160; 如果您不确定是否需要代理，可查看其他浏览器中的网络设置或查看系统的网络设置。">
 
 <!ENTITY torsettings.bridgeHelpTitle "网桥中继帮助">
 <!ENTITY torsettings.bridgeHelp1 "网桥指未公开的 Tor 节点，通过这种节点连接 Tor 网络时更难以封锁。每种网桥使用不同的方式来突破审查。obfs 类型的网桥使通信看起来像随机信号，而 meek 网桥看起来像连接到相应的服务而不是 Tor 网络。">

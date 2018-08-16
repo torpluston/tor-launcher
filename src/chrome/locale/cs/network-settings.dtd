@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Zkopíruj logový soubor Toru do schránky">
 
 <!ENTITY torsettings.proxyHelpTitle "Nápověda k proxy">
-<!ENTITY torsettings.proxyHelp1 "Při připojování přes firemní, školní nebo univerzitní síť je třeba místní proxy.&#160;Pokud si nejste jisti jak odpovědět na tuto otázku, podívejte se na Internetová nastavení v jiném prohlížeči nebo na systémová nastavení sítě, kde uvidíte, zda je potřeba proxy.">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Nápověda o  mostních relé">
 <!ENTITY torsettings.bridgeHelp1 "Mosty jsou nezveřejněné prvky, které dělají blokování připojení k síti Tor obtížnější.&#160; Každý typ mostu používá odlišný způsob jak zabránit cenzuře.&#160; Obfs mosty dělají z vašich dat náhodný šum a meek mosty vytvářejí dojem, že se připojujete k dané službě a ne k Toru.">

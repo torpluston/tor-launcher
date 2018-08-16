@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Salin Log Tor Ke Clipboard">
 
 <!ENTITY torsettings.proxyHelpTitle "Bantuan untuk Proxy">
-<!ENTITY torsettings.proxyHelp1 "Proxy lokal diperlukan ketika mencoba terhubung dari jaringan perusahaan, sekolah, atau universitas.&#160;  Jika anda tidak yakin bagaimana untuk menjawab pertanyaan ini, lihat pengaturan Internet di peramban lainnya atau periksa pengaturan sistem jaringan Anda untuk melihat apakah proksi lokal dibutuhkan.">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Bantuan Bridge Relay">
 <!ENTITY torsettings.bridgeHelp1 "Bridges adalah relays yang tidak terdaftar, yang membuat pemblokiran sambungan di Jaringan Tor lebih sulit dilakukan.&#160; Setiap jenis bridge menggunakan metode yang berbeda untuk menghindari sensor.&#160; Jenis obfs membuat sambungan Anda terlihat seperti kegiatan acak dan jenis meek membuat sambungan Anda terlihat tersambung ke layanan tersebut, bukan ke Tor.">

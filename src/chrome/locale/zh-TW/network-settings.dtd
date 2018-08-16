@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "將洋蔥路由的訊息記錄複製到剪貼簿">
 
 <!ENTITY torsettings.proxyHelpTitle "代理協助">
-<!ENTITY torsettings.proxyHelp1 "當您通過公司，學校或者大學網絡進行連接時，您需要一個本地代理。如果您不確定如何回答這個問題，請參考其他瀏覽器的網絡設置或者系統網絡設置，來決定是否需要本地代理。">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "橋接中繼器之說明">
 <!ENTITY torsettings.bridgeHelp1 "網橋是未位於列表的中繼，可以使得tor網絡更難被屏蔽。&#160;不同類別的網橋使用不同方法規避審查。.&#160; obfs使您的通訊類似隨機發出的雜音，meek使您的通訊看起來是訪問他們的服務而不是tor。">

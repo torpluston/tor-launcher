@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Копирай Tor лога в клипборда">
 
 <!ENTITY torsettings.proxyHelpTitle "Прокси помощ">
-<!ENTITY torsettings.proxyHelp1 "Локално прокси е нужно, когато се свързвате през мрежата на компания, училище или университет.&#160;Ако не сте сигурни как да отговорите на този въпрос, вижте интернет настройките на друг браузър или разгледайте системните мрежови настройки, за да видите дали се нуждаете от прокси.">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Bridge Relay помощ">
 <!ENTITY torsettings.bridgeHelp1 "Бриджовете са не публикуване релеи, които правят блокирването на връзката до Tor мрежата много по-трудно.&#160;Всеки тип бридж използва различен метод да заообиколи цензурата.&#160;Тези, използващи obfs маскират интернет трафика като произволен шум, базираните на meek маскират трафика да излглежда, че се свързва с услугата, а не с Tor.">

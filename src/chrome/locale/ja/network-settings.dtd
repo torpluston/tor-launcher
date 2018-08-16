@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Torのログをクリップボードにコピー">
 
 <!ENTITY torsettings.proxyHelpTitle "プロキシヘルプ">
-<!ENTITY torsettings.proxyHelp1 "会社、学校、大学等のネットワークを通して接続する場合、ローカルプロクシが必要になります。&#160;もしこの質問にどう答えればよいかわからない場合は、他のブラウザのインターネット設定を見るか、システムのネットワーク設定を確認するかして、プロクシが必要であるかを調べてください。">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "ブリッジリレーのヘルプ">
 <!ENTITY torsettings.bridgeHelp1 "ブリッジとはTorネットワークへの接続をブロックすることを難しくするためのリストされていないリレーです。&#160; それぞれの種類のブリッジは検閲を避けるための異なる手法を利用しています。&#160; obfsのものはあなたのトラフィックをランダムなノイズのように見せかけ，meekのものはあなたのトラフィックをTorではなくそのサービスへの接続であるように見せかけます。">

@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "نسخ سجل تور إلي الحافظة">
 
 <!ENTITY torsettings.proxyHelpTitle "مساعدة الوسيط">
-<!ENTITY torsettings.proxyHelp1 "تحتاج لوسيط (بروكسي) محلي عند الاتصال عبر شركة، أو مدرسة، أو شبكة جامعية. إذا لم تكن متأكدا من كيفية الإجابة على هذا السؤال فألق نظرة على إعدادات الإنترنت في متصفح آخر أو تحقق من إعدادات شبكة نظامك لتتأكد إن كان هناك حاجة لوسيط.">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "المساعدة الخاصة بالجسور المُرحلة">
 <!ENTITY torsettings.bridgeHelp1 "الجسور هي تحويلات غير مدرجة تجعل حجب الاتصالات إلى شبكة تور أصعب.&#160; كل نوع من الجسور يستخدم طريقة مختلفة لتجنب الرقابة.&#160; جسور obfs تجعل حركة معلوماتك تبدو كضجيج عشوائي، وجسور meek تجعل حركة معلوماتك تبدوا كأنها تتصل لتلك الخدمة بدلا من تور.">

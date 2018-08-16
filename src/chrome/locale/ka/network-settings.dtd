@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "Tor-ის ქსელის პარამეტრები">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.default "Tor-თან დაკავშირება">
 <!ENTITY torsettings.wizard.title.configure "Tor-ის ქსელის პარამეტრები">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.connecting "კავშირის დამყარება">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Tor-ის ბრაუზერის ენა">
@@ -9,54 +9,54 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
-<!ENTITY torSettings.configure "კონფიგურირება">
+<!ENTITY torSettings.connectPrompt "Tor-თან დასაკავშირებლად დააწკაპეთ „დაკავშირებაზე“.">
+<!ENTITY torSettings.configurePrompt "დააწკაპეთ „გამართვაზე“ ქსელის სათანადო პარამეტრების შესარჩევად, თუ ისეთ ქვეყანაში იმყოფებით, სადაც შეზღუდულია Tor (ასეთებია ეგვიპტე, ჩინეთი, თურქეთი) ან თუ ისეთი კერძო ქსელიდან ცდილობთ დაკავშირებას, რომელიც საჭიროებს პროქსის.">
+<!ENTITY torSettings.configure "გამართვა">
 <!ENTITY torSettings.connect "დაკავშირება">
 
 <!-- Other: -->
 
-<!ENTITY torsettings.startingTor "Waiting for Tor to start…">
-<!ENTITY torsettings.restartTor "Restart Tor">
-<!ENTITY torsettings.reconfigTor "Reconfigure">
+<!ENTITY torsettings.startingTor "ელოდება Tor-ს გასაშვებად...">
+<!ENTITY torsettings.restartTor "Tor-ის ხელახლა გაშვება">
+<!ENTITY torsettings.reconfigTor "ხელახლა გამართვა">
 
 <!ENTITY torsettings.discardSettings.prompt "You have configured Tor bridges or you have entered local proxy settings.&#160; To make a direct connection to the Tor network, these settings must be removed.">
-<!ENTITY torsettings.discardSettings.proceed "Remove Settings and Connect">
+<!ENTITY torsettings.discardSettings.proceed "პარამეტრების მოცილება და დაკავშირება">
 
-<!ENTITY torsettings.optional "Optional">
+<!ENTITY torsettings.optional "დამატებითი">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
-<!ENTITY torsettings.useProxy.type "Proxy Type:">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
-<!ENTITY torsettings.useProxy.address "Address:">
-<!ENTITY torsettings.useProxy.address.placeholder "IP address or hostname">
+<!ENTITY torsettings.useProxy.checkbox "ინტერნეტთან დასაკავშირებლად პროქსის ვიყენებ">
+<!ENTITY torsettings.useProxy.type "პროქსის სახეობა:">
+<!ENTITY torsettings.useProxy.type.placeholder "მიუთითეთ პროქსის სახეობა">
+<!ENTITY torsettings.useProxy.address "მისამართი">
+<!ENTITY torsettings.useProxy.address.placeholder "IP მისამართი ან დასახელება">
 <!ENTITY torsettings.useProxy.port "პორტი:">
-<!ENTITY torsettings.useProxy.username "Username:">
+<!ENTITY torsettings.useProxy.username "მომხმარებლის სახელი:">
 <!ENTITY torsettings.useProxy.password "პაროლი">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "This computer goes through a firewall that only allows connections to certain ports">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
+<!ENTITY torsettings.firewall.checkbox "კომპიუტერი ინტერნეტს უკავშირდება ქსელის ფარის გავლით, რომელშიც მხოლოდ ცალკეული პორტებია დაშვებული">
+<!ENTITY torsettings.firewall.allowedPorts "დაშვებული პორტები:">
+<!ENTITY torsettings.useBridges.checkbox "Tor შეზღუდულია ჩემს ქვეყანაში">
 <!ENTITY torsettings.useBridges.default "Select a built-in bridge">
 <!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
 <!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "შეიყვანეთ სურათზე მოცემული სიმბოლოები">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "ახალი გამოწვევა">
 <!ENTITY torsettings.useBridges.captchaSubmit "წარუდგინოს">
 <!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
 <!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.useBridges.placeholder "აკრიფეთ მისამართი:პორტი (თითო ცალკე ხაზზე)">
 
-<!ENTITY torsettings.copyLog "Copy Tor Log To Clipboard">
+<!ENTITY torsettings.copyLog "Tor-ის აღრიცხვის ჩანაწერების დაკოპირება">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy is needed when connecting through a company, school, or university network.&#160;If you are not sure how to answer this question, look at the Internet settings in another browser or check your system's network settings to see whether a proxy is needed.">
+<!ENTITY torsettings.proxyHelpTitle "პროქსი — დახმარება">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Bridge Relay Help">
 <!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
 <!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torprogress.pleaseWait "გთხოვთ, მოითმინოთ სანამ დაუკავშირდება Tor-ქსელს.&#160; რამდენიმე წუთს შეიძლება გასტანოს.">

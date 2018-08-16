@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Скопіювати журнал Tor до буферу обміну">
 
 <!ENTITY torsettings.proxyHelpTitle "Довідка Проксі">
-<!ENTITY torsettings.proxyHelp1 "Локальний проксі-сервер потрібен під час підключення через мережу компанії, школи або університету.&#160;Якщо ви не знаєте, як відповісти на це запитання, перегляньте налаштування Інтернету в іншому веб-переглядачі або перевірте ваші мережеві налаштування системи, щоб дізнатися, чи потрібен проксі-сервер.">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Допомога по ретрансляторам типу міст">
 <!ENTITY torsettings.bridgeHelp1 "Мости - це незареєстровані передавачі, що ускладнюють блокування з'єднання з мережею Tor.&#160; Кожен тип мосту використовує інакший метод, щоб уникнути цензури.&#160;  Функції obfs роблять ваш трафік схожим на випадковий шум, а функції meek роблять ваш трафік схожим на те, що він підключається до цієї служби не через Tor.">

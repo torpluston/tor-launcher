@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Cóipeáil Logchomhad Tor go dtí an Ghearrthaisce">
 
 <!ENTITY torsettings.proxyHelpTitle "Cabhair le Seachfhreastalaithe">
-<!ENTITY torsettings.proxyHelp1 "Úsáidtear seachfhreastalaí áitiúil nuair a cheanglaítear ó líonra i gcomhlacht, i scoil, nó in ollscoil.&#160;Mura bhfuil tú cinnte faoin fhreagra ba chóir duit a thabhairt, caith súil ar na socruithe Idirlín i mbrabhsálaí eile, nó ar shocruithe líonra do chórais, le fáil amach an bhfuil seachfhreastalaí de dhíth.">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Cabhair le Droichid">
 <!ENTITY torsettings.bridgeHelp1 "Tá sé níos deacra cosc a chur ar cheangail le Líonra Tor nuair a úsáideann tú droichead, cineál athsheachadán neamhliostaithe.&#160;Úsáideann gach droichead modh difriúil leis an gcinsireacht a sheachaint.&#160;Mar shampla, cuireann na droichid obfs cuma randamach ar do thrácht líonra, agus leis na cinn meek, dealraíonn sé go bhfuil tú ag ceangal leis an tseirbhís sin seachas le Tor.">

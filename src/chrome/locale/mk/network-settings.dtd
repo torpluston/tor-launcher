@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Копирај го Tor логот за залепување">
 
 <!ENTITY torsettings.proxyHelpTitle "Прокси помош">
-<!ENTITY torsettings.proxyHelp1 "Локален прокси е потребен кога се приклучувате преку компанија, училиште, или универзитетска мрежа.&#160; Ако не сте сигурни како да одговорите на ова прашање, погледнете во Интернет поставките во друг Интернет прелистувач или проверете ги вашите системски мрежни поставки да видите дали е потребен прокси.">
+<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Мост јазол помош">
 <!ENTITY torsettings.bridgeHelp1 "Мостовите се неизлистани јазли кои го прават потешко блокирањето на врските кон Tor мрежата.&#160; Секој тип на мост користи различен метод за избегнување на цензурирањето.&#160; obfs мостот го прави протокот на информации да изгледа нормален, како да е од некој стандарден прелистувач наместо од Tor.">
