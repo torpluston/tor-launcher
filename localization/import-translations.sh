@@ -2,7 +2,6 @@
 
 TRANSLATION_BRANCHES="
 tor-launcher-network-settings
-tor-launcher-progress
 tor-launcher-properties
 "
 
