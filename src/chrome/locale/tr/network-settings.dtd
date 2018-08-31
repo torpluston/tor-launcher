@@ -16,8 +16,8 @@
 
 <!-- Other: -->
 
-<!ENTITY torsettings.startingTor "Tor'un başlaması bekleniyor…">
-<!ENTITY torsettings.restartTor "Tor'u Yeniden Başlat">
+<!ENTITY torsettings.startingTor "Tor uygulamasının başlaması bekleniyor…">
+<!ENTITY torsettings.restartTor "Tor Uygulamasını Yeniden Başlat">
 <!ENTITY torsettings.reconfigTor "Yeniden Yapılandır">
 
 <!ENTITY torsettings.discardSettings.prompt "Tor Köprülerini yapılandırdınız ya da yerel vekil sunucu ayarlarını yazdınız.&#160; Tor ağına doğrudan bağlanmak için bu ayarlar kaldırılmalıdır.">
@@ -30,33 +30,33 @@
 <!ENTITY torsettings.useProxy.type.placeholder "vekil sunucu türünü seçin">
 <!ENTITY torsettings.useProxy.address "Adres:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adresi ya da sunucu adı">
-<!ENTITY torsettings.useProxy.port "Bağlantı noktası:">
-<!ENTITY torsettings.useProxy.username "Kullanıcı adı:">
+<!ENTITY torsettings.useProxy.port "Kapı Numarası:">
+<!ENTITY torsettings.useProxy.username "Kullanıcı Adı:">
 <!ENTITY torsettings.useProxy.password "Parola:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "Bu bilgisayar yalnız belirli bağlantı noktalarına bağlanmaya izin veren bir güvenlik duvarı kullanıyor">
-<!ENTITY torsettings.firewall.allowedPorts "İzin Verilen Bağlantı Noktaları:">
-<!ENTITY torsettings.useBridges.checkbox "Bulunduğum ülkede Tor engelleniyor">
-<!ENTITY torsettings.useBridges.default "Bir hazır köprü seçin">
+<!ENTITY torsettings.firewall.checkbox "Bu bilgisayarda yalnız belirli kapı numaralarından bağlanılmasına izin veren bir güvenlik duvarı kullanılıyor">
+<!ENTITY torsettings.firewall.allowedPorts "Kullanılabilecek Kapı Numaraları:">
+<!ENTITY torsettings.useBridges.checkbox "Bulunduğum ülkede Tor ağı engelleniyor">
+<!ENTITY torsettings.useBridges.default "Hazır Köprülerden Seçin">
 <!ENTITY torsettings.useBridges.default.placeholder "bir köprü seçin">
 <!ENTITY torsettings.useBridges.bridgeDB "torproject.org üzerinden bir köprü isteyin">
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "Görseldeki karakterleri yazın">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Yeni bir güvenlik kodu isteyin">
 <!ENTITY torsettings.useBridges.captchaSubmit "Gönder">
-<!ENTITY torsettings.useBridges.custom "Bildiğim bir köprü sağla">
-<!ENTITY torsettings.useBridges.label "Güvenli bir kaynaktan gelen köprü bilgisini yazın.">
+<!ENTITY torsettings.useBridges.custom "Bildiğim Bir Köprüyü Kullanacağım">
+<!ENTITY torsettings.useBridges.label "Güvenli bir kaynaktan aldığınız köprü bilgilerini yazın.">
 <!ENTITY torsettings.useBridges.placeholder "adres:kapı numarası şeklinde yazın (her satıra bir tane)">
 
 <!ENTITY torsettings.copyLog "Tor Günlüğünü Panoya Kopyala">
 
 <!ENTITY torsettings.proxyHelpTitle "Vekil Sunucu Yardımı">
-<!ENTITY torsettings.proxyHelp1 "Bir kurum, okul ya da üniversite ağı aracılığıyla bağlanırken yerel bir vekil sunucu gereklidir.&#160;Bir vekil sunucu kullanıp kullanmamanız gerektiğinden emin değilseniz, bilgisayarınızın ağa bağlantı şeklini anlamak için başka bir tarayıcıdaki İnternet ayarlarına bakın ya da sisteminizin ağ ayarlarını gözden geçirin.">
+<!ENTITY torsettings.proxyHelp1 "Bir kurum, okul ya da üniversite ağı aracılığıyla bağlanırken yerel bir vekil sunucu gereklidir.&#160;Bir vekil sunucu kullanıp kullanmamanız gerektiğinden emin değilseniz, bilgisayarınızın ağa bağlantı şeklini anlamak için aynı ağdaki başka bir web tarayıcısının İnternet ayarlarına bakın ya da sisteminizin ağ ayarlarını gözden geçirin.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Köprü Aktarıcı Yardımı">
-<!ENTITY torsettings.bridgeHelp1 "Köprüler, Tor Ağına bağlantıların engellenmesini zorlaştıran listelenmemiş aktarıcılardır. &#160;Her köprü türü engellemeden kaçınmak için farklı bir yöntem kullanır.&#160; Obfs köprüler, trafiğinizi rastgele gürültü gibi gösterir ve meek köprüleri ise, trafiğinizi Tor yerine o hizmete bağlanmış gibi gösterir.">
-<!ENTITY torsettings.bridgeHelp2 "Bazı ülkelerin Tor ağını engellemeye çalışması nedeniyle bazı köprüler bazı ülkelerde çalışır ancak diğer ülkelerde çalışmaz.&#160; Ülkenizde hangi köprülerin çalışacağından emin değilseniz, torproject.org/about/contact.html#support adresine bakın.">
+<!ENTITY torsettings.bridgeHelp1 "Köprüler, Tor Ağına bağlantıların engellenmesini zorlaştıran ve herkese açık olarak listelenmeyen aktarıcılardır. &#160;Her köprü türü engellemeden kaçınmak için farklı bir yöntem kullanır.&#160; Obfs köprüleri, ağ trafiğinizi rastgele gürültü gibi gösterir. Meek köprüleri ise, trafiğinizi Tor ağı yerine o hizmete bağlanmış gibi gösterir.">
+<!ENTITY torsettings.bridgeHelp2 "Bazı ülkelerin Tor ağını engellemeye çalışması nedeniyle bazı köprüler bazı ülkelerde çalışırken başka ülkelerde çalışmayabilir.&#160; Ülkenizde hangi köprülerin çalışacağından emin değilseniz, torproject.org/about/contact.html#support adresine bakabilirsiniz.">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Lütfen Tor&#160; ağı ile bağlantı kurulurken bekleyin. Bu işlem birkaç dakika sürebilir.">

@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "ক্লিপবোর্ডে কপি টর লগ করুন">
 
 <!ENTITY torsettings.proxyHelpTitle "প্রক্সি সাহায্য">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelp1 "একটি প্রতিষ্ঠান, স্কুল বা বিশ্ববিদ্যালয়ের নেটওয়ার্কের মাধ্যমে সংযোগ করার সময় স্থানীয় প্রক্সির প্রয়োজন হতে পারে । #160; যদি আপনি নিশ্চিত না হন যে কোন প্রক্সি প্রয়োজন কিনা, অন্য ব্রাউজারে ইন্টারনেট সেটিংসের দিকে তাকান অথবা আপনার সিস্টেম এর নেটওয়ার্ক সেটিংস চেক করুন.">
 
 <!ENTITY torsettings.bridgeHelpTitle "ব্রিজ রিলে সহায়তা">
 <!ENTITY torsettings.bridgeHelp1 "ব্রিজগুলি তালিকাভুক্ত নয় এমন রিলে যা টর নেটওয়ার্ক সংযোগ বন্ধ করে আরও কঠিন করে তোলে। &#160; সেন্সরশিপ এড়ানোর জন্য প্রতিটি ধরনের সেতু একটি ভিন্ন পদ্ধতি ব্যবহার করে। &#160; Obfs আপনার ট্র্যাফিক র্যান্ডম শব্দ মত চেহারা, এবং নিছক টাওয়ার ট্র্যাফিক চেহারা মত এটি টর পরিবর্তে যে পরিষেবা সংযোগ করা হয়।">

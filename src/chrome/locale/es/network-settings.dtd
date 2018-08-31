@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Copiar el registro de mensajes(log) de Tor al portapapeles">
 
 <!ENTITY torsettings.proxyHelpTitle "Ayuda ">
-<!ENTITY torsettings.proxyHelp1 "Es posible que se necesite un proxy local al conectarse a través de una red de una empresa, escuela o universidad. Si no estás seguro de si se necesita o no un proxy, consulta la configuración de Internet en otro navegador o comprueba la configuración de red de tu sistema.">
+<!ENTITY torsettings.proxyHelp1 "Es posible que se necesite un proxy local al conectarse a través de una red de una empresa, escuela o universidad.&#160;Si no estás seguro de si se necesita o no un proxy, consulta la configuración de Internet en otro navegador o comprueba la configuración de red de tu sistema.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Ayuda de repetidores puente ('bridge relays')">
 <!ENTITY torsettings.bridgeHelp1 "Los puentes son transmisores no listados que dificultan el bloqueo de las conexiones a la red Tor.&#160; Cada tipo de puente utiliza un método diferente para evitar la censura.&#160; Los obfs hacen que tu tráfico parezca ruido aleatorio, y los modestos hacen que tu tráfico parezca que se está conectando a ese servicio en lugar de a Tor.">
