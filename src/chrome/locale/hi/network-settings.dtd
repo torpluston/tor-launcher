@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "टोर संजाल व्यवस्था">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.default "टोर से कनेक्ट करें">
 <!ENTITY torsettings.wizard.title.configure "टोर संजाल व्यवस्था">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.connecting "एक कनेक्शन की स्थापना">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "टोर  विचरक भाषा ">
@@ -9,54 +9,54 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
-<!ENTITY torSettings.configure "Configure">
+<!ENTITY torSettings.connectPrompt "टोर से कनेक्ट करने के लिए &quot;कनेक्ट&quot; पर क्लिक करें।">
+<!ENTITY torSettings.configurePrompt "नेटवर्क सेटिंग्स को समायोजित करने के लिए &quot;कॉन्फ़िगर करें&quot; पर क्लिक करें यदि आप ऐसे देश में हैं जो सेंसर टोर (जैसे मिस्र, चीन, तुर्की) या यदि आप किसी ऐसे निजी नेटवर्क से कनेक्ट हो रहे हैं जिसके लिए प्रॉक्सी की आवश्यकता है।">
+<!ENTITY torSettings.configure "कॉन्फ़िगर">
 <!ENTITY torSettings.connect "जोड़ें">
 
 <!-- Other: -->
 
-<!ENTITY torsettings.startingTor "Waiting for Tor to start…">
-<!ENTITY torsettings.restartTor "Restart Tor">
-<!ENTITY torsettings.reconfigTor "Reconfigure">
+<!ENTITY torsettings.startingTor "टोर शुरू करने की प्रतीक्षा कर रहा है ...">
+<!ENTITY torsettings.restartTor "टोर पुनरारंभ करें">
+<!ENTITY torsettings.reconfigTor "पुन: कॉन्फ़िगर">
 
-<!ENTITY torsettings.discardSettings.prompt "You have configured Tor bridges or you have entered local proxy settings.&#160; To make a direct connection to the Tor network, these settings must be removed.">
-<!ENTITY torsettings.discardSettings.proceed "Remove Settings and Connect">
+<!ENTITY torsettings.discardSettings.prompt "आपने टोर ब्रिड्जस को कॉन्फ़िगर किया है या आपने स्थानीय प्रॉक्सी सेटिंग्स &#160; दर्ज की हैं। टोर नेटवर्क से सीधा कनेक्शन बनाने के लिए, इन सेटिंग्स को हटा दिया जाना चाहिए।">
+<!ENTITY torsettings.discardSettings.proceed "सेटिंग्स हटाएँ और कनेक्ट करें">
 
-<!ENTITY torsettings.optional "Optional">
+<!ENTITY torsettings.optional "ऐच्छिक">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
-<!ENTITY torsettings.useProxy.type "Proxy Type:">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
+<!ENTITY torsettings.useProxy.checkbox "मैं इंटरनेट से कनेक्ट करने के लिए प्रॉक्सी का उपयोग करता हूं">
+<!ENTITY torsettings.useProxy.type "प्रॉक्सी प्रकार:">
+<!ENTITY torsettings.useProxy.type.placeholder "प्रॉक्सी प्रकार का चयन करें">
 <!ENTITY torsettings.useProxy.address "पता :">
-<!ENTITY torsettings.useProxy.address.placeholder "IP address or hostname">
+<!ENTITY torsettings.useProxy.address.placeholder "IP पता या मेजबाननाम">
 <!ENTITY torsettings.useProxy.port "पोर्ट/द्वार :">
-<!ENTITY torsettings.useProxy.username "Username:">
-<!ENTITY torsettings.useProxy.password "Password:">
+<!ENTITY torsettings.useProxy.username "उपयोगकर्ता नाम">
+<!ENTITY torsettings.useProxy.password "पासवर्ड">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "This computer goes through a firewall that only allows connections to certain ports">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.firewall.checkbox "यह कंप्यूटर फ़ायरवॉल के माध्यम से जाता है जो केवल कुछ पोर्ट्स के कनेक्शन की अनुमति देता है...">
+<!ENTITY torsettings.firewall.allowedPorts "अनुमति प्राप्त पोर्ट्स ">
+<!ENTITY torsettings.useBridges.checkbox "टोर मेरे देश में सेंसर किया गया है">
+<!ENTITY torsettings.useBridges.default "एक अंतर्निर्मित पुल का चयन करें">
+<!ENTITY torsettings.useBridges.default.placeholder "एक पुल का चयन करें">
+<!ENTITY torsettings.useBridges.bridgeDB "Torproject.org से एक पुल का अनुरोध करें">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "छवि से अक्षर दर्ज करें">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "एक नई चुनौती प्राप्त करें">
 <!ENTITY torsettings.useBridges.captchaSubmit "जमा करें">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
+<!ENTITY torsettings.useBridges.custom "एक पुल प्रदान करें जो मुझे पता है">
+<!ENTITY torsettings.useBridges.label "एक विश्वसनीय स्रोत से पुल जानकारी दर्ज करें।">
 <!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
-<!ENTITY torsettings.copyLog "Copy Tor Log To Clipboard">
+<!ENTITY torsettings.copyLog "क्लिपबोर्ड पर टोर लॉग कॉपी करें">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelpTitle "प्रॉक्सी मदद">
+<!ENTITY torsettings.proxyHelp1 "किसी कंपनी, स्कूल या विश्वविद्यालय नेटवर्क &#160; से कनेक्ट करते समय स्थानीय प्रॉक्सी की आवश्यकता हो सकती है। यदि आप सुनिश्चित नहीं हैं कि प्रॉक्सी की आवश्यकता है, तो किसी अन्य ब्राउज़र में इंटरनेट सेटिंग्स देखें या अपने सिस्टम की नेटवर्क सेटिंग्स जांचें।">
 
-<!ENTITY torsettings.bridgeHelpTitle "Bridge Relay Help">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelpTitle "ब्रिज रिले सहायता">
+<!ENTITY torsettings.bridgeHelp1 "पुल असूचीबद्ध रिले हैं जो टोर नेटवर्क &#160; से कनेक्शन को अवरुद्ध करना अधिक कठिन बनाते हैं। सेंसरशिप से बचने के लिए प्रत्येक प्रकार का पुल एक अलग विधि का उपयोग करता है। &#160; Obfs वाले लोग आपके ट्रैफ़िक को यादृच्छिक शोर की तरह दिखते हैं, और नम्र लोग आपके ट्रैफिक को टोर के बजाय उस सेवा से कनेक्ट करने की तरह दिखते हैं।">
+<!ENTITY torsettings.bridgeHelp2 "कुछ देशों में कुछ पुल काम करते हैं, लेकिन अन्य &#160; नहीं, क्योंकि कुछ देशों ने टोर को अवरुद्ध करने का प्रयास किया है। यदि आप अनिश्चित हैं कि आपके देश में कौन से पुल काम करते हैं, तो torproject.org/about/contact.html#support पर जाएं">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "कुछ देर रुकिए। हम टोर की संजाल से जुड़ रहे हैं। कुछ मिनट लग सकते हैं।">
