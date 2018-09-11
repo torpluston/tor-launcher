@@ -47,8 +47,8 @@ pref("extensions.torlauncher.tordatadir_path", "");
 
 // BridgeDB-related preferences (used for Moat).
 pref("extensions.torlauncher.bridgedb_front", "ajax.aspnetcdn.com");
-pref("extensions.torlauncher.bridgedb_reflector", "https://onionquiche.azureedge.net/");
-pref("extensions.torlauncher.moat_service", "https://moat.onionlab.eu/moat");
+pref("extensions.torlauncher.bridgedb_reflector", "https://onion.azureedge.net/");
+pref("extensions.torlauncher.moat_service", "https://bridges.torproject.org/moat");
 pref("extensions.torlauncher.bridgedb_bridge_type", "obfs4");
 
 // Recommended default bridge type (can be set per localized bundle).
