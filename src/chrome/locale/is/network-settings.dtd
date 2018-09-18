@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Afrita atvikaskrá Tor á klippispjald">
 
 <!ENTITY torsettings.proxyHelpTitle "Hjálp fyrir milliþjóna">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelp1 "Hugsanlega þarf að nota staðværan milliþjón (proxy) þegar tengst er í gegnum net fyrirtækis, skóla eða stofnunar.&#160;Ef þú ert ekki viss hvort þurfi að nota milliþjón, kíktu þá á netstillingarnar í einhverjum öðrum vafra eða á uppsetningu netsins í stýrikerfinu þínu.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Hjálp fyrir brúaendurvarpa">
 <!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">

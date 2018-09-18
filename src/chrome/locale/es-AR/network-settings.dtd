@@ -5,7 +5,7 @@
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Idioma del Navegador Tor">
-<!ENTITY torlauncher.localePicker.prompt "Por favor selecciona un idioma ">
+<!ENTITY torlauncher.localePicker.prompt "Por favor seleccioná un idioma ">
 
 <!-- For "first run" wizard: -->
 
@@ -52,11 +52,11 @@
 <!ENTITY torsettings.copyLog "Copiar la bitácora Tor al Portapapeles">
 
 <!ENTITY torsettings.proxyHelpTitle "Ayuda para Proxy">
-<!ENTITY torsettings.proxyHelp1 "Un proxy local puede ser necesitado cuando te estés conectando a través de una red de una compañía, escuela o universidad.&#160;Si no estás seguro si un proxy es necesario, mirá los ajustes de Internet en otro navegador o revisá tus ajustes de red del sistema.">
+<!ENTITY torsettings.proxyHelp1 "Un proxy local puede ser necesario cuando te estés conectando a través de una red de una compañía, escuela o universidad.&#160;Si no estás seguro si un proxy es necesario, mirá los ajustes de Internet en otro navegador o revisá tus ajustes de red del sistema.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Ayuda para relevo puente">
 <!ENTITY torsettings.bridgeHelp1 "Puentes son relevos no listados que hacen más dificultoso bloquear conexiones a la red de Tor.&#160; Cada uno de los tipos de puente usa un método diferente para evitar censura.&#160; Los obfs hacen que tu tráfico parezca ruido aleatorio, y los meek hacen que tu tráfico parezca que se está conectando a otro servicio en vez de Tor.">
 <!ENTITY torsettings.bridgeHelp2 "Por la manera en que ciertos países intentan bloquear a Tor, ciertos puentes funcionan en ciertos países pero no otros.&#160; Si no estás seguro acerca de cuáles puentes funcionan en tu país, visitá torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Por favor, espere mientras establecemos una conexión a la red Tor.&#160;  Puede tardar varios minutos.">
+<!ENTITY torprogress.pleaseWait "Por favor, esperá mientras establecemos una conexión a la red de Tor.&#160;  Puede tardar varios minutos.">
