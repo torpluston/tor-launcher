@@ -224,22 +224,17 @@ _MoatRequestor.prototype =
     }
 
     let ptStateDir = TorLauncherUtil.getTorFile("tordatadir", false);
-    let meekHelperProfileDir = TorLauncherUtil.getTorFile("pt-profiles-dir",
-                                                          true);
-    if (!ptStateDir || !meekHelperProfileDir)
+    if (!ptStateDir)
     {
       let msg = TorLauncherUtil.getLocalizedString("datadir_missing");
       return Promise.reject(new Error(msg));
     }
     ptStateDir.append("pt_state");  // Match what tor uses.
 
-    meekHelperProfileDir.appendRelativePath("profile.moat-http-helper");
-
     let envAdditions = { TOR_PT_MANAGED_TRANSPORT_VER: "1",
                          TOR_PT_STATE_LOCATION: ptStateDir.path,
                          TOR_PT_EXIT_ON_STDIN_CLOSE: "1",
-                         TOR_PT_CLIENT_TRANSPORTS: this.kTransport,
-                         TOR_BROWSER_MEEK_PROFILE: meekHelperProfileDir.path };
+                         TOR_PT_CLIENT_TRANSPORTS: this.kTransport };
     if (this.mLocalProxyURL)
       envAdditions.TOR_PT_PROXY = this.mLocalProxyURL;
 
