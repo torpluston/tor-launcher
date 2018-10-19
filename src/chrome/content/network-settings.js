@@ -309,6 +309,7 @@ function populateLocaleList(aLangPackAddons)
     "de"    : "Deutsch",
     "el"    : "\u03B5\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC",
     "es-ES" : "Espa\u00f1ol",
+    "es-AR" : "Espa\u00f1ol de Argentina",
     "fa"    : "\u0641\u0627\u0631\u0633\u06cc",
     "fr"    : "Fran\u00e7ais",
     "ga"    : "Gaeilge (Irish)",
