@@ -10,15 +10,15 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "לחץ על “התחבר“ כדי להתחבר אל Tor.">
-<!ENTITY torSettings.configurePrompt "לחץ על ”הגדר“ כדי להתאים הגדרות רשת אם אתה במדינה שמצנזרת את Tor (למשל מצרים, סין וטורקיה) או אם אתה מתחבר מרשת פרטית הדורשת ייפוי־כוח.">
-<!ENTITY torSettings.configure "הגדר">
+<!ENTITY torSettings.configurePrompt "לחץ על ”תצר“ כדי להתאים הגדרות רשת אם אתה במדינה שמצנזרת את Tor (למשל מצרים, סין וטורקיה) או אם אתה מתחבר מרשת פרטית הדורשת ייפוי־כוח.">
+<!ENTITY torSettings.configure "תצר">
 <!ENTITY torSettings.connect "התחבר">
 
 <!-- Other: -->
 
 <!ENTITY torsettings.startingTor "ממתין אל Tor להתחיל...">
 <!ENTITY torsettings.restartTor "הפעל מחדש את Tor">
-<!ENTITY torsettings.reconfigTor "הגדר מחדש">
+<!ENTITY torsettings.reconfigTor "תצר מחדש">
 
 <!ENTITY torsettings.discardSettings.prompt "הגדרת גשרי Tor או הכנסת הגדרות ייפוי־כוח מקומי.&#160; כדי לעשות חיבור ישיר לרשת Tor, הגדרות אלו חייבות להיות מוסרות.">
 <!ENTITY torsettings.discardSettings.proceed "הסר הגדרות והתחבר">

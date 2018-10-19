@@ -1,62 +1,62 @@
-<!ENTITY torsettings.dialog.title "টর নেটওয়ার্ক সেটিংস">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
-<!ENTITY torsettings.wizard.title.configure "টর নেটওয়ার্ক সেটিংস">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.dialog.title "টর নেটওয়ার্ক সেটিংস">
+<!ENTITY torsettings.wizard.title.default "টর সাথে সংযোগ স্থাপন করুন">
+<!ENTITY torsettings.wizard.title.configure "টর নেটওয়ার্ক সেটিংস">
+<!ENTITY torsettings.wizard.title.connecting "একটি সংযোগ স্থাপন">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Tor Browser Language">
-<!ENTITY torlauncher.localePicker.prompt "Please select a language.">
+<!ENTITY torlauncher.localePicker.title "টর ব্রাউজার ভাষা">
+<!ENTITY torlauncher.localePicker.prompt "দয়া করে একটি ভাষা নির্বাচন করুন">
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
-<!ENTITY torSettings.configure "Configure">
-<!ENTITY torSettings.connect "সংযোগ করুন">
+<!ENTITY torSettings.connectPrompt "টর সাথে সংযোগ করতে &quot;সংযোগ করুন&quot; ক্লিক করুন">
+<!ENTITY torSettings.configurePrompt "আপনি এমন একটি দেশে থাকলে নেটওয়ার্ক সেটিংস সংশোধন করতে &quot;কনফিগার করুন&quot; ক্লিক করুন যা টরকে সেন্সর করে (যেমনঃ মিশর, চীন, তুরস্ক) অথবা যদি আপনি একটি প্রাইভেট নেটওয়ার্ক থেকে সংযোগ করেন যা প্রক্সি প্রয়োজন।">
+<!ENTITY torSettings.configure "কনফিগার করুন">
+<!ENTITY torSettings.connect "সংযোগ করা">
 
 <!-- Other: -->
 
-<!ENTITY torsettings.startingTor "Waiting for Tor to start…">
-<!ENTITY torsettings.restartTor "Restart Tor">
-<!ENTITY torsettings.reconfigTor "Reconfigure">
+<!ENTITY torsettings.startingTor "টর শুরু করার জন্য অপেক্ষা করছে ...">
+<!ENTITY torsettings.restartTor "টর্চ পুনরায় চালু করুন">
+<!ENTITY torsettings.reconfigTor "পুনরায় কনফিগার করুন">
 
-<!ENTITY torsettings.discardSettings.prompt "You have configured Tor bridges or you have entered local proxy settings.&#160; To make a direct connection to the Tor network, these settings must be removed.">
-<!ENTITY torsettings.discardSettings.proceed "Remove Settings and Connect">
+<!ENTITY torsettings.discardSettings.prompt "আপনি টর ব্রিজগুলি কনফিগার করেছেন বা আপনি স্থানীয় প্রক্সি সেটিংস এ প্রবেশ করেছেন।&#160; টর নেটওয়ার্কের সাথে সরাসরি সংযোগ স্থাপনের জন্য, এই সেটিংস মুছে ফেলা আবশ্যক।">
+<!ENTITY torsettings.discardSettings.proceed "সেটিংস সরান এবং সংযুক্ত করুন">
 
-<!ENTITY torsettings.optional "Optional">
+<!ENTITY torsettings.optional "ঐচ্ছিক">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
-<!ENTITY torsettings.useProxy.type "Proxy Type:">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
-<!ENTITY torsettings.useProxy.address "Address:">
-<!ENTITY torsettings.useProxy.address.placeholder "IP address or hostname">
-<!ENTITY torsettings.useProxy.port "পোর্ট:">
+<!ENTITY torsettings.useProxy.checkbox "আমি ইন্টারনেটে সংযোগ স্থাপন করতে প্রক্সি ব্যবহার করি">
+<!ENTITY torsettings.useProxy.type "প্রক্সি প্রকার:">
+<!ENTITY torsettings.useProxy.type.placeholder "একটি প্রক্সি টাইপ নির্বাচন করুন">
+<!ENTITY torsettings.useProxy.address "ঠিকানা:">
+<!ENTITY torsettings.useProxy.address.placeholder "আইপি ঠিকানা বা হোস্টনাম">
+<!ENTITY torsettings.useProxy.port "পোর্টঃ">
 <!ENTITY torsettings.useProxy.username "ব্যবহারকারী নাম:">
 <!ENTITY torsettings.useProxy.password "পাসওয়ার্ড:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "This computer goes through a firewall that only allows connections to certain ports">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
-<!ENTITY torsettings.useBridges.captchaSubmit "দাখিল করা">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.firewall.checkbox "এই কম্পিউটারটি একটি ফায়ারওয়ালের মাধ্যমে যায় যা কেবলমাত্র কিছু পোর্টের সংযোগের অনুমতি দেয়">
+<!ENTITY torsettings.firewall.allowedPorts "অনুমোদিত পোর্টসমূহ:">
+<!ENTITY torsettings.useBridges.checkbox "টর আমার দেশে সেন্সর করা হয়">
+<!ENTITY torsettings.useBridges.default "একটি অন্তর্নির্মিত ব্রিজ নির্বাচন করুন">
+<!ENTITY torsettings.useBridges.default.placeholder "একটি ব্রিজ নির্বাচন করুন">
+<!ENTITY torsettings.useBridges.bridgeDB "torproject.org থেকে একটি সেতুর জন্য অনুরোধ করুন">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "ইমেজ থেকে অক্ষর লিখুন">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "একটি নতুন চ্যালেঞ্জ পান">
+<!ENTITY torsettings.useBridges.captchaSubmit "জমা  করুন">
+<!ENTITY torsettings.useBridges.custom "একটি ব্রিজ প্রদান আমি জানি">
+<!ENTITY torsettings.useBridges.label "বিশ্বস্ত উৎস থেকে ব্রিজ তথ্য প্রবেশ করান।">
+<!ENTITY torsettings.useBridges.placeholder "টাইপ ঠিকানা: পোর্ট (প্রতি লাইন প্রতি)">
 
-<!ENTITY torsettings.copyLog "Copy Tor Log To Clipboard">
+<!ENTITY torsettings.copyLog "ক্লিপবোর্ডে কপি টর লগ করুন">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelpTitle "প্রক্সি সাহায্য">
+<!ENTITY torsettings.proxyHelp1 "একটি প্রতিষ্ঠান, স্কুল বা বিশ্ববিদ্যালয়ের নেটওয়ার্কের মাধ্যমে সংযোগ করার সময় স্থানীয় প্রক্সির প্রয়োজন হতে পারে । #160; যদি আপনি নিশ্চিত না হন যে কোন প্রক্সি প্রয়োজন কিনা, অন্য ব্রাউজারে ইন্টারনেট সেটিংসের দিকে তাকান অথবা আপনার সিস্টেম এর নেটওয়ার্ক সেটিংস চেক করুন.">
 
-<!ENTITY torsettings.bridgeHelpTitle "Bridge Relay Help">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelpTitle "ব্রিজ রিলে সহায়তা">
+<!ENTITY torsettings.bridgeHelp1 "ব্রিজগুলি তালিকাভুক্ত নয় এমন রিলে যা টর নেটওয়ার্ক সংযোগ বন্ধ করে আরও কঠিন করে তোলে। &#160; সেন্সরশিপ এড়ানোর জন্য প্রতিটি ধরনের সেতু একটি ভিন্ন পদ্ধতি ব্যবহার করে। &#160; Obfs আপনার ট্র্যাফিক র্যান্ডম শব্দ মত চেহারা, এবং নিছক টাওয়ার ট্র্যাফিক চেহারা মত এটি টর পরিবর্তে যে পরিষেবা সংযোগ করা হয়।">
+<!ENTITY torsettings.bridgeHelp2 "কিছু দেশ টোরকে বাধা দেওয়ার চেষ্টা করে কেন, কিছু কিছু ব্রিজ নির্দিষ্ট দেশে কাজ করে কিন্তু অন্যদের নয়। &#160; আপনার দেশে কোন ব্রিজগুলি কাজ করে তা যদি আপনি অনিশ্চিত থাকেন, তাহলে torproject.org/about/contact.html#support দেখুন">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torprogress.pleaseWait "আমরা টর নেটওয়ার্কে একটি সংযোগ স্থাপন করার সময় অনুগ্রহ করে অপেক্ষা করুন। &#160; এই কয়েক মিনিট সময় নিতে পারে.">

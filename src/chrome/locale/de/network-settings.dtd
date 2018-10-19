@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "Klicken Sie auf &quot;Verbinden&quot;, um eine Verbindung zu Tor herzustellen.">
-<!ENTITY torSettings.configurePrompt "Klicken Sie auf &quot;Konfigurieren&quot;, um die Netzwerkeinstellungen anzupassen, wenn Sie sich in einem Land befinden, das Tor blockiert (z.B. Ägypten, China, Türkei) oder wenn Sie sich von einem privaten Netzwerk aus verbinden, das einen Proxy benötigt.">
+<!ENTITY torSettings.configurePrompt "Klicken Sie auf &quot;Konfigurieren&quot;, um die Netzwerkeinstellungen anzupassen, wenn Sie sich in einem Land befinden, das Tor blockiert (z.B. Ägypten, China, Türkei), oder wenn Sie sich von einem privaten Netzwerk aus verbinden, das einen Proxy benötigt.">
 <!ENTITY torSettings.configure "Konfigurieren">
 <!ENTITY torSettings.connect "Verbinden">
 
@@ -41,7 +41,7 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor wird in meinem Land blockiert.">
 <!ENTITY torsettings.useBridges.default "Bereitgestellte Brücke auswählen">
 <!ENTITY torsettings.useBridges.default.placeholder "Brücke auswählen">
-<!ENTITY torsettings.useBridges.bridgeDB "Brücke von torproject.org anfragen">
+<!ENTITY torsettings.useBridges.bridgeDB "Brücke von torproject.org anfordern">
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "Geben Sie die Zeichen in dem Bild ein">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Neue Herausforderung bekommen">
 <!ENTITY torsettings.useBridges.captchaSubmit "Übermitteln">
@@ -55,8 +55,8 @@
 <!ENTITY torsettings.proxyHelp1 "Unter Umständen ist ein lokaler Proxy nötig, um sich von einem eingeschränkten Netzwerk eines Unternehmens, einer Schule oder Universität zu verbinden.&#160;Im Zweifelsfall kann die Einstellung in einem anderen Browser oder die System-Netzwerkeinstellung .verglichen werden.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Hilfe zum Brückenrelais">
-<!ENTITY torsettings.bridgeHelp1 "Brücken sind nicht aufgelistete Vermittler, die es schwieriger machen, Verbindungen zum Tor-Netzwerk zu blockieren.&#160; Jede Art von Brücke verwendet eine andere Methode, um Zensur zu vermeiden.&#160; Die vom Typ obfs lassen Ihren Datenverkehr wie Zufallsrauschen aussehen und die vom Typ meek lassen Ihren Datenverkehr aussehen, als ob Sie eine Verbindung zu diesem jeweiligen Dienst herstellen anstatt zu Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Aufgrund der Tatsache, dass bestimmte Länder versuchen, Tor zu blockieren, funktionieren bestimmte Brücken in bestimmten Ländern, aber nicht in anderen.&#160; Wenn Sie sich nicht sicher sind, welche Brücken in Ihrem Land funktionieren, besuchen Sie torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelp1 "Brücken sind nicht aufgelistete Vermittler, die es schwieriger machen, Verbindungen zum Tor-Netzwerk zu blockieren.&#160; Jede Art von Brücke verwendet eine andere Methode, um Zensur zu vermeiden.&#160; Die vom Typ obfs lassen Ihren Datenverkehr wie Zufallsrauschen aussehen, und die vom Typ meek lassen Ihren Datenverkehr aussehen, als ob Sie eine Verbindung zu diesem jeweiligen Dienst herstellen anstatt zu Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Aufgrund der Art, wie bestimmte Länder versuchen, Tor zu blockieren, funktionieren bestimmte Brücken in gewissen Ländern, nicht aber in anderen.&#160; Wenn Sie sich nicht sicher sind, welche Brücken in Ihrem Land funktionieren, besuchen Sie torproject.org/about/contact.html#support">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Bitte warten Sie, während eine Verbindung zum Tor-Netzwerk hergestellt wird.&#160; Das kann einige Minuten dauern.">

@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "點擊&quot;連接&quot;來連上 Tor ">
-<!ENTITY torSettings.configurePrompt "如果您處於會監視tor網絡的國家（例如埃及，中國，土耳其）或者您位於私人網絡中，需要代理訪問互聯網。請點擊“配置”更改網絡設置。">
+<!ENTITY torSettings.configurePrompt "如果您處於會監視tor網絡的國家（例如埃及，中國，土耳其）或者您位於私人網路中，需要代理訪問互聯網。請點擊，「設定」更改網路設置。">
 <!ENTITY torSettings.configure "設定">
 <!ENTITY torSettings.connect "連接">
 
@@ -41,8 +41,8 @@
 <!ENTITY torsettings.useBridges.checkbox "我的國家中 Tor 受到審查">
 <!ENTITY torsettings.useBridges.default "選擇內建的橋接">
 <!ENTITY torsettings.useBridges.default.placeholder "選擇網橋">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.bridgeDB "從 torproject.org 請求網橋">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "輸入圖片中的文字">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
 <!ENTITY torsettings.useBridges.captchaSubmit "提交">
 <!ENTITY torsettings.useBridges.custom "提供一個認識的橋接 ">

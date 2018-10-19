@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "Smelltu á &quot;Tengjast&quot; til að tengjast við Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.configurePrompt "Smelltu á “Stilla” til að breyta netstillingum ef þú ert í landi sem ritskoðar umferð um Tor (svo sem Egyptalandi, Kína, Tyrklandi) eða ef þú ert að tengjast af einkaneti sem krefst þess að fara um milliþjón.">
 <!ENTITY torSettings.configure "Stilla">
 <!ENTITY torSettings.connect "Tengjast">
 
@@ -20,7 +20,7 @@
 <!ENTITY torsettings.restartTor "Endurræsa Tor">
 <!ENTITY torsettings.reconfigTor "Endurstilla">
 
-<!ENTITY torsettings.discardSettings.prompt "You have configured Tor bridges or you have entered local proxy settings.&#160; To make a direct connection to the Tor network, these settings must be removed.">
+<!ENTITY torsettings.discardSettings.prompt "Þú hefur sett upp brýr fyrir Tor eða að þú hefur farið inn í stillingar milliþjóns á kerfinu.&#160; Til að útbúa beina tengingu inn á Tor-netið, þá verður að fjarlægja þessar stillingar.">
 <!ENTITY torsettings.discardSettings.proceed "Fjarlægja stillingar og tengjast">
 
 <!ENTITY torsettings.optional "Valkvætt">
@@ -36,7 +36,7 @@
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "This computer goes through a firewall that only allows connections to certain ports">
+<!ENTITY torsettings.firewall.checkbox "Þessi tölva tengist í gegnum eldvegg sem leyfir einungis tengingar í gegnum tilteknar gáttir">
 <!ENTITY torsettings.firewall.allowedPorts "Leyfðar gáttir:">
 <!ENTITY torsettings.useBridges.checkbox "Tor er ritskoðað í landinu mínu">
 <!ENTITY torsettings.useBridges.default "Veldu innbyggða brú">
@@ -55,8 +55,8 @@
 <!ENTITY torsettings.proxyHelp1 "Hugsanlega þarf að nota staðværan milliþjón (proxy) þegar tengst er í gegnum net fyrirtækis, skóla eða stofnunar.&#160;Ef þú ert ekki viss hvort þurfi að nota milliþjón, kíktu þá á netstillingarnar í einhverjum öðrum vafra eða á uppsetningu netsins í stýrikerfinu þínu.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Hjálp fyrir brúaendurvarpa">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelp1 "Brýr eru faldir endurvarpar sem gera erfiðara að loka á tengingar á Tor netinu.&#160; Hver tegund af brúm notar mismunandi aðferðir til að forðast ritskoðun.&#160; obfs-brýrnar láta netumferðina þína líta út sem handahófskennt suð og meek-brýr láta netumferðina þína líta út fyrir að tengjast þeirri þjónustu í staðinn fyrir Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Vegna þess hvernig sum lönd reyna að loka á umferð um Tor, munu sumar brýr virka í sumum löndum en aðrar ekki.&#160; Ef þú ert ekki viss um hvaða brýr virka í landinu þínu, skaltu skoða torproject.org/about/contact.html#support">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Bíddu aðeins á meðan tengingu er komið á við Tor-netið.&#160; Það getur tekið nokkrar mínútur.">

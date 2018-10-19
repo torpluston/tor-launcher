@@ -36,7 +36,7 @@
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP/HTTPS">
-<!ENTITY torsettings.firewall.checkbox "Computeren går gennem en firewall som kun tillader forbindelse til specifikke porte">
+<!ENTITY torsettings.firewall.checkbox "Computeren går gennem en firewall som kun tillader forbindelse til bestemte porte">
 <!ENTITY torsettings.firewall.allowedPorts "Tilladte Porte:">
 <!ENTITY torsettings.useBridges.checkbox "Tor er censureret i mit land">
 <!ENTITY torsettings.useBridges.default "Vælg en indbygget bro">
@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Kopiér Tor-loggen til udklipsholderen">
 
 <!ENTITY torsettings.proxyHelpTitle "Hjælp til proxy">
-<!ENTITY torsettings.proxyHelp1 "Der kan være brug for en lokal proxy når der oprettes forbindelse gennem et netværk i virksomhed, skole eller universitet.&#160;Hvis du ikke er sikker på om der er brug for en proxy, så kig i internetindstillingerne i en anden browser eller tjek dit systems netværksindstillinger.">
+<!ENTITY torsettings.proxyHelp1 "Der kan være brug for en lokal proxy når der oprettes forbindelse gennem et netværk i virksomhed, skole eller universitet.&#160;Hvis du er i tvivl om der er brug for en proxy, så kig i internetindstillingerne i en anden browser eller tjek dit systems netværksindstillinger.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Bro-relæ hjælp">
 <!ENTITY torsettings.bridgeHelp1 "Broer er ulistede relæer som gør det sværrer at blokere forbindelser til Tor-netværket.&#160; Hver type bro bruger en anderledes metode for at undgå censur.&#160; Dem med obfs får din netværkstrafik til at ligne tilfældig støj og dem med meek får din netværkstrafik til at se ud som om den er forbundet til tjenesten i stedet for Tor.">

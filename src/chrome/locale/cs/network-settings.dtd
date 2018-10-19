@@ -1,38 +1,38 @@
-<!ENTITY torsettings.dialog.title "Síťové nastavení TORu">
-<!ENTITY torsettings.wizard.title.default "Připojit k Toru">
+<!ENTITY torsettings.dialog.title "Síťové nastavení Toru">
+<!ENTITY torsettings.wizard.title.default "Připojení k síti Tor">
 <!ENTITY torsettings.wizard.title.configure "Nastavení sítě Tor">
-<!ENTITY torsettings.wizard.title.connecting "Sestavuji spojení">
+<!ENTITY torsettings.wizard.title.connecting "Navazování spojení">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Jazyk Tor Prohlížeče">
-<!ENTITY torlauncher.localePicker.prompt "Prosím zvolte jazyk.">
+<!ENTITY torlauncher.localePicker.title "Jazyk prohlížeče Tor">
+<!ENTITY torlauncher.localePicker.prompt "Zvolte prosím jazyk.">
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Klikněte na „Připojit“ pro připojení k Toru.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
-<!ENTITY torSettings.configure "Konfigurovat">
+<!ENTITY torSettings.connectPrompt "Pro připojení k síti Tor klepněte na tlačítko „Připojit“.">
+<!ENTITY torSettings.configurePrompt "Pokud jste v zemi, která síť Tor omezuje (např. Egypt, Čína, Turecko), nebo pokud se připojujete ze sítě, která vyžaduje použití proxy, klepněte na tlačítko „Nastavení“ pro úpravu nastavení sítě.">
+<!ENTITY torSettings.configure "Nastavení">
 <!ENTITY torSettings.connect "Připojit">
 
 <!-- Other: -->
 
-<!ENTITY torsettings.startingTor "Čekání na start TORu">
+<!ENTITY torsettings.startingTor "Čekání na start Toru">
 <!ENTITY torsettings.restartTor "Restartovat Tor">
 <!ENTITY torsettings.reconfigTor "Přenastavit">
 
-<!ENTITY torsettings.discardSettings.prompt "Nastavil jste síťový most nebo zadal lokální proxy.&#160; Aby jste se mohl připojit k síti Tor přímo, musíte tato nastavení odstranit.">
+<!ENTITY torsettings.discardSettings.prompt "Nastavili jste síťový most nebo lokální proxy.&#160; Pro připojení k síti Tor přímo tato nastavení odstraňte.">
 <!ENTITY torsettings.discardSettings.proceed "Odstranit nastavení a připojit se">
 
-<!ENTITY torsettings.optional "Volitelný">
+<!ENTITY torsettings.optional "Volitelné">
 
 <!ENTITY torsettings.useProxy.checkbox "Používám proxy pro připojení k Internetu">
-<!ENTITY torsettings.useProxy.type "Typ Proxy:">
+<!ENTITY torsettings.useProxy.type "Typ proxy:">
 <!ENTITY torsettings.useProxy.type.placeholder "vyberte typ proxy">
 <!ENTITY torsettings.useProxy.address "Adresa:">
-<!ENTITY torsettings.useProxy.address.placeholder "IP adresa nebo jméno hosta">
+<!ENTITY torsettings.useProxy.address.placeholder "IP adresa nebo název serveru">
 <!ENTITY torsettings.useProxy.port "Port:">
 <!ENTITY torsettings.useProxy.username "Uživatel:">
-<!ENTITY torsettings.useProxy.password "Heslo.">
+<!ENTITY torsettings.useProxy.password "Heslo:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
@@ -41,22 +41,22 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor je v mé zemi cenzurován">
 <!ENTITY torsettings.useBridges.default "Vyberte vestavěný most">
 <!ENTITY torsettings.useBridges.default.placeholder "vyberte most">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
-<!ENTITY torsettings.useBridges.captchaSubmit "Předložit">
-<!ENTITY torsettings.useBridges.custom "Znám poskytovatele mostu">
+<!ENTITY torsettings.useBridges.bridgeDB "Vyžádat most od torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Zadejte písmena z obrázku">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Nový obrázek">
+<!ENTITY torsettings.useBridges.captchaSubmit "Odeslat">
+<!ENTITY torsettings.useBridges.custom "Zadat známý most">
 <!ENTITY torsettings.useBridges.label "Zadejte informace o mostu z důvěryhodného zdroje.">
-<!ENTITY torsettings.useBridges.placeholder "napište adresa:post (jedna položka na řádek)">
+<!ENTITY torsettings.useBridges.placeholder "zadávejte ve tvaru adresa:post (jedna položka na řádek)">
 
-<!ENTITY torsettings.copyLog "Zkopíruj logový soubor Toru do schránky">
+<!ENTITY torsettings.copyLog "Zkopírovat protokol Toru do schránky">
 
 <!ENTITY torsettings.proxyHelpTitle "Nápověda k proxy">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelp1 "Pří připojení skrze síť firmy, školy nebo univerzity může být potřeba lokální proxy.&#160;Pokud si nejste jisti, jestli je proxy potřeba, podívejte se do nastavení internetu jiného prohlížeče, nebo do systémového nastavení sítě.">
 
-<!ENTITY torsettings.bridgeHelpTitle "Nápověda o  mostních relé">
-<!ENTITY torsettings.bridgeHelp1 "Mosty jsou nezveřejněné prvky, které dělají blokování připojení k síti Tor obtížnější.&#160; Každý typ mostu používá odlišný způsob jak zabránit cenzuře.&#160; Obfs mosty dělají z vašich dat náhodný šum a meek mosty vytvářejí dojem, že se připojujete k dané službě a ne k Toru.">
-<!ENTITY torsettings.bridgeHelp2 "Protože se každá země snaží zablokovat Tor jinak, některé typy mostů fungují pouze v některých zemích.&#160; Pokud si nejste jisti typy mostů, které fungují ve vaší zemi, navštivte torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelpTitle "Nápověda o  mostních uzlech">
+<!ENTITY torsettings.bridgeHelp1 "Mosty jsou neveřejné uzly, které znesnadňují blokování sítě Tor.&#160; Každý typ mostu používá odlišný způsob jak zabránit cenzuře.&#160; Obfs mosty dělají z vašich dat náhodný šum a meek mosty vytvářejí dojem, že se připojujete k dané službě a ne k Toru.">
+<!ENTITY torsettings.bridgeHelp2 "Protože se některé země snaží zablokovat Tor, některé typy mostů fungují pouze v některých zemích.&#160; Pokud si nejste jisti typy mostů, které fungují ve vaší zemi, navštivte torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Počkejte prosím, než vytvoříme spojení do sítě Tor.&#160; Může to trvat několik minut.">
+<!ENTITY torprogress.pleaseWait "Počkejte prosím na vytvoření spojení do sítě Tor.&#160; Může to trvat několik minut.">
