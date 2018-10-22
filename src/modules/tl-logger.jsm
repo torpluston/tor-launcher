@@ -151,6 +151,14 @@ let TLLoggerInternal = // Private
       case "extensions.torlauncher.logmethod":
         this.mLogMethod = TorLauncherUtil.getIntPref(
                                        "extensions.torlauncher.logmethod");
+        if (this.mLogMethod === 0) {
+          TorLauncherUtil.setBoolPref("browser.dom.window.dump.enabled", true);
+        } else if (TorLauncherUtil.
+          getIntPref("extensions.torbutton.logmethod", 3) !== 0) {
+          // If Torbutton is not available or its log method is not 0
+          // then let's reset the dump pref.
+          TorLauncherUtil.setBoolPref("browser.dom.window.dump.enabled", false);
+        }
         break;
       case "extensions.torlauncher.loglevel":
         this.mLogLevel = TorLauncherUtil.getIntPref(
