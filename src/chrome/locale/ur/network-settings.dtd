@@ -23,7 +23,7 @@
 <!ENTITY torsettings.discardSettings.prompt "You have configured Tor bridges or you have entered local proxy settings.&#160; To make a direct connection to the Tor network, these settings must be removed.">
 <!ENTITY torsettings.discardSettings.proceed "Remove Settings and Connect">
 
-<!ENTITY torsettings.optional "Optional">
+<!ENTITY torsettings.optional "اختیاری">
 
 <!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!ENTITY torsettings.useProxy.type "Proxy Type:">

@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "Tor мрежни поставки">
 <!ENTITY torsettings.wizard.title.default "Поврзи се на Tor">
 <!ENTITY torsettings.wizard.title.configure "Tor мрежни поставки">
-<!ENTITY torsettings.wizard.title.connecting "Воспоставување на конекција">
+<!ENTITY torsettings.wizard.title.connecting "Воспоставување на поврзување">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Tor Browser јазик">
@@ -9,19 +9,19 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Кликнете &quot;Конектирај&quot; да се конектирате на Tor.">
-<!ENTITY torSettings.configurePrompt "Кликни на &quot;Постави&quot; да ги поставите мрежните поставки ако сте во земја која го цензурира Tor (како Египет, Кина, Турција) или ако се поврзувате од приватна мрежа која бара прокси.">
-<!ENTITY torSettings.configure "Постави">
-<!ENTITY torSettings.connect "Конектирај">
+<!ENTITY torSettings.connectPrompt "Кликнете &quot;Поврзи&quot; да се поврзете на Tor.">
+<!ENTITY torSettings.configurePrompt "Кликни на &quot;Конфигурирај&quot; да ги конфигурирате мрежните поставки ако сте во земја која го цензурира Tor (како Египет, Кина, Турција) или ако се поврзувате од приватна мрежа која бара прокси.">
+<!ENTITY torSettings.configure "Конфигурирај">
+<!ENTITY torSettings.connect "Поврзи">
 
 <!-- Other: -->
 
 <!ENTITY torsettings.startingTor "Почекај за стартување на Tor...">
-<!ENTITY torsettings.restartTor "Повторно стартување на Tor">
-<!ENTITY torsettings.reconfigTor "Промени поставки">
+<!ENTITY torsettings.restartTor "Рестартирај го Tor">
+<!ENTITY torsettings.reconfigTor "Пре-конфигурирај">
 
-<!ENTITY torsettings.discardSettings.prompt "Имате поставено Tor мостови или имате внесено локални прокси поставки.&#160; Директно да се поврзете на Tor мрежата, овие поставки мораат да бидат избришани.">
-<!ENTITY torsettings.discardSettings.proceed "Избриши ги поставките и конектирај се">
+<!ENTITY torsettings.discardSettings.prompt "Имате конфигурирано Tor мостови или имате внесено локални прокси поставки.&#160; За директно да се поврзете на Tor мрежата, овие поставки мораат да бидат избришани.">
+<!ENTITY torsettings.discardSettings.proceed "Избриши ги поставките и поврзи се">
 
 <!ENTITY torsettings.optional "Опционално">
 
@@ -36,15 +36,15 @@
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "Овој компјутер оди преку заштитен ѕид кој дозволува конекции до одредени порти">
+<!ENTITY torsettings.firewall.checkbox "Овој компјутер оди преку заштитен ѕид кој дозволува поврзувања до одредени порти">
 <!ENTITY torsettings.firewall.allowedPorts "Дозволени порти:">
 <!ENTITY torsettings.useBridges.checkbox "Tor е цензуриран во мојата држава">
 <!ENTITY torsettings.useBridges.default "Одбери вграден мост">
 <!ENTITY torsettings.useBridges.default.placeholder "одбери мост">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
-<!ENTITY torsettings.useBridges.captchaSubmit "Submit">
+<!ENTITY torsettings.useBridges.bridgeDB "Барање за мост од torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Внесете ги карактерите од сликата">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Пробајте нов предизвик">
+<!ENTITY torsettings.useBridges.captchaSubmit "Испрати">
 <!ENTITY torsettings.useBridges.custom "Обезбеди мост кој го знам">
 <!ENTITY torsettings.useBridges.label "Внесете информации за мост од доверлив извор.">
 <!ENTITY torsettings.useBridges.placeholder "внеси адреса:порта (по една во секој ред)">
@@ -52,11 +52,11 @@
 <!ENTITY torsettings.copyLog "Копирај го Tor логот за залепување">
 
 <!ENTITY torsettings.proxyHelpTitle "Прокси помош">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelp1 "Може да ви биде потребно локално прокси кога се поврзувате преку мрежа на компанија, училиште, или универзитет.&#160;Ако не сте сигурни дали е потребно прокси, погледнете во Интернет поставки во друг прелистувач или проверете ги мрежните поставки на системот.">
 
-<!ENTITY torsettings.bridgeHelpTitle "Мост јазол помош">
-<!ENTITY torsettings.bridgeHelp1 "Мостовите се неизлистани јазли кои го прават потешко блокирањето на врските кон Tor мрежата.&#160; Секој тип на мост користи различен метод за избегнување на цензурирањето.&#160; obfs мостот го прави протокот на информации да изгледа нормален, како да е од некој стандарден прелистувач наместо од Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Поради колку конкретно државите се обидуваат да го блокираат Tor, конкретни мостови работат во едни конкретни држави но не и во други.&#160; Ако не си сигурен кои мостови работат во твојата држава, посети torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelpTitle "Помош за мост реле">
+<!ENTITY torsettings.bridgeHelp1 "Мостовите се неизлистани релеа кои го прават потешко блокирањето на поврзувањата кон Tor мрежата.&#160; Секој тип на мост користи различен метод за избегнување на цензурирањето.&#160; obfs мостот го прави протокот на информации да изгледа нормален, како да е од некој стандарден прелистувач наместо од Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Поради тоа колку конкретно државите се обидуваат да го блокираат Tor, конкретни мостови работат во едни конкретни држави но не и во други.&#160; Ако не си сигурен кои мостови работат во твојата држава, посети torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Ве молиме почекајте додека се воспостави конекција со Тор мрежата.&#160; Ова може да потрае неколку минути.">
+<!ENTITY torprogress.pleaseWait "Ве молиме почекајте додека се воспостави поврзувањето со Тор мрежата.&#160; Ова може да потрае неколку минути.">

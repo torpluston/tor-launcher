@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Kopieer Tor-log naar het klembord">
 
 <!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelp1 "Een lokale proxy kan nodig zijn als u verbinding maakt via het netwerk van een bedrijf, school, of universiteit.&#160;Als u niet zeker weet of een proxy nodig is, kijk dan naar de internetinstellingen in een andere browser of kijk naar de netwerkinstellingen van het systeem.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Bridge relay-hulp">
 <!ENTITY torsettings.bridgeHelp1 "Bridges zijn niet vermelde relays die het moeilijk maken om verbindingen naar het Tor Network te blokkeren.&#160; Elk van deze bridges gebruikt een andere methode om censuur te vermijden.&#160; Degene die obfs gebruiken, zien eruit gelijk willekeurige ruis, en de andere laten uw netwerk verkeer eruit zien alsof u verbind met een andere service in plaats van met Tor.">
