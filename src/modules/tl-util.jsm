@@ -194,10 +194,17 @@ let TorLauncherUtil =  // Public
       var key;
       if (aKeyword == "TAG")
       {
-        if ("onehop_create" == val)
-          val = "handshake_dir";
-        else if ("circuit_create" == val)
-          val = "handshake_or";
+        // The bootstrap status tags in tagMap below are used by Tor
+        // versions prior to 0.4.0.x. We map each one to the tag that will
+        // produce the localized string that is the best fit.
+        let tagMap =
+        {
+          "conn_dir":       "conn",
+          "handshake_dir":  "onehop_create",
+          "conn_or":        "enough_dirinfo",
+          "handshake_or":   "ap_conn"
+        };
+        if (val in tagMap) val = tagMap[val];
 
         key = "bootstrapStatus." + val;
         fallbackStr = aStatusObj.SUMMARY;
