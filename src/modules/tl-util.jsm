@@ -1,4 +1,4 @@
-// Copyright (c) 2018, The Tor Project, Inc.
+// Copyright (c) 2019, The Tor Project, Inc.
 // See LICENSE for licensing information.
 //
 // vim: set sw=2 sts=2 ts=8 et syntax=javascript:
@@ -876,10 +876,30 @@ let TLUtilInternal =  // Private
       return this.mDefaultPreferencesLoaded;
     }
 
+    // Check whether default preferences have already been loaded, e.g.,
+    // because Tor Launcher is integrated into the browser rather than
+    // running as an extension. This code assumes that a default value is
+    // defined for extensions.torlauncher.loglevel.
+    let prefName = "extensions.torlauncher.loglevel";
+    let val;
+    try
+    {
+      let defaultBranch = this._getPrefDefaultBranch(prefName);
+      val = defaultBranch.getIntPref("");
+    } catch (e) {}
+    if (val !== undefined)
+    {
+      this.mDefaultPreferencesLoaded = true;
+      return true;
+    }
+
+    // Use the JS subscript loaded in conjunction with our pref() function
+    // to load the default preferences.
+    const kPrefsURL =
+          "resource://torlauncher/defaults/preferences/torlauncher-prefs.js";
     var loader = Cc["@mozilla.org/moz/jssubscript-loader;1"]
                        .getService(Ci.mozIJSSubScriptLoader);
-    loader.loadSubScript(
-            "resource://torlauncher/defaults/preferences/prefs.js", this);
+    loader.loadSubScript(kPrefsURL, this);
 
     this.mDefaultPreferencesLoaded =
           (this.mNumDefaultPrefsDefined == this.mNumDefaultPrefsLoaded);
