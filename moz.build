@@ -1,0 +1,8 @@
+# -*- Mode: python; indent-tabs-mode: nil; tab-width: 40 -*-
+# vim: set filetype=python:
+### Copyright (c) 2019, The Tor Project, Inc.
+### See LICENSE for licensing information.
+
+JAR_MANIFESTS += ['jar.mn']
+
+JS_PREFERENCE_FILES += [ 'src/defaults/preferences/torlauncher-prefs.js' ]

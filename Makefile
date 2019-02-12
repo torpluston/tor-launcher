@@ -1,12 +1,15 @@
-### Copyright (c) 2014, The Tor Project, Inc.
+### Copyright (c) 2019, The Tor Project, Inc.
 ### See src/LICENSE for licensing information.
+
+# Makefile for packaging Tor Launcher outside of the browser build. The only
+# target in this file that is used by the Tor Browser build process is
+# import-translations.
 
 EXT_NAME=tor-launcher
 VERSION:=`grep em:version src/install.rdf | sed -e 's/[<>]/	/g' | cut -f3`
 XPI_NAME:=$(shell echo "$(EXT_NAME)-$(VERSION).xpi")
 STANDALONE_NAME=$(EXT_NAME)-standalone
 STANDALONE_TARBALL=$(shell echo "$(STANDALONE_NAME)-$(VERSION).tar.gz")
-REQUIRED_TRANSLATION_FILES=$(shell ls -1 src/chrome/locale/en/)
 
 AVAIL_TARGETS=help package standalone import-translations clean
 
@@ -36,23 +39,18 @@ pkg-prepare:	clean
 		fi \
 	fi
 	@cp -a chrome.manifest.in "$(TMP)/$(EXT_NAME)"/chrome.manifest
-	@mv "$(TMP)/$(EXT_NAME)"/chrome/locale/en \
-	    "$(TMP)/$(EXT_NAME)"/chrome/locale/en-US
 	@for d in "$(TMP)/$(EXT_NAME)"/chrome/locale/*; do \
-	   if [ "`basename "$${d}"`" = "en-US" ]; then \
+	   locale="`basename $${d}`"; \
+	   if [ "$${locale}" = "en-US" ]; then \
 	     continue; \
 	   fi; \
-	   for f in $(REQUIRED_TRANSLATION_FILES); do \
-	     if [ ! -e "$${d}/$${f}" ] || \
-	        ( \
-	          [ -n "$(BUNDLE_LOCALES)" ] && \
-	          ! echo $(BUNDLE_LOCALES) | grep -qw `basename "$${d}"` \
-	        ); then \
-	       echo "Removing locale $${d} (missing resource $${f})"; \
+	   if [ -n "$(BUNDLE_LOCALES)" ]; then \
+	     if ! echo $(BUNDLE_LOCALES) | grep -qw "$${locale}"; then \
 	       rm -rf "$${d}"; \
-	       break; \
+	     else \
+	       echo "Including locale $${locale}"; \
 	     fi \
-	   done \
+	   fi \
 	 done
 	@for l in $(BUNDLE_LOCALES); do \
 	   if [ ! -d "$(TMP)/$(EXT_NAME)"/chrome/locale/"$${l}" ]; then \
@@ -62,8 +60,10 @@ pkg-prepare:	clean
 	 done
 	@for d in "$(TMP)/$(EXT_NAME)"/chrome/locale/*; do \
 	   locale="`basename $${d}`"; \
-	   echo "locale torlauncher $${locale} chrome/locale/$${locale}/" >> \
-	        "$(TMP)/$(EXT_NAME)"/chrome.manifest; \
+	   if [ "$${locale}" != "en-US" ]; then \
+	     echo "locale torlauncher $${locale} chrome/locale/$${locale}/" >> \
+	          "$(TMP)/$(EXT_NAME)"/chrome.manifest; \
+	   fi; \
 	 done
 
 package:	pkg-prepare

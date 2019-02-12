@@ -1,8 +1,7 @@
 PLEASE NOTE:
-  Tor Launcher is packaged with Tor Browser, Tor Messenger, and
-  other Tor-enabled applications and is designed for those
-  applications. You should not install and try to use it in
-  Mozilla Firefox or another Firefox-based browser.
+  Tor Launcher is built into Tor Browser, and it may be built as a
+  XUL/XPCOM extension for use with TorBirdy.  You should not install
+  and try to use it in Mozilla Firefox or another Firefox-based browser.
 
 OVERVIEW
 Tor Launcher is a browser extension that starts the tor process
@@ -32,17 +31,10 @@ for other product releases; e.g., maint-0.2.10 is a branch that is
 used for releases in the Tor Browser 6.5 series.
 
 BUILDING TOR LAUNCHER
-Official builds of Tor Launcher are done as part of a larger
-application build process. For example, look here for information
-about the Tor Browser build process:
+Official builds that use the Tor Launcher code are done as part of
+a larger application build process. For example, look here for
+information about the Tor Browser build process:
   https://trac.torproject.org/projects/tor/wiki/doc/TorBrowser/Hacking
-
-If you want to build your own standalone copy of Tor Launcher in
-order to test a translation or code change that you have made, run
-the following command:
-  make package
-
-The resulting xpi file is created in a subdirectory named pkg.
 
 CONTACTING THE DEVELOPERS
 To contact the Tor Launcher developers, use the #tor-dev channel
