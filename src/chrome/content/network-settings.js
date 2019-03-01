@@ -1,4 +1,4 @@
-// Copyright (c) 2018, The Tor Project, Inc.
+// Copyright (c) 2019, The Tor Project, Inc.
 // See LICENSE for licensing information.
 //
 // vim: set sw=2 sts=2 ts=8 et syntax=javascript:
@@ -542,18 +542,22 @@ function onOpenBridgeDBRequestPrompt()
     return;
 
   let meekClientPath;
+  let meekTransport;  // We support both "meek" and "meek_lite".
   let meekClientArgs;
   reply.lineArray.forEach(aLine =>
   {
     let tokens = aLine.split(' ');
-    if ((tokens.length > 2) && (tokens[0] == "meek") && (tokens[1] == "exec"))
+    if ((tokens.length > 2) &&
+        ((tokens[0] == "meek") || (tokens[0] == "meek_lite")) &&
+        (tokens[1] == "exec"))
     {
+      meekTransport = tokens[0];
       meekClientPath = tokens[2];
       meekClientArgs = tokens.slice(3);
     }
   });
 
-  if (!meekClientPath)
+  if (!meekTransport)
   {
     reportMoatError(TorLauncherUtil.getLocalizedString("no_meek"));
     return;
@@ -578,7 +582,8 @@ function onOpenBridgeDBRequestPrompt()
     resetBridgeDBRequestPrompt();
     setBridgeDBRequestState("fetchingCaptcha");
     overlay.hidden = false;
-    requestMoatCaptcha(proxySettings, meekClientPath, meekClientArgs);
+    requestMoatCaptcha(proxySettings, meekTransport, meekClientPath,
+                       meekClientArgs);
   }
 }
 
@@ -2508,7 +2513,8 @@ function createColonStr(aStr1, aStr2)
 }
 
 
-function requestMoatCaptcha(aProxySettings, aMeekClientPath, aMeekClientArgs)
+function requestMoatCaptcha(aProxySettings, aMeekTransport,
+                            aMeekClientPath, aMeekClientArgs)
 {
   function cleanup(aMoatRequestor, aErr)
   {
@@ -2543,7 +2549,7 @@ function requestMoatCaptcha(aProxySettings, aMeekClientPath, aMeekClientArgs)
   };
   addBridgeDBRequestEventListener(kCaptchaCancelEventType, cancelListener);
 
-  moatRequestor.init(proxyURLFromSettings(aProxySettings),
+  moatRequestor.init(proxyURLFromSettings(aProxySettings), aMeekTransport,
                      aMeekClientPath, aMeekClientArgs)
     .then(()=>
     {

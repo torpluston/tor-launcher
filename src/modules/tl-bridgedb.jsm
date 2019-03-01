@@ -1,4 +1,4 @@
-// Copyright (c) 2018, The Tor Project, Inc.
+// Copyright (c) 2019, The Tor Project, Inc.
 // See LICENSE for licensing information.
 //
 // vim: set sw=2 sts=2 ts=8 et syntax=javascript:
@@ -61,7 +61,6 @@ function _MoatRequestor()
 _MoatRequestor.prototype =
 {
   kMaxResponseLength: 1024 * 400,
-  kTransport: "meek",
   kMoatContentType: "application/vnd.api+json",
   kMoatVersion: "0.1.0",
   kPrefBridgeDBFront: "extensions.torlauncher.bridgedb_front",
@@ -74,6 +73,9 @@ _MoatRequestor.prototype =
   kMoatCheckRequestType: "moat-solution",
   kMoatCheckResponseType: "moat-bridges",
 
+  kMozProxyTypeSocks4: "socks4",
+  kMozProxyTypeSocks5: "socks",
+
   kStateIdle: 0,
   kStateWaitingForVersion: 1,
   kStateWaitingForProxyDone: 2,
@@ -83,19 +85,22 @@ _MoatRequestor.prototype =
 
   mState: this.kStateIdle,
 
+  mMeekTransport: undefined,
   mLocalProxyURL: undefined,
   mMeekFront: undefined,  // Frontend server, if we are using one.
+  mMeekClientEscapedArgs: undefined,
   mMeekClientProcess: undefined,
   mMeekClientStdoutBuffer: undefined,
-  mMeekClientProxyType: undefined,  // contains Mozilla names such as socks4
+  mMeekClientProxyType: undefined,  // kMozProxyTypeSocks4 or kMozProxyTypeSocks5
   mMeekClientIP: undefined,
   mMeekClientPort: undefined,
   mMoatResponseListener: undefined,
   mUserCanceled: false,
 
   // Returns a promise.
-  init: function(aProxyURL, aMeekClientPath, aMeekClientArgs)
+  init: function(aProxyURL, aMeekTransport, aMeekClientPath, aMeekClientArgs)
   {
+    this.mMeekTransport = aMeekTransport;
     this.mLocalProxyURL = aProxyURL;
     return this._startMeekClient(aMeekClientPath, aMeekClientArgs);
   },
@@ -208,21 +213,24 @@ _MoatRequestor.prototype =
       meekClientPath = f.path;
     }
 
-    // Construct the args array.
-    let args = aMeekClientArgs.slice(); // make a copy
+    // Construct the per-connection arguments.
+    this.mMeekClientEscapedArgs = "";
     let meekReflector = TorLauncherUtil.getCharPref(this.kPrefBridgeDBReflector);
     if (meekReflector)
     {
-      args.push("-url");
-      args.push(meekReflector);
+      this.mMeekClientEscapedArgs += "url=";
+      this.mMeekClientEscapedArgs += this._escapeArgValue(meekReflector);
     }
     this.mMeekFront = TorLauncherUtil.getCharPref(this.kPrefBridgeDBFront);
     if (this.mMeekFront)
     {
-      args.push("-front");
-      args.push(this.mMeekFront);
+      if (this.mMeekClientEscapedArgs.length > 0)
+        this.mMeekClientEscapedArgs += ';';
+      this.mMeekClientEscapedArgs += "front=";
+      this.mMeekClientEscapedArgs += this._escapeArgValue(this.mMeekFront);
     }
 
+    // Setup environment and start the meek client process.
     let ptStateDir = TorLauncherUtil.getTorFile("tordatadir", false);
     let meekHelperProfileDir = TorLauncherUtil.getTorFile("pt-profiles-dir",
                                                           true);
@@ -238,17 +246,19 @@ _MoatRequestor.prototype =
     let envAdditions = { TOR_PT_MANAGED_TRANSPORT_VER: "1",
                          TOR_PT_STATE_LOCATION: ptStateDir.path,
                          TOR_PT_EXIT_ON_STDIN_CLOSE: "1",
-                         TOR_PT_CLIENT_TRANSPORTS: this.kTransport,
+                         TOR_PT_CLIENT_TRANSPORTS: this.mMeekTransport,
                          TOR_BROWSER_MEEK_PROFILE: meekHelperProfileDir.path };
     if (this.mLocalProxyURL)
       envAdditions.TOR_PT_PROXY = this.mLocalProxyURL;
 
     TorLauncherLogger.log(3, "starting " + meekClientPath + " in "
                           + workDir.path);
-    TorLauncherLogger.log(3, "args " + JSON.stringify(args));
+    TorLauncherLogger.log(3, "args " + JSON.stringify(aMeekClientArgs));
     TorLauncherLogger.log(3, "env additions " + JSON.stringify(envAdditions));
+    TorLauncherLogger.log(3, "per-connection args \"" +
+                             this.mMeekClientEscapedArgs + "\"");
     let opts = { command: meekClientPath,
-                 arguments: args,
+                 arguments: aMeekClientArgs,
                  workdir: workDir.path,
                  environmentAppend: true,
                  environment: envAdditions,
@@ -270,6 +280,21 @@ _MoatRequestor.prototype =
           return this._meekClientHandshake(aProc);
       });
   }, // _startMeekClient
+
+  // Escape aValue per section 3.5 of the PT specification:
+  //   First the "<Key>=<Value>" formatted arguments MUST be escaped,
+  //   such that all backslash, equal sign, and semicolon characters
+  //   are escaped with a backslash.
+  _escapeArgValue: function(aValue)
+  {
+    if (!aValue)
+      return "";
+
+    let rv = aValue.replace(/\\/g, "\\\\");
+    rv = rv.replace(/=/g, "\\=");
+    rv = rv.replace(/;/g, "\\;");
+    return rv;
+  },
 
   // Returns a promise that is resolved when the PT handshake finishes.
   _meekClientHandshake: function(aMeekClientProc)
@@ -389,7 +414,7 @@ _MoatRequestor.prototype =
             {
               errMsg = "Invalid CMETHOD response (too few parameters).";
             }
-            else if (tokens[1] != this.kTransport)
+            else if (tokens[1] != this.mMeekTransport)
             {
               errMsg = "Unexpected transport " + tokens[1]
                        + " in CMETHOD response.";
@@ -399,11 +424,11 @@ _MoatRequestor.prototype =
               let proxyType = tokens[2];
               if (proxyType == "socks5")
               {
-                this.mMeekClientProxyType = "socks";
+                this.mMeekClientProxyType = this.kMozProxyTypeSocks5;
               }
               else if ((proxyType == "socks4a") || (proxyType == "socks4"))
               {
-                this.mMeekClientProxyType = "socks4";
+                this.mMeekClientProxyType = this.kMozProxyTypeSocks4;
               }
               else
               {
@@ -466,12 +491,49 @@ _MoatRequestor.prototype =
   // Based on meek/firefox/components/main.js
   _sendMoatRequest: function(aRequestObj, aIsCheck)
   {
+    // Include arguments per section 3.5 of the PT specification:
+    //   Lastly the arguments are transmitted when making the outgoing
+    //   connection using the authentication mechanism specific to the
+    //   SOCKS protocol version.
+    //
+    //    - In the case of SOCKS 4, the concatenated argument list is
+    //      transmitted in the "USERID" field of the "CONNECT" request.
+    //
+    //    - In the case of SOCKS 5, the parent process must negotiate
+    //      "Username/Password" authentication [RFC1929], and transmit
+    //      the arguments encoded in the "UNAME" and "PASSWD" fields.
+    //
+    //      If the encoded argument list is less than 255 bytes in
+    //      length, the "PLEN" field must be set to "1" and the "PASSWD"
+    //      field must contain a single NUL character.
+
+    let userName = "";
+    let password = undefined;
+    if (this.mMeekClientProxyType == this.kMozProxyTypeSocks4)
+    {
+      userName = this.mMeekClientEscapedArgs;
+    }
+    else
+    {
+      if (this.mMeekClientEscapedArgs.length <= 255)
+      {
+        userName = this.mMeekClientEscapedArgs;
+        password = "\x00";
+      }
+      else
+      {
+        userName = this.mMeekClientEscapedArgs.substring(0, 255);
+        password = this.mMeekClientEscapedArgs.substring(255);
+      }
+    }
+
     let proxyPS = Cc["@mozilla.org/network/protocol-proxy-service;1"]
                   .getService(Ci.nsIProtocolProxyService);
     let flags = Ci.nsIProxyInfo.TRANSPARENT_PROXY_RESOLVES_HOST;
     let noTimeout = 0xFFFFFFFF; // UINT32_MAX
-    let proxyInfo = proxyPS.newProxyInfo(this.mMeekClientProxyType,
+    let proxyInfo = proxyPS.newProxyInfoWithAuth(this.mMeekClientProxyType,
                               this.mMeekClientIP, this.mMeekClientPort,
+                              userName, password,
                               flags, noTimeout, undefined);
     let uriStr = TorLauncherUtil.getCharPref(this.kPrefMoatService);
     if (!uriStr)
