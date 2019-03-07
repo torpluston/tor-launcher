@@ -1,4 +1,4 @@
-// Copyright (c) 2018, The Tor Project, Inc.
+// Copyright (c) 2019, The Tor Project, Inc.
 // See LICENSE for licensing information.
 //
 // vim: set sw=2 sts=2 ts=8 et syntax=javascript:
@@ -35,9 +35,7 @@ const kPrefBridgeDBType = "extensions.torlauncher.bridgedb_bridge_type";
 // extensions.torlauncher.bridgedb_bridge.1, and so on.
 const kPrefBranchBridgeDBBridge = "extensions.torlauncher.bridgedb_bridge.";
 
-// As of April 2016, no one is responding to help desk email. Hopefully this will change soon.
-//const kSupportAddr = "help@rt.torproject.org";
-const kSupportURL = "torproject.org/about/contact.html#support";
+const kSupportURL = "support.torproject.org/#connectingtotor";
 
 const kTorProcessReadyTopic = "TorProcessIsReady";
 const kTorProcessExitedTopic = "TorProcessExited";
