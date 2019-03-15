@@ -4,7 +4,7 @@
 <!ENTITY torsettings.wizard.title.connecting "Membuat sambungan">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Bahasa Peramban Tor">
+<!ENTITY torlauncher.localePicker.title "Bahasa Tor Browser">
 <!ENTITY torlauncher.localePicker.prompt "Silahkan pilih bahasa.">
 
 <!-- For "first run" wizard: -->

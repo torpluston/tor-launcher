@@ -11,13 +11,13 @@
 
 <!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
 <!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
-<!ENTITY torSettings.configure "Configure">
+<!ENTITY torSettings.configure "Теңшеу">
 <!ENTITY torSettings.connect "Қосылу ">
 
 <!-- Other: -->
 
 <!ENTITY torsettings.startingTor "Waiting for Tor to start…">
-<!ENTITY torsettings.restartTor "Restart Tor">
+<!ENTITY torsettings.restartTor "Tor-ды қайта қосу">
 <!ENTITY torsettings.reconfigTor "Reconfigure">
 
 <!ENTITY torsettings.discardSettings.prompt "You have configured Tor bridges or you have entered local proxy settings.&#160; To make a direct connection to the Tor network, these settings must be removed.">

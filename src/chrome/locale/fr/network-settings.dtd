@@ -1,10 +1,10 @@
-<!ENTITY torsettings.dialog.title "Paramètres du réseau Tor">
+<!ENTITY torsettings.dialog.title "Paramètres du réseau Tor">
 <!ENTITY torsettings.wizard.title.default "Se connecter à Tor">
-<!ENTITY torsettings.wizard.title.configure "Paramètres du réseau Tor">
+<!ENTITY torsettings.wizard.title.configure "Paramètres du réseau Tor">
 <!ENTITY torsettings.wizard.title.connecting "Établissement d’une connexion">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Langue du Navigateur Tor">
+<!ENTITY torlauncher.localePicker.title "Langue du navigateur Tor Browser">
 <!ENTITY torlauncher.localePicker.prompt "Veuillez choisir une langue.">
 
 <!-- For "first run" wizard: -->
@@ -20,7 +20,7 @@
 <!ENTITY torsettings.restartTor "Redémarrer Tor">
 <!ENTITY torsettings.reconfigTor "Reconfigurer">
 
-<!ENTITY torsettings.discardSettings.prompt "Vous avez configuré des ponts Tor ou vous avez saisi des paramètres de mandataire local.&#160;Pour établir une connexion directe vers le réseau Tor, ces paramètres doivent être supprimés.">
+<!ENTITY torsettings.discardSettings.prompt "Vous avez configuré des ponts Tor ou vous avez saisi des paramètres de mandataire local.&#160;Pour établir une connexion directe vers le réseau Tor, ces paramètres doivent être supprimés.">
 <!ENTITY torsettings.discardSettings.proceed "Supprimer les paramètres et se connecter">
 
 <!ENTITY torsettings.optional "facultatif">
@@ -59,4 +59,4 @@
 <!ENTITY torsettings.bridgeHelp2 "Dans la mesure où certains pays tentent de bloquer Tor, certains ponts fonctionnent dans certains pays, mais pas dans d’autres.&#160;Si vous ne savez pas quels ponts fonctionnent dans votre pays, visitez torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Veuillez patienter pendant que nous établissons une connexion vers le réseau Tor.&#160;Cela pourrait prendre plusieurs minutes.">
+<!ENTITY torprogress.pleaseWait "Veuillez patienter pendant que nous établissons une connexion vers le réseau Tor.&#160;Cela pourrait prendre plusieurs minutes.">

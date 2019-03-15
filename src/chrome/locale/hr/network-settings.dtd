@@ -20,7 +20,7 @@
 <!ENTITY torsettings.restartTor "Ponovno pokreni Tor">
 <!ENTITY torsettings.reconfigTor "Ponovno podesi">
 
-<!ENTITY torsettings.discardSettings.prompt "You have configured Tor bridges or you have entered local proxy settings.&#160; To make a direct connection to the Tor network, these settings must be removed.">
+<!ENTITY torsettings.discardSettings.prompt "Konfigurirali ste Tor mostove ili ste unijeli postavke lokalnog proxya.&#160; Kako bi ostvarili direktnu vezu s Tor mrežom, ove postavke moraju biti uklonjene.">
 <!ENTITY torsettings.discardSettings.proceed "Obriši postavke i poveži se">
 
 <!ENTITY torsettings.optional "Neobavezno">

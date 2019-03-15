@@ -4,13 +4,13 @@
 <!ENTITY torsettings.wizard.title.connecting "Užmezgiamas ryšys">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Tor naršyklės kalba">
+<!ENTITY torlauncher.localePicker.title "Tor Browser kalba">
 <!ENTITY torlauncher.localePicker.prompt "Prašome pasirinkti kalbą.">
 
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "Norėdami prisijungti prie Tor, spustelėkite &quot;Prisijungti&quot;.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.configurePrompt "Spustelėkite &quot;Konfigūruoti&quot;, norėdami reguliuoti tinklo nustatymus, jeigu esate šalyje, kuri cenzūruoja Tor (tokioje kaip Egiptas, Kinija, Turkija) arba jeigu jungiatės iš privačiojo tinklo, kuris reikalauja įgaliotojo serverio.">
 <!ENTITY torSettings.configure "Konfigūruoti">
 <!ENTITY torSettings.connect "Prisijungti">
 
@@ -31,7 +31,7 @@
 <!ENTITY torsettings.useProxy.address "Adresas:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adresas arba serverio vardas">
 <!ENTITY torsettings.useProxy.port "Prievadas:">
-<!ENTITY torsettings.useProxy.username "Vartotojo vardas:">
+<!ENTITY torsettings.useProxy.username "Naudotojo vardas:">
 <!ENTITY torsettings.useProxy.password "Slaptažodis:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
@@ -39,11 +39,11 @@
 <!ENTITY torsettings.firewall.checkbox "Šis kompiuteris jungiasi per užkardą, kuri leidžia jungtis tik prie tam tikrų prievadų">
 <!ENTITY torsettings.firewall.allowedPorts "Leidžiami prievadai:">
 <!ENTITY torsettings.useBridges.checkbox "Mano šalyje Tor yra cenzūruojamas">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.default "Pasirinkite esamą tinklų tiltą">
 <!ENTITY torsettings.useBridges.default.placeholder "pasirinkite tinklų tiltą">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.bridgeDB "Prašyti tinklų tilto iš torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Įveskite ženklus iš paveikslėlio">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Gaukite naują iššūkį">
 <!ENTITY torsettings.useBridges.captchaSubmit "Pateikti">
 <!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
 <!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
@@ -52,11 +52,11 @@
 <!ENTITY torsettings.copyLog "Kopijuoti Tor žurnalą į iškarpinę">
 
 <!ENTITY torsettings.proxyHelpTitle "Įgaliotojo serverio žinynas">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelp1 "Vietinis įgaliotasis serveris gali būti reikalingas, jungiantis per kompanijos, mokyklos ar universiteto tinklą.&#160;Jeigu nesate tikri ar įgaliotasis serveris yra reikalingas, žiūrėkite interneto nustatymus kitoje naršyklėje arba patikrinkite savo sistemos tinklo nustatymus.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Bridge Relay Help">
 <!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
 <!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Prašome palaukti, kol mes užmegsime ryšį su Tor tinklu.&#160; Tai gali užtrukti kelias minutes.">
+<!ENTITY torprogress.pleaseWait "Palaukite, kol mes užmegsime ryšį su Tor tinklu.&#160; Tai gali užtrukti kelias minutes.">

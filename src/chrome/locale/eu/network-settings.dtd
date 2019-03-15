@@ -46,8 +46,8 @@
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Lortu erronka berri bat">
 <!ENTITY torsettings.useBridges.captchaSubmit "Bidali">
 <!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.useBridges.label "Idatzi iturri fidagarri batetik ateratako zubiaren informazioa.">
+<!ENTITY torsettings.useBridges.placeholder "idatzi helbidea:ataka (bana lerroko)">
 
 <!ENTITY torsettings.copyLog "Kopiatu Tor erregistroa arbelera">
 

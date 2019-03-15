@@ -1,17 +1,17 @@
-<!ENTITY torsettings.dialog.title "Setări rețea Tor">
+<!ENTITY torsettings.dialog.title "Setări Rețea Tor">
 <!ENTITY torsettings.wizard.title.default "Conectare la Tor">
 <!ENTITY torsettings.wizard.title.configure "Setări Rețea Tor">
 <!ENTITY torsettings.wizard.title.connecting "Stabilire Conexiune">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Limba pentru Tor Browser">
-<!ENTITY torlauncher.localePicker.prompt "Va rugăm sa alegeți o limba.">
+<!ENTITY torlauncher.localePicker.prompt "Va rugăm sa alegeți o limbă.">
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Apasă &quot;Conectare&quot; pentru a te conecta la Tor">
+<!ENTITY torSettings.connectPrompt "Apasă &quot;Conectare&quot; pentru a te conecta la Tor.">
 <!ENTITY torSettings.configurePrompt "Apasă &quot;Configurare&quot; pentru a modifica setările de rețea dacă te afli într-o țară care blochează Tor (cum ar fi Egipt, China, Turcia) sau dacă te conectezi dintr-o rețea privată care necesită un proxy.">
-<!ENTITY torSettings.configure "Configuraţi ">
+<!ENTITY torSettings.configure "Configurare">
 <!ENTITY torSettings.connect "Conectare">
 
 <!-- Other: -->
@@ -20,8 +20,8 @@
 <!ENTITY torsettings.restartTor "Repornește Tor">
 <!ENTITY torsettings.reconfigTor "Reconfigurare">
 
-<!ENTITY torsettings.discardSettings.prompt "Ați configurat bridge-uri Tor sau ați introdus setări proxu locale.&#160; Pentru a face o conexiune directă la rețeaua Tor aceste setări trebuiesc eliminate.">
-<!ENTITY torsettings.discardSettings.proceed "Eliminați Setări și Conectare">
+<!ENTITY torsettings.discardSettings.prompt "Ați configurat punți Tor sau ați introdus setări proxy locale.&#160; Pentru a te conecta direct la rețeaua Tor aceste setări trebuiesc eliminate.">
+<!ENTITY torsettings.discardSettings.proceed "Eliminare Setări și Conectare">
 
 <!ENTITY torsettings.optional "Opțional">
 
@@ -36,26 +36,26 @@
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "Acest computer iese printr-un firewall care permite doar conexiuni către anumite porturi">
+<!ENTITY torsettings.firewall.checkbox "Acest computer trece printr-un firewall care permite doar conexiuni către anumite porturi">
 <!ENTITY torsettings.firewall.allowedPorts "Porturi permise:">
 <!ENTITY torsettings.useBridges.checkbox "Tor este cenzurat în țara mea">
 <!ENTITY torsettings.useBridges.default "Selectează o punte integrată">
 <!ENTITY torsettings.useBridges.default.placeholder "selectează o punte">
 <!ENTITY torsettings.useBridges.bridgeDB "Cere o punte de la torproject.org">
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "Introdu caracterele din imagine">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
-<!ENTITY torsettings.useBridges.captchaSubmit "A depune">
-<!ENTITY torsettings.useBridges.custom "Furnizează o punte pe care o știu">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Obțineți o nouă provocare">
+<!ENTITY torsettings.useBridges.captchaSubmit "Trimite">
+<!ENTITY torsettings.useBridges.custom "Folosește o punte pe care o știu">
 <!ENTITY torsettings.useBridges.label "Introdu informația despre punte dintr-o sursă de încredere">
 <!ENTITY torsettings.useBridges.placeholder "scrie adresă:port (una pe linie)">
 
 <!ENTITY torsettings.copyLog "Copiați jurnalul Tor în Clipboard">
 
 <!ENTITY torsettings.proxyHelpTitle "Ajutor Proxy">
-<!ENTITY torsettings.proxyHelp1 "Un proxy local ar putea fi necesar la conectarea din rețeaua unei companii, școli sau universități.&#160;Dacă nu ești sigur că un proxy ar fi necesar, vezi setările pentru Internet în alt navigator web sau verifică setările de rețea.">
+<!ENTITY torsettings.proxyHelp1 "Un proxy local ar putea fi necesar la conectarea prin rețeaua unei companii, școli sau universități.&#160;Dacă nu ești sigur că un proxy este necesar, vezi setările pentru Internet în alt navigator web sau verifică setările de rețea.">
 
-<!ENTITY torsettings.bridgeHelpTitle "Ajutor Bridge Relay">
-<!ENTITY torsettings.bridgeHelp1 "Punțile sunt relee ne-listate care fac mai dificilă blocarea conexiunilor spre Rețeaua Tor. &#160; Fiecare tip de punte folosește o altă metodă pentru a evita cenzura. &#160; Cele obfs fac traficul tău să semene cu zgomot aleatoriu, iar cele meek fac traficul să pară că se conectează la acel serviciu în loc de Tor.">
+<!ENTITY torsettings.bridgeHelpTitle "Ajutor Releuri de tip Punte">
+<!ENTITY torsettings.bridgeHelp1 "Punțile sunt relee ne-listate care fac mai dificilă blocarea conexiunilor spre Rețeaua Tor. &#160; Fiecare tip de punte folosește o altă metodă pentru a evita cenzura. &#160; Cele de tip obfs fac traficul tău să semene cu zgomot aleatoriu, iar cele meek fac traficul să pară că se conectează la acel serviciu în loc de Tor.">
 <!ENTITY torsettings.bridgeHelp2 "Datorită modului în care diverse țări încearcă să blocheze Tor, unele punți funcționează doar în anumite țări și nu în altele. &#160; Dacă nu ești sigur ce punți funcționează în țara ta, vizitează torproject.org/about/contact.html#support">
 
 <!-- Progress -->

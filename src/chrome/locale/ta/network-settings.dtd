@@ -1,33 +1,33 @@
 <!ENTITY torsettings.dialog.title "Tor நெட்வொர்க் அமைப்புகள்">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.default "Tor உடன் இணை">
 <!ENTITY torsettings.wizard.title.configure "Tor நெட்வொர்க் அமைப்புகள்">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.connecting "இணைப்பை நிறுவுகிறது">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Tor Browser Language">
-<!ENTITY torlauncher.localePicker.prompt "Please select a language.">
+<!ENTITY torlauncher.localePicker.title "Tor உலாவி மொழி">
+<!ENTITY torlauncher.localePicker.prompt "ஒரு மொழியைத் தேர்ந்தெடுங்கள்.">
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.connectPrompt "Tor உடன் இணைக்க &quot;இணையை&quot; கிளிக் செய்யுங்கள்.">
+<!ENTITY torSettings.configurePrompt "நீங்கள் Tor ஐ தணிக்கை செய்யும் (எகிப்து, சீனா, துருக்கி போன்ற) நாடுகளில் இருந்தால் அல்லது பதிலாள் தேவைப்படும் தனிப்பட்ட வலைப்பின்னலில் இருந்தால் பிணைய அமைப்புகளைச் சரிசெய்ய &quot;கட்டமையை&quot; கிளிக் செய்யுங்கள்.">
 <!ENTITY torSettings.configure "கட்டமைக்க">
 <!ENTITY torSettings.connect "இணைக்க">
 
 <!-- Other: -->
 
 <!ENTITY torsettings.startingTor "Tor தொடங்குவதற்கு காத்திருக்கிறது...">
-<!ENTITY torsettings.restartTor "Restart Tor">
-<!ENTITY torsettings.reconfigTor "Reconfigure">
+<!ENTITY torsettings.restartTor "Tor ஐ மறுதொடக்கு">
+<!ENTITY torsettings.reconfigTor "மறுகட்டமை">
 
-<!ENTITY torsettings.discardSettings.prompt "You have configured Tor bridges or you have entered local proxy settings.&#160; To make a direct connection to the Tor network, these settings must be removed.">
-<!ENTITY torsettings.discardSettings.proceed "Remove Settings and Connect">
+<!ENTITY torsettings.discardSettings.prompt "நீங்கள் Tor bridges கட்டமைத்துள்ளீர்கள் அல்லது உள் பதிலாள் அமைப்பில் நுழைந்துள்ளீர்கள்.&#160; Tor பிணையத்துடன் நேரடி இணைப்பு ஏற்படுத்த, இந்த அமைப்புகள் நீக்கப்பட வேண்டும்.">
+<!ENTITY torsettings.discardSettings.proceed "அமைப்புகளை நீக்கி இணை">
 
 <!ENTITY torsettings.optional "விருப்பத்தேர்வு">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
-<!ENTITY torsettings.useProxy.type "Proxy Type:">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
+<!ENTITY torsettings.useProxy.checkbox "நான் இணையத்துடன் இணைய ஒரு பதிலாளைப் பயன்படுத்துகிறேன்">
+<!ENTITY torsettings.useProxy.type "பதிலாள் வகை:">
+<!ENTITY torsettings.useProxy.type.placeholder "ஒரு பதிலாள் வகையைத் தேர்ந்தெடுங்கள்">
 <!ENTITY torsettings.useProxy.address "முகவரி:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP முகவரி அல்லது ஹோஸ்ட்பெயர்">
 <!ENTITY torsettings.useProxy.port "Port:">
@@ -36,27 +36,27 @@
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "This computer goes through a firewall that only allows connections to certain ports">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.firewall.checkbox "இந்த கணினி ஒரு தீயரண் வழியே செல்கிறது அது குறிப்பிட்ட முனைகளுக்கான இணைப்புகளை மட்டுமே அனுமதிக்கிறது">
+<!ENTITY torsettings.firewall.allowedPorts "அனுமதிக்கப்பட்ட முனைகள்:">
+<!ENTITY torsettings.useBridges.checkbox "Tor எனது நாட்டின் தணிக்கையிடப்படுகிறது">
+<!ENTITY torsettings.useBridges.default "ஒரு உள்ளமை bridge தேர்ந்தெடுங்கள்">
+<!ENTITY torsettings.useBridges.default.placeholder "ஒரு bridge தேர்ந்தெடுங்கள்">
+<!ENTITY torsettings.useBridges.bridgeDB "torproject.org இலிருந்து bridge கோருங்கள்">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "படத்திலிருக்கும் எழுத்துகளை உள்ளிடுங்கள்">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "ஒரு புதிய சவாலைப் பெறுங்கள்">
 <!ENTITY torsettings.useBridges.captchaSubmit "சமர்ப்பி">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.useBridges.custom "எனக்குத் தெரிந்த bridge வழங்கு">
+<!ENTITY torsettings.useBridges.label "நம்பிக்கையான மூலத்திலிருந்து bridge தகவலை உள்ளிடுங்கள்.">
+<!ENTITY torsettings.useBridges.placeholder "முகவரி:முனை தட்டச்சிடுங்கள் (ஒரு வரிசைக்கு ஒன்று)">
 
 <!ENTITY torsettings.copyLog " Tor பதிவுகளை கிளிப்போர்டுக்கு நகலெடு">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelpTitle "பதிலாள் உதவி">
+<!ENTITY torsettings.proxyHelp1 "ஒரு நிறுவனம், பள்ளி அல்லது பல்கலைக்கழக வலைப்பின்னல் வழியே இணைக்கும்போது ஒரு உள் பதிலாள் தேவைப்படலாம்.&#160;பதிலாள் தேவைப்படுகிறதா என்பது உங்களுக்கு உறுதியாகத் தெரியவில்லையெனில், மற்றொரு உலாவியின் இணைய அமைப்புகளைப் பாருங்கள் அல்லது உங்கள் கணினியின் பிணைய அமைப்புகளைச் சரிபாருங்கள்.">
 
-<!ENTITY torsettings.bridgeHelpTitle "Bridge Relay Help">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelpTitle "Bridge தொடர் உதவி">
+<!ENTITY torsettings.bridgeHelp1 "Bridges என்பது பட்டியலிடப்படாத தொடர்கள் ஆகும் அவை Tor பிணையத்திற்கான இணைப்புகளைத் தடுப்பது இன்னும் கடினமாக்குகின்றன.&#160; ஒவ்வொரு வகை bridge உம் தணிக்கையைத் தவிர்க்க வெவ்வேறு முறையைப் பயன்படுத்துகிறது.&#160; obfs உங்கள் போக்குவரத்தை ஒரு சமவாய்ப்பு இரைச்சலாகத் தோன்றச் செய்கிறது, மேலும் Tor க்கு பதிலாக அதன் சேவயைஉடன் இணைப்பது போல் உங்கள் போக்குவரத்தைத் தோன்றச் செய்கிறது.">
+<!ENTITY torsettings.bridgeHelp2 "குறிப்பிட்ட நாடுகள் Tor ஐ எப்படி முடக்க முயற்சிக்கின்றன என்பதைப் பொறுத்து , குறிப்பிட்ட bridges குறிப்பிட்ட நாடுகளில் மட்டுமே வேலை செய்கின்றன.&#160; உங்கள் நாட்டில் எந்த bridges வேலை செய்யும் என்பது உங்களுக்கு உறுதியாகத் தெரியவில்லையெனில், torproject.org/about/contact.html#support பக்கத்தைப் பாருங்கள்">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "தயவுசெய்து நாங்கள் Tor வலையமைப்புடன் ஒரு இணைப்பு நிறுவும்வரை காத்திருங்கள்.&#160;

@@ -55,8 +55,8 @@
 <!ENTITY torsettings.proxyHelp1 "اگر از طریق شبکه‌ی یک شرکت، مدرسه، یا دانشگاه به اینترنت متصل می‌شوید، ممکن است احتیاج به یک پروکسی داخلی داشته باشید. اگر از احتیاج به پروکسی داخلی مطمئن نیستید، به تنظیمات شبکه یک مرورگر دیگر یا تنظیمات شبکه سیستم خود نگاه کنید.">
 
 <!ENTITY torsettings.bridgeHelpTitle "کمک برای پل ارتباطی">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelp1 "پل‌ها رله‌هایی فهرست نشده هستند که مسدودیت ارتباط به شبکه Tor را سخت‌تر می‌کنند.&#160; هر نوعی از پل از روش مختلفی برای مقابله با سانسور استفاده می‌کند.&#160; نوع obgs ترافیک شما را شبیه نویزهای راندوم نشان می‌دهند و نوع meek ترافیک شما را به جای اتصال به تور، در حال اتصال به آن خدمات نشان می‌دهد.">
+<!ENTITY torsettings.bridgeHelp2 "به دلیل اینکه بعضی کشورها سعی بر مسدودسازی تور دارند، بعضی از پل‌ها فقط در این کشورها کار می‌کنند.&#160; اگر مطمئن نیستید که کدام پل‌ها در کشور شما کار می‌کنند، اینجا را ببینید torproject.org/about/contact.html#support">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "لطفا صبر کنید. در حال برقراری ارتباط با شبکه تٌر.&amp;160; این پروسه ممکن است چند دقیقه به طول بینجامد.">
