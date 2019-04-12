@@ -59,4 +59,4 @@
 <!ENTITY torsettings.bridgeHelp2 "Bazı ülkelerin Tor ağını engellemeye çalışması nedeniyle bazı köprüler bazı ülkelerde çalışırken başka ülkelerde çalışmayabilir.&#160; Ülkenizde hangi köprülerin çalışacağından emin değilseniz, torproject.org/about/contact.html#support adresine bakabilirsiniz.">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Lütfen Tor&#160; ağı ile bağlantı kurulurken bekleyin. Bu işlem birkaç dakika sürebilir.">
+<!ENTITY torprogress.pleaseWait "Lütfen Tor ağı ile bağlantı kurulurken bekleyin. Bu işlem birkaç dakika sürebilir.">

@@ -9,8 +9,8 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.connectPrompt "Kliktnite &quot;Pripojiť&quot; pre pripojenie do siete Tor.">
+<!ENTITY torSettings.configurePrompt "Kliknite &quot;Konfigurácia&quot; pre nastavenie siete ak ste v krajite ktorá cenzúruje Tor (ako Egypt, Čína, Turecko) alebo ak sa pripájate zo súkromnej siete ktorá vyžaduje proxy.">
 <!ENTITY torSettings.configure "Konfigurácia">
 <!ENTITY torSettings.connect "Pripojiť">
 
@@ -27,7 +27,7 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Na pripojenie k internetu používam proxy">
 <!ENTITY torsettings.useProxy.type "Typ Proxy:">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
+<!ENTITY torsettings.useProxy.type.placeholder "vybrať typ proxy">
 <!ENTITY torsettings.useProxy.address "Adresa:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adresa alebo názov hostiteľa">
 <!ENTITY torsettings.useProxy.port "Port:">
@@ -39,24 +39,24 @@
 <!ENTITY torsettings.firewall.checkbox "Tento počítač ide cez firewall, ktorý povoľuje iba niektoré porty">
 <!ENTITY torsettings.firewall.allowedPorts "Povolené porty:">
 <!ENTITY torsettings.useBridges.checkbox "Tor je v mojej krajine cenzurovaný">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.default "Zvoľte zabudované premostenie">
+<!ENTITY torsettings.useBridges.default.placeholder "zvoľte premostenie">
+<!ENTITY torsettings.useBridges.bridgeDB "Vyžiadať premostenie od torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Zadajte znaky z obrázka...">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Vyžiadať nový obrátok na rozpoznanie.">
 <!ENTITY torsettings.useBridges.captchaSubmit "Odoslať">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.useBridges.custom "Poskytnúť mauálne známe premostenie.">
+<!ENTITY torsettings.useBridges.label "Zadať premostenie z dôveryhodného zdroja.">
+<!ENTITY torsettings.useBridges.placeholder "napíšte adresu:port (jedna na riadok)">
 
 <!ENTITY torsettings.copyLog "Skopírovať záznam Tor do schránky clipboard">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelpTitle "Pomoc pre Proxy">
+<!ENTITY torsettings.proxyHelp1 "Lokálne proxy môže byť vyžadované ak je projojenie cez pracovnú, školskú alebo univerzitnú sieť.&#160;Ak si nie ste isný či je proxy vyžadované, pozrite na nastavenie Internetového pripojenia v inom internetovom prehliadači alebo v nastaveniach siete systému.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Nápoveda o relé premosteniach">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelp1 "Premostenia sú nezaznamenané relé, ktoré komplikujú blokovanie pripojení do siete Tor.&#160; Každý typ premostenia používa inú metódu aby sa vyhlo cenzúre.&#160; Obfs kamuflujú vašu komunikáciu ako náhodný šum a ostatné sa tvária že pristupujú na iné služby ako Tor. ">
+<!ENTITY torsettings.bridgeHelp2 "Vzhľadom na to ako niektoré krajiny blokujú Tor, niektoré premostenia fungujú v niektorých krajinách ale nie v iných.&#160; Ak si nie ste istý ktoré premostenia fungujú u vás, navštívte torproject.org/about/contact.html#support">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Prosím počkajte na vytvorenie pripojenia do siete Tor.&#160; Môže to trvať niekoľko minút. ">

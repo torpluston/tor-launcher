@@ -4,7 +4,7 @@
 <!ENTITY torsettings.wizard.title.connecting "Établissement d’une connexion">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Langue du navigateur Tor Browser">
+<!ENTITY torlauncher.localePicker.title "Langue du Navigateur Tor">
 <!ENTITY torlauncher.localePicker.prompt "Veuillez choisir une langue.">
 
 <!-- For "first run" wizard: -->

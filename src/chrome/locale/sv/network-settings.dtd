@@ -1,6 +1,6 @@
 <!ENTITY torsettings.dialog.title "Nätverksinställningar för Tor">
 <!ENTITY torsettings.wizard.title.default "Anslut till Tor">
-<!ENTITY torsettings.wizard.title.configure "Tor Nätverk inställningar">
+<!ENTITY torsettings.wizard.title.configure "Nätverksinställningar för Tor">
 <!ENTITY torsettings.wizard.title.connecting "Etablerar en anslutning">
 
 <!-- For locale picker: -->

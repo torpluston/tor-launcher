@@ -43,16 +43,16 @@
 <!ENTITY torsettings.useBridges.default.placeholder "選擇網橋">
 <!ENTITY torsettings.useBridges.bridgeDB "從 torproject.org 請求網橋">
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "輸入圖片中的文字">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "獲得新的挑戰">
 <!ENTITY torsettings.useBridges.captchaSubmit "提交">
 <!ENTITY torsettings.useBridges.custom "提供一個認識的橋接 ">
 <!ENTITY torsettings.useBridges.label "從信任的來源輸入橋接資訊">
-<!ENTITY torsettings.useBridges.placeholder "種類地址:端口 (一行一個)">
+<!ENTITY torsettings.useBridges.placeholder "輸入地址:連接埠 (一行一個)">
 
 <!ENTITY torsettings.copyLog "將洋蔥路由的訊息記錄複製到剪貼簿">
 
 <!ENTITY torsettings.proxyHelpTitle "代理協助">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelp1 "當您透過公司、學校或者大學網路進行連線時，您可能需要一個本地代理伺服器。如果您不確定是否需要代理伺服器，請參考其他瀏覽器的網路設定或者系統網路設定。">
 
 <!ENTITY torsettings.bridgeHelpTitle "橋接中繼器之說明">
 <!ENTITY torsettings.bridgeHelp1 "網橋是未位於列表的中繼，可以使得tor網絡更難被屏蔽。&#160;不同類別的網橋使用不同方法規避審查。.&#160; obfs使您的通訊類似隨機發出的雜音，meek使您的通訊看起來是訪問他們的服務而不是tor。">

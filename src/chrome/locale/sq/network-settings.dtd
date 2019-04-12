@@ -25,7 +25,7 @@
 
 <!ENTITY torsettings.optional "Me zgjedhje">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
+<!ENTITY torsettings.useProxy.checkbox "Unë përdor një proxy për tu lidhur në Internet">
 <!ENTITY torsettings.useProxy.type "Lloji i Proxy-t:">
 <!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!ENTITY torsettings.useProxy.address "Adresa:">
@@ -38,16 +38,16 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Ky kompjuter kalon përmes një muri mbrojtës, që i lejon lidhje vetëm me disa porta.">
 <!ENTITY torsettings.firewall.allowedPorts "Portat e Lejuara:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
+<!ENTITY torsettings.useBridges.checkbox "TOR është i çensuruar në vëndin tim">
+<!ENTITY torsettings.useBridges.default "Zgjidh një urë të paracaktuar">
 <!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
 <!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
 <!ENTITY torsettings.useBridges.captchaSubmit "Parashtroni">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.useBridges.custom "Mundëso një urë lidhëse që njoh">
+<!ENTITY torsettings.useBridges.label "Vendos informacion për urën nga një burim i besuar.">
+<!ENTITY torsettings.useBridges.placeholder "shkruaj adresën:portën (një për rresht)">
 
 <!ENTITY torsettings.copyLog "Kopjojeni Regjistrin e Tor në Kujtesën e fragmenteve">
 

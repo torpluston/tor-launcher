@@ -17,7 +17,7 @@
 <!-- Other: -->
 
 <!ENTITY torsettings.startingTor "Laukiama, kol Tor bus paleistas…">
-<!ENTITY torsettings.restartTor "Pakartotinai paleisti Tor">
+<!ENTITY torsettings.restartTor "Paleisti Tor iš naujo">
 <!ENTITY torsettings.reconfigTor "Konfigūruoti iš naujo">
 
 <!ENTITY torsettings.discardSettings.prompt "Jūs esate sukofigūravę Tor tinklų tiltus arba esate įrašę vietinio įgaliotojo serverio nustatymus.&#160; Tam, kad galėtumėte tiesiogiai prisijungti prie Tor tinklo, šie nustatymai privalo būti pašalinti.">
@@ -39,24 +39,24 @@
 <!ENTITY torsettings.firewall.checkbox "Šis kompiuteris jungiasi per užkardą, kuri leidžia jungtis tik prie tam tikrų prievadų">
 <!ENTITY torsettings.firewall.allowedPorts "Leidžiami prievadai:">
 <!ENTITY torsettings.useBridges.checkbox "Mano šalyje Tor yra cenzūruojamas">
-<!ENTITY torsettings.useBridges.default "Pasirinkite esamą tinklų tiltą">
+<!ENTITY torsettings.useBridges.default "Pasirinkite įtaisytąjį tinklų tiltą">
 <!ENTITY torsettings.useBridges.default.placeholder "pasirinkite tinklų tiltą">
 <!ENTITY torsettings.useBridges.bridgeDB "Prašyti tinklų tilto iš torproject.org">
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "Įveskite ženklus iš paveikslėlio">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Gaukite naują iššūkį">
 <!ENTITY torsettings.useBridges.captchaSubmit "Pateikti">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.useBridges.custom "Pateikti man žinomą tinklų tiltą">
+<!ENTITY torsettings.useBridges.label "Įveskite tinklų tilto informaciją iš patikimo šaltinio.">
+<!ENTITY torsettings.useBridges.placeholder "tipas adresas:prievadas (kiekvienoje eilutėje po vieną)">
 
 <!ENTITY torsettings.copyLog "Kopijuoti Tor žurnalą į iškarpinę">
 
 <!ENTITY torsettings.proxyHelpTitle "Įgaliotojo serverio žinynas">
 <!ENTITY torsettings.proxyHelp1 "Vietinis įgaliotasis serveris gali būti reikalingas, jungiantis per kompanijos, mokyklos ar universiteto tinklą.&#160;Jeigu nesate tikri ar įgaliotasis serveris yra reikalingas, žiūrėkite interneto nustatymus kitoje naršyklėje arba patikrinkite savo sistemos tinklo nustatymus.">
 
-<!ENTITY torsettings.bridgeHelpTitle "Bridge Relay Help">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelpTitle "Tiltų tinklo retransliavimo žinynas">
+<!ENTITY torsettings.bridgeHelp1 "Tinklų tiltai yra neregistruoti retransliavimai, kurie apsunkina ryšių prie Tor tinklo blokavimą.&#160; Kiekvienas tinklų tilto tipas naudoja kitokį būdą išvengti cenzūros.&#160; Obfs tinklų tiltai paverčia jūsų srautą panašų į atsitiktinį triukšmą, o meek tinklų tiltai paverčia jūsų srautą, kad jis atrodytų taip, lyg jungtumėtės prie tos paslaugos, o ne prie Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Dėl to, kaip tam tikros šalys bando blokuoti Tor, tam tikri tinklų tiltai vienose šalyse veikia, o kitose neveikia.&#160; Jeigu nesate tikri, kurie tinklų tiltai jūsų šalyje veikia, apsilankykite torproject.org/about/contact.html#support">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Palaukite, kol mes užmegsime ryšį su Tor tinklu.&#160; Tai gali užtrukti kelias minutes.">
