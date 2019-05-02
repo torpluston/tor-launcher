@@ -55,7 +55,7 @@
 <!ENTITY torsettings.proxyHelp1 "Un mandataire local peut être nécessaire lors d’une connexion par un réseau d’entreprise, d’école ou d’université.&#160;Si vous n’êtes pas certain si un mandataire est nécessaire, vérifiez les paramètres Internet d’un autre navigateur ou les paramètres réseau de votre système.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Aide sur les relais-ponts">
-<!ENTITY torsettings.bridgeHelp1 "Les ponts sont des relais non référencés qui rendent les connexions au Tor réseau plus difficiles à bloquer.&#160;Chaque type de pont utilise un moyen différent pour éviter la censure.&#160;Avec les ponts obfs, votre trafic ressemble à du bruit aléatoire et avec les ponts meek, votre trafic semble se connecter à ce service plutôt qu’à Tor.">
+<!ENTITY torsettings.bridgeHelp1 "Les ponts sont des relais non référencés qui rendent les connexions au réseau Tor plus difficiles à bloquer.&#160; Chaque type de pont utilise un moyen différent pour éviter la censure.&#160; Avec les ponts obfs, votre trafic ressemble à du bruit aléatoire, et avec les ponts meek, votre trafic semble se connecter à ce service plutôt qu’à Tor.">
 <!ENTITY torsettings.bridgeHelp2 "Dans la mesure où certains pays tentent de bloquer Tor, certains ponts fonctionnent dans certains pays, mais pas dans d’autres.&#160;Si vous ne savez pas quels ponts fonctionnent dans votre pays, visitez torproject.org/about/contact.html#support">
 
 <!-- Progress -->

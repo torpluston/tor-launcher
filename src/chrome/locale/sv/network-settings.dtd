@@ -20,7 +20,7 @@
 <!ENTITY torsettings.restartTor "Starta om Tor">
 <!ENTITY torsettings.reconfigTor "Omkonfigurera">
 
-<!ENTITY torsettings.discardSettings.prompt "Du har konfigurerat Tor-bryggor eller så har du angett lokala proxyinställningar.&#160; För att göra en direktanslutning till Tor-nätverket måste de här inställningarna tas bort.">
+<!ENTITY torsettings.discardSettings.prompt "Du har konfigurerat Tor-broar eller så har du angett lokala proxyinställningar.&#160; För att göra en direktanslutning till Tor-nätverket måste de här inställningarna tas bort.">
 <!ENTITY torsettings.discardSettings.proceed "Ta bort inställningar och anslut">
 
 <!ENTITY torsettings.optional "Valfri">
@@ -39,14 +39,14 @@
 <!ENTITY torsettings.firewall.checkbox "Denna dator går genom en brandvägg som bara tillåter anslutningar på vissa specifika portar.">
 <!ENTITY torsettings.firewall.allowedPorts "Tillåtna portar:">
 <!ENTITY torsettings.useBridges.checkbox "Tor är censurerat i mitt land">
-<!ENTITY torsettings.useBridges.default "Välj en inbyggd brygga">
-<!ENTITY torsettings.useBridges.default.placeholder "Välj en brygga">
-<!ENTITY torsettings.useBridges.bridgeDB "Begär en brygga från torproject.org">
+<!ENTITY torsettings.useBridges.default "Välj en inbyggd bro">
+<!ENTITY torsettings.useBridges.default.placeholder "Välj en bro">
+<!ENTITY torsettings.useBridges.bridgeDB "Begär en bro från torproject.org">
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "Ange tecknen från bilden">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Få en ny utmaning">
 <!ENTITY torsettings.useBridges.captchaSubmit "Skicka">
-<!ENTITY torsettings.useBridges.custom "Använd en egen brygga">
-<!ENTITY torsettings.useBridges.label "Ange brygg informationen från en betrodd källa">
+<!ENTITY torsettings.useBridges.custom "Använd en egen bro">
+<!ENTITY torsettings.useBridges.label "Ange broinformationen från en betrodd källa">
 <!ENTITY torsettings.useBridges.placeholder "skriv adress:port (en per rad)">
 
 <!ENTITY torsettings.copyLog "Kopiera Tor-loggen till urklippet">
@@ -54,9 +54,9 @@
 <!ENTITY torsettings.proxyHelpTitle "Proxy hjälp">
 <!ENTITY torsettings.proxyHelp1 "En lokal proxy kan behövas när du ansluter via ett företag, skola eller universitetsnätverk.&#160;Om du inte är säker på om en proxy behövs, titta på internetinställningarna i en annan webbläsare eller kontrollera systemets nätverksinställningar.">
 
-<!ENTITY torsettings.bridgeHelpTitle "Hjälp om relä bryggor">
-<!ENTITY torsettings.bridgeHelp1 "Bryggor är olistade reläer som gör det svårare att blockera anslutningar till Tor nätverket. &#160; Var typ av brygga använder sig av olika metoder för att undvika censur. &#160; Obfs gör att din trafik ser ut som brus och meek gör att din trafik ser ut som att du ansluter till tjänsten istället för Tor.">
-<!ENTITY torsettings.bridgeHelp2 "I och med att vissa länder försöker blockera Tor fungerar inte alla bryggor i alla länder. &#160; Ifall du är osäker på vilka bryggor som fungerar i ditt land besök torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelpTitle "Hjälp om relä-broar">
+<!ENTITY torsettings.bridgeHelp1 "Broar är olistade reläer som gör det svårare att blockera anslutningar till Tor nätverket. &#160; Var typ av bro använder sig av olika metoder för att undvika censur. &#160; Obfs gör att din trafik ser ut som brus och meek gör att din trafik ser ut som att du ansluter till tjänsten istället för Tor.">
+<!ENTITY torsettings.bridgeHelp2 "I och med att vissa länder försöker blockera Tor fungerar inte alla broar i alla länder. &#160; Ifall du är osäker på vilka broar som fungerar i ditt land besök torproject.org/about/contact.html#support">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Var god och vänta medans vi etablerar en anslutning till Tor nätverket. &#160; Detta kan ta upp till flera minuter.">

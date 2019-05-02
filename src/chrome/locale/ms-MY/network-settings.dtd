@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Salin log Tor ke Papan Keratan">
 
 <!ENTITY torsettings.proxyHelpTitle "Bantuan Proksi">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelp1 "Satu proksi setempat diperlukan semasa menyambung dengan rangkaian syarikat, sekolah, atau universiti.&#160;Jika anda tidak pasti sama ada proksi diperlukan atau sebaliknya, lihat tetapan Internet dalam pelayar yang lain atau periksa tetapan rangkaian sistem anda.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Bantuan Geganti Titi">
 <!ENTITY torsettings.bridgeHelp1 "Titi adalah geganti tidak tersenarai yang menjadikannya lebih sukar menyekat sambungan dengan Rangkaian Tor.&#160; Setiap jenis titi menggunakan kaedah berbeza untuk menghindari sekatan.&#160; Obf menjadikan trafik anda seakan-akan hingar rawak, dan paling teruk menjadikan trafik anda kelihatan mahu bersambung dengan perkhidmatan lain selain dari Tor.">

@@ -1,16 +1,16 @@
-<!ENTITY torsettings.dialog.title "Tor'i võrgu seaded">
-<!ENTITY torsettings.wizard.title.default "Ühendu Tor'i">
-<!ENTITY torsettings.wizard.title.configure "Tor'i võrgu seaded">
+<!ENTITY torsettings.dialog.title "Tor\'i võrgu seaded">
+<!ENTITY torsettings.wizard.title.default "Ühendu Tor\'i">
+<!ENTITY torsettings.wizard.title.configure "Tor\'i võrgu seaded">
 <!ENTITY torsettings.wizard.title.connecting "Ühenduse loomine">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Tor'i brauseri keel">
+<!ENTITY torlauncher.localePicker.title "Tor\'i brauseri keel">
 <!ENTITY torlauncher.localePicker.prompt "Palun valige keel.">
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Klikkige &quot;Ühendu&quot; et ühenduda Tor'i.">
-<!ENTITY torSettings.configurePrompt "Kliki &quot;Seadista&quot; et muuta võrgusätteid kui te viibite riigis, mis tsensoreerib Tor'i (näiteks Egiptus, Hiina, Türgi) või kui te ühendute eravõrgust millel on vaja proksit.">
+<!ENTITY torSettings.connectPrompt "Klikkige &quot;Ühendu&quot; et ühenduda Tor\'i.">
+<!ENTITY torSettings.configurePrompt "Kliki &quot;Seadista&quot; et muuta võrgusätteid kui te viibite riigis, mis tsensoreerib Tor\'i (näiteks Egiptus, Hiina, Türgi) või kui te ühendute eravõrgust millel on vaja proksit.">
 <!ENTITY torSettings.configure "Seadista">
 <!ENTITY torSettings.connect "Ühendu">
 
@@ -20,7 +20,7 @@
 <!ENTITY torsettings.restartTor "Taaskäivita Tor">
 <!ENTITY torsettings.reconfigTor "Seadista uuesti">
 
-<!ENTITY torsettings.discardSettings.prompt "Te olete seadistanud kohalikud Tor'i sillad või olete sisestanud kohalikud proksi sätted.&#160; Et luua otseühendus Tor'i võrguga, tuleb need sätted eemaldada.">
+<!ENTITY torsettings.discardSettings.prompt "Te olete seadistanud kohalikud Tor\'i sillad või olete sisestanud kohalikud proksi sätted.&#160; Et luua otseühendus Tor\'i võrguga, tuleb need sätted eemaldada.">
 <!ENTITY torsettings.discardSettings.proceed "Eemalda seaded ja ühendu">
 
 <!ENTITY torsettings.optional "Valikuline">
@@ -41,7 +41,7 @@
 <!ENTITY torsettings.useBridges.checkbox "Tor on minu riigis tsensoreeritud">
 <!ENTITY torsettings.useBridges.default "Valige sisseehitatud sild">
 <!ENTITY torsettings.useBridges.default.placeholder "valige sild">
-<!ENTITY torsettings.useBridges.bridgeDB "Saatke päring torproject.org'i et saada sild">
+<!ENTITY torsettings.useBridges.bridgeDB "Saatke päring torproject.org\'i et saada sild">
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "Sisestage pildil olevad tähemärgid">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Võta uus väljakutse">
 <!ENTITY torsettings.useBridges.captchaSubmit "Esita">
@@ -49,14 +49,14 @@
 <!ENTITY torsettings.useBridges.label "Sisesta sillainfo usaldusväärsest allikast.">
 <!ENTITY torsettings.useBridges.placeholder "tüüp aadress:port (üks iga rea kohta)">
 
-<!ENTITY torsettings.copyLog "Kopeeri Tor'i logi lõikepuhvrisse">
+<!ENTITY torsettings.copyLog "Kopeeri Tor\'i logi lõikepuhvrisse">
 
 <!ENTITY torsettings.proxyHelpTitle "Proksi abi">
 <!ENTITY torsettings.proxyHelp1 "Kohalik proksi võib olla vajalik kui ühenduda läbi firma, kooli või ülikooli võrgu.&#160;Kui te ei ole kindlad kas proksi on vajalik, tutvuge internetisätetega teises brauseris või kontrollige oma süsteemi võrgusätteid.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Silla relee abi">
-<!ENTITY torsettings.bridgeHelp1 "Sillad on järjendamata releed mis teevad Tor'i võrku ühenduvate ühenduste blokeerimise raskemaks.&#160; Kõik sillatüübid kasutavad erinevat meetodit et tsensorlust vältida.&#160; Obfs sillad obfuskeerivad teie andmeliikluse suvaliseks andmemüraks, ja meek tüüpi sillad tekitavad illusiooni et te ühendute sellesse teenusesse, mitte Tor'i.">
-<!ENTITY torsettings.bridgeHelp2 "Kuna erinevad riigid üritavad erinevate meetoditega Tor'i blokeerida, töötavad osad sillad osades riikides, kuid mitte teistes.&#160; Kui Te ei ole kindlad millised sillad teie riigis töötavad, külastage torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelp1 "Sillad on järjendamata releed mis teevad Tor\'i võrku ühenduvate ühenduste blokeerimise raskemaks.&#160; Kõik sillatüübid kasutavad erinevat meetodit et tsensorlust vältida.&#160; Obfs sillad obfuskeerivad teie andmeliikluse suvaliseks andmemüraks, ja meek tüüpi sillad tekitavad illusiooni et te ühendute sellesse teenusesse, mitte Tor\'i.">
+<!ENTITY torsettings.bridgeHelp2 "Kuna erinevad riigid üritavad erinevate meetoditega Tor\'i blokeerida, töötavad osad sillad osades riikides, kuid mitte teistes.&#160; Kui Te ei ole kindlad millised sillad teie riigis töötavad, külastage torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Palun oodake kuni loome ühenduse Tor'i võrguga.&#160; See võib võtta mitu minutit.">
+<!ENTITY torprogress.pleaseWait "Palun oodake kuni loome ühenduse Tor\'i võrguga.&#160; See võib võtta mitu minutit.">

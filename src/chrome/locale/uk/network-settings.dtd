@@ -41,9 +41,9 @@
 <!ENTITY torsettings.useBridges.checkbox "Тор цензується в моїй країні">
 <!ENTITY torsettings.useBridges.default "Виберіть вбудований міст">
 <!ENTITY torsettings.useBridges.default.placeholder "Виберіть міст">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useBridges.bridgeDB "Запитати міст з torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Введіть символи з зображення">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Отримати нове завдання">
 <!ENTITY torsettings.useBridges.captchaSubmit "Надіслати">
 <!ENTITY torsettings.useBridges.custom "Надайте міст, який я знаю">
 <!ENTITY torsettings.useBridges.label "Уведіть інформацію про міст із надійного джерела.">
@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Скопіювати журнал Tor до буферу обміну">
 
 <!ENTITY torsettings.proxyHelpTitle "Довідка Проксі">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelp1 "Може знадобитися локальний проксі-сервер при підключенні через мережу компанії, школи або університету.&#160;Якщо ви не впевнені у необхідності проксі-серверу, погляньте у налаштування з\єднання з інтернетом у іншому браузері або перевірте ваші системні налаштування мережі.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Допомога по ретрансляторам типу міст">
 <!ENTITY torsettings.bridgeHelp1 "Мости - це незареєстровані передавачі, що ускладнюють блокування з'єднання з мережею Tor.&#160; Кожен тип мосту використовує інакший метод, щоб уникнути цензури.&#160;  Функції obfs роблять ваш трафік схожим на випадковий шум, а функції meek роблять ваш трафік схожим на те, що він підключається до цієї служби не через Tor.">

@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "Tor 네트워크 설정">
-<!ENTITY torsettings.wizard.title.default "Connect to Tor">
+<!ENTITY torsettings.wizard.title.default "Tor에 연결하기">
 <!ENTITY torsettings.wizard.title.configure "Tor 네트워크 설정">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.connecting "연결되는 중">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Tor 브라우저 언어">
@@ -9,8 +9,8 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.connectPrompt "To에 연결하기 위해 &quot;연결&quot;을 클릭하세요.">
+<!ENTITY torSettings.configurePrompt "Tor를 검열하는 국가(이집트, 중국, 터키 등) 나 프록시가 필요한 사설 네트워크에서 연결하는 경우, &quot;설정&quot;을 클릭하여 네트워크 설정을 조정합니다.">
 <!ENTITY torSettings.configure "구성">
 <!ENTITY torSettings.connect "연결">
 
@@ -23,40 +23,40 @@
 <!ENTITY torsettings.discardSettings.prompt "Tor 브리지를 구성했거나 로컬 프록시 설정을 입력했습니다.&#160;Tor 네트워크에 직접 연결하려면 이 설정을 제거해야 합니다.">
 <!ENTITY torsettings.discardSettings.proceed "설정 제거 및 연결">
 
-<!ENTITY torsettings.optional "선택">
+<!ENTITY torsettings.optional "옵션">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
+<!ENTITY torsettings.useProxy.checkbox "인터넷에 연결할 때 프록시를 사용합니다">
 <!ENTITY torsettings.useProxy.type "프록시 종류:">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
+<!ENTITY torsettings.useProxy.type.placeholder "프록시 유형을 선택해 주세요.">
 <!ENTITY torsettings.useProxy.address "주소:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP 주소 또는 호스트 네임">
 <!ENTITY torsettings.useProxy.port "포트:">
 <!ENTITY torsettings.useProxy.username "사용자명:">
-<!ENTITY torsettings.useProxy.password "암호:">
+<!ENTITY torsettings.useProxy.password "비밀번호:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "이 컴퓨터는 특정 포트만 통과하는 방화벽을 지나 연결됩니다.">
+<!ENTITY torsettings.firewall.checkbox "이 컴퓨터는 특정 포트만 허용하는 방화벽을 통해서 연결됩니다.">
 <!ENTITY torsettings.firewall.allowedPorts "허용된 포트:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
-<!ENTITY torsettings.useBridges.captchaSubmit "Submit">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.useBridges.checkbox "우리나라에서는 Tor를 검열합니다.">
+<!ENTITY torsettings.useBridges.default "제공된 브릿지를 선택하세요.">
+<!ENTITY torsettings.useBridges.default.placeholder "브릿지를 선택하세요.">
+<!ENTITY torsettings.useBridges.bridgeDB "torproject.org 에 브릿지를 요청하세요.">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "이미지에 나온 글자를 입력하세요.">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "새로운 캡차 시도값을 구합니다.">
+<!ENTITY torsettings.useBridges.captchaSubmit "제출확인">
+<!ENTITY torsettings.useBridges.custom "내가 아는 브리지를 알려주세요.">
+<!ENTITY torsettings.useBridges.label "신뢰할 수있는 정보로부터 전달받은 브릿지 정보를 입력하세요.">
+<!ENTITY torsettings.useBridges.placeholder "주소:포트번호 입력하세요.(한줄에 하나씩)">
 
 <!ENTITY torsettings.copyLog "Tor log를 클립보드에 복사하기">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelpTitle "프록시 도움말">
+<!ENTITY torsettings.proxyHelp1 "회사나 학교, 혹인 대학 네트워크를 통해 연결하는 경우에 로컬 프록시가 필요할 수 있습니다.&#160;프록시가 필요한지 모르는 경우에는 다른 브라우저에서 인터넷 설정을 확인하거나 시스템의 네트워크 설정을 확인하세요.">
 
 <!ENTITY torsettings.bridgeHelpTitle "브릿지 중계 서버 도움말">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelp1 "브리지는 Tor 네트워크에 대한 연결을 차단하는 것을 더 어렵게 해주는 비공개 릴레이입니다.&#160; 각 유형의 브리지는 검열을 피하기 위해 각기 다른 방법을 사용합니다. &#160; obfs 인것은 당신의 트래픽이 임의의 잡음형태인 것처럼 보이게 해줍니다. 그리고 meek 인것은 Tor 대신에 당신이 서비스에 연결되어있는 것처럼 보이게 해줍니다.">
+<!ENTITY torsettings.bridgeHelp2 "일부 국가에서 어떻게든 Tor 를 차단하려고 하기 때문에, 어떤 브릿지는 특정 국가에서는 동작하지만 다른 곳에서는 그렇지 않습니다.&#160; 당신의 나라에서 어떤 브릿지가 동작하고 있는지 모르는 경우 torproject.org/about/contact.html#support 를 방문하세요.">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Tor 네트워크에 연결할 때까지 기다려주십시오.&#160; 몇 분 정도 소요될 수 있습니다.">
