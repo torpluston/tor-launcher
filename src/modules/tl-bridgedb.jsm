@@ -122,7 +122,6 @@ _MoatRequestor.prototype =
   //
   // aTransports is an array of transport strings. Supported values:
   //   "vanilla"
-  //   "fte"
   //   "obfs3"
   //   "obfs4"
   //   "scramblesuit"
