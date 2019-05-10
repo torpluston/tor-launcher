@@ -1,0 +1,62 @@
+<!ENTITY torsettings.dialog.title "Definições da Rede Tor">
+<!ENTITY torsettings.wizard.title.default "Ligar ao Tor">
+<!ENTITY torsettings.wizard.title.configure "Definições da Rede Tor">
+<!ENTITY torsettings.wizard.title.connecting "Estabelecer uma Ligação">
+
+<!-- For locale picker: -->
+<!ENTITY torlauncher.localePicker.title "Idioma do Tor Browser">
+<!ENTITY torlauncher.localePicker.prompt "Por favor, selecione um idioma.">
+
+<!-- For "first run" wizard: -->
+
+<!ENTITY torSettings.connectPrompt "Clique em &quot;Ligar&quot; para ligar ao Tor.">
+<!ENTITY torSettings.configurePrompt "Clique em “Configurar” para ajustar as definições de rede se estiver num país que censura o Tor (tal como a China, o Egito, a Turquia) ou se estiver a ligar a partir de uma rede privada que requer um proxy.">
+<!ENTITY torSettings.configure "Configurar">
+<!ENTITY torSettings.connect "Ligar">
+
+<!-- Other: -->
+
+<!ENTITY torsettings.startingTor "A aguardar que o Tor inicie...">
+<!ENTITY torsettings.restartTor "Reiniciar o Tor">
+<!ENTITY torsettings.reconfigTor "Reconfigurar">
+
+<!ENTITY torsettings.discardSettings.prompt "Configurou as pontes do Tor ou inseriu as definições do proxy local.&#160; Para efetuar uma ligação direta à rede Tor, estas definições devem ser removidas.">
+<!ENTITY torsettings.discardSettings.proceed "Remover Definições e Ligar">
+
+<!ENTITY torsettings.optional "Opcional">
+
+<!ENTITY torsettings.useProxy.checkbox "Eu utilizo um proxy para ligar à Internet">
+<!ENTITY torsettings.useProxy.type "Tipo de proxy:">
+<!ENTITY torsettings.useProxy.type.placeholder "selecionar um tipo de proxy">
+<!ENTITY torsettings.useProxy.address "Endereço:">
+<!ENTITY torsettings.useProxy.address.placeholder "Endereço de IP ou nome do hospedeiro">
+<!ENTITY torsettings.useProxy.port "Porta:">
+<!ENTITY torsettings.useProxy.username "Nome do utilizador:">
+<!ENTITY torsettings.useProxy.password "Palavra-passe:">
+<!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
+<!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
+<!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
+<!ENTITY torsettings.firewall.checkbox "Este computador liga através de uma firewall que só permite ligações para determinadas portas">
+<!ENTITY torsettings.firewall.allowedPorts "Portas permitidas:">
+<!ENTITY torsettings.useBridges.checkbox "O Tor é censurado no meu país">
+<!ENTITY torsettings.useBridges.default "Selecionar uma ponte integrada">
+<!ENTITY torsettings.useBridges.default.placeholder "selecionar uma ponte">
+<!ENTITY torsettings.useBridges.bridgeDB "Solicitar uma ponte do torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Insira os carateres da imagem">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Obter um novo desafio">
+<!ENTITY torsettings.useBridges.captchaSubmit "Submeter">
+<!ENTITY torsettings.useBridges.custom "Fornecer uma ponte que eu conheça">
+<!ENTITY torsettings.useBridges.label "Inserir a informação da ponte de uma fonte confiável.">
+<!ENTITY torsettings.useBridges.placeholder "digite address:port (uma por linha)">
+
+<!ENTITY torsettings.copyLog "Copiar o Registo do Tor para a Área de Transferência">
+
+<!ENTITY torsettings.proxyHelpTitle "Ajuda de Proxy">
+<!ENTITY torsettings.proxyHelp1 "Poderá ser necessário um proxy local ao ligar-se através de uma empresa, escola ou universidade. Se não tiver certeza se é necessário um proxy, verifique as definições da Internet noutro navegador ou verifique as definições da rede do seu sistema.">
+
+<!ENTITY torsettings.bridgeHelpTitle "Ajuda da Retransmissão de Ponte">
+<!ENTITY torsettings.bridgeHelp1 "As pontes são retransmissões não listadas que dificultam o bloqueio de ligações à Rede Tor.&#160; Cada tipo de ponte utiliza um método diferente para evitar a censura.&#160; Os &quot;obfs&quot; fazem com que o seu tráfego pareça um ruído aleatório, e os pacíficos fazem com que o seu tráfego pareça que está a ligar-se a esses serviço, em vez de ao Tor.">
+<!ENTITY torsettings.bridgeHelp2 "Por causa de como certos países tentam bloquear o Tor, certas pontes funcionam em certos países, mas não em outros. Se não tiver a certeza sobre quais as pontes que funcionam no seu país, visite torproject.org/about/contact.html#support.">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Por favor, aguarde, enquanto nós estabelecemos uma ligação à rede Tor.&#160; Isto pode demorar alguns minutos.">

@@ -1,0 +1,331 @@
+#filter substitution
+### Copyright (c) 2019, The Tor Project, Inc.
+### See LICENSE for licensing information.
+
+torlauncher.jar:
+  components/     (src/components/*)
+
+% content  torlauncher %content/
+  content/        (src/chrome/content/*)
+
+  modules/        (src/modules/*)
+
+% resource torlauncher  %
+
+% skin     torlauncher  default %skin/
+  skin/           (src/chrome/skin/*)
+
+% component {4F476361-23FB-43EF-A427-B36A14D3208E}         %components/tl-protocol.js
+% contract  @torproject.org/torlauncher-protocol-service;1 {4F476361-23FB-43EF-A427-B36A14D3208E}
+
+% component {FE7B4CAF-BCF4-4848-8BFF-EFA66C9AFDA1}         %components/tl-process.js
+% contract  @torproject.org/torlauncher-process-service;1  {FE7B4CAF-BCF4-4848-8BFF-EFA66C9AFDA1}
+
+% category  profile-after-change TorProcessService @torproject.org/torlauncher-process-service;1
+
+% locale torlauncher en-US %locale/en-US/
+  locale/en-US/ (src/chrome/locale/en-US/*)
+% locale torlauncher ady %locale/ady/
+  locale/ady/ (src/chrome/locale/ady/*)
+% locale torlauncher af %locale/af/
+  locale/af/ (src/chrome/locale/af/*)
+% locale torlauncher af-ZA %locale/af-ZA/
+  locale/af-ZA/ (src/chrome/locale/af-ZA/*)
+% locale torlauncher ak %locale/ak/
+  locale/ak/ (src/chrome/locale/ak/*)
+% locale torlauncher am %locale/am/
+  locale/am/ (src/chrome/locale/am/*)
+% locale torlauncher am-ET %locale/am-ET/
+  locale/am-ET/ (src/chrome/locale/am-ET/*)
+% locale torlauncher ar %locale/ar/
+  locale/ar/ (src/chrome/locale/ar/*)
+% locale torlauncher arn %locale/arn/
+  locale/arn/ (src/chrome/locale/arn/*)
+% locale torlauncher az %locale/az/
+  locale/az/ (src/chrome/locale/az/*)
+% locale torlauncher be %locale/be/
+  locale/be/ (src/chrome/locale/be/*)
+% locale torlauncher bg %locale/bg/
+  locale/bg/ (src/chrome/locale/bg/*)
+% locale torlauncher bg-BG %locale/bg-BG/
+  locale/bg-BG/ (src/chrome/locale/bg-BG/*)
+% locale torlauncher bn %locale/bn/
+  locale/bn/ (src/chrome/locale/bn/*)
+% locale torlauncher bn-BD %locale/bn-BD/
+  locale/bn-BD/ (src/chrome/locale/bn-BD/*)
+% locale torlauncher bn-IN %locale/bn-IN/
+  locale/bn-IN/ (src/chrome/locale/bn-IN/*)
+% locale torlauncher bo %locale/bo/
+  locale/bo/ (src/chrome/locale/bo/*)
+% locale torlauncher br %locale/br/
+  locale/br/ (src/chrome/locale/br/*)
+% locale torlauncher bs %locale/bs/
+  locale/bs/ (src/chrome/locale/bs/*)
+% locale torlauncher ca %locale/ca/
+  locale/ca/ (src/chrome/locale/ca/*)
+% locale torlauncher ca@valencia %locale/ca@valencia/
+  locale/ca@valencia/ (src/chrome/locale/ca@valencia/*)
+% locale torlauncher cs %locale/cs/
+  locale/cs/ (src/chrome/locale/cs/*)
+% locale torlauncher cs-CZ %locale/cs-CZ/
+  locale/cs-CZ/ (src/chrome/locale/cs-CZ/*)
+% locale torlauncher csb %locale/csb/
+  locale/csb/ (src/chrome/locale/csb/*)
+% locale torlauncher cv %locale/cv/
+  locale/cv/ (src/chrome/locale/cv/*)
+% locale torlauncher cy %locale/cy/
+  locale/cy/ (src/chrome/locale/cy/*)
+% locale torlauncher da %locale/da/
+  locale/da/ (src/chrome/locale/da/*)
+% locale torlauncher de %locale/de/
+  locale/de/ (src/chrome/locale/de/*)
+% locale torlauncher dz %locale/dz/
+  locale/dz/ (src/chrome/locale/dz/*)
+% locale torlauncher el %locale/el/
+  locale/el/ (src/chrome/locale/el/*)
+% locale torlauncher el-GR %locale/el-GR/
+  locale/el-GR/ (src/chrome/locale/el-GR/*)
+% locale torlauncher eo %locale/eo/
+  locale/eo/ (src/chrome/locale/eo/*)
+% locale torlauncher es %locale/es/
+  locale/es/ (src/chrome/locale/es/*)
+% locale torlauncher es-AR %locale/es-AR/
+  locale/es-AR/ (src/chrome/locale/es-AR/*)
+% locale torlauncher es-CL %locale/es-CL/
+  locale/es-CL/ (src/chrome/locale/es-CL/*)
+% locale torlauncher es-CO %locale/es-CO/
+  locale/es-CO/ (src/chrome/locale/es-CO/*)
+% locale torlauncher es-MX %locale/es-MX/
+  locale/es-MX/ (src/chrome/locale/es-MX/*)
+% locale torlauncher es-NI %locale/es-NI/
+  locale/es-NI/ (src/chrome/locale/es-NI/*)
+% locale torlauncher et %locale/et/
+  locale/et/ (src/chrome/locale/et/*)
+% locale torlauncher eu %locale/eu/
+  locale/eu/ (src/chrome/locale/eu/*)
+% locale torlauncher fa %locale/fa/
+  locale/fa/ (src/chrome/locale/fa/*)
+% locale torlauncher fi %locale/fi/
+  locale/fi/ (src/chrome/locale/fi/*)
+% locale torlauncher fil %locale/fil/
+  locale/fil/ (src/chrome/locale/fil/*)
+% locale torlauncher fo %locale/fo/
+  locale/fo/ (src/chrome/locale/fo/*)
+% locale torlauncher fr %locale/fr/
+  locale/fr/ (src/chrome/locale/fr/*)
+% locale torlauncher fr-CA %locale/fr-CA/
+  locale/fr-CA/ (src/chrome/locale/fr-CA/*)
+% locale torlauncher fur %locale/fur/
+  locale/fur/ (src/chrome/locale/fur/*)
+% locale torlauncher fy %locale/fy/
+  locale/fy/ (src/chrome/locale/fy/*)
+% locale torlauncher ga %locale/ga/
+  locale/ga/ (src/chrome/locale/ga/*)
+% locale torlauncher gl %locale/gl/
+  locale/gl/ (src/chrome/locale/gl/*)
+% locale torlauncher gu %locale/gu/
+  locale/gu/ (src/chrome/locale/gu/*)
+% locale torlauncher gu-IN %locale/gu-IN/
+  locale/gu-IN/ (src/chrome/locale/gu-IN/*)
+% locale torlauncher gun %locale/gun/
+  locale/gun/ (src/chrome/locale/gun/*)
+% locale torlauncher ha %locale/ha/
+  locale/ha/ (src/chrome/locale/ha/*)
+% locale torlauncher he %locale/he/
+  locale/he/ (src/chrome/locale/he/*)
+% locale torlauncher hi %locale/hi/
+  locale/hi/ (src/chrome/locale/hi/*)
+% locale torlauncher hr %locale/hr/
+  locale/hr/ (src/chrome/locale/hr/*)
+% locale torlauncher hr-HR %locale/hr-HR/
+  locale/hr-HR/ (src/chrome/locale/hr-HR/*)
+% locale torlauncher ht %locale/ht/
+  locale/ht/ (src/chrome/locale/ht/*)
+% locale torlauncher hu %locale/hu/
+  locale/hu/ (src/chrome/locale/hu/*)
+% locale torlauncher hy %locale/hy/
+  locale/hy/ (src/chrome/locale/hy/*)
+% locale torlauncher hy-AM %locale/hy-AM/
+  locale/hy-AM/ (src/chrome/locale/hy-AM/*)
+% locale torlauncher ia %locale/ia/
+  locale/ia/ (src/chrome/locale/ia/*)
+% locale torlauncher id %locale/id/
+  locale/id/ (src/chrome/locale/id/*)
+% locale torlauncher is %locale/is/
+  locale/is/ (src/chrome/locale/is/*)
+% locale torlauncher it %locale/it/
+  locale/it/ (src/chrome/locale/it/*)
+% locale torlauncher ja %locale/ja/
+  locale/ja/ (src/chrome/locale/ja/*)
+% locale torlauncher jv %locale/jv/
+  locale/jv/ (src/chrome/locale/jv/*)
+% locale torlauncher ka %locale/ka/
+  locale/ka/ (src/chrome/locale/ka/*)
+% locale torlauncher kk %locale/kk/
+  locale/kk/ (src/chrome/locale/kk/*)
+% locale torlauncher km %locale/km/
+  locale/km/ (src/chrome/locale/km/*)
+% locale torlauncher kn %locale/kn/
+  locale/kn/ (src/chrome/locale/kn/*)
+% locale torlauncher ko %locale/ko/
+  locale/ko/ (src/chrome/locale/ko/*)
+% locale torlauncher ko-KR %locale/ko-KR/
+  locale/ko-KR/ (src/chrome/locale/ko-KR/*)
+% locale torlauncher ku %locale/ku/
+  locale/ku/ (src/chrome/locale/ku/*)
+% locale torlauncher kw %locale/kw/
+  locale/kw/ (src/chrome/locale/kw/*)
+% locale torlauncher ky %locale/ky/
+  locale/ky/ (src/chrome/locale/ky/*)
+% locale torlauncher lb %locale/lb/
+  locale/lb/ (src/chrome/locale/lb/*)
+% locale torlauncher lg %locale/lg/
+  locale/lg/ (src/chrome/locale/lg/*)
+% locale torlauncher ln %locale/ln/
+  locale/ln/ (src/chrome/locale/ln/*)
+% locale torlauncher lo %locale/lo/
+  locale/lo/ (src/chrome/locale/lo/*)
+% locale torlauncher lt %locale/lt/
+  locale/lt/ (src/chrome/locale/lt/*)
+% locale torlauncher lv %locale/lv/
+  locale/lv/ (src/chrome/locale/lv/*)
+% locale torlauncher mg %locale/mg/
+  locale/mg/ (src/chrome/locale/mg/*)
+% locale torlauncher mi %locale/mi/
+  locale/mi/ (src/chrome/locale/mi/*)
+% locale torlauncher mk %locale/mk/
+  locale/mk/ (src/chrome/locale/mk/*)
+% locale torlauncher ml %locale/ml/
+  locale/ml/ (src/chrome/locale/ml/*)
+% locale torlauncher mn %locale/mn/
+  locale/mn/ (src/chrome/locale/mn/*)
+% locale torlauncher mr %locale/mr/
+  locale/mr/ (src/chrome/locale/mr/*)
+% locale torlauncher ms %locale/ms/
+  locale/ms/ (src/chrome/locale/ms/*)
+% locale torlauncher ms-MY %locale/ms-MY/
+  locale/ms-MY/ (src/chrome/locale/ms-MY/*)
+% locale torlauncher mt %locale/mt/
+  locale/mt/ (src/chrome/locale/mt/*)
+% locale torlauncher my %locale/my/
+  locale/my/ (src/chrome/locale/my/*)
+% locale torlauncher nah %locale/nah/
+  locale/nah/ (src/chrome/locale/nah/*)
+% locale torlauncher nap %locale/nap/
+  locale/nap/ (src/chrome/locale/nap/*)
+% locale torlauncher nb %locale/nb/
+  locale/nb/ (src/chrome/locale/nb/*)
+% locale torlauncher nds %locale/nds/
+  locale/nds/ (src/chrome/locale/nds/*)
+% locale torlauncher ne %locale/ne/
+  locale/ne/ (src/chrome/locale/ne/*)
+% locale torlauncher nl %locale/nl/
+  locale/nl/ (src/chrome/locale/nl/*)
+% locale torlauncher nl-BE %locale/nl-BE/
+  locale/nl-BE/ (src/chrome/locale/nl-BE/*)
+% locale torlauncher nn %locale/nn/
+  locale/nn/ (src/chrome/locale/nn/*)
+% locale torlauncher nso %locale/nso/
+  locale/nso/ (src/chrome/locale/nso/*)
+% locale torlauncher pa %locale/pa/
+  locale/pa/ (src/chrome/locale/pa/*)
+% locale torlauncher pap %locale/pap/
+  locale/pap/ (src/chrome/locale/pap/*)
+% locale torlauncher pl %locale/pl/
+  locale/pl/ (src/chrome/locale/pl/*)
+% locale torlauncher pl-PL %locale/pl-PL/
+  locale/pl-PL/ (src/chrome/locale/pl-PL/*)
+% locale torlauncher pms %locale/pms/
+  locale/pms/ (src/chrome/locale/pms/*)
+% locale torlauncher ps %locale/ps/
+  locale/ps/ (src/chrome/locale/ps/*)
+% locale torlauncher pt %locale/pt/
+  locale/pt/ (src/chrome/locale/pt/*)
+% locale torlauncher pt-BR %locale/pt-BR/
+  locale/pt-BR/ (src/chrome/locale/pt-BR/*)
+% locale torlauncher pt-PT %locale/pt-PT/
+  locale/pt-PT/ (src/chrome/locale/pt-PT/*)
+% locale torlauncher ro %locale/ro/
+  locale/ro/ (src/chrome/locale/ro/*)
+% locale torlauncher ru %locale/ru/
+  locale/ru/ (src/chrome/locale/ru/*)
+% locale torlauncher ru@petr1708 %locale/ru@petr1708/
+  locale/ru@petr1708/ (src/chrome/locale/ru@petr1708/*)
+% locale torlauncher sco %locale/sco/
+  locale/sco/ (src/chrome/locale/sco/*)
+% locale torlauncher si-LK %locale/si-LK/
+  locale/si-LK/ (src/chrome/locale/si-LK/*)
+% locale torlauncher sk %locale/sk/
+  locale/sk/ (src/chrome/locale/sk/*)
+% locale torlauncher sk-SK %locale/sk-SK/
+  locale/sk-SK/ (src/chrome/locale/sk-SK/*)
+% locale torlauncher sl %locale/sl/
+  locale/sl/ (src/chrome/locale/sl/*)
+% locale torlauncher sl-SI %locale/sl-SI/
+  locale/sl-SI/ (src/chrome/locale/sl-SI/*)
+% locale torlauncher sn %locale/sn/
+  locale/sn/ (src/chrome/locale/sn/*)
+% locale torlauncher so %locale/so/
+  locale/so/ (src/chrome/locale/so/*)
+% locale torlauncher sq %locale/sq/
+  locale/sq/ (src/chrome/locale/sq/*)
+% locale torlauncher sq-AL %locale/sq-AL/
+  locale/sq-AL/ (src/chrome/locale/sq-AL/*)
+% locale torlauncher sr %locale/sr/
+  locale/sr/ (src/chrome/locale/sr/*)
+% locale torlauncher sr@latin %locale/sr@latin/
+  locale/sr@latin/ (src/chrome/locale/sr@latin/*)
+% locale torlauncher st %locale/st/
+  locale/st/ (src/chrome/locale/st/*)
+% locale torlauncher su %locale/su/
+  locale/su/ (src/chrome/locale/su/*)
+% locale torlauncher sv %locale/sv/
+  locale/sv/ (src/chrome/locale/sv/*)
+% locale torlauncher sw %locale/sw/
+  locale/sw/ (src/chrome/locale/sw/*)
+% locale torlauncher szl %locale/szl/
+  locale/szl/ (src/chrome/locale/szl/*)
+% locale torlauncher ta %locale/ta/
+  locale/ta/ (src/chrome/locale/ta/*)
+% locale torlauncher te %locale/te/
+  locale/te/ (src/chrome/locale/te/*)
+% locale torlauncher te-IN %locale/te-IN/
+  locale/te-IN/ (src/chrome/locale/te-IN/*)
+% locale torlauncher tg %locale/tg/
+  locale/tg/ (src/chrome/locale/tg/*)
+% locale torlauncher th %locale/th/
+  locale/th/ (src/chrome/locale/th/*)
+% locale torlauncher ti %locale/ti/
+  locale/ti/ (src/chrome/locale/ti/*)
+% locale torlauncher tk %locale/tk/
+  locale/tk/ (src/chrome/locale/tk/*)
+% locale torlauncher tr %locale/tr/
+  locale/tr/ (src/chrome/locale/tr/*)
+% locale torlauncher uk %locale/uk/
+  locale/uk/ (src/chrome/locale/uk/*)
+% locale torlauncher ur %locale/ur/
+  locale/ur/ (src/chrome/locale/ur/*)
+% locale torlauncher ur-PK %locale/ur-PK/
+  locale/ur-PK/ (src/chrome/locale/ur-PK/*)
+% locale torlauncher uz %locale/uz/
+  locale/uz/ (src/chrome/locale/uz/*)
+% locale torlauncher ve %locale/ve/
+  locale/ve/ (src/chrome/locale/ve/*)
+% locale torlauncher vi %locale/vi/
+  locale/vi/ (src/chrome/locale/vi/*)
+% locale torlauncher wa %locale/wa/
+  locale/wa/ (src/chrome/locale/wa/*)
+% locale torlauncher wo %locale/wo/
+  locale/wo/ (src/chrome/locale/wo/*)
+% locale torlauncher zh %locale/zh/
+  locale/zh/ (src/chrome/locale/zh/*)
+% locale torlauncher zh-CN %locale/zh-CN/
+  locale/zh-CN/ (src/chrome/locale/zh-CN/*)
+% locale torlauncher zh-CN.GB2312 %locale/zh-CN.GB2312/
+  locale/zh-CN.GB2312/ (src/chrome/locale/zh-CN.GB2312/*)
+% locale torlauncher zh-HK %locale/zh-HK/
+  locale/zh-HK/ (src/chrome/locale/zh-HK/*)
+% locale torlauncher zh-TW %locale/zh-TW/
+  locale/zh-TW/ (src/chrome/locale/zh-TW/*)
+% locale torlauncher zu %locale/zu/
+  locale/zu/ (src/chrome/locale/zu/*)
