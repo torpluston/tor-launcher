@@ -49,7 +49,7 @@
 <!ENTITY torsettings.useBridges.label "Saisir des informations de pont provenant d’une source fiable">
 <!ENTITY torsettings.useBridges.placeholder "type adresse:port (un par ligne)">
 
-<!ENTITY torsettings.copyLog "Copier le journal de Tor dans le presse-papiers">
+<!ENTITY torsettings.copyLog "Copier le journal Tor dans le presse-papiers">
 
 <!ENTITY torsettings.proxyHelpTitle "Aide sur les mandataires">
 <!ENTITY torsettings.proxyHelp1 "Un mandataire local peut être nécessaire lors d’une connexion par un réseau d’entreprise, d’école ou d’université.&#160;Si vous n’êtes pas certain si un mandataire est nécessaire, vérifiez les paramètres Internet d’un autre navigateur ou les paramètres réseau de votre système.">
