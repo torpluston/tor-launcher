@@ -325,6 +325,7 @@ function populateLocaleList(aLangPackAddons)
     "nb"    : "Norsk bokmå\u0345l",
     "pl"    : "Polski",
     "pt-PT" : "Portugu\u00eas (Europeu)",
+    "ro"    : "Rom\u00e2n\u0103",
     "ru"    : "\u0420\u0443\u0441\u0441\u043a\u0438\u0439",
     "sv"    : "Svenska",
     "tr"    : "T\u00fcrk\u00e7e",
