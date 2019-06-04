@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "请点击“连接”以连接至 Tor 网络。">
-<!ENTITY torSettings.configurePrompt "如果您所在的国家（如埃及，中国，土耳其）对Tor进行审查，或者您处于私人网络需要代理。请点击“配置”，对网络设置进行调整。">
+<!ENTITY torSettings.configurePrompt "如果您所在的国家（如埃及，中国，土耳其）对 Tor 进行审查，或者您处于的私人网络需要代理，请点击“配置”，对网络设置进行调整。">
 <!ENTITY torSettings.configure "配置">
 <!ENTITY torSettings.connect "连接">
 
@@ -38,12 +38,12 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "该计算机的防火墙仅允许特定端口的互联网连接">
 <!ENTITY torsettings.firewall.allowedPorts "允许的端口：">
-<!ENTITY torsettings.useBridges.checkbox "我所在国家对 Tor 进行了封锁">
+<!ENTITY torsettings.useBridges.checkbox "我所在的国家对 Tor 进行了审查">
 <!ENTITY torsettings.useBridges.default "选择内置网桥">
 <!ENTITY torsettings.useBridges.default.placeholder "选择网桥">
 <!ENTITY torsettings.useBridges.bridgeDB "从torproject.org获取一个网桥">
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "请输入图片中出现的字符">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "迎接新的挑战">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "获取新的验证码">
 <!ENTITY torsettings.useBridges.captchaSubmit "提交">
 <!ENTITY torsettings.useBridges.custom "输入获取的网桥">
 <!ENTITY torsettings.useBridges.label "输入可信来源提供的网桥：">

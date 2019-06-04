@@ -45,7 +45,7 @@
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "Saisir les caractères de l’image">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Obtenir un nouveau test">
 <!ENTITY torsettings.useBridges.captchaSubmit "Envoyer">
-<!ENTITY torsettings.useBridges.custom "Fournir un pont que je connais">
+<!ENTITY torsettings.useBridges.custom "Utiliser un pont que je connais">
 <!ENTITY torsettings.useBridges.label "Saisir des informations de pont provenant d’une source fiable">
 <!ENTITY torsettings.useBridges.placeholder "type adresse:port (un par ligne)">
 
