@@ -321,6 +321,7 @@ function populateLocaleList(aLangPackAddons)
     "ja"    : "\u65e5\u672c\u8a9e",
     "ka"    : "\u10E5\u10D0\u10E0\u10D7\u10E3\u10DA\u10D8",
     "ko"    : "\ud55c\uad6d\uc5b4",
+    "mk"    : "\u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438",
     "nl"    : "Nederlands",
     "nb"    : "Norsk bokmå\u0345l",
     "pl"    : "Polski",
