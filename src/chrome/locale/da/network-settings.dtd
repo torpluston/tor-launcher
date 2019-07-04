@@ -29,7 +29,7 @@
 <!ENTITY torsettings.useProxy.type "Proxytype:">
 <!ENTITY torsettings.useProxy.type.placeholder "vælg en proxytype">
 <!ENTITY torsettings.useProxy.address "Adresse:">
-<!ENTITY torsettings.useProxy.address.placeholder "IP adresse eller værtsnavn">
+<!ENTITY torsettings.useProxy.address.placeholder "IP-adresse eller værtsnavn">
 <!ENTITY torsettings.useProxy.port "Port:">
 <!ENTITY torsettings.useProxy.username "Brugernavn:">
 <!ENTITY torsettings.useProxy.password "Adgangskode:">
@@ -37,7 +37,7 @@
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP/HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Computeren går gennem en firewall som kun tillader forbindelse til bestemte porte">
-<!ENTITY torsettings.firewall.allowedPorts "Tilladte Porte:">
+<!ENTITY torsettings.firewall.allowedPorts "Tilladte porte:">
 <!ENTITY torsettings.useBridges.checkbox "Tor er censureret i mit land">
 <!ENTITY torsettings.useBridges.default "Vælg en indbygget bro">
 <!ENTITY torsettings.useBridges.default.placeholder "vælg en bro">
@@ -54,7 +54,7 @@
 <!ENTITY torsettings.proxyHelpTitle "Hjælp til proxy">
 <!ENTITY torsettings.proxyHelp1 "Der kan være brug for en lokal proxy når der oprettes forbindelse gennem et netværk i virksomhed, skole eller universitet.&#160;Hvis du er i tvivl om der er brug for en proxy, så kig i internetindstillingerne i en anden browser eller tjek dit systems netværksindstillinger.">
 
-<!ENTITY torsettings.bridgeHelpTitle "Bro-relæ hjælp">
+<!ENTITY torsettings.bridgeHelpTitle "Hjælp til bro-relæ">
 <!ENTITY torsettings.bridgeHelp1 "Broer er ulistede relæer som gør det sværrer at blokere forbindelser til Tor-netværket.&#160; Hver type bro bruger en anderledes metode for at undgå censur.&#160; Dem med obfs får din netværkstrafik til at ligne tilfældig støj og dem med meek får din netværkstrafik til at se ud som om den er forbundet til tjenesten i stedet for Tor.">
 <!ENTITY torsettings.bridgeHelp2 "Pga. den måde bestemte lande prøver at blokere Tor, vil bestemte broer virke i nogle lande men ikke andre.&#160; Besøg torproject.org/about/contact.html#support hvis du er i tvivl om hvilke broer der virker i dit land.">
 

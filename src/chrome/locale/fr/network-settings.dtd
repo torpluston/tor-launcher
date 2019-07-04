@@ -46,7 +46,7 @@
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Obtenir un nouveau test">
 <!ENTITY torsettings.useBridges.captchaSubmit "Envoyer">
 <!ENTITY torsettings.useBridges.custom "Utiliser un pont que je connais">
-<!ENTITY torsettings.useBridges.label "Saisir des informations de pont provenant d’une source fiable">
+<!ENTITY torsettings.useBridges.label "Saisir des renseignements de pont provenant d’une source fiable">
 <!ENTITY torsettings.useBridges.placeholder "type adresse:port (un par ligne)">
 
 <!ENTITY torsettings.copyLog "Copier le journal Tor dans le presse-papiers">
