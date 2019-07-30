@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-   - Copyright (c) 2018, The Tor Project, Inc.
+   - Copyright (c) 2019, The Tor Project, Inc.
    - See LICENSE for licensing information.
    - vim: set sw=2 sts=2 ts=8 et syntax=xml:
   -->
@@ -9,9 +9,7 @@
 <?xml-stylesheet href="chrome://torlauncher/skin/network-settings.css"
                  type="text/css"?>
 
-<!DOCTYPE overlay SYSTEM "chrome://torlauncher/locale/network-settings.dtd">
-
-<?xul-overlay href="chrome://torlauncher/content/network-settings-overlay.xul"?>
+<!DOCTYPE wizard SYSTEM "chrome://torlauncher/locale/network-settings.dtd">
 
 <wizard id="TorNetworkSettings"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
@@ -127,8 +125,8 @@
 
   <wizardpage class="help" pageid="helpPanel" next="notUsed"
               onpageadvanced="closeHelp(); return false;">
-    <vbox id="bridgeHelpContent" hidden="true"/>
-    <vbox id="proxyHelpContent" hidden="true"/>
+    <vbox id="bridgeHelpContent"/>
+    <vbox id="proxyHelpContent"/>
   </wizardpage>
 
   <hbox pack="start">

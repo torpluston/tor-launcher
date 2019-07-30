@@ -1,16 +1,9 @@
-<?xml version="1.0"?>
-<!--
-   - Copyright (c) 2018, The Tor Project, Inc.
-   - See LICENSE for licensing information.
-   - vim: set sw=2 sts=2 ts=8 et syntax=xml:
-  -->
+// Copyright (c) 2019, The Tor Project, Inc.
+// See LICENSE for licensing information.
+//
+// vim: set sw=2 sts=2 ts=8 et syntax=javascript:
 
-<!DOCTYPE overlay SYSTEM "chrome://torlauncher/locale/network-settings.dtd">
-
-<overlay id="TorNetworkSettingsOverlay"
-        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-        xmlns:html="http://www.w3.org/1999/xhtml">
-
+var proxySettings = `
   <vbox id="proxySettings">
     <hbox align="center">
       <checkbox id="useProxy" groupboxID="proxySpecificSettings"
@@ -73,20 +66,16 @@
       </grid>
     </groupbox>
   </vbox>
+`;
 
-  <vbox id="proxyHelpContent">
+var proxyHelpContent = `
+  <vbox id="proxyHelpContent" hidden="true">
     <hbox align="middle"><label>&torsettings.proxyHelpTitle;</label></hbox>
     <description>&torsettings.proxyHelp1;</description>
   </vbox>
+`;
 
-  <groupbox id="firewallSpecificSettings">
-    <hbox align="center">
-      <label value="&torsettings.firewall.allowedPorts;"
-             control="firewallAllowedPorts"/>
-      <textbox id="firewallAllowedPorts" value="80,443"/>
-    </hbox>
-  </groupbox>
-
+var bridgeSettings = `
   <vbox id="bridgeSettings">
     <checkbox id="useBridges" groupboxID="bridgeSpecificSettings"
                 label="&torsettings.useBridges.checkbox;"
@@ -139,13 +128,17 @@
       </vbox>
     </groupbox>
   </vbox>
+`;
 
-  <vbox id="bridgeHelpContent">
+var bridgeHelpContent = `
+  <vbox id="bridgeHelpContent" hidden="true">
     <hbox align="middle"><label>&torsettings.bridgeHelpTitle;</label></hbox>
     <description>&torsettings.bridgeHelp1;</description>
     <description>&torsettings.bridgeHelp2;</description>
   </vbox>
+`;
 
+var progressContent = `
   <vbox id="progressContent">
     <hbox class="tbb-header" pack="center">
       <image class="tbb-logo"/>
@@ -159,7 +152,9 @@
              value="&torsettings.reconfigTor;"/>
     </vbox>
   </vbox>
+`;
 
+var restartContent = `
   <vbox id="restartContent">
     <hbox pack="center">
       <description id="restartPanelMessage" flex="1"/>
@@ -170,7 +165,9 @@
               oncommand="onRestartTor()"/>
     </hbox>
   </vbox>
+`;
 
+var bridgeDBRequestOverlayContent = `
   <vbox id="bridgeDBRequestOverlayContent" align="center">
     <vbox>
       <label id="bridgeDBPrompt"/>
@@ -200,7 +197,9 @@
       </hbox>
     </vbox>
   </vbox>
+`;
 
+var errorOverlayContent = `
   <vbox id="errorOverlayContent">
     <hbox pack="center">
       <description errorElemId="message" flex="1"/>
@@ -211,10 +210,11 @@
               oncommand="onDismissErrorOverlay()"/>
     </hbox>
   </vbox>
+`;
 
+var copyLogFeedbackPanel = `
   <panel id="copyLogFeedbackPanel" type="arrow" fade="slow"
          onclick="closeCopyLogFeedbackPanel()">
      <description flex="1"/>
   </panel>
-</overlay>
-
+`;

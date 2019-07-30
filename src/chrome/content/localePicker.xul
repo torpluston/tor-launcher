@@ -9,9 +9,7 @@
 <?xml-stylesheet href="chrome://torlauncher/skin/network-settings.css"
                  type="text/css"?>
 
-<!DOCTYPE overlay SYSTEM "chrome://torlauncher/locale/network-settings.dtd">
-
-<?xul-overlay href="chrome://torlauncher/content/network-settings-overlay.xul"?>
+<!DOCTYPE wizard SYSTEM "chrome://torlauncher/locale/network-settings.dtd">
 
 <wizard id="TorLauncherLocalePicker"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"

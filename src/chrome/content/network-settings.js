@@ -10,6 +10,7 @@ const Ci = Components.interfaces;
 const Cu = Components.utils;
 const Cr = Components.results;
 
+Cu.import("resource://gre/modules/Services.jsm");
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "TorLauncherUtil",
                           "resource://torlauncher/modules/tl-util.jsm");
@@ -116,6 +117,8 @@ var gBridgeDBRequestEventListeners = [];
 
 function initDialogCommon()
 {
+  loadSharedXUL();
+
   gObsService = Cc["@mozilla.org/observer-service;1"]
                   .getService(Ci.nsIObserverService);
 
@@ -155,6 +158,39 @@ function initDialogCommon()
     if (env.exists("TOR_HIDE_BROWSER_LOGO"))
       wizardElem.setAttribute("tor_hide_browser_logo", true);
   }
+}
+
+
+function loadSharedXUL()
+{
+  let ctxt = {};
+  Services.scriptloader.loadSubScript(
+    "chrome://torlauncher/content/network-settings-shared.js", ctxt);
+
+  let elementIDs =
+  [
+     "proxySettings",
+     "proxyHelpContent",
+     "bridgeSettings",
+     "bridgeHelpContent",
+     "progressContent",
+     "restartContent",
+     "bridgeDBRequestOverlayContent",
+     "errorOverlayContent",
+     "copyLogFeedbackPanel",
+  ];
+
+  let entityURLs = ["chrome://torlauncher/locale/network-settings.dtd"];
+  elementIDs.forEach(aID =>
+  {
+    let node = document.getElementById(aID);
+    if (node)
+    {
+      let xulStr = ctxt[aID];
+      let frag = window.MozXULElement.parseXULToFragment(xulStr, entityURLs);
+      node.parentNode.replaceChild(frag, node);
+    }
+  });
 }
 
 
