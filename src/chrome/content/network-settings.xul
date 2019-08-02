@@ -18,9 +18,6 @@
         persist="screenX screenY"
         buttons="accept,cancel,extra2"
         buttonlabelextra2="&torsettings.copyLog;"
-        ondialogaccept="return onNetworkSettingsFinish();"
-        ondialogcancel="return onCancel();"
-        ondialogextra2="onCopyLog();"
         onload="initDialog();"
         onunload="deinitDialog();">
 

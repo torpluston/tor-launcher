@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018, The Tor Project, Inc.
+ * Copyright (c) 2019, The Tor Project, Inc.
  * See LICENSE for licensing information.
  *
  * vim: set sw=2 sts=2 ts=8 et syntax=css:
@@ -47,8 +47,14 @@ wizard label {
   margin: 0px;
 }
 
-wizard radiogroup {
-  margin: 5px 0px 8px 25px;
+.rightAlign {
+  text-align: right;
+}
+
+groupbox {
+  margin-left: 16px;
+  padding: 8px;
+  border: 1px solid GrayText;
 }
 
 .tbb-header groupbox {
@@ -57,7 +63,7 @@ wizard radiogroup {
   margin-bottom: 0px;
 }
 
-.firstResponses label {
+.firstResponses > label {
   text-align: center;
   margin-top: 1.2em;
 }

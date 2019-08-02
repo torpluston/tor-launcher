@@ -20,7 +20,7 @@ var proxySettings = `
         <rows>
           <row align="center">
             <label value="&torsettings.useProxy.type;" control="proxyType"
-                   style="text-align:right"/>
+                   class="rightAlign"/>
             <hbox align="center">
               <menulist id="proxyType" sizetopopup="always"
                         placeholder="&torsettings.useProxy.type.placeholder;"
@@ -38,7 +38,7 @@ var proxySettings = `
           </row>
           <row align="center">
             <label value="&torsettings.useProxy.address;" control="proxyAddr"
-                   style="text-align:right"/>
+                   class="rightAlign"/>
             <hbox align="center">
               <textbox id="proxyAddr" size="20" flex="1"
                        placeholder="&torsettings.useProxy.address.placeholder;"/>
@@ -50,7 +50,7 @@ var proxySettings = `
           <row align="center">
             <label id="proxyUsernameLabel"
                    value="&torsettings.useProxy.username;"
-                   control="proxyUsername" style="text-align:right"/>
+                   control="proxyUsername" class="rightAlign"/>
             <hbox align="center">
               <textbox id="proxyUsername" size="14" flex="1"
                        placeholder="&torsettings.optional;"/>
@@ -146,7 +146,7 @@ var progressContent = `
     <vbox flex="1">
       <description id="progressPleaseWait"
                    hidden="true">&torprogress.pleaseWait;</description>
-      <progressmeter id="progressMeter" mode="determined" value="0"/>
+      <html:progress id="progressMeter" value="0" max="100"/>
       <description id="progressDesc" errorElemId="message"/>
       <label id="progressReconfigureLabel" hidden="true"
              value="&torsettings.reconfigTor;"/>

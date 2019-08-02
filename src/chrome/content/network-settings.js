@@ -157,6 +157,51 @@ function initDialogCommon()
                 .getService(Ci.nsIEnvironment);
     if (env.exists("TOR_HIDE_BROWSER_LOGO"))
       wizardElem.setAttribute("tor_hide_browser_logo", true);
+
+    // Add wizard event listeners.
+    document.addEventListener("wizardcancel", (aEvent) => {
+      if (!onCancel())
+        aEvent.preventDefault();
+    });
+
+    document.addEventListener("pageadvanced", (aEvent) => {
+      if ("helpPanel" == wizardElem.currentPage.pageid)
+      {
+        closeHelp();
+        aEvent.preventDefault();
+      }
+    });
+
+    document.addEventListener("pageshow", (aEvent) => {
+      if (kWizardProgressPageID == wizardElem.currentPage.pageid)
+        onShowProgressPanel();
+    });
+
+    document.addEventListener("pagehide", (aEvent) => {
+      if (kWizardProgressPageID == wizardElem.currentPage.pageid)
+        resetProgressNavButtons();
+    });
+
+    document.addEventListener("extra2", (aEvent) => {
+      onCopyLog();
+    });
+  }
+  else
+  {
+    // Add network settings dialog event listeners.
+    document.addEventListener("dialogaccept", (aEvent) => {
+      if (!onNetworkSettingsFinish())
+        aEvent.preventDefault();
+    });
+
+    document.addEventListener("dialogcancel", (aEvent) => {
+      if (!onCancel())
+        aEvent.preventDefault();
+    });
+
+    document.addEventListener("dialogextra2", (aEvent) => {
+      onCopyLog();
+    });
   }
 }
 
@@ -239,6 +284,12 @@ function initDialog()
   let haveWizard = (wizardElem != null);
   if (haveWizard)
   {
+    // Add wizardfinish event handler.
+    document.addEventListener("wizardfinish", (aEvent) => {
+      if (!onWizardFinish())
+        aEvent.preventDefault();
+    });
+
     // Relabel the accept button to be "Connect"
     let okBtn = document.documentElement.getButton("accept");
     if (okBtn)
@@ -316,6 +367,11 @@ function initLocaleDialog()
 {
   initDialogCommon();
 
+  // Add wizardfinish event handler.
+  document.addEventListener("wizardfinish", (aEvent) => {
+    setLocale();
+  });
+
   // Replace the finish button's label ("Done") with the next button's
   // label ("Next" or "Continue").
   let nextBtn = document.documentElement.getButton("next");
@@ -324,7 +380,8 @@ function initLocaleDialog()
     doneBtn.label = nextBtn.label;
 
   let { AddonManager } = Cu.import("resource://gre/modules/AddonManager.jsm");
-  AddonManager.getAddonsByTypes(["locale"], function(aLangPackAddons)
+  let addonsPromise = AddonManager.getAddonsByTypes(["locale"]);
+  addonsPromise.then(aLangPackAddons =>
       {
         populateLocaleList(aLangPackAddons);
         resizeDialogToFitContent();
@@ -421,13 +478,15 @@ function populateLocaleList(aLangPackAddons)
   langInfo.splice(0, 0,
                   { langCode: code, langName: name, isSelected: isSelected });
 
-  // Populate the XUL listbox.
+  // Populate the XUL richlistbox.
   let localeList = document.getElementById(kLocaleList);
   for (let infoObj of langInfo)
   {
-    let listItem = document.createElement("listitem");
+    let listItem = document.createElement("richlistitem");
     listItem.setAttribute("value", infoObj.langCode);
-    listItem.setAttribute("label", infoObj.langName);
+    let label = document.createElement("label");
+    label.value = infoObj.langName;
+    listItem.appendChild(label);
     localeList.appendChild(listItem);
     if (infoObj.isSelected)
       localeList.selectedItem = listItem;
@@ -807,7 +866,6 @@ function resetProgressNavButtons()
 
   restoreButtonLabel("finish");
   showOrHideButton("cancel", true, false);
-  return true;
 }
 
 
@@ -905,7 +963,7 @@ function updateBootstrapProgress(aStatusObj)
   let meter = document.getElementById("progressMeter");
   if (meter)
   {
-    meter.value = percentComplete;
+    meter.setAttribute("value", percentComplete);
     showProgressMeterIfNoError();
   }
 
@@ -1968,7 +2026,7 @@ function showProgressPanel()
   let meter = document.getElementById("progressMeter");
   if (meter)
   {
-    meter.value = 0;
+    meter.setAttribute("value", 0);
     meter.style.visibility = "hidden";
   }
 
@@ -2428,7 +2486,7 @@ function setElemValue(aID, aValue)
         }
         // fallthru
       case "menulist":
-      case "listbox":
+      case "richlistbox":
       case "label":
         elem.value = (val) ? val : "";
         break;
@@ -2482,7 +2540,7 @@ function getElemValue(aID, aDefaultValue)
         break;
       case "textbox":
       case "menulist":
-      case "listbox":
+      case "richlistbox":
         rv = elem.value;
         break;
     }
