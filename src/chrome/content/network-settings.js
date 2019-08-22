@@ -642,14 +642,26 @@ function onOpenBridgeDBRequestPrompt()
   let meekClientArgs;
   reply.lineArray.forEach(aLine =>
   {
+    // Parse each ClientTransportPlugin line and look for the meek or
+    // meek_lite transport. This code works a lot like the Tor daemon's
+    // parse_transport_line() function.
     let tokens = aLine.split(' ');
-    if ((tokens.length > 2) &&
-        ((tokens[0] == "meek") || (tokens[0] == "meek_lite")) &&
-        (tokens[1] == "exec"))
+    if ((tokens.length > 2) && (tokens[1] == "exec"))
     {
-      meekTransport = tokens[0];
-      meekClientPath = tokens[2];
-      meekClientArgs = tokens.slice(3);
+      let transportArray = tokens[0].split(",").map(aStr => aStr.trim());
+      let transport = transportArray.find(
+                                  aTransport => (aTransport === "meek"));
+      if (!transport)
+      {
+        transport = transportArray.find(
+                                  aTransport => (aTransport === "meek_lite"));
+      }
+      if (transport)
+      {
+        meekTransport = transport;
+        meekClientPath = tokens[2];
+        meekClientArgs = tokens.slice(3);
+      }
     }
   });
 
