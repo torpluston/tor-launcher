@@ -532,7 +532,7 @@ _MoatRequestor.prototype =
     let noTimeout = 0xFFFFFFFF; // UINT32_MAX
     let proxyInfo = proxyPS.newProxyInfoWithAuth(this.mMeekClientProxyType,
                               this.mMeekClientIP, this.mMeekClientPort,
-                              userName, password,
+                              userName, password, undefined, undefined,
                               flags, noTimeout, undefined);
     let uriStr = TorLauncherUtil.getCharPref(this.kPrefMoatService);
     if (!uriStr)
@@ -546,14 +546,14 @@ _MoatRequestor.prototype =
 
     // There does not seem to be a way to directly create an nsILoadInfo from
     // JavaScript, so we create a throw away non-proxied channel to get one.
-    let loadInfo = Services.io.newChannelFromURI2(uri, undefined,
+    let loadInfo = Services.io.newChannelFromURI(uri, undefined,
                         Services.scriptSecurityManager.getSystemPrincipal(),
                         undefined,
                         Ci.nsILoadInfo.SEC_ALLOW_CROSS_ORIGIN_DATA_IS_NULL,
                         Ci.nsIContentPolicy.TYPE_OTHER).loadInfo;
     let httpHandler = Services.io.getProtocolHandler("http")
                                  .QueryInterface(Ci.nsIHttpProtocolHandler);
-    let ch = httpHandler.newProxiedChannel2(uri, proxyInfo, 0, undefined,
+    let ch = httpHandler.newProxiedChannel(uri, proxyInfo, 0, undefined,
                                  loadInfo).QueryInterface(Ci.nsIHttpChannel);
 
     // Remove unwanted HTTP headers and set request parameters.
@@ -616,13 +616,13 @@ _MoatResponseListener.prototype =
   mResponseLength: 0,
   mResponseBody: undefined,
 
-  onStartRequest: function(aRequest, aContext)
+  onStartRequest: function(aRequest)
   {
     this.mResponseLength = 0;
     this.mResponseBody = "";
   },
 
-  onStopRequest: function(aRequest, aContext, aStatus)
+  onStopRequest: function(aRequest, aStatus)
   {
     this.mChannel = undefined;
 
@@ -636,9 +636,9 @@ _MoatResponseListener.prototype =
     let statusCode, msg;
     try
     {
-      statusCode = aContext.responseStatus;
-      if (aContext.responseStatusText)
-        msg = statusCode + " " + aContext.responseStatusText;
+      statusCode = aRequest.responseStatus;
+      if (aRequest.responseStatusText)
+        msg = statusCode + " " + aRequest.responseStatusText;
     }
     catch (e) {}
 
@@ -693,7 +693,7 @@ _MoatResponseListener.prototype =
     }
   }, // onStopRequest
 
-  onDataAvailable: function(aRequest, aContext, aStream, aSrcOffset, aLength)
+  onDataAvailable: function(aRequest, aStream, aSrcOffset, aLength)
   {
     TorLauncherLogger.log(2, "Moat onDataAvailable: " + aLength + " bytes");
     if ((this.mResponseLength + aLength) > this.mRequestor.kMaxResponseLength)
