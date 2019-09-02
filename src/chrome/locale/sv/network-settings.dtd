@@ -23,11 +23,11 @@
 <!ENTITY torsettings.discardSettings.prompt "Du har konfigurerat Tor-broar eller så har du angett lokala proxyinställningar.&#160; För att göra en direktanslutning till Tor-nätverket måste de här inställningarna tas bort.">
 <!ENTITY torsettings.discardSettings.proceed "Ta bort inställningar och anslut">
 
-<!ENTITY torsettings.optional "Valfri">
+<!ENTITY torsettings.optional "Valfritt">
 
 <!ENTITY torsettings.useProxy.checkbox "Jag använder en proxy för att ansluta till internet">
-<!ENTITY torsettings.useProxy.type "Typ av proxy:">
-<!ENTITY torsettings.useProxy.type.placeholder "Välj en proxy typ">
+<!ENTITY torsettings.useProxy.type "Proxytyp:">
+<!ENTITY torsettings.useProxy.type.placeholder "Välj en proxytyp">
 <!ENTITY torsettings.useProxy.address "Adress:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-adress eller värdnamn">
 <!ENTITY torsettings.useProxy.port "Port:">
@@ -52,11 +52,11 @@
 <!ENTITY torsettings.copyLog "Kopiera Tor-loggen till urklippet">
 
 <!ENTITY torsettings.proxyHelpTitle "Proxy hjälp">
-<!ENTITY torsettings.proxyHelp1 "En lokal proxy kan behövas när du ansluter via ett företag, skola eller universitetsnätverk.&#160;Om du inte är säker på om en proxy behövs, titta på internetinställningarna i en annan webbläsare eller kontrollera systemets nätverksinställningar.">
+<!ENTITY torsettings.proxyHelp1 "En lokal proxy kan behövas när du ansluter via ett företags-, skol- eller universitetsnätverk.&#160;Om du inte är säker på om en proxy behövs, titta på internetinställningarna i en annan webbläsare eller kontrollera systemets nätverksinställningar.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Hjälp om relä-broar">
 <!ENTITY torsettings.bridgeHelp1 "Broar är olistade reläer som gör det svårare att blockera anslutningar till Tor nätverket. &#160; Var typ av bro använder sig av olika metoder för att undvika censur. &#160; Obfs gör att din trafik ser ut som brus och meek gör att din trafik ser ut som att du ansluter till tjänsten istället för Tor.">
 <!ENTITY torsettings.bridgeHelp2 "I och med att vissa länder försöker blockera Tor fungerar inte alla broar i alla länder. &#160; Ifall du är osäker på vilka broar som fungerar i ditt land besök torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Var god och vänta medans vi etablerar en anslutning till Tor nätverket. &#160; Detta kan ta upp till flera minuter.">
+<!ENTITY torprogress.pleaseWait "Var god och vänta medan vi etablerar en anslutning till Tor-nätverket. &#160; Detta kan ta upp till flera minuter.">

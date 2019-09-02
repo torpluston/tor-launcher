@@ -1,7 +1,7 @@
 <!ENTITY torsettings.dialog.title "Подешавања Тор мреже">
 <!ENTITY torsettings.wizard.title.default "Повежите се на Тор">
 <!ENTITY torsettings.wizard.title.configure "Подешавања Тор мреже">
-<!ENTITY torsettings.wizard.title.connecting "Establishing a Connection">
+<!ENTITY torsettings.wizard.title.connecting "Uspostavljanje veze">
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Тор језик">
@@ -21,11 +21,11 @@
 <!ENTITY torsettings.reconfigTor "Поново Конфигуриши">
 
 <!ENTITY torsettings.discardSettings.prompt "You have configured Tor bridges or you have entered local proxy settings.&#160; To make a direct connection to the Tor network, these settings must be removed.">
-<!ENTITY torsettings.discardSettings.proceed "Remove Settings and Connect">
+<!ENTITY torsettings.discardSettings.proceed "Ukloni podešavanja i poveži se">
 
 <!ENTITY torsettings.optional "Опционо">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
+<!ENTITY torsettings.useProxy.checkbox "Koristim proxy za povezivanje na internet">
 <!ENTITY torsettings.useProxy.type "Врста proxyja:">
 <!ENTITY torsettings.useProxy.type.placeholder "изаберите тип проксија">
 <!ENTITY torsettings.useProxy.address "Adresa:">
@@ -39,17 +39,17 @@
 <!ENTITY torsettings.firewall.checkbox "Овај рачунар пролази кроз firewall који дозвољава само конекције на одређене портове.">
 <!ENTITY torsettings.firewall.allowedPorts "Дозвољени Портови:">
 <!ENTITY torsettings.useBridges.checkbox "Тор је цензурисан у мојој земљи">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
+<!ENTITY torsettings.useBridges.default "Odaberi ugrađeni most">
+<!ENTITY torsettings.useBridges.default.placeholder "Odaberi most">
+<!ENTITY torsettings.useBridges.bridgeDB "Zahtevaj most od torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Unesi karaktere sa slike">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
-<!ENTITY torsettings.useBridges.captchaSubmit "Submit">
+<!ENTITY torsettings.useBridges.captchaSubmit "Predaj">
 <!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
 <!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
 <!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
 
-<!ENTITY torsettings.copyLog "Copy Tor Log To Clipboard">
+<!ENTITY torsettings.copyLog "Kopiraj Tor log u privremenu memoriju">
 
 <!ENTITY torsettings.proxyHelpTitle "Proxy Help">
 <!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
