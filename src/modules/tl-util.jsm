@@ -333,10 +333,13 @@ let TorLauncherUtil =  // Public
     const kPrefStartTor = "extensions.torlauncher.start_tor";
     try
     {
+      const kBrowserToolboxPort = "MOZ_BROWSER_TOOLBOX_PORT";
       const kEnvSkipLaunch = "TOR_SKIP_LAUNCH";
 
       var env = Cc["@mozilla.org/process/environment;1"]
                   .getService(Ci.nsIEnvironment);
+      if (env.exists(kBrowserToolboxPort))
+        return false;
       if (env.exists(kEnvSkipLaunch))
         return ("1" != env.get(kEnvSkipLaunch));
     } catch(e) {}
