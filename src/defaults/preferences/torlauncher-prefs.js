@@ -5,6 +5,13 @@ pref("extensions.torlauncher.prompt_for_locale", true);
 pref("extensions.torlauncher.start_tor", true);
 pref("extensions.torlauncher.prompt_at_startup", true);
 
+// This pref controls whether Tor Launcher will try to remove the old
+// meek and moat http helper browser profiles. This only has an effect
+// on macOS; for Windows and Linux profile removal is handled by the
+// updater (since on those platforms the profiles are embedded within
+// the browser install directory).
+pref("extensions.torlauncher.should_remove_meek_helper_profiles", true);
+
 pref("extensions.torlauncher.loglevel", 4);  // 1=verbose, 2=debug, 3=info, 4=note, 5=warn
 pref("extensions.torlauncher.logmethod", 1);  // 0=stdout, 1=errorconsole, 2=debuglog
 pref("extensions.torlauncher.max_tor_log_entries", 1000);

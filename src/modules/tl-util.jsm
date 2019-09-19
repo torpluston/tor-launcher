@@ -758,6 +758,42 @@ let TorLauncherUtil =  // Public
       }
     } catch(e) {}
   },
+
+  removeMeekAndMoatHelperProfiles: function()
+  {
+    function removeDirectory(aParentDir, aName)
+    {
+      try
+      {
+        let dir = aParentDir.clone();
+        dir.appendRelativePath(aName);
+        if (dir.exists())
+          dir.remove(true);
+      }
+      catch (e)
+      {
+        TorLauncherLogger.log(5, "Failed to remove " + aName + ": " + e);
+      }
+    }
+
+    const kPrefRemoveHelperProfiles =
+                "extensions.torlauncher.should_remove_meek_helper_profiles";
+    if (this.getBoolPref(kPrefRemoveHelperProfiles, false))
+    {
+      // Only attempt removal once.
+      this.setBoolPref(kPrefRemoveHelperProfiles, false);
+
+      if (this.isMac)
+      {
+        let ptProfilesDir = this.getTorFile("pt-profiles-dir", true);
+        if (ptProfilesDir)
+        {
+          removeDirectory(ptProfilesDir, "profile.meek-http-helper");
+          removeDirectory(ptProfilesDir, "profile.moat-http-helper");
+        }
+      }
+    }
+  },
 };
 
 

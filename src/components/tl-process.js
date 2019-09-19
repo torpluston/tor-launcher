@@ -112,6 +112,8 @@ TorProcessService.prototype =
                                      Cr.NS_ERROR_NOT_INITIALIZED);
       }
 
+      TorLauncherUtil.removeMeekAndMoatHelperProfiles();
+
       if (TorLauncherUtil.shouldOnlyConfigureTor)
       {
         this._controlTor(true, false);
