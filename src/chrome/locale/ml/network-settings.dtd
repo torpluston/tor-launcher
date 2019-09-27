@@ -9,54 +9,54 @@
 
 <!-- For "first run" wizard: -->
 
-<!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
-<!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
+<!ENTITY torSettings.connectPrompt "ടോറുമായി ബന്ധിപ്പിക്കാൻ കണക്ടിൽ ക്ലിക്ക് ചെയുക ">
+<!ENTITY torSettings.configurePrompt "ടോർ സെൻസർ ചെയ്തിട്ടുള്ള രാജ്യങ്ങളിൽപെട്ട  (അതായത് ഈജിപ്ത് , ചൈന , തുർക്കി )ആളാണ് നിങ്ങളെങ്കിൽ അല്ലെങ്കിൽ നിങ്ങൾ ബന്ധപ്പെടുന്നത് പ്റോക്സി ആവശ്യമുള്ള രു സ്വകാര്യ നെറ്വർകിൽ നിന്നും ആണെങ്കിൽ നെറ്റ്‌വർക്ക് സെറ്റിംഗ്സിൽ മാറ്റം വരുത്താൻ കോൺഫിഗെർ ബട്ടണിൽ ക്ലിക്ക് ചെയുക ">
 <!ENTITY torSettings.configure "ക്രമപ്പെടുത്തു ">
-<!ENTITY torSettings.connect "Connect">
+<!ENTITY torSettings.connect "ബന്ധിപ്പിക്കുക ">
 
 <!-- Other: -->
 
-<!ENTITY torsettings.startingTor "Waiting for Tor to start…">
-<!ENTITY torsettings.restartTor "Restart Tor">
+<!ENTITY torsettings.startingTor "ടോർ തുടങ്ങാൻ കാത്തിരിക്കുന്നു ">
+<!ENTITY torsettings.restartTor "ടോർ ഒന്നുകൂടെ തുടങ്ങുക ">
 <!ENTITY torsettings.reconfigTor "പുനഃർക്രമീകരിക്കുക ">
 
-<!ENTITY torsettings.discardSettings.prompt "You have configured Tor bridges or you have entered local proxy settings.&#160; To make a direct connection to the Tor network, these settings must be removed.">
-<!ENTITY torsettings.discardSettings.proceed "Remove Settings and Connect">
+<!ENTITY torsettings.discardSettings.prompt "നിങ്ങൾ ടോർ ബ്രിഡ്ജസ് രൂപപ്പെടുത്തിയിരിക്കുന്നു അല്ലെങ്കിൽ ഒരു സാധാരണ പ്രോക്സി സെറ്റിംഗ്സ് എന്റർ ചെയ്തിരിക്കുന്നു &amp;#160 ടോറുമായി ഒരു നേർ ബന്ധം സ്ഥാപിക്കാൻ ഈ സെറ്റിംഗ്സ് തീർച്ചയായും നീക്കം ചെയ്യേണ്ടതാണ് ">
+<!ENTITY torsettings.discardSettings.proceed "സെറ്റിംഗ്സ് നീക്കം ചെയ്തു ബന്ധം സ്ഥാപിക്കുക ">
 
-<!ENTITY torsettings.optional "Optional">
+<!ENTITY torsettings.optional "നിര്ബന്ധമില്ലാത്തത് ">
 
-<!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
-<!ENTITY torsettings.useProxy.type "Proxy Type:">
-<!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
-<!ENTITY torsettings.useProxy.address "Address:">
-<!ENTITY torsettings.useProxy.address.placeholder "IP address or hostname">
+<!ENTITY torsettings.useProxy.checkbox "ഞാൻ ഇന്റർനൈറ്റിലെക് ബന്ധപ്പെടാൻ ഒരു പ്രോക്സി ഉപയോഗിക്കുന്നു ">
+<!ENTITY torsettings.useProxy.type "പ്രോക്സി ഇനം  :">
+<!ENTITY torsettings.useProxy.type.placeholder "ഒരു പ്രോക്സി ഇനം തിരഞ്ഞെടുക്കുക  :">
+<!ENTITY torsettings.useProxy.address "മേൽവിലാസം :">
+<!ENTITY torsettings.useProxy.address.placeholder "ഐ പി മേൽവിലാസം അല്ലെങ്കിൽ ഹോസ്റ്റ് നെയിം ">
 <!ENTITY torsettings.useProxy.port "Port:">
-<!ENTITY torsettings.useProxy.username "Username:">
-<!ENTITY torsettings.useProxy.password "Password:">
+<!ENTITY torsettings.useProxy.username "യൂസർ നെയിം :">
+<!ENTITY torsettings.useProxy.password "പാസ്സ്‌വേർഡ്‌ ">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
-<!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "This computer goes through a firewall that only allows connections to certain ports">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports:">
-<!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
-<!ENTITY torsettings.useBridges.default "Select a built-in bridge">
-<!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
-<!ENTITY torsettings.useBridges.bridgeDB "Request a bridge from torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Enter the characters from the image">
-<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Get a new challenge">
+<!ENTITY torsettings.useProxy.type.http "എച് ടി ടി പി /എച് ടി ടി പി എസ് ">
+<!ENTITY torsettings.firewall.checkbox "ഈ കംപ്യൂട്ടർ ചില പ്രത്യേക പോർട്ടുകളിലൂടെ മാത്രം ബന്ധം അനുവദിക്കുന്ന ഫയർവാൾ വഴിയാണ് പോകുന്നത്">
+<!ENTITY torsettings.firewall.allowedPorts "അനുവദിച്ചിട്ടുള്ള പോർട്ടുകൾ ">
+<!ENTITY torsettings.useBridges.checkbox "എന്റെ രാജ്യത്തു ടോർ സെൻസർ ചെയ്തിട്ടുള്ളതാണ് ">
+<!ENTITY torsettings.useBridges.default "ഇതിനകത്തു തന്നെയുള്ള ഒരു ബ്രിഡ്ജ് തിരഞ്ഞെടുക്കുക ">
+<!ENTITY torsettings.useBridges.default.placeholder "ഒരു ബ്രിഡ്ജ് തിരഞ്ഞെടുക്കുക ">
+<!ENTITY torsettings.useBridges.bridgeDB "torproject.org നിന്നും ഒരു ബ്രിഡ്ജ് ചോദിക്കുക ">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder " കാണുന്ന ചിത്രത്തിൽ നിന്നും അക്ഷരങ്ങൾ ചേർക്കുക ">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "ഒരു പുതിയ ആഹ്വാനം ചെയ്യുക ">
 <!ENTITY torsettings.useBridges.captchaSubmit "സമർപ്പിക്കുക ">
-<!ENTITY torsettings.useBridges.custom "Provide a bridge I know">
-<!ENTITY torsettings.useBridges.label "Enter bridge information from a trusted source.">
-<!ENTITY torsettings.useBridges.placeholder "type address:port (one per line)">
+<!ENTITY torsettings.useBridges.custom "എനിക്ക് അറിയാവുന്ന ഒരു ബ്രിഡ്ജിനെ തരിക ">
+<!ENTITY torsettings.useBridges.label "വിശ്വസിക്കാവുന്ന ശ്രിതസ്സിൽ നിന്നും കിട്ടിയ ബ്രിഡ്ജിന്റെ വിവരങ്ങൾ ചേർക്കുക ">
+<!ENTITY torsettings.useBridges.placeholder "അഡ്രസ് : പോർട്ട് (ഒരു വരിയിൽ ഒരെണ്ണം എന്ന രീതിയികൾ ചേർക്കുക )">
 
-<!ENTITY torsettings.copyLog "Copy Tor Log To Clipboard">
+<!ENTITY torsettings.copyLog "ടോർ വിവരപ്പട്ടിക ക്ളിപ് ബോർഡിലേക്ക് ചേർക്കുക ">
 
-<!ENTITY torsettings.proxyHelpTitle "Proxy Help">
-<!ENTITY torsettings.proxyHelp1 "A local proxy might be needed when connecting through a company, school, or university network.&#160;If you are not sure whether a proxy is needed, look at the Internet settings in another browser or check your system's network settings.">
+<!ENTITY torsettings.proxyHelpTitle "പ്രോക്സി സഹായം ">
+<!ENTITY torsettings.proxyHelp1 "കമ്പനി , സ്‌കൂൾ അല്ലെങ്കിൽ യൂണിവേഴ്സിറ്റി എന്നിവിടങ്ങളിൽ നിന്നും റ്റോറിലേക്കു ബന്ധിപ്പിക്കുമ്പോൾ ഒരു പ്രോക്സി ആവശ്യമായി വരും &amp;#160 , ഒരു പ്രോക്സി അവസായമാണോ അല്ലയോ എന്ന് നിങ്ങൾക് അറിയില്ലെങ്കിൽ , നിങ്ങളുടെ ഇന്റർനെറ്റ് സെറ്റിങ്സിലോ അല്ലെങ്കിൽ മറ്റൊരു ബ്രൗസേരിലോ അതും അല്ലെങ്കിൽ നിങ്ങളുടെ സിസ്റ്റത്തിന്റെ നെറ്റ്‌വർക്ക് സെറ്റിങ്സിലോ നോക്കുക ">
 
-<!ENTITY torsettings.bridgeHelpTitle "Bridge Relay Help">
-<!ENTITY torsettings.bridgeHelp1 "Bridges are unlisted relays that make it more difficult to block connections to the Tor Network.&#160; Each type of bridge uses a different method to avoid censorship.&#160; The obfs ones make your traffic look like random noise, and the meek ones make your traffic look like it's connecting to that service instead of Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Because of how certain countries try to block Tor, certain bridges work in certain countries but not others.&#160; If you are unsure about which bridges work in your country, visit torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelpTitle "ബ്രിഡ്ജ് റിലേ സഹായം ">
+<!ENTITY torsettings.bridgeHelp1 "ബ്രിഡ്ജുകൾ എന്ന് പറയുന്നത് വിവരപ്പട്ടികയിൽ ചേർക്കപെടാത്ത റെലയ്കളാണ് അത് റ്റോറിലേക്കു ബന്ധപ്പെടുന്നത് തടസ്സപ്പെടുത്തുന്നതിനെ കൂടുതൽ ദുഷ്കരമാക്കുന്നു &amp;#160. ഓരോ ബ്രിഡ്‌ജും സെന്സര്ഷിപ് തടയുന്നതിന് വേണ്ടി വ്യത്യസ്തമായ രീതികൾ ഉപയോഗിക്കുന്നു &amp;#160. obfs നിങ്ങളുടെ പോക്കുവരവിന് അടുക്കില്ലാത്ത രീതിയിലും മീക് പോലുള്ളത് സെരിക്കും റ്റോറിലേക്കു ബന്ധപ്പെടുത്തുന്ന രീതിയിൽ തന്നെയും പ്രേവര്തിക്കുന്നു ">
+<!ENTITY torsettings.bridgeHelp2 "രാജ്യങ്ങൾ ഏതൊക്കെ രീതിയിലും ടോറിനെ തടയാൻ ശ്രെമിച്ചാലും , പ്രത്യേകം ബ്രിഡ്ജുകൾ പ്രത്യേകം രാജ്യങ്ങൾ പ്രേവര്തിക്കുന്നുണ്ട് &amp;#160. നിങ്ങളുടെ രാജ്യത്തു ഏതൊക്കെ ബ്രിഡ്‌ജുകളാണ് പ്രേവര്തിക്കുന്നതു എന്ന് നിങ്ങൾക്കു ഉറപ്പില്ലെങ്കിൽ torproject.org/about/contact.html#support കാണുക ">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+<!ENTITY torprogress.pleaseWait "റ്റോറിലേക്കു ബന്ധപ്പെടുത്തുന്നത് വരെ ദയവായി ക്ഷെമിക്കുക &amp;#160. ഇത് നിരവധി സമയം എടുക്കും ">

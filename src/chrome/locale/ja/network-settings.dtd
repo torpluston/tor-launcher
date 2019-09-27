@@ -29,7 +29,7 @@
 <!ENTITY torsettings.useProxy.type "プロキシの種類:">
 <!ENTITY torsettings.useProxy.type.placeholder "プロキシの種類を選択">
 <!ENTITY torsettings.useProxy.address "アドレス:">
-<!ENTITY torsettings.useProxy.address.placeholder "IPアドレス またはホストネーム">
+<!ENTITY torsettings.useProxy.address.placeholder "IP アドレスまたはホスト名">
 <!ENTITY torsettings.useProxy.port "ポート">
 <!ENTITY torsettings.useProxy.username "ユーザー名:">
 <!ENTITY torsettings.useProxy.password "パスワード:">
@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Torのログをクリップボードにコピー">
 
 <!ENTITY torsettings.proxyHelpTitle "プロキシヘルプ">
-<!ENTITY torsettings.proxyHelp1 "会社、学校、大学等のネットワークを通して接続する場合、ローカルプロクシが必要になる場合があります。&#160;プロクシが必要であるかどうかわからない場合は、他のブラウザのインターネット設定を見るか、システムのネットワーク設定を確認してください。">
+<!ENTITY torsettings.proxyHelp1 "会社、学校、大学等のネットワークを通して接続する場合、ローカルプロキシが必要になる場合があります。&#160;プロキシが必要であるかどうかわからない場合は、他のブラウザのインターネット設定を見るか、システムのネットワーク設定を確認してください。">
 
 <!ENTITY torsettings.bridgeHelpTitle "ブリッジリレーのヘルプ">
 <!ENTITY torsettings.bridgeHelp1 "ブリッジとはTorネットワークへの接続をブロックすることを難しくするためのリストされていないリレーです。&#160; それぞれの種類のブリッジは検閲を避けるための異なる手法を利用しています。&#160; obfsのものはあなたのトラフィックをランダムなノイズのように見せかけ，meekのものはあなたのトラフィックをTorではなくそのサービスへの接続であるように見せかけます。">

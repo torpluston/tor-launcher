@@ -1,5 +1,5 @@
 <!ENTITY torsettings.dialog.title "洋蔥路由網路設定">
-<!ENTITY torsettings.wizard.title.default "連結 Tor">
+<!ENTITY torsettings.wizard.title.default "連線到 Tor">
 <!ENTITY torsettings.wizard.title.configure "Tor 網路設定">
 <!ENTITY torsettings.wizard.title.connecting "建立 Tor 連線">
 
@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "點擊&quot;連接&quot;來連上 Tor ">
-<!ENTITY torSettings.configurePrompt "如果您處於會監視tor網絡的國家（例如埃及，中國，土耳其）或者您位於私人網路中，需要代理訪問互聯網。請點擊，「設定」更改網路設置。">
+<!ENTITY torSettings.configurePrompt "如果您處於會監視 tor 網路的國家（例如埃及、中國、土耳其）或者您位於需要代理伺服器的私人網路中，請點擊「設定」來調整網路設定。">
 <!ENTITY torSettings.configure "設定">
 <!ENTITY torSettings.connect "連接">
 
@@ -36,12 +36,12 @@
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "這台電腦通過某個只允許連接至特定連線埠的防火牆">
+<!ENTITY torsettings.firewall.checkbox "這台電腦通過某個只允許連接至特定連接埠的防火牆">
 <!ENTITY torsettings.firewall.allowedPorts "允許的連接埠：">
 <!ENTITY torsettings.useBridges.checkbox "我的國家中 Tor 受到審查">
 <!ENTITY torsettings.useBridges.default "選擇內建的橋接">
-<!ENTITY torsettings.useBridges.default.placeholder "選擇網橋">
-<!ENTITY torsettings.useBridges.bridgeDB "從 torproject.org 請求網橋">
+<!ENTITY torsettings.useBridges.default.placeholder "選擇橋接">
+<!ENTITY torsettings.useBridges.bridgeDB "從 torproject.org 請求橋接">
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "輸入圖片中的文字">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "獲得新的挑戰">
 <!ENTITY torsettings.useBridges.captchaSubmit "提交">
@@ -55,8 +55,8 @@
 <!ENTITY torsettings.proxyHelp1 "當您透過公司、學校或者大學網路進行連線時，您可能需要一個本地代理伺服器。如果您不確定是否需要代理伺服器，請參考其他瀏覽器的網路設定或者系統網路設定。">
 
 <!ENTITY torsettings.bridgeHelpTitle "橋接中繼器之說明">
-<!ENTITY torsettings.bridgeHelp1 "網橋是未位於列表的中繼，可以使得tor網絡更難被屏蔽。&#160;不同類別的網橋使用不同方法規避審查。.&#160; obfs使您的通訊類似隨機發出的雜音，meek使您的通訊看起來是訪問他們的服務而不是tor。">
-<!ENTITY torsettings.bridgeHelp2 "因為某些國家嘗試屏蔽tor，一些特定的網橋只能在特定的國家生效在其他地區則會失活。&#160;如果您不確定哪些網橋在您的國家生效，請訪問torproject.org/about/contact.html#support。">
+<!ENTITY torsettings.bridgeHelp1 "橋接是未列出的中繼，可以使得 Tor 網路更難被封鎖。&#160; 不同類型的橋接使用不同方法規避審查。&#160; obfs 使您的通訊類似隨機發出的雜音，meek 使您的通訊看起來是訪問他們的服務而不是 Tor。">
+<!ENTITY torsettings.bridgeHelp2 "因為某些國家嘗試封鎖 Tor，一些特定的橋接只能在特定的國家有效，在其他地區則會失效。&#160; 如果您不確定哪些橋接在您的國家有效，請訪問 torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "請耐心等候，我們正在建立tor網絡。&#160;這個過程將會需要幾分鐘的時間。">
+<!ENTITY torprogress.pleaseWait "請耐心等候，我們正在建立 Tor 網路連線。&#160; 這個過程可能需要幾分鐘的時間。">

@@ -55,7 +55,7 @@
 <!ENTITY torsettings.proxyHelp1 "Een lokale proxy kan nodig zijn als u verbinding maakt via het netwerk van een bedrijf, school of universiteit.&#160;Als u niet zeker weet of een proxy nodig is, bekijk dan de internetinstellingen in een andere browser, of bekijk de netwerkinstellingen van uw systeem.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Bridge relay-hulp">
-<!ENTITY torsettings.bridgeHelp1 "Bridges zijn niet-vermelde relays die het moeilijk maken om verbindingen met het Tor-netwerk te blokkeren.&#160; Elk van deze bridges gebruikt een andere methode om censuur te vermijden.&#160; Degene die obfs gebruiken, laten uw verkeer eruitzien als willekeurige ruis, en degene die meek gebruiken, laten uw netwerk verkeer eruitzien alsof u met een andere service dan Tor verbinding maakt.">
+<!ENTITY torsettings.bridgeHelp1 "Bridges zijn niet-vermelde relays die het moeilijker maken om verbindingen met het Tor-netwerk te blokkeren.&#160; Elk type bridge gebruikt een andere methode om censuur te vermijden.&#160; Bridges die obfs gebruiken, laten uw verkeer eruitzien als willekeurige ruis, en bridges die meek gebruiken, laten uw netwerkverkeer eruitzien alsof u met een andere service dan Tor verbinding maakt.">
 <!ENTITY torsettings.bridgeHelp2 "Vanwege de manier waarop bepaalde landen Tor proberen te blokkeren, werken sommige bridges in bepaalde landen wel, maar niet in andere.&#160; Als u niet zeker weet welke bridges in uw land werken, bezoek dan torproject.org/about/contact.html#support">
 
 <!-- Progress -->
