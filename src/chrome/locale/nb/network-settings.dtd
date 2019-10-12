@@ -26,17 +26,23 @@
 <!ENTITY torsettings.optional "Valgfritt">
 
 <!ENTITY torsettings.useProxy.checkbox "Jeg bruker en mellomtjener for å koble til Internett">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.type "Mellomtjeningstype:">
 <!ENTITY torsettings.useProxy.type.placeholder "velg en mellomtjenertype">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.address "Adresse:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-adresse, eller vertsnavn">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.port "Port:">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.username "Brukernavn:">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "Passord:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Denne datamaskinen går gjennom en brannmur som kun tillater tilkoblinger til visse porter">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.firewall.allowedPorts "Tillatte porter:">
 <!ENTITY torsettings.useBridges.checkbox "Tor er sensurert i mitt land">
 <!ENTITY torsettings.useBridges.default "Velg en bro med flere innfartsårer">
@@ -60,3 +66,28 @@
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Vent mens tilkobling til Tor-nettverket opprettes.&#160; Dette kan ta flere minutter.">
+
+<!-- #31286 about:preferences strings  -->
+<!ENTITY torPreferences.categoryTitle "Tor">
+<!ENTITY torPreferences.torSettings "Tor Settings">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
+<!ENTITY torPreferences.learnMore "Lær mer">
+<!ENTITY torPreferences.bridges "Broer">
+<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
+<!ENTITY torPreferences.useBridge "Use a bridge">
+<!-- torlauncher.request_a_new_bridge -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
+<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.advanced "Avansert">
+<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
+<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Løs CAPTCHA-en for å forespørre en bro.">
+<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Løsningen er ikke riktig. Vær så snill, prøv på nytt.">
+<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
+<!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">

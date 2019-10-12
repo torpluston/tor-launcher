@@ -26,17 +26,23 @@
 <!ENTITY torsettings.optional "Optioneel">
 
 <!ENTITY torsettings.useProxy.checkbox "I gebruik een proxy om met het internet te verbinden.">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.type "Proxytype:">
 <!ENTITY torsettings.useProxy.type.placeholder "selecteer een proxytype">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.address "Adres:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-adres of hostnaam">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.port "Poort:">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.username "Gebruikersnaam:">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "Wachtwoord:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Deze computer gebruikt een firewall die alleen verbindingen naar bepaalde poorten toestaat">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.firewall.allowedPorts "Toegestane poorten:">
 <!ENTITY torsettings.useBridges.checkbox "Tor is in mijn land gecensureerd.">
 <!ENTITY torsettings.useBridges.default "Een ingebouwde bridge selecteren">
@@ -55,8 +61,33 @@
 <!ENTITY torsettings.proxyHelp1 "Een lokale proxy kan nodig zijn als u verbinding maakt via het netwerk van een bedrijf, school of universiteit.&#160;Als u niet zeker weet of een proxy nodig is, bekijk dan de internetinstellingen in een andere browser, of bekijk de netwerkinstellingen van uw systeem.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Bridge relay-hulp">
-<!ENTITY torsettings.bridgeHelp1 "Bridges zijn niet-vermelde relays die het moeilijker maken om verbindingen met het Tor-netwerk te blokkeren.&#160; Elk type bridge gebruikt een andere methode om censuur te vermijden.&#160; Bridges die obfs gebruiken, laten uw verkeer eruitzien als willekeurige ruis, en bridges die meek gebruiken, laten uw netwerkverkeer eruitzien alsof u met een andere service dan Tor verbinding maakt.">
+<!ENTITY torsettings.bridgeHelp1 "Bridges zijn niet-vermelde relays die het moeilijker maken om verbindingen met het Tor-netwerk te blokkeren.&#160; Elk type bridge gebruikt een andere methode om censuur te vermijden.&#160; Bridges die obfs gebruiken, laten uw verkeer eruitzien als willekeurige ruis, en bridges die meek gebruiken, laten uw verkeer eruitzien alsof u met een andere service dan Tor verbinding maakt.">
 <!ENTITY torsettings.bridgeHelp2 "Vanwege de manier waarop bepaalde landen Tor proberen te blokkeren, werken sommige bridges in bepaalde landen wel, maar niet in andere.&#160; Als u niet zeker weet welke bridges in uw land werken, bezoek dan torproject.org/about/contact.html#support">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Even geduld; er wordt verbinding gemaakt met het Tor-netwerk.&#160; Dit kan enkele minuten duren.">
+
+<!-- #31286 about:preferences strings  -->
+<!ENTITY torPreferences.categoryTitle "Tor">
+<!ENTITY torPreferences.torSettings "Tor Settings">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
+<!ENTITY torPreferences.learnMore "Meer info">
+<!ENTITY torPreferences.bridges "Bridges">
+<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
+<!ENTITY torPreferences.useBridge "Use a bridge">
+<!-- torlauncher.request_a_new_bridge -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
+<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.advanced "Geavanceerd">
+<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
+<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Los de CAPTCHA op om een bridge aan te vragen.">
+<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "De oplossing is niet juist. Probeer het opnieuw.">
+<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
+<!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">

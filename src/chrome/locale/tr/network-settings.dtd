@@ -26,17 +26,23 @@
 <!ENTITY torsettings.optional "İsteğe bağlı">
 
 <!ENTITY torsettings.useProxy.checkbox "Internete erişmek için vekil sunucu kullanıyorum">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.type "Vekil Sunucu Türü:">
 <!ENTITY torsettings.useProxy.type.placeholder "vekil sunucu türünü seçin">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.address "Adres:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adresi ya da sunucu adı">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.port "Kapı Numarası:">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.username "Kullanıcı Adı:">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "Parola:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Bu bilgisayarda yalnız belirli kapı numaralarından bağlanılmasına izin veren bir güvenlik duvarı kullanılıyor">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.firewall.allowedPorts "Kullanılabilecek Kapı Numaraları:">
 <!ENTITY torsettings.useBridges.checkbox "Bulunduğum ülkede Tor ağı engelleniyor">
 <!ENTITY torsettings.useBridges.default "Hazır Köprülerden Seçin">
@@ -60,3 +66,28 @@
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Lütfen Tor ağı ile bağlantı kurulurken bekleyin. Bu işlem birkaç dakika sürebilir.">
+
+<!-- #31286 about:preferences strings  -->
+<!ENTITY torPreferences.categoryTitle "Tor">
+<!ENTITY torPreferences.torSettings "Tor Ayarları">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser sizi tüm dünyada binlerce gönüllü tarafından işletilen Tor Ağına bağlar." >
+<!ENTITY torPreferences.learnMore "Ayrıntılı Bilgi Alın">
+<!ENTITY torPreferences.bridges "Köprüler">
+<!ENTITY torPreferences.bridgesDescription "Köprüler Tor bağlantısının engellendiği yerlerden Tor Ağına erişmek için kullanılır.. Bulunduğunuz konuma göre bir köprü türü diğerinden daha uygun olabilir.">
+<!ENTITY torPreferences.useBridge "Bir köprü kullanın">
+<!-- torlauncher.request_a_new_bridge -->
+<!ENTITY torPreferences.requestNewBridge "Yeni Köprü İsteğinde Bulunun&amp;#x2026;">
+<!ENTITY torPreferences.provideBridge "Bir köprü adresi yazın">
+<!ENTITY torPreferences.advanced "Gelişmiş">
+<!ENTITY torPreferences.advancedDescription "Tor Browser uygulamasının İnternete nasıl bağlanacağını yapılandırın.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Virgül ile ayrılmış değerler">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Köprü İsteğinde Bulunun">
+<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Köprü veritabanına bağlanılıyor. Lütfen bekleyin.">
+<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Köprü isteği yapmak için güvenlik kodunu çözün.">
+<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Çözüm doğru değil. Lütfen yeniden deneyin.">
+<!ENTITY torPreferences.viewTorLogs "Tor günlük kayıtlarına bakın.">
+<!ENTITY torPreferences.viewLogs "Günlüğü Görüntüle&amp;#x2026;">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor Günlük Kayıtları">

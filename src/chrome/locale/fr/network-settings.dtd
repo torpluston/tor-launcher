@@ -26,17 +26,23 @@
 <!ENTITY torsettings.optional "facultatif">
 
 <!ENTITY torsettings.useProxy.checkbox "J’utilise un mandataire pour accéder à Internet">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.type "Type de mandataire :">
 <!ENTITY torsettings.useProxy.type.placeholder "sélectionner un type de mandataire">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.address "Adresse :">
 <!ENTITY torsettings.useProxy.address.placeholder "adresse IP ou nom d’hôte">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.port "Port :">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.username "Nom d’utilisateur :">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "Mot de passe :">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Cet ordinateur passe par un pare-feu qui n’autorise que les connexions à certains ports">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.firewall.allowedPorts "Ports autorisés :">
 <!ENTITY torsettings.useBridges.checkbox "Tor est censuré dans mon pays">
 <!ENTITY torsettings.useBridges.default "Sélectionner un pont intégré">
@@ -60,3 +66,28 @@
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Veuillez patienter pendant que nous établissons une connexion vers le réseau Tor.&#160;Cela pourrait prendre plusieurs minutes.">
+
+<!-- #31286 about:preferences strings  -->
+<!ENTITY torPreferences.categoryTitle "Tor">
+<!ENTITY torPreferences.torSettings "Tor Settings">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
+<!ENTITY torPreferences.learnMore "En apprendre davantage">
+<!ENTITY torPreferences.bridges "Ponts">
+<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
+<!ENTITY torPreferences.useBridge "Use a bridge">
+<!-- torlauncher.request_a_new_bridge -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
+<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.advanced "Avancé">
+<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
+<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Résoudre le captcha pour demander un pont.">
+<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "La solution est erronée. Veuillez ressayer.">
+<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
+<!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">

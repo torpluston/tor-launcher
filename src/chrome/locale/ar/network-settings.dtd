@@ -26,17 +26,23 @@
 <!ENTITY torsettings.optional "اختياري">
 
 <!ENTITY torsettings.useProxy.checkbox "أستخدم وسيطا للاتصال بالإنترنت">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.type "نوع البروكسي:">
 <!ENTITY torsettings.useProxy.type.placeholder "اختر نوع الوسيط">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.address "العنوان:">
 <!ENTITY torsettings.useProxy.address.placeholder "عنوان الإنترنت IP أو اسم المضيف">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.port "المنفذ:">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.username "اسم المستخدم:">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "كلمة السر:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "اتصال الإنترنت لهذا الكمبيوتر يمر بجدار حماية يسمح بالاتصال فقط من خلال منافذ معينة">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.firewall.allowedPorts "المنافذ المسموح بها:">
 <!ENTITY torsettings.useBridges.checkbox "تور محجوب في بلدي">
 <!ENTITY torsettings.useBridges.default "اختر جسرا مُدمَجا في البرنامج">
@@ -60,3 +66,28 @@
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "الرجاء الانتظار بينما ننشئ اتصالا لشبكة تور.&#160; قد يستغرق هذا عدة دقائق.">
+
+<!-- #31286 about:preferences strings  -->
+<!ENTITY torPreferences.categoryTitle "تور">
+<!ENTITY torPreferences.torSettings "Tor Settings">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
+<!ENTITY torPreferences.learnMore "إعرف/ي أكثر ">
+<!ENTITY torPreferences.bridges "الجسور">
+<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
+<!ENTITY torPreferences.useBridge "Use a bridge">
+<!-- torlauncher.request_a_new_bridge -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
+<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.advanced "متقدم">
+<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
+<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "حل كاباتشا لطلب جسر.">
+<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "الحل ليس سليمًا. يُرجى إعادة المحاولة.">
+<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
+<!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">

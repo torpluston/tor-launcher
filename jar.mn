@@ -25,6 +25,8 @@ torlauncher.jar:
 
 % locale torlauncher en-US %locale/en-US/
   locale/en-US/ (src/chrome/locale/en-US/*)
+% locale torlauncher ach %locale/ach/
+  locale/ach/ (src/chrome/locale/ach/*)
 % locale torlauncher ady %locale/ady/
   locale/ady/ (src/chrome/locale/ady/*)
 % locale torlauncher af %locale/af/
@@ -41,6 +43,8 @@ torlauncher.jar:
   locale/ar/ (src/chrome/locale/ar/*)
 % locale torlauncher arn %locale/arn/
   locale/arn/ (src/chrome/locale/arn/*)
+% locale torlauncher ast %locale/ast/
+  locale/ast/ (src/chrome/locale/ast/*)
 % locale torlauncher az %locale/az/
   locale/az/ (src/chrome/locale/az/*)
 % locale torlauncher be %locale/be/
@@ -85,6 +89,8 @@ torlauncher.jar:
   locale/el/ (src/chrome/locale/el/*)
 % locale torlauncher el-GR %locale/el-GR/
   locale/el-GR/ (src/chrome/locale/el-GR/*)
+% locale torlauncher en-GB %locale/en-GB/
+  locale/en-GB/ (src/chrome/locale/en-GB/*)
 % locale torlauncher eo %locale/eo/
   locale/eo/ (src/chrome/locale/eo/*)
 % locale torlauncher es %locale/es/
@@ -121,6 +127,8 @@ torlauncher.jar:
   locale/fy/ (src/chrome/locale/fy/*)
 % locale torlauncher ga %locale/ga/
   locale/ga/ (src/chrome/locale/ga/*)
+% locale torlauncher gd %locale/gd/
+  locale/gd/ (src/chrome/locale/gd/*)
 % locale torlauncher gl %locale/gl/
   locale/gl/ (src/chrome/locale/gl/*)
 % locale torlauncher gu %locale/gu/
@@ -161,6 +169,8 @@ torlauncher.jar:
   locale/jv/ (src/chrome/locale/jv/*)
 % locale torlauncher ka %locale/ka/
   locale/ka/ (src/chrome/locale/ka/*)
+% locale torlauncher kab %locale/kab/
+  locale/kab/ (src/chrome/locale/kab/*)
 % locale torlauncher kk %locale/kk/
   locale/kk/ (src/chrome/locale/kk/*)
 % locale torlauncher km %locale/km/
@@ -227,6 +237,10 @@ torlauncher.jar:
   locale/nn/ (src/chrome/locale/nn/*)
 % locale torlauncher nso %locale/nso/
   locale/nso/ (src/chrome/locale/nso/*)
+% locale torlauncher oc %locale/oc/
+  locale/oc/ (src/chrome/locale/oc/*)
+% locale torlauncher or %locale/or/
+  locale/or/ (src/chrome/locale/or/*)
 % locale torlauncher pa %locale/pa/
   locale/pa/ (src/chrome/locale/pa/*)
 % locale torlauncher pap %locale/pap/
@@ -267,6 +281,8 @@ torlauncher.jar:
   locale/sn/ (src/chrome/locale/sn/*)
 % locale torlauncher so %locale/so/
   locale/so/ (src/chrome/locale/so/*)
+% locale torlauncher son %locale/son/
+  locale/son/ (src/chrome/locale/son/*)
 % locale torlauncher sq %locale/sq/
   locale/sq/ (src/chrome/locale/sq/*)
 % locale torlauncher sq-AL %locale/sq-AL/

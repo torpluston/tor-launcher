@@ -26,17 +26,23 @@
 <!ENTITY torsettings.optional "Hautazkoa">
 
 <!ENTITY torsettings.useProxy.checkbox "Proxy bat erabiltzen dut Internetera sartzeko">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.type "Proxy mota:">
 <!ENTITY torsettings.useProxy.type.placeholder "proxy mota aukeratu">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.address "Helbidea:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP helbide edo ostalari izena">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.port "Ataka:">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.username "Erabiltzaile izena:">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "Pasahitza:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Ordenagailu honek ataka zehatz batzuetara bakarrik konektatzea baimentzen duen sueten baten zehar doa">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.firewall.allowedPorts "Baimendutako atakak:">
 <!ENTITY torsettings.useBridges.checkbox "Tor zentsuratuta dago nire herrialdean">
 <!ENTITY torsettings.useBridges.default "Select a built-in bridge">
@@ -60,3 +66,28 @@
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Mesedez itxaron Tor sarera konexioa ezartzen dugun bitartean.&#160; Honek minutu batzuk har litzake.">
+
+<!-- #31286 about:preferences strings  -->
+<!ENTITY torPreferences.categoryTitle "Tor">
+<!ENTITY torPreferences.torSettings "Tor Settings">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
+<!ENTITY torPreferences.learnMore "Ikasi gehiago">
+<!ENTITY torPreferences.bridges "Zubiak">
+<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
+<!ENTITY torPreferences.useBridge "Use a bridge">
+<!-- torlauncher.request_a_new_bridge -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
+<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.advanced "Aurreratua">
+<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
+<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "CAPTCHAa ebatzi ezazu zubi bat eskatzeko.">
+<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Ebazpena ez da zuzena. Mesedez saiatu berriro.">
+<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
+<!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">

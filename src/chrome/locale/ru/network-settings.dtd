@@ -26,17 +26,23 @@
 <!ENTITY torsettings.optional "Необязательно">
 
 <!ENTITY torsettings.useProxy.checkbox "Я использую прокси для подключения к интернету">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.type "Тип прокси:">
 <!ENTITY torsettings.useProxy.type.placeholder "выбор типа прокси">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.address "Адрес:">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-адрес или имя узла">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.port "Порт:">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.username "Имя пользователя:">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "Пароль:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Мой сетевой экран позволяет мне подключиться только к определенным портам">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.firewall.allowedPorts "Разрешенные порты:">
 <!ENTITY torsettings.useBridges.checkbox "Tor запрещен в моей стране">
 <!ENTITY torsettings.useBridges.default "Выбрать встроенный мост">
@@ -60,3 +66,28 @@
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Пожалуйста, подождите, пока мы установим подключение к сети Tor.&#160; Это может занять несколько минут.">
+
+<!-- #31286 about:preferences strings  -->
+<!ENTITY torPreferences.categoryTitle "Tor">
+<!ENTITY torPreferences.torSettings "Tor Settings">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
+<!ENTITY torPreferences.learnMore "Подробнее">
+<!ENTITY torPreferences.bridges "Мосты">
+<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
+<!ENTITY torPreferences.useBridge "Use a bridge">
+<!-- torlauncher.request_a_new_bridge -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
+<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.advanced "Дополнительно">
+<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
+<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Решите CAPTCHA для запроса моста.">
+<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Решение не является правильным. Попробуйте еще раз.">
+<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
+<!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">

@@ -26,17 +26,23 @@
 <!ENTITY torsettings.optional "選用">
 
 <!ENTITY torsettings.useProxy.checkbox "使用代理服務連線到網際網路">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.type "代理伺服器類型：">
 <!ENTITY torsettings.useProxy.type.placeholder "選擇代理伺服器類型">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.address "位址：">
 <!ENTITY torsettings.useProxy.address.placeholder "IP 位址或主機名稱">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.port "連接埠：">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.username "使用者名稱：">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "密碼：">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "這台電腦通過某個只允許連接至特定連接埠的防火牆">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.firewall.allowedPorts "允許的連接埠：">
 <!ENTITY torsettings.useBridges.checkbox "我的國家中 Tor 受到審查">
 <!ENTITY torsettings.useBridges.default "選擇內建的橋接">
@@ -60,3 +66,28 @@
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "請耐心等候，我們正在建立 Tor 網路連線。&#160; 這個過程可能需要幾分鐘的時間。">
+
+<!-- #31286 about:preferences strings  -->
+<!ENTITY torPreferences.categoryTitle "Tor">
+<!ENTITY torPreferences.torSettings "Tor Settings">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
+<!ENTITY torPreferences.learnMore "了解更多">
+<!ENTITY torPreferences.bridges "橋接器">
+<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
+<!ENTITY torPreferences.useBridge "Use a bridge">
+<!-- torlauncher.request_a_new_bridge -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
+<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.advanced "進階的">
+<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
+<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "解決驗證碼來請求橋接">
+<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "解答不正確。請再試一次。">
+<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
+<!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">

@@ -26,17 +26,23 @@
 <!ENTITY torsettings.optional "ঐচ্ছিক">
 
 <!ENTITY torsettings.useProxy.checkbox "আমি ইন্টারনেটে সংযোগ স্থাপন করতে প্রক্সি ব্যবহার করি">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.type "প্রক্সি প্রকার:">
 <!ENTITY torsettings.useProxy.type.placeholder "একটি প্রক্সি টাইপ নির্বাচন করুন">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.address "ঠিকানা:">
 <!ENTITY torsettings.useProxy.address.placeholder "আইপি ঠিকানা বা হোস্টনাম">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.port "পোর্টঃ">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.username "ব্যবহারকারী নাম:">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "পাসওয়ার্ড:">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "এই কম্পিউটারটি একটি ফায়ারওয়ালের মাধ্যমে যায় যা কেবলমাত্র কিছু পোর্টের সংযোগের অনুমতি দেয়">
+<!-- TODO: remove colon-->
 <!ENTITY torsettings.firewall.allowedPorts "অনুমোদিত পোর্টসমূহ:">
 <!ENTITY torsettings.useBridges.checkbox "টর আমার দেশে সেন্সর করা হয়">
 <!ENTITY torsettings.useBridges.default "একটি অন্তর্নির্মিত ব্রিজ নির্বাচন করুন">
@@ -60,3 +66,28 @@
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "আমরা টর নেটওয়ার্কে একটি সংযোগ স্থাপন করার সময় অনুগ্রহ করে অপেক্ষা করুন। &#160; এই কয়েক মিনিট সময় নিতে পারে.">
+
+<!-- #31286 about:preferences strings  -->
+<!ENTITY torPreferences.categoryTitle "Tor">
+<!ENTITY torPreferences.torSettings "Tor Settings">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
+<!ENTITY torPreferences.learnMore "আরও জানুন">
+<!ENTITY torPreferences.bridges "ব্রিজ">
+<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
+<!ENTITY torPreferences.useBridge "Use a bridge">
+<!-- torlauncher.request_a_new_bridge -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
+<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.advanced "অগ্রবর্তী">
+<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
+<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "একটি ব্রিজ অনুরোধ করার জন্য ক্যাপচা সমাধান করুন।...">
+<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "সমাধান সঠিক নয়। অনুগ্রহপূর্বক আবার চেষ্টা করুন.">
+<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
+<!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
