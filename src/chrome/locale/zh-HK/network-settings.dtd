@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "代理伺服器類型：">
+<!ENTITY torsettings.useProxy.type "代理伺服器類型">
 <!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "位址：">
+<!ENTITY torsettings.useProxy.address "位址">
 <!ENTITY torsettings.useProxy.address.placeholder "IP位址或主機名稱">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "連接埠：">
+<!ENTITY torsettings.useProxy.port "連接埠">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "用戶名：">
+<!ENTITY torsettings.useProxy.username "用戶名">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "密碼：">
+<!ENTITY torsettings.useProxy.password "密碼">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "http╱https">
 <!ENTITY torsettings.firewall.checkbox "呢部電腦通過某個只容許連接至特定連線埠嘅防火牆">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "容許嘅連接埠：">
+<!ENTITY torsettings.firewall.allowedPorts "容許嘅連接埠">
 <!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
 <!ENTITY torsettings.useBridges.default "Select a built-in bridge">
 <!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please wait.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Solve the CAPTCHA to request a bridge.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "The solution is not correct. Please try again.">

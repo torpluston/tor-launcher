@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Używam proxy do łączenia się z Internetem">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Typ Proxy:">
+<!ENTITY torsettings.useProxy.type "Typ Proxy">
 <!ENTITY torsettings.useProxy.type.placeholder "wybierz typ proxy">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Adres:">
+<!ENTITY torsettings.useProxy.address "Adres">
 <!ENTITY torsettings.useProxy.address.placeholder "Nazwa hosta lub adres IP">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Port:">
+<!ENTITY torsettings.useProxy.port "Port">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Użytkownik:">
+<!ENTITY torsettings.useProxy.username "Użytkownik">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Hasło:">
+<!ENTITY torsettings.useProxy.password "Hasło">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Ten komputer pozwala na połączenie z ustalonymi portami">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Dozwolone porty:">
+<!ENTITY torsettings.firewall.allowedPorts "Dozwolone porty">
 <!ENTITY torsettings.useBridges.checkbox "Tor jest ocenzurowany w moim kraju">
 <!ENTITY torsettings.useBridges.default "Wybierz wbudowany most">
 <!ENTITY torsettings.useBridges.default.placeholder "wybierz most">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Poproś o nowy most...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Kontakt z BridgeDB. Proszę czekać.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Rozwiąż CAPTCHA, aby poprosić o most.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Rozwiązanie nie jest poprawne. Proszę spróbuj ponownie.">

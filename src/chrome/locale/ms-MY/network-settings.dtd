@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Saya guna proksi untuk bersambung dengan Internet">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Jenis Proksi:">
+<!ENTITY torsettings.useProxy.type "Jenis Proksi">
 <!ENTITY torsettings.useProxy.type.placeholder "pilih sejenis proksi">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Alamat:">
+<!ENTITY torsettings.useProxy.address "Alamat">
 <!ENTITY torsettings.useProxy.address.placeholder "Alamat IP atau nama hos">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Port:">
+<!ENTITY torsettings.useProxy.port "Port">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Nama Pengguna:">
+<!ENTITY torsettings.useProxy.username "Nama Pengguna">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Kata Laluan:">
+<!ENTITY torsettings.useProxy.password "Kata Laluan">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Komputer ini melalui tembok api yang hanya membolehkan sambungan ke port tertentu">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Port Dibenarkan:">
+<!ENTITY torsettings.firewall.allowedPorts "Port Dibenarkan">
 <!ENTITY torsettings.useBridges.checkbox "Tor dilarang penggunaannya di negara saya">
 <!ENTITY torsettings.useBridges.default "Pilih satu titi terbina-dalam">
 <!ENTITY torsettings.useBridges.default.placeholder "pilih satu titi">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Pinta satu Titi Baharu...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Menghubungi BridgeDB. Tunggu sebentar.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Selesaikan CAPTCHA untuk meminta satu titi.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Jawapan salah. Cuba sekali lagi.">

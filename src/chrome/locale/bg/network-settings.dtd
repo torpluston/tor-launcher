@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Аз използвам прокси за достъп до интернет">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Прокси Тип:">
+<!ENTITY torsettings.useProxy.type "Прокси Тип">
 <!ENTITY torsettings.useProxy.type.placeholder "Изберете вида на проксито">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Адрес:">
+<!ENTITY torsettings.useProxy.address "Адрес">
 <!ENTITY torsettings.useProxy.address.placeholder "IP адрес или хост">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Порт:">
+<!ENTITY torsettings.useProxy.port "Порт">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Потребителско име:">
+<!ENTITY torsettings.useProxy.username "Потребителско име">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Парола:">
+<!ENTITY torsettings.useProxy.password "Парола">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Този компютър се свързва през firewall,който позволява връзки само към определени портове.">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Позволени портове:">
+<!ENTITY torsettings.firewall.allowedPorts "Позволени портове">
 <!ENTITY torsettings.useBridges.checkbox "Tor  е цензуриран в моята страна">
 <!ENTITY torsettings.useBridges.default "Избор на вграден бридж">
 <!ENTITY torsettings.useBridges.default.placeholder "изберете бридж">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Заявка за нов bridge...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Свързване с BridgeDB. Моля изчакайте.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Решете CAPTCHA за заявка на bridge.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Решението не е правилно. Моля, опитайте пак.">

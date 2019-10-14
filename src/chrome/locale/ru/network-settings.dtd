@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Я использую прокси для подключения к интернету">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Тип прокси:">
+<!ENTITY torsettings.useProxy.type "Тип прокси">
 <!ENTITY torsettings.useProxy.type.placeholder "выбор типа прокси">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Адрес:">
+<!ENTITY torsettings.useProxy.address "Адрес">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-адрес или имя узла">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Порт:">
+<!ENTITY torsettings.useProxy.port "Порт">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Имя пользователя:">
+<!ENTITY torsettings.useProxy.username "Имя пользователя">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Пароль:">
+<!ENTITY torsettings.useProxy.password "Пароль">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Мой сетевой экран позволяет мне подключиться только к определенным портам">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Разрешенные порты:">
+<!ENTITY torsettings.firewall.allowedPorts "Разрешенные порты">
 <!ENTITY torsettings.useBridges.checkbox "Tor запрещен в моей стране">
 <!ENTITY torsettings.useBridges.default "Выбрать встроенный мост">
 <!ENTITY torsettings.useBridges.default.placeholder "выбор моста">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Запрос нового моста…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Обращение к BridgeDB. Пожалуйста, подождите.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Решите CAPTCHA для запроса моста.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Решение не является правильным. Попробуйте еще раз.">

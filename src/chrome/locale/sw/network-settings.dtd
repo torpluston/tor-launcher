@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Proxy Type:">
+<!ENTITY torsettings.useProxy.type "Proxy Type">
 <!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Address:">
+<!ENTITY torsettings.useProxy.address "Address">
 <!ENTITY torsettings.useProxy.address.placeholder "IP address or hostname">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Kituo:">
+<!ENTITY torsettings.useProxy.port "Kituo">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Username:">
+<!ENTITY torsettings.useProxy.username "Username">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Password:">
+<!ENTITY torsettings.useProxy.password "Password">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "This computer goes through a firewall that only allows connections to certain ports">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports:">
+<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports">
 <!ENTITY torsettings.useBridges.checkbox "Tor is censored in my country">
 <!ENTITY torsettings.useBridges.default "Select a built-in bridge">
 <!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please wait.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Solve the CAPTCHA to request a bridge.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "The solution is not correct. Please try again.">

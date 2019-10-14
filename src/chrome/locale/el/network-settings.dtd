@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Χρησιμοποιώ διακομιστή μεσολάβησης για να συνδεθώ στο ίντερνετ.">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Τύπος διακομιστή μεσολάβησης:">
+<!ENTITY torsettings.useProxy.type "Τύπος διακομιστή μεσολάβησης">
 <!ENTITY torsettings.useProxy.type.placeholder "Επιλέξτε τύπο διακομιστή μεσολάβησης.">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Διεύθυνση:">
+<!ENTITY torsettings.useProxy.address "Διεύθυνση">
 <!ENTITY torsettings.useProxy.address.placeholder "Διεύθυνση ΙΡ η όνομα υπολογιστή ">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Θύρα συστήματος:">
+<!ENTITY torsettings.useProxy.port "Θύρα συστήματος">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Όνομα Χρήστη:">
+<!ENTITY torsettings.useProxy.username "Όνομα Χρήστη">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Κωδικός:">
+<!ENTITY torsettings.useProxy.password "Κωδικός">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Το τείχος προστασίας μου με αφήνει να συνδέομαι μόνο σε συγκεκριμένες θύρες συστήματος">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Επιτρεπόμενες Θύρες:">
+<!ENTITY torsettings.firewall.allowedPorts "Επιτρεπόμενες Θύρες">
 <!ENTITY torsettings.useBridges.checkbox "Ο Tor είναι αποκλεισμένος στη χώρα μου">
 <!ENTITY torsettings.useBridges.default "Επιλέξτε ένα ενταγμένο bridge">
 <!ENTITY torsettings.useBridges.default.placeholder "Επιλέξτε ένα bridge">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Ζητήστε μία καινούρια γέφυρα...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Επικοινωνούμε με την BridgeDB. Παρακαλώ, περιμένετε.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Λύστε το CAPTCHA για να ζητήσετε γέφυρα.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Η λύση δεν είναι σωστή. Παρακαλώ προσπαθήστε ξανά.">

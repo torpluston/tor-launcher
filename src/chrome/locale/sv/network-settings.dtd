@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Jag använder en proxy för att ansluta till internet">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Proxytyp:">
+<!ENTITY torsettings.useProxy.type "Proxytyp">
 <!ENTITY torsettings.useProxy.type.placeholder "Välj en proxytyp">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Adress:">
+<!ENTITY torsettings.useProxy.address "Adress">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-adress eller värdnamn">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Port:">
+<!ENTITY torsettings.useProxy.port "Port">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Användarnamn:">
+<!ENTITY torsettings.useProxy.username "Användarnamn">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Lösenord:">
+<!ENTITY torsettings.useProxy.password "Lösenord">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Denna dator går genom en brandvägg som bara tillåter anslutningar på vissa specifika portar.">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Tillåtna portar:">
+<!ENTITY torsettings.firewall.allowedPorts "Tillåtna portar">
 <!ENTITY torsettings.useBridges.checkbox "Tor är censurerat i mitt land">
 <!ENTITY torsettings.useBridges.default "Välj en inbyggd bro">
 <!ENTITY torsettings.useBridges.default.placeholder "Välj en bro">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Begär en ny bro...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Kontaktar BridgeDB. Vänligen vänta.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Lös CAPTCHA:n för att begära en bro.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Lösningen är inte korrekt. Vänligen försök igen.">

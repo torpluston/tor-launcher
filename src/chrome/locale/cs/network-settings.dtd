@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Používám proxy pro připojení k Internetu">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Typ proxy:">
+<!ENTITY torsettings.useProxy.type "Typ proxy">
 <!ENTITY torsettings.useProxy.type.placeholder "vyberte typ proxy">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Adresa:">
+<!ENTITY torsettings.useProxy.address "Adresa">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adresa nebo název serveru">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Port:">
+<!ENTITY torsettings.useProxy.port "Port">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Uživatel:">
+<!ENTITY torsettings.useProxy.username "Uživatel">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Heslo:">
+<!ENTITY torsettings.useProxy.password "Heslo">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Tento počítač používá firewall, který povoluje připojení pouze přes některé porty.">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Povolené porty:">
+<!ENTITY torsettings.firewall.allowedPorts "Povolené porty">
 <!ENTITY torsettings.useBridges.checkbox "Tor je v mé zemi cenzurován">
 <!ENTITY torsettings.useBridges.default "Vyberte vestavěný most">
 <!ENTITY torsettings.useBridges.default.placeholder "vyberte most">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Požádat o nový most…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Kontaktování BridgeDB. Čekejte prosím.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Pro vyžádání mostu prosím opište kód CAPTCHA.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Neopsali jste kód správně. Zkuste to prosím znovu.">

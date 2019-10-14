@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Користам прокси за поврзување на Интернет">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Тип на прокси:">
+<!ENTITY torsettings.useProxy.type "Тип на прокси">
 <!ENTITY torsettings.useProxy.type.placeholder "одбери тип на прокси">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Адреси:">
+<!ENTITY torsettings.useProxy.address "Адреси">
 <!ENTITY torsettings.useProxy.address.placeholder "IP адреси или име на хост">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Порта:">
+<!ENTITY torsettings.useProxy.port "Порта">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Корисничко име:">
+<!ENTITY torsettings.useProxy.username "Корисничко име">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Лозинка:">
+<!ENTITY torsettings.useProxy.password "Лозинка">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Овој компјутер оди преку заштитен ѕид кој дозволува поврзувања до одредени порти">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Дозволени порти:">
+<!ENTITY torsettings.firewall.allowedPorts "Дозволени порти">
 <!ENTITY torsettings.useBridges.checkbox "Tor е цензуриран во мојата држава">
 <!ENTITY torsettings.useBridges.default "Одбери вграден мост">
 <!ENTITY torsettings.useBridges.default.placeholder "одбери мост">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Барање за нов мост...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Контактирање со BridgeDB. Ве молиме почекајте.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Решете ја ЗАДАЧАТА за да побарате мост.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Решението е погрешно. Ве молиме обидете се повторно.">

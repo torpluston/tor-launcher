@@ -27,13 +27,13 @@
 
 <!ENTITY torsettings.useProxy.checkbox "मैं इंटरनेट से कनेक्ट करने के लिए प्रॉक्सी का उपयोग करता हूं">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "प्रॉक्सी प्रकार:">
+<!ENTITY torsettings.useProxy.type "प्रॉक्सी प्रकार">
 <!ENTITY torsettings.useProxy.type.placeholder "प्रॉक्सी प्रकार का चयन करें">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "पता :">
+<!ENTITY torsettings.useProxy.address "पता ">
 <!ENTITY torsettings.useProxy.address.placeholder "IP पता या मेजबाननाम">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "पोर्ट/द्वार :">
+<!ENTITY torsettings.useProxy.port "पोर्ट/द्वार ">
 <!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.username "उपयोगकर्ता नाम">
 <!-- TODO: remove colon-->
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "एक नए पुल का अनुरोध करें ...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "BridgeDB से संपर्क किया जा रहा है।कृपया प्रतीक्षा करें।">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "पुल का अनुरोध करने के लिए कैप्चा को हल करें।">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "समाधान सही नहीं है। कृपया पुन: प्रयास करें।">

@@ -27,15 +27,15 @@
 
 <!ENTITY torsettings.useProxy.checkbox "ഞാൻ ഇന്റർനൈറ്റിലെക് ബന്ധപ്പെടാൻ ഒരു പ്രോക്സി ഉപയോഗിക്കുന്നു ">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "പ്രോക്സി ഇനം  :">
+<!ENTITY torsettings.useProxy.type "പ്രോക്സി ഇനം  ">
 <!ENTITY torsettings.useProxy.type.placeholder "ഒരു പ്രോക്സി ഇനം തിരഞ്ഞെടുക്കുക  :">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "മേൽവിലാസം :">
+<!ENTITY torsettings.useProxy.address "മേൽവിലാസം ">
 <!ENTITY torsettings.useProxy.address.placeholder "ഐ പി മേൽവിലാസം അല്ലെങ്കിൽ ഹോസ്റ്റ് നെയിം ">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Port:">
+<!ENTITY torsettings.useProxy.port "Port">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "യൂസർ നെയിം :">
+<!ENTITY torsettings.useProxy.username "യൂസർ നെയിം ">
 <!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "പാസ്സ്‌വേർഡ്‌ ">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "ഒരു പുതിയ ബ്രിഡ്ജിനെ ചോദിക്കുക ...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "ബ്രിഡ്ജ് ഡി ബിയെ ബന്ധപ്പെടുന്നു , ദയവായി കാത്തിരിക്കുക ">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "ബ്രിഡ്ജിനെ കിട്ടാൻ തന്നിരിക്കുന്ന കാപ്ച പരിഹരിക്കുക ">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "പരിഹാരം ശെരിയല്ല . ദയവായി ഒന്നുകൂടെ ശ്രെമിക്കുക ">

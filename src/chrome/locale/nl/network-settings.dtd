@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "I gebruik een proxy om met het internet te verbinden.">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Proxytype:">
+<!ENTITY torsettings.useProxy.type "Proxytype">
 <!ENTITY torsettings.useProxy.type.placeholder "selecteer een proxytype">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Adres:">
+<!ENTITY torsettings.useProxy.address "Adres">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-adres of hostnaam">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Poort:">
+<!ENTITY torsettings.useProxy.port "Poort">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Gebruikersnaam:">
+<!ENTITY torsettings.useProxy.username "Gebruikersnaam">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Wachtwoord:">
+<!ENTITY torsettings.useProxy.password "Wachtwoord">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Deze computer gebruikt een firewall die alleen verbindingen naar bepaalde poorten toestaat">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Toegestane poorten:">
+<!ENTITY torsettings.firewall.allowedPorts "Toegestane poorten">
 <!ENTITY torsettings.useBridges.checkbox "Tor is in mijn land gecensureerd.">
 <!ENTITY torsettings.useBridges.default "Een ingebouwde bridge selecteren">
 <!ENTITY torsettings.useBridges.default.placeholder "selecteer een bridge">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Een nieuwe bridge aanvragen…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contact maken met BridgeDB. Een ogenblik.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Los de CAPTCHA op om een bridge aan te vragen.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "De oplossing is niet juist. Probeer het opnieuw.">

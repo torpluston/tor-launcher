@@ -27,15 +27,15 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Na pripojenie k internetu používam proxy">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Typ Proxy:">
+<!ENTITY torsettings.useProxy.type "Typ Proxy">
 <!ENTITY torsettings.useProxy.type.placeholder "vybrať typ proxy">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Adresa:">
+<!ENTITY torsettings.useProxy.address "Adresa">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adresa alebo názov hostiteľa">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Port:">
+<!ENTITY torsettings.useProxy.port "Port">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Už.názov:">
+<!ENTITY torsettings.useProxy.username "Už.názov">
 <!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "Heslo?">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
@@ -43,7 +43,7 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Tento počítač ide cez firewall, ktorý povoľuje iba niektoré porty">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Povolené porty:">
+<!ENTITY torsettings.firewall.allowedPorts "Povolené porty">
 <!ENTITY torsettings.useBridges.checkbox "Tor je v mojej krajine cenzurovaný">
 <!ENTITY torsettings.useBridges.default "Zvoľte zabudované premostenie">
 <!ENTITY torsettings.useBridges.default.placeholder "zvoľte premostenie">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Požiadať o nové premostenie.">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Spájam sa s databázou premostení. Prosím čakajte.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Vyrieš CAPTCHA na vyžiadanie premostenia.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Riešenie nie je správne. Prosím skúste znova.">

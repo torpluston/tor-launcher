@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "인터넷에 연결할 때 프록시를 사용합니다">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "프록시 종류:">
+<!ENTITY torsettings.useProxy.type "프록시 종류">
 <!ENTITY torsettings.useProxy.type.placeholder "프록시 유형을 선택해 주세요.">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "주소:">
+<!ENTITY torsettings.useProxy.address "주소">
 <!ENTITY torsettings.useProxy.address.placeholder "IP 주소 또는 호스트 네임">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "포트:">
+<!ENTITY torsettings.useProxy.port "포트">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "사용자명:">
+<!ENTITY torsettings.useProxy.username "사용자명">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "비밀번호:">
+<!ENTITY torsettings.useProxy.password "비밀번호">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "이 컴퓨터는 특정 포트만 허용하는 방화벽을 통해서 연결됩니다.">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "허용된 포트:">
+<!ENTITY torsettings.firewall.allowedPorts "허용된 포트">
 <!ENTITY torsettings.useBridges.checkbox "우리나라에서는 Tor를 검열합니다.">
 <!ENTITY torsettings.useBridges.default "제공된 브릿지를 선택하세요.">
 <!ENTITY torsettings.useBridges.default.placeholder "브릿지를 선택하세요.">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "새로운 브릿지 요청하기">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "브릿지DB에 연결하고 있으니, 잠시 기다려주세요.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "브릿지를 요청하기 위해 CAPCHA를 풀어주세요.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "풀이가 맞지 않습니다. 다시 시도해주세요.">

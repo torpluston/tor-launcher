@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Я використовую проксі для з'єднання з Інтернетом">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Тип проксі:">
+<!ENTITY torsettings.useProxy.type "Тип проксі">
 <!ENTITY torsettings.useProxy.type.placeholder "оберіть тип проксі">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Адреса:">
+<!ENTITY torsettings.useProxy.address "Адреса">
 <!ENTITY torsettings.useProxy.address.placeholder "ІР адреса або ім'я хосту">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Порт:">
+<!ENTITY torsettings.useProxy.port "Порт">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Ім'я користувача:">
+<!ENTITY torsettings.useProxy.username "Ім'я користувача">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Пароль:">
+<!ENTITY torsettings.useProxy.password "Пароль">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Мій брандмауер дозволяє підключення тільки до певних портів">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Дозволенні порти:">
+<!ENTITY torsettings.firewall.allowedPorts "Дозволенні порти">
 <!ENTITY torsettings.useBridges.checkbox "Тор цензується в моїй країні">
 <!ENTITY torsettings.useBridges.default "Виберіть вбудований міст">
 <!ENTITY torsettings.useBridges.default.placeholder "Виберіть міст">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Надіслати запит на отримання нового мосту...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "З&#x27;єднання з базою даних мостів. Зачекайте.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Розв&#x27;яжіть CAPTCHA, щоб надіслати запит на отримання мосту.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Розв&#x27;язання невірне. Спробуйте знову.">

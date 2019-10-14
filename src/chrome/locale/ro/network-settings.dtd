@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Folosesc un proxy pentru a mă conecta la Internet">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Tip proxy:">
+<!ENTITY torsettings.useProxy.type "Tip proxy">
 <!ENTITY torsettings.useProxy.type.placeholder "alege un tip de proxy">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Adresă:">
+<!ENTITY torsettings.useProxy.address "Adresă">
 <!ENTITY torsettings.useProxy.address.placeholder "Adresă IP sau hostname">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Port:">
+<!ENTITY torsettings.useProxy.port "Port">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Nume utilizator:">
+<!ENTITY torsettings.useProxy.username "Nume utilizator">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Parola:">
+<!ENTITY torsettings.useProxy.password "Parola">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Acest computer trece printr-un firewall care permite doar conexiuni către anumite porturi">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Porturi permise:">
+<!ENTITY torsettings.firewall.allowedPorts "Porturi permise">
 <!ENTITY torsettings.useBridges.checkbox "Tor este cenzurat în țara mea">
 <!ENTITY torsettings.useBridges.default "Selectează o punte integrată">
 <!ENTITY torsettings.useBridges.default.placeholder "selectează o punte">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Cerere Punte Nouă">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Se contactează BridgeDB. Așteptați.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Rezolvă acest CAPTCHA pentru a cere o punte.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Soluția nu este corectă. Încearcă din nou.">

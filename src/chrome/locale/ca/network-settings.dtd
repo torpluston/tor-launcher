@@ -28,23 +28,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Utilitzo un servidor intermediari per a accedir a Internet">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Tipus de servidor intermediari local:">
+<!ENTITY torsettings.useProxy.type "Tipus de servidor intermediari local">
 <!ENTITY torsettings.useProxy.type.placeholder "seleccioneu un tipus de servidor intermediari">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Adreça:">
+<!ENTITY torsettings.useProxy.address "Adreça">
 <!ENTITY torsettings.useProxy.address.placeholder "Adreça IP o nom del host">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Port:">
+<!ENTITY torsettings.useProxy.port "Port">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Nom d'usuari:">
+<!ENTITY torsettings.useProxy.username "Nom d'usuari">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Contrasenya:">
+<!ENTITY torsettings.useProxy.password "Contrasenya">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Aquest ordinador va a través d'un tallafoc que només permet connexions a certs ports">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Ports permesos:">
+<!ENTITY torsettings.firewall.allowedPorts "Ports permesos">
 <!ENTITY torsettings.useBridges.checkbox "Tor està censurat al meu país">
 <!ENTITY torsettings.useBridges.default "Seleccioneu un pont predefinit">
 <!ENTITY torsettings.useBridges.default.placeholder "seleccioneu un pont">
@@ -92,3 +92,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Sol·licita un pont nou...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "S&#x27;està contactant amb el BridgeDB. Espereu.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Resolgueu el CAPTCHA per a sol·licitar un pont.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "La solució no és correcta. Torneu a provar-ho.">

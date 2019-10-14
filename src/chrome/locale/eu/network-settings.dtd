@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Proxy bat erabiltzen dut Internetera sartzeko">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Proxy mota:">
+<!ENTITY torsettings.useProxy.type "Proxy mota">
 <!ENTITY torsettings.useProxy.type.placeholder "proxy mota aukeratu">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Helbidea:">
+<!ENTITY torsettings.useProxy.address "Helbidea">
 <!ENTITY torsettings.useProxy.address.placeholder "IP helbide edo ostalari izena">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Ataka:">
+<!ENTITY torsettings.useProxy.port "Ataka">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Erabiltzaile izena:">
+<!ENTITY torsettings.useProxy.username "Erabiltzaile izena">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Pasahitza:">
+<!ENTITY torsettings.useProxy.password "Pasahitza">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Ordenagailu honek ataka zehatz batzuetara bakarrik konektatzea baimentzen duen sueten baten zehar doa">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Baimendutako atakak:">
+<!ENTITY torsettings.firewall.allowedPorts "Baimendutako atakak">
 <!ENTITY torsettings.useBridges.checkbox "Tor zentsuratuta dago nire herrialdean">
 <!ENTITY torsettings.useBridges.default "Select a built-in bridge">
 <!ENTITY torsettings.useBridges.default.placeholder "aukeratu zubia">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Zubi berri bat eskatu…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "BridgeDBrekin kontaktatzen. Itxaron mesedez.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "CAPTCHAa ebatzi ezazu zubi bat eskatzeko.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Ebazpena ez da zuzena. Mesedez saiatu berriro.">

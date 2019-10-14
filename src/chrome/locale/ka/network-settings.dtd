@@ -27,15 +27,15 @@
 
 <!ENTITY torsettings.useProxy.checkbox "ინტერნეტთან დასაკავშირებლად პროქსის ვიყენებ">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "პროქსის სახეობა:">
+<!ENTITY torsettings.useProxy.type "პროქსის სახეობა">
 <!ENTITY torsettings.useProxy.type.placeholder "მიუთითეთ პროქსის სახეობა">
 <!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.address "მისამართი">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-მისამართი ან დასახელება">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "პორტი:">
+<!ENTITY torsettings.useProxy.port "პორტი">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "მომხმარებლის სახელი:">
+<!ENTITY torsettings.useProxy.username "მომხმარებლის სახელი">
 <!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "პაროლი">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
@@ -43,7 +43,7 @@
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "კომპიუტერი ინტერნეტს უკავშირდება ქსელის ფარის გავლით, რომელშიც მხოლოდ ცალკეული პორტებია დაშვებული">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "დაშვებული პორტები:">
+<!ENTITY torsettings.firewall.allowedPorts "დაშვებული პორტები">
 <!ENTITY torsettings.useBridges.checkbox "Tor შეზღუდულია ჩემს ქვეყანაში">
 <!ENTITY torsettings.useBridges.default "ჩაშენებული გადამცემი ხიდის მითითება">
 <!ENTITY torsettings.useBridges.default.placeholder "ხიდის მითითება">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "ახალი გადამცემი ხიდის მოთხოვნა...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "დაკავშირება BridgeDB-სთან. გთხოვთ, მოითმინოთ.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "გაიარეთ CAPTCHA, გადამცემი ხიდის მოთხოვნისთვის.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "გადაწყვეტა არასწორია. გთხოვთ სცადოთ ხელახლა.">

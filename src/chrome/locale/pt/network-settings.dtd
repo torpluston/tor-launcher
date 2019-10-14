@@ -26,18 +26,18 @@
 <!ENTITY torsettings.optional "Opcional">
 
 <!ENTITY torsettings.useProxy.checkbox "Eu utilizo um proxy para ligar à Internet">
-<!ENTITY torsettings.useProxy.type "Tipo de proxy:">
+<!ENTITY torsettings.useProxy.type "Tipo de proxy">
 <!ENTITY torsettings.useProxy.type.placeholder "selecionar um tipo de proxy">
-<!ENTITY torsettings.useProxy.address "Endereço:">
+<!ENTITY torsettings.useProxy.address "Endereço">
 <!ENTITY torsettings.useProxy.address.placeholder "Endereço de IP ou nome do hospedeiro">
-<!ENTITY torsettings.useProxy.port "Porta:">
-<!ENTITY torsettings.useProxy.username "Nome do utilizador:">
-<!ENTITY torsettings.useProxy.password "Senha:">
+<!ENTITY torsettings.useProxy.port "Porta">
+<!ENTITY torsettings.useProxy.username "Nome do utilizador">
+<!ENTITY torsettings.useProxy.password "Senha">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Este computador liga através de uma firewall que só permite ligações para determinadas portas.">
-<!ENTITY torsettings.firewall.allowedPorts "Portas permitidas:">
+<!ENTITY torsettings.firewall.allowedPorts "Portas permitidas">
 <!ENTITY torsettings.useBridges.checkbox "Tor é censurado no meu país">
 <!ENTITY torsettings.useBridges.default "Selecionar um ponte integrada">
 <!ENTITY torsettings.useBridges.default.placeholder "selecionar uma ponte">
@@ -60,3 +60,9 @@
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Por favor, aguarde, enquanto nós estabelecemos uma ligação à rede Tor.&#160;  Isto pode demorar alguns minutos.">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Solicite uma Nova Ponte...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "A contactar BridgeDB. Por favor, aguarde.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Resolva o CAPTCHA para solicitar uma ponte.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "A solução não está correta. Por favor, tente novamente.">

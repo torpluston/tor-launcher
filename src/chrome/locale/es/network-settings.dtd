@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Utilizo un proxy para conectar a Internet.">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Tipo de proxy:">
+<!ENTITY torsettings.useProxy.type "Tipo de proxy">
 <!ENTITY torsettings.useProxy.type.placeholder "seleccionar un tipo de proxy">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Dirección:">
+<!ENTITY torsettings.useProxy.address "Dirección">
 <!ENTITY torsettings.useProxy.address.placeholder "Dirección IP o nombre de máquina (host)">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Puerto:">
+<!ENTITY torsettings.useProxy.port "Puerto">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Nombre de usuario:">
+<!ENTITY torsettings.useProxy.username "Nombre de usuario">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Contraseña:">
+<!ENTITY torsettings.useProxy.password "Contraseña">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Esta computadora va a través de un cortafuegos(firewall) que sólo permite conexiones a ciertos puertos">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Puertos permitidos:">
+<!ENTITY torsettings.firewall.allowedPorts "Puertos permitidos">
 <!ENTITY torsettings.useBridges.checkbox "En mi país se censura a Tor">
 <!ENTITY torsettings.useBridges.default "Seleccionar un puente construido">
 <!ENTITY torsettings.useBridges.default.placeholder "seleccionar un puente">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "Ver los registros de Tor.">
 <!ENTITY torPreferences.viewLogs "Ver registros&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Registros de Tor">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Solicitar un nuevo puente...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contactando con BridgeDB. Espera por favor.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Resuelve el CAPTCHA para solicitar un puente.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "La solución no es correcta. Por favor, inténtalo de nuevo.">

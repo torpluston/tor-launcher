@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "ขอสะพานใหม่…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "กำลังติดต่อ BridgeDB. กรุณารอ">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "แก้ปัญหา CAPTCHA เพื่อขอสะพาน">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "วิธีแก้ไขไม่ถูกต้อง กรุณาลองอีกครั้ง">

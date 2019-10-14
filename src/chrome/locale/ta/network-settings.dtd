@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "நான் இணையத்துடன் இணைய ஒரு பதிலாளைப் பயன்படுத்துகிறேன்">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "பதிலாள் வகை:">
+<!ENTITY torsettings.useProxy.type "பதிலாள் வகை">
 <!ENTITY torsettings.useProxy.type.placeholder "ஒரு பதிலாள் வகையைத் தேர்ந்தெடுங்கள்">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "முகவரி:">
+<!ENTITY torsettings.useProxy.address "முகவரி">
 <!ENTITY torsettings.useProxy.address.placeholder "IP முகவரி அல்லது ஹோஸ்ட்பெயர்">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Port:">
+<!ENTITY torsettings.useProxy.port "Port">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "பயனர்பெயர்:">
+<!ENTITY torsettings.useProxy.username "பயனர்பெயர்">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "கடவுச்சொல்:">
+<!ENTITY torsettings.useProxy.password "கடவுச்சொல்">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "இந்த கணினி ஒரு தீயரண் வழியே செல்கிறது அது குறிப்பிட்ட முனைகளுக்கான இணைப்புகளை மட்டுமே அனுமதிக்கிறது">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "அனுமதிக்கப்பட்ட முனைகள்:">
+<!ENTITY torsettings.firewall.allowedPorts "அனுமதிக்கப்பட்ட முனைகள்">
 <!ENTITY torsettings.useBridges.checkbox "Tor எனது நாட்டின் தணிக்கையிடப்படுகிறது">
 <!ENTITY torsettings.useBridges.default "ஒரு உள்ளமை bridge தேர்ந்தெடுங்கள்">
 <!ENTITY torsettings.useBridges.default.placeholder "ஒரு bridge தேர்ந்தெடுங்கள்">
@@ -92,3 +92,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please wait.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Solve the CAPTCHA to request a bridge.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "The solution is not correct. Please try again.">

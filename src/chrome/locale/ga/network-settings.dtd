@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Úsáidim seachfhreastalaí chun ceangal leis an Idirlíon">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Cineál an tSeachfhreastalaí:">
+<!ENTITY torsettings.useProxy.type "Cineál an tSeachfhreastalaí">
 <!ENTITY torsettings.useProxy.type.placeholder "roghnaigh cineál an tseachfhreastalaí">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Seoladh:">
+<!ENTITY torsettings.useProxy.address "Seoladh">
 <!ENTITY torsettings.useProxy.address.placeholder "Seoladh IP nó óstainm">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Port:">
+<!ENTITY torsettings.useProxy.port "Port">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Ainm úsáideora:">
+<!ENTITY torsettings.useProxy.username "Ainm úsáideora">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Focal faire:">
+<!ENTITY torsettings.useProxy.password "Focal faire">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Téann an ríomhaire seo trí bhalla dóiteáin nach gceadaíonn ceangail ach le poirt áirithe">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Poirt Cheadaithe:">
+<!ENTITY torsettings.firewall.allowedPorts "Poirt Cheadaithe">
 <!ENTITY torsettings.useBridges.checkbox "Déantar cinsireacht ar Tor sa tír seo">
 <!ENTITY torsettings.useBridges.default "Roghnaigh droichead ionsuite">
 <!ENTITY torsettings.useBridges.default.placeholder "roghnaigh droichead">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Iarr Droichead Nua...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Ag dul i dteagmháil le BridgeDB. Fan nóiméad.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Réitigh an CAPTCHA le droichead a iarraidh.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Níl an freagra sin ceart. Bain triail eile as.">

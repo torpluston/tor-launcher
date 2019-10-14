@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "J’utilise un mandataire pour accéder à Internet">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Type de mandataire :">
+<!ENTITY torsettings.useProxy.type "Type de mandataire ">
 <!ENTITY torsettings.useProxy.type.placeholder "sélectionner un type de mandataire">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Adresse :">
+<!ENTITY torsettings.useProxy.address "Adresse ">
 <!ENTITY torsettings.useProxy.address.placeholder "adresse IP ou nom d’hôte">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Port :">
+<!ENTITY torsettings.useProxy.port "Port ">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Nom d’utilisateur :">
+<!ENTITY torsettings.useProxy.username "Nom d’utilisateur ">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Mot de passe :">
+<!ENTITY torsettings.useProxy.password "Mot de passe ">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Cet ordinateur passe par un pare-feu qui n’autorise que les connexions à certains ports">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Ports autorisés :">
+<!ENTITY torsettings.firewall.allowedPorts "Ports autorisés ">
 <!ENTITY torsettings.useBridges.checkbox "Tor est censuré dans mon pays">
 <!ENTITY torsettings.useBridges.default "Sélectionner un pont intégré">
 <!ENTITY torsettings.useBridges.default.placeholder "Sélectionner un pont">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Demander un nouveau pont…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Connexion à BridgeDB. Veuillez patienter.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Résoudre le captcha pour demander un pont.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "La solution est erronée. Veuillez ressayer.">

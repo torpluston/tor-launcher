@@ -26,18 +26,18 @@
 <!ENTITY torsettings.optional "Opcionalno">
 
 <!ENTITY torsettings.useProxy.checkbox "Koristim proxy za spajanje na Internet">
-<!ENTITY torsettings.useProxy.type "Tip proxya:">
+<!ENTITY torsettings.useProxy.type "Tip proxya">
 <!ENTITY torsettings.useProxy.type.placeholder "odaberite tip proxya">
-<!ENTITY torsettings.useProxy.address "Adresa:">
+<!ENTITY torsettings.useProxy.address "Adresa">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adresa ili hostname">
-<!ENTITY torsettings.useProxy.port "Port:">
-<!ENTITY torsettings.useProxy.username "Korisničko ime:">
-<!ENTITY torsettings.useProxy.password "Lozinka:">
+<!ENTITY torsettings.useProxy.port "Port">
+<!ENTITY torsettings.useProxy.username "Korisničko ime">
+<!ENTITY torsettings.useProxy.password "Lozinka">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Ovo računalo je iza vatrozida koji dopušta spajanje samo na određene portove">
-<!ENTITY torsettings.firewall.allowedPorts "Dozvoljeni portovi:">
+<!ENTITY torsettings.firewall.allowedPorts "Dozvoljeni portovi">
 <!ENTITY torsettings.useBridges.checkbox "Tor je cenzuriran u mojoj državi">
 <!ENTITY torsettings.useBridges.default "Odaberite ugrađeni most">
 <!ENTITY torsettings.useBridges.default.placeholder "odaberite most">
@@ -60,3 +60,9 @@
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Molimo pričekajte dok ne uspostavimo vezu s Tor mrežom.&#160; To bi moglo potrajati nekoliko minuta.">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please wait.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Solve the CAPTCHA to request a bridge.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "The solution is not correct. Please try again.">

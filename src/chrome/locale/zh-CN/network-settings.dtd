@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "使用代理访问互联网">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "代理类型：">
+<!ENTITY torsettings.useProxy.type "代理类型">
 <!ENTITY torsettings.useProxy.type.placeholder "选择代理类型">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "地址：">
+<!ENTITY torsettings.useProxy.address "地址">
 <!ENTITY torsettings.useProxy.address.placeholder "IP 地址或主机名">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "端口：">
+<!ENTITY torsettings.useProxy.port "端口">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "用户名：">
+<!ENTITY torsettings.useProxy.username "用户名">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "密码：">
+<!ENTITY torsettings.useProxy.password "密码">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "该计算机的防火墙仅允许特定端口的互联网连接">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "允许的端口：">
+<!ENTITY torsettings.firewall.allowedPorts "允许的端口">
 <!ENTITY torsettings.useBridges.checkbox "我所在的国家对 Tor 进行了审查">
 <!ENTITY torsettings.useBridges.default "选择内置网桥">
 <!ENTITY torsettings.useBridges.default.placeholder "选择网桥">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "查看日志&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "正在请求新网桥……">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "正在连接到BridgeDB,请等待。">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "请输入验证码以获取网桥。">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "结果并不正确，请重试。">

@@ -26,13 +26,13 @@
 <!ENTITY torsettings.optional "Opciono">
 
 <!ENTITY torsettings.useProxy.checkbox "I use a proxy to connect to the Internet">
-<!ENTITY torsettings.useProxy.type "Proxy Type:">
+<!ENTITY torsettings.useProxy.type "Proxy Type">
 <!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
-<!ENTITY torsettings.useProxy.address "Adresa:">
+<!ENTITY torsettings.useProxy.address "Adresa">
 <!ENTITY torsettings.useProxy.address.placeholder "IP address or hostname">
-<!ENTITY torsettings.useProxy.port "Port:">
-<!ENTITY torsettings.useProxy.username "Korisničko ime:">
-<!ENTITY torsettings.useProxy.password "Lozinka:">
+<!ENTITY torsettings.useProxy.port "Port">
+<!ENTITY torsettings.useProxy.username "Korisničko ime">
+<!ENTITY torsettings.useProxy.password "Lozinka">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4 ">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5 ">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS ">
@@ -60,3 +60,9 @@
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Please wait while we establish a connection to the Tor network.&#160; This may take several minutes.">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please wait.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Solve the CAPTCHA to request a bridge.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "The solution is not correct. Please try again.">

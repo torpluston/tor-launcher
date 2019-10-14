@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "أستخدم وسيطا للاتصال بالإنترنت">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "نوع البروكسي:">
+<!ENTITY torsettings.useProxy.type "نوع البروكسي">
 <!ENTITY torsettings.useProxy.type.placeholder "اختر نوع الوسيط">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "العنوان:">
+<!ENTITY torsettings.useProxy.address "العنوان">
 <!ENTITY torsettings.useProxy.address.placeholder "عنوان الإنترنت IP أو اسم المضيف">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "المنفذ:">
+<!ENTITY torsettings.useProxy.port "المنفذ">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "اسم المستخدم:">
+<!ENTITY torsettings.useProxy.username "اسم المستخدم">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "كلمة السر:">
+<!ENTITY torsettings.useProxy.password "كلمة السر">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "اتصال الإنترنت لهذا الكمبيوتر يمر بجدار حماية يسمح بالاتصال فقط من خلال منافذ معينة">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "المنافذ المسموح بها:">
+<!ENTITY torsettings.firewall.allowedPorts "المنافذ المسموح بها">
 <!ENTITY torsettings.useBridges.checkbox "تور محجوب في بلدي">
 <!ENTITY torsettings.useBridges.default "اختر جسرا مُدمَجا في البرنامج">
 <!ENTITY torsettings.useBridges.default.placeholder "اختر جسرا">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "اطلب جسرا جديدا…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "يتصل بقاعدة بيانات الجسور BridgeDB. يُرجى الانتظار.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "حل كاباتشا لطلب جسر.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "الحل ليس سليمًا. يُرجى إعادة المحاولة.">

@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Internete erişmek için vekil sunucu kullanıyorum">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Vekil Sunucu Türü:">
+<!ENTITY torsettings.useProxy.type "Vekil Sunucu Türü">
 <!ENTITY torsettings.useProxy.type.placeholder "vekil sunucu türünü seçin">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Adres:">
+<!ENTITY torsettings.useProxy.address "Adres">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adresi ya da sunucu adı">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Kapı Numarası:">
+<!ENTITY torsettings.useProxy.port "Kapı Numarası">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Kullanıcı Adı:">
+<!ENTITY torsettings.useProxy.username "Kullanıcı Adı">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Parola:">
+<!ENTITY torsettings.useProxy.password "Parola">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Bu bilgisayarda yalnız belirli kapı numaralarından bağlanılmasına izin veren bir güvenlik duvarı kullanılıyor">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Kullanılabilecek Kapı Numaraları:">
+<!ENTITY torsettings.firewall.allowedPorts "Kullanılabilecek Kapı Numaraları">
 <!ENTITY torsettings.useBridges.checkbox "Bulunduğum ülkede Tor ağı engelleniyor">
 <!ENTITY torsettings.useBridges.default "Hazır Köprülerden Seçin">
 <!ENTITY torsettings.useBridges.default.placeholder "bir köprü seçin">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "Tor günlük kayıtlarına bakın.">
 <!ENTITY torPreferences.viewLogs "Günlüğü Görüntüle&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Günlük Kayıtları">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Yeni Bir Köprü İsteği Yap...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Köprü veritabanına bağlanılıyor. Lütfen bekleyin.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Köprü isteği yapmak için güvenlik kodunu çözün.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Çözüm doğru değil. Lütfen yeniden deneyin.">

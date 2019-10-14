@@ -26,18 +26,18 @@
 <!ENTITY torsettings.optional "Facultatif">
 
 <!ENTITY torsettings.useProxy.checkbox "J’utilise un mandataire pour accéder à Internet">
-<!ENTITY torsettings.useProxy.type "Type de mandataire :">
+<!ENTITY torsettings.useProxy.type "Type de mandataire ">
 <!ENTITY torsettings.useProxy.type.placeholder "sélectionner un type de mandataire">
-<!ENTITY torsettings.useProxy.address "Adresse :">
+<!ENTITY torsettings.useProxy.address "Adresse ">
 <!ENTITY torsettings.useProxy.address.placeholder "Adresse IP ou nom d’hôte">
-<!ENTITY torsettings.useProxy.port "Port :">
-<!ENTITY torsettings.useProxy.username "Nom d’utilisateur :">
-<!ENTITY torsettings.useProxy.password "Mot de passe :">
+<!ENTITY torsettings.useProxy.port "Port ">
+<!ENTITY torsettings.useProxy.username "Nom d’utilisateur ">
+<!ENTITY torsettings.useProxy.password "Mot de passe ">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Cet ordinateur passe par un pare-feu qui n’autorise que les connexions à certains ports">
-<!ENTITY torsettings.firewall.allowedPorts "Ports autorisés :">
+<!ENTITY torsettings.firewall.allowedPorts "Ports autorisés ">
 <!ENTITY torsettings.useBridges.checkbox "Tor est censuré dans mon pays">
 <!ENTITY torsettings.useBridges.default "Sélectionner un pont intégré">
 <!ENTITY torsettings.useBridges.default.placeholder "sélectionner un pont">
@@ -60,3 +60,9 @@
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Veuillez patienter pendant que nous établissons une connexion vers le réseau Tor.&#160; Cela pourrait prendre plusieurs minutes.">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please wait.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Solve the CAPTCHA to request a bridge.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "The solution is not correct. Please try again.">

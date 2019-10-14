@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Proxy-t használok az Internetre való kapcsolódáshoz">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Proxy Típus:">
+<!ENTITY torsettings.useProxy.type "Proxy Típus">
 <!ENTITY torsettings.useProxy.type.placeholder " válaszon ki egy proxy típust">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Cím:">
+<!ENTITY torsettings.useProxy.address "Cím">
 <!ENTITY torsettings.useProxy.address.placeholder "IP cím vagy gépnév">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Port:">
+<!ENTITY torsettings.useProxy.port "Port">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Felhasználónév:">
+<!ENTITY torsettings.useProxy.username "Felhasználónév">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Jelszó:">
+<!ENTITY torsettings.useProxy.password "Jelszó">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "A számítógép egy tűzfalon keresztül kommunikál, ami csak adott portokon keresztül engedélyezi a kapcsolatotokat.">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Engedélyezett portok:">
+<!ENTITY torsettings.firewall.allowedPorts "Engedélyezett portok">
 <!ENTITY torsettings.useBridges.checkbox "A Tor cenzúrázva van az országomban">
 <!ENTITY torsettings.useBridges.default "Válasszon ki egy beépített hidat">
 <!ENTITY torsettings.useBridges.default.placeholder "Válasszon ki egy hidat">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Új híd kérése...">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Kapcsolódás a hídadatbázishoz. Kérjük várjon.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Oldjon meg egy CAPTCHA-t a híd kéréséhez.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "A megoldás nem helyes. Kérjük próbálja újra.">

@@ -26,18 +26,18 @@
 <!ENTITY torsettings.optional "Voliteľné">
 
 <!ENTITY torsettings.useProxy.checkbox "Na pripojenie k internetu používam proxy">
-<!ENTITY torsettings.useProxy.type "Typ proxy:">
+<!ENTITY torsettings.useProxy.type "Typ proxy">
 <!ENTITY torsettings.useProxy.type.placeholder "select a proxy type">
-<!ENTITY torsettings.useProxy.address "Adresa:">
+<!ENTITY torsettings.useProxy.address "Adresa">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adresa alebo názov hostiteľa">
-<!ENTITY torsettings.useProxy.port "Port:">
-<!ENTITY torsettings.useProxy.username "Užívateľské meno:">
-<!ENTITY torsettings.useProxy.password "Heslo:">
+<!ENTITY torsettings.useProxy.port "Port">
+<!ENTITY torsettings.useProxy.username "Užívateľské meno">
+<!ENTITY torsettings.useProxy.password "Heslo">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Tento počítač prechádza cez firewall, ktorý povoľuje spojenie len k určitým portom.">
-<!ENTITY torsettings.firewall.allowedPorts "Povolené porty:">
+<!ENTITY torsettings.firewall.allowedPorts "Povolené porty">
 <!ENTITY torsettings.useBridges.checkbox "Tor je v mojej krajine cenzurovaný">
 <!ENTITY torsettings.useBridges.default "Select a built-in bridge">
 <!ENTITY torsettings.useBridges.default.placeholder "select a bridge">
@@ -60,3 +60,9 @@
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Prosím počkajte na vytvorenie pripojenia do siete Tor.&#160; Môže to trvať niekoľko minút. ">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please wait.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Solve the CAPTCHA to request a bridge.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "The solution is not correct. Please try again.">

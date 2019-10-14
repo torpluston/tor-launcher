@@ -27,23 +27,23 @@
 
 <!ENTITY torsettings.useProxy.checkbox "Ég nota milliþjón (proxy) til að tengjast við internetið">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Gerð milliþjóns:">
+<!ENTITY torsettings.useProxy.type "Gerð milliþjóns">
 <!ENTITY torsettings.useProxy.type.placeholder "veldu tegund milliþjóns">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Vistfang:">
+<!ENTITY torsettings.useProxy.address "Vistfang">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-vistfang eða vélarheiti">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Gátt:">
+<!ENTITY torsettings.useProxy.port "Gátt">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Notandanafn:">
+<!ENTITY torsettings.useProxy.username "Notandanafn">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "Lykilorð:">
+<!ENTITY torsettings.useProxy.password "Lykilorð">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Þessi tölva tengist í gegnum eldvegg sem leyfir einungis tengingar í gegnum tilteknar gáttir">
 <!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Leyfðar gáttir:">
+<!ENTITY torsettings.firewall.allowedPorts "Leyfðar gáttir">
 <!ENTITY torsettings.useBridges.checkbox "Tor er ritskoðað í landinu mínu">
 <!ENTITY torsettings.useBridges.default "Veldu innbyggða brú">
 <!ENTITY torsettings.useBridges.default.placeholder "veldu brú">
@@ -91,3 +91,9 @@
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+
+<!-- #31286 about:preferences strings -->
+<!ENTITY torPreferences.requestNewBridge "Biðja um nýja brú…">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Tengist BridgeDB. Bíddu aðeins.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Leystu CAPTCHA-þrautina til að biðja um brú.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Þessi lausn er ekki rétt. Reyndu aftur.">
