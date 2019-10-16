@@ -26,24 +26,18 @@
 <!ENTITY torsettings.optional "Roghnach">
 
 <!ENTITY torsettings.useProxy.checkbox "Úsáidim seachfhreastalaí chun ceangal leis an Idirlíon">
-<!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Cineál an tSeachfhreastalaí">
+<!ENTITY torsettings.useProxy.type "Proxy Type">
 <!ENTITY torsettings.useProxy.type.placeholder "roghnaigh cineál an tseachfhreastalaí">
-<!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Seoladh">
+<!ENTITY torsettings.useProxy.address "Address">
 <!ENTITY torsettings.useProxy.address.placeholder "Seoladh IP nó óstainm">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.port "Port">
-<!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "Ainm úsáideora">
-<!-- TODO: remove colon-->
+<!ENTITY torsettings.useProxy.username "Username">
 <!ENTITY torsettings.useProxy.password "Focal faire">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Téann an ríomhaire seo trí bhalla dóiteáin nach gceadaíonn ceangail ach le poirt áirithe">
-<!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "Poirt Cheadaithe">
+<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports">
 <!ENTITY torsettings.useBridges.checkbox "Déantar cinsireacht ar Tor sa tír seo">
 <!ENTITY torsettings.useBridges.default "Roghnaigh droichead ionsuite">
 <!ENTITY torsettings.useBridges.default.placeholder "roghnaigh droichead">
@@ -75,25 +69,15 @@
 <!ENTITY torPreferences.bridges "Droichid">
 <!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
 <!ENTITY torPreferences.useBridge "Use a bridge">
-<!-- torlauncher.request_a_new_bridge -->
 <!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
 <!ENTITY torPreferences.provideBridge "Provide a bridge">
 <!ENTITY torPreferences.advanced "Advanced">
 <!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
 <!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
 <!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
-<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
 <!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
-<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Réitigh an CAPTCHA le droichead a iarraidh.">
-<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Níl an freagra sin ceart. Bain triail eile as.">
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
 <!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
-
-<!-- #31286 about:preferences strings -->
-<!ENTITY torPreferences.requestNewBridge "Iarr Droichead Nua...">
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Ag dul i dteagmháil le BridgeDB. Fan nóiméad.">
-<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Réitigh an CAPTCHA le droichead a iarraidh.">
-<!ENTITY torPreferences.requestBridgeErrorBadSolution "Níl an freagra sin ceart. Bain triail eile as.">

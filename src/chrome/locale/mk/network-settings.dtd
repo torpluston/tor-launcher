@@ -26,23 +26,17 @@
 <!ENTITY torsettings.optional "Опционално">
 
 <!ENTITY torsettings.useProxy.checkbox "Користам прокси за поврзување на Интернет">
-<!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "Тип на прокси">
+<!ENTITY torsettings.useProxy.type "Тип на Прокси">
 <!ENTITY torsettings.useProxy.type.placeholder "одбери тип на прокси">
-<!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "Адреси">
+<!ENTITY torsettings.useProxy.address "Адреса">
 <!ENTITY torsettings.useProxy.address.placeholder "IP адреси или име на хост">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.port "Порта">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.username "Корисничко име">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "Лозинка">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Овој компјутер оди преку заштитен ѕид кој дозволува поврзувања до одредени порти">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.firewall.allowedPorts "Дозволени порти">
 <!ENTITY torsettings.useBridges.checkbox "Tor е цензуриран во мојата држава">
 <!ENTITY torsettings.useBridges.default "Одбери вграден мост">
@@ -68,32 +62,22 @@
 <!ENTITY torprogress.pleaseWait "Ве молиме почекајте додека се воспостави поврзувањето со Тор мрежата.&#160; Ова може да потрае неколку минути.">
 
 <!-- #31286 about:preferences strings  -->
-<!ENTITY torPreferences.categoryTitle "Тор">
-<!ENTITY torPreferences.torSettings "Tor Settings">
-<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
+<!ENTITY torPreferences.categoryTitle "Tor">
+<!ENTITY torPreferences.torSettings "Tor Поставки">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser го рутира вашиот сообраќај преку Tor мрежата, водена од илјадници волонтери ширум светот." >
 <!ENTITY torPreferences.learnMore "Научете повеќе">
 <!ENTITY torPreferences.bridges "Мостови">
-<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
-<!ENTITY torPreferences.useBridge "Use a bridge">
-<!-- torlauncher.request_a_new_bridge -->
-<!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
-<!ENTITY torPreferences.provideBridge "Provide a bridge">
-<!ENTITY torPreferences.advanced "Advanced">
-<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
-<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
-<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
-<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
-<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
-<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Решете ја ЗАДАЧАТА за да побарате мост.">
-<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
-<!ENTITY torPreferences.requestBridgeErrorBadSolution "Решението е погрешно. Ве молиме обидете се повторно.">
-<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
-<!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
-<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
-
-<!-- #31286 about:preferences strings -->
-<!ENTITY torPreferences.requestNewBridge "Барање за нов мост...">
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Контактирање со BridgeDB. Ве молиме почекајте.">
+<!ENTITY torPreferences.bridgesDescription "Мостовите ви помагаат да пристапите на Tor мрежата на места каде Tor е блокиран. Зависно од тоа каде сте, еден мост може да работи подобро од друг.">
+<!ENTITY torPreferences.useBridge "Користи мост">
+<!ENTITY torPreferences.requestNewBridge "Побарај Нов мост&amp;#x2026;">
+<!ENTITY torPreferences.provideBridge "Овозможи мост">
+<!ENTITY torPreferences.advanced "Напредно">
+<!ENTITY torPreferences.advancedDescription "Конфигурирајте како Tor Browser да се поврзува на Интернет.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Разделени-со-запирка вредности">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Побарај Мост">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Контактирај BridgeDB. Ве молиме почекајте.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Решете ја ЗАДАЧАТА за да побарате мост.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Решението е погрешно. Ве молиме обидете се повторно.">
+<!ENTITY torPreferences.viewTorLogs "Види ги Tor логовите.">
+<!ENTITY torPreferences.viewLogs "Види логови&amp;#x2026;">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor Логови">

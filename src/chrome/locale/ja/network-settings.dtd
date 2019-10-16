@@ -26,23 +26,17 @@
 <!ENTITY torsettings.optional "オプション">
 
 <!ENTITY torsettings.useProxy.checkbox "インターネットに接続するのにプロキシを使用します">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.type "プロキシの種類">
 <!ENTITY torsettings.useProxy.type.placeholder "プロキシの種類を選択">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.address "アドレス">
 <!ENTITY torsettings.useProxy.address.placeholder "IP アドレスまたはホスト名">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.port "ポート">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.username "ユーザー名">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "パスワード">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "このコンピューターは特定のポートへの接続のみ許可するファイアーウォールを通します。">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.firewall.allowedPorts "許可されたポート">
 <!ENTITY torsettings.useBridges.checkbox "Tor は私の国では検閲されています">
 <!ENTITY torsettings.useBridges.default "内蔵ブリッジを選択する">
@@ -69,31 +63,21 @@
 
 <!-- #31286 about:preferences strings  -->
 <!ENTITY torPreferences.categoryTitle "Tor">
-<!ENTITY torPreferences.torSettings "Tor Settings">
-<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
-<!ENTITY torPreferences.learnMore "さらに詳しく">
+<!ENTITY torPreferences.torSettings "Tor の設定">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser は通信トラフィックを Tor ネットワークを経由させて送信します。Tor ネットワークは世界中の何千ものボランティアによって運用されています。" >
+<!ENTITY torPreferences.learnMore "詳細情報">
 <!ENTITY torPreferences.bridges "ブリッジ">
-<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
-<!ENTITY torPreferences.useBridge "Use a bridge">
-<!-- torlauncher.request_a_new_bridge -->
-<!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
-<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.bridgesDescription "ブリッジは Tor がブロックされる地域から Tor ネットワークにアクセスすることを手助けします。地域によって、あるブリッジが他のものよりうまく動作する可能性があります。">
+<!ENTITY torPreferences.useBridge "ブリッジを使用する">
+<!ENTITY torPreferences.requestNewBridge "新しいブリッジを要求&amp;#x2026;">
+<!ENTITY torPreferences.provideBridge "ブリッジを指定する">
 <!ENTITY torPreferences.advanced "詳細">
-<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
-<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
-<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
-<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
-<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
-<!ENTITY torPreferences.requestBridgeDialogSolvePrompt " ブリッジをリクエストするにはCAPTCHAを解いて下さい。">
-<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
-<!ENTITY torPreferences.requestBridgeErrorBadSolution "その解答は正しくありません。再度実行してください。">
-<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
-<!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
-<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
-
-<!-- #31286 about:preferences strings -->
-<!ENTITY torPreferences.requestNewBridge "新たなブリッジをリクエスト。">
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "BridgeDBとの接続を確立しています。しばらく待って下さい。">
+<!ENTITY torPreferences.advancedDescription "Tor Browser がインターネットに接続する方法を設定します。">
+<!ENTITY torPreferences.firewallPortsPlaceholder "コンマ区切りの値">
+<!ENTITY torPreferences.requestBridgeDialogTitle "ブリッジの要求">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "BridgeDB に接続しています。しばらくお待ちください。">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt " ブリッジをリクエストするにはCAPTCHAを解いて下さい。">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "その解答は正しくありません。再度実行してください。">
+<!ENTITY torPreferences.viewTorLogs "Tor のログを表示する。">
+<!ENTITY torPreferences.viewLogs "ログを表示&amp;#x2026;">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor ログ">

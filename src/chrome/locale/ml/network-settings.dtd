@@ -26,24 +26,18 @@
 <!ENTITY torsettings.optional "നിര്ബന്ധമില്ലാത്തത് ">
 
 <!ENTITY torsettings.useProxy.checkbox "ഞാൻ ഇന്റർനൈറ്റിലെക് ബന്ധപ്പെടാൻ ഒരു പ്രോക്സി ഉപയോഗിക്കുന്നു ">
-<!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.type "പ്രോക്സി ഇനം  ">
+<!ENTITY torsettings.useProxy.type "Proxy Type">
 <!ENTITY torsettings.useProxy.type.placeholder "ഒരു പ്രോക്സി ഇനം തിരഞ്ഞെടുക്കുക  :">
-<!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.address "മേൽവിലാസം ">
+<!ENTITY torsettings.useProxy.address "Address">
 <!ENTITY torsettings.useProxy.address.placeholder "ഐ പി മേൽവിലാസം അല്ലെങ്കിൽ ഹോസ്റ്റ് നെയിം ">
-<!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.port "Port">
-<!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.username "യൂസർ നെയിം ">
-<!-- TODO: remove colon-->
-<!ENTITY torsettings.useProxy.password "പാസ്സ്‌വേർഡ്‌ ">
+<!ENTITY torsettings.useProxy.port "പോര്‍ട്ട്">
+<!ENTITY torsettings.useProxy.username "ഉപയോക്താവിന്റെ പേർ ">
+<!ENTITY torsettings.useProxy.password "രഹസ്യവാക്കു്">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "എച് ടി ടി പി /എച് ടി ടി പി എസ് ">
 <!ENTITY torsettings.firewall.checkbox "ഈ കംപ്യൂട്ടർ ചില പ്രത്യേക പോർട്ടുകളിലൂടെ മാത്രം ബന്ധം അനുവദിക്കുന്ന ഫയർവാൾ വഴിയാണ് പോകുന്നത്">
-<!-- TODO: remove colon-->
-<!ENTITY torsettings.firewall.allowedPorts "അനുവദിച്ചിട്ടുള്ള പോർട്ടുകൾ ">
+<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports">
 <!ENTITY torsettings.useBridges.checkbox "എന്റെ രാജ്യത്തു ടോർ സെൻസർ ചെയ്തിട്ടുള്ളതാണ് ">
 <!ENTITY torsettings.useBridges.default "ഇതിനകത്തു തന്നെയുള്ള ഒരു ബ്രിഡ്ജ് തിരഞ്ഞെടുക്കുക ">
 <!ENTITY torsettings.useBridges.default.placeholder "ഒരു ബ്രിഡ്ജ് തിരഞ്ഞെടുക്കുക ">
@@ -69,31 +63,21 @@
 
 <!-- #31286 about:preferences strings  -->
 <!ENTITY torPreferences.categoryTitle "Tor">
-<!ENTITY torPreferences.torSettings "Tor Settings">
-<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
-<!ENTITY torPreferences.learnMore "Learn More">
-<!ENTITY torPreferences.bridges "Bridges">
-<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
-<!ENTITY torPreferences.useBridge "Use a bridge">
-<!-- torlauncher.request_a_new_bridge -->
-<!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
-<!ENTITY torPreferences.provideBridge "Provide a bridge">
-<!ENTITY torPreferences.advanced "Advanced">
-<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
-<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
-<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
-<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
-<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
-<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "ബ്രിഡ്ജിനെ കിട്ടാൻ തന്നിരിക്കുന്ന കാപ്ച പരിഹരിക്കുക ">
-<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
-<!ENTITY torPreferences.requestBridgeErrorBadSolution "പരിഹാരം ശെരിയല്ല . ദയവായി ഒന്നുകൂടെ ശ്രെമിക്കുക ">
-<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
-<!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
-<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
-
-<!-- #31286 about:preferences strings -->
-<!ENTITY torPreferences.requestNewBridge "ഒരു പുതിയ ബ്രിഡ്ജിനെ ചോദിക്കുക ...">
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "ബ്രിഡ്ജ് ഡി ബിയെ ബന്ധപ്പെടുന്നു , ദയവായി കാത്തിരിക്കുക ">
+<!ENTITY torPreferences.torSettings "ടോർ  ക്രമീകരണങ്ങൾ ">
+<!ENTITY torPreferences.torSettingsDescription "സ്വയം സഹായിക്കുന്ന ഒരു പറ്റം ആളുകളുടെ സഹായത്തോടെ ടോർ ബ്രൌസർ ടോർ നെറ്വർക്കിലേക്കു നിങ്ങളെ ബന്ധിപ്പിക്കുന്നതാണ് ." >
+<!ENTITY torPreferences.learnMore "കൂടുതൽ അറിയു">
+<!ENTITY torPreferences.bridges "ബ്രിഡ്ജുകൾ  ">
+<!ENTITY torPreferences.bridgesDescription "ബ്രിഡ്ജുകൾ ടോർ തടഞ്ഞിട്ടുള്ള സ്ഥലങ്ങളിൽ ടോർ നെറ്റർക് ഉപയോഗിക്കാൻ സഹായിക്കുന്നു . ഒരു ബ്രിഡ്ജ് മറ്റ്റൊന്നിനേക്കാൾ നന്നായി പ്രേവര്തിക്കുന്നത് നിങ്ങൾ എവിടെയാണെന്നതിനെ ആശ്രയിച്ചിരിക്കും .">
+<!ENTITY torPreferences.useBridge "ഒരു ബ്രിഡ്ജ് ഉപയോഗിക്കുക  ">
+<!ENTITY torPreferences.requestNewBridge "ഒരു പുതിയ ബ്രിഡ്ജിനെ ചോദിക്കുക &amp;#x2026;">
+<!ENTITY torPreferences.provideBridge "ഒരു ബ്രിഡ്ജ് നല്‍കുക">
+<!ENTITY torPreferences.advanced "പുരോഗമിച്ച">
+<!ENTITY torPreferences.advancedDescription "ടോർ ബ്രൗസർ എങ്ങനെയാണ് ഇന്റർനെറ്റിലേക്കു ബന്ധപ്പെടുന്നത് എന്ന് കോൺഫിഗർ ചെയ്യുക .">
+<!ENTITY torPreferences.firewallPortsPlaceholder "കോമ വേര്തിരിച്ചിരിക്കുന്ന വാൽയൂ">
+<!ENTITY torPreferences.requestBridgeDialogTitle "ബ്രിഡ്ജിനെ ചോദിക്കുക ">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "ബ്രിഡ്ജ് ഡി ബിയെ ബന്ധപ്പെടുന്നു , ദയവായി കാത്തിരിക്കുക .">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "ബ്രിഡ്ജിനെ കിട്ടാൻ തന്നിരിക്കുന്ന കാപ്ച പരിഹരിക്കുക ">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "പരിഹാരം ശെരിയല്ല . ദയവായി ഒന്നുകൂടെ ശ്രെമിക്കുക ">
+<!ENTITY torPreferences.viewTorLogs "ടോർ ലോഗ്സ് കാണുക .">
+<!ENTITY torPreferences.viewLogs "ലോഗ്സ് കാണുക &amp;#x2026;">
+<!ENTITY torPreferences.torLogsDialogTitle "ടോർ ലോഗ്സ് ">

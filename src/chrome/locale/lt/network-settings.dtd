@@ -26,23 +26,17 @@
 <!ENTITY torsettings.optional "Nebūtina">
 
 <!ENTITY torsettings.useProxy.checkbox "Prisijungimui prie interneto aš naudoju įgaliotąjį serverį">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.type "Įgaliotojo serverio tipas">
 <!ENTITY torsettings.useProxy.type.placeholder "pasirinkite įgaliotojo serverio tipą">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.address "Adresas">
 <!ENTITY torsettings.useProxy.address.placeholder "IP adresas arba serverio vardas">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.port "Prievadas">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.username "Naudotojo vardas">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.useProxy.password "Slaptažodis">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Šis kompiuteris jungiasi per užkardą, kuri leidžia jungtis tik prie tam tikrų prievadų">
-<!-- TODO: remove colon-->
 <!ENTITY torsettings.firewall.allowedPorts "Leidžiami prievadai">
 <!ENTITY torsettings.useBridges.checkbox "Mano šalyje Tor yra cenzūruojamas">
 <!ENTITY torsettings.useBridges.default "Pasirinkite įtaisytąjį tinklų tiltą">
@@ -69,31 +63,21 @@
 
 <!-- #31286 about:preferences strings  -->
 <!ENTITY torPreferences.categoryTitle "Tor">
-<!ENTITY torPreferences.torSettings "Tor Settings">
-<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
-<!ENTITY torPreferences.learnMore "Learn More">
+<!ENTITY torPreferences.torSettings "Tor nustatymai">
+<!ENTITY torPreferences.torSettingsDescription "Tor naršyklė nukreipia jūsų srautą per Tor tinklą, veikiančio po visą pasaulį išsidėsčiusių tūkstančių savanorių dėka." >
+<!ENTITY torPreferences.learnMore "Sužinokite daugiau">
 <!ENTITY torPreferences.bridges "Tinklų tiltai">
-<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
-<!ENTITY torPreferences.useBridge "Use a bridge">
-<!-- torlauncher.request_a_new_bridge -->
-<!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
-<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.bridgesDescription "Tinklo tiltai padeda jums pasiekti Tor tinklą, vietose kur Tor užblokuotas. Priklausomai nuo to kur esate, vienas tiltas gali veikti geriau nei kitas.">
+<!ENTITY torPreferences.useBridge "Naudokite tinklo tiltą">
+<!ENTITY torPreferences.requestNewBridge "Pateikite užklausą naujam tinklo tiltui&amp;#x2026;">
+<!ENTITY torPreferences.provideBridge "Pateikite tinklų tiltą">
 <!ENTITY torPreferences.advanced "Išplėstiniai">
-<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
-<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
-<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
-<!-- torlauncher.contacting_bridgedb=Contacting BridgeDB. Please wait. -->
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
-<!-- torlauncher.captcha_prompt=Solve the CAPTCHA to request a bridge. -->
-<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Norėdami užklausti tinklų tiltą, išspręskite saugos kodą.">
-<!--torlauncher.bad_captcha_solution=The solution is not correct. Please try again.-->
-<!ENTITY torPreferences.requestBridgeErrorBadSolution "Sprendimas neteisingas. Bandykite dar kartą.">
-<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
-<!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
-<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
-
-<!-- #31286 about:preferences strings -->
-<!ENTITY torPreferences.requestNewBridge "Užklausti naują tinklų tiltą…">
+<!ENTITY torPreferences.advancedDescription "Sukonfigūruokite kaip Tor naršyklė jungsis prie interneto.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Kableliais atskirtos reikšmės">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Užklausti tinklų tiltą…">
 <!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Susisiekiama su BridgeDB. Palaukite.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Norėdami užklausti tinklų tiltą, išspręskite saugos kodą.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Sprendimas neteisingas. Bandykite dar kartą.">
+<!ENTITY torPreferences.viewTorLogs "Žiūrėti Tor žurnalą.">
+<!ENTITY torPreferences.viewLogs "Žiūrėti žurnalą&amp;#x2026;">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor žurnalas">
