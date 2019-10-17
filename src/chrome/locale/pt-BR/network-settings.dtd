@@ -37,7 +37,7 @@
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "A conexão Internet deste computador é filtrada por uma firewall que autoriza conexões somente a determinadas portas.">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports">
+<!ENTITY torsettings.firewall.allowedPorts "Portas permitidas">
 <!ENTITY torsettings.useBridges.checkbox "Tor é censurado no país onde estou">
 <!ENTITY torsettings.useBridges.default "Selecione uma ponte embutida">
 <!ENTITY torsettings.useBridges.default.placeholder "selecionar uma ponte">
@@ -69,7 +69,7 @@
 <!ENTITY torPreferences.bridges "Pontes">
 <!ENTITY torPreferences.bridgesDescription "As pontes ajudam você a acessar a rede Tor em locais onde o Tor está bloqueado. Dependendo de onde você estiver, uma ponte pode funcionar melhor que outra.">
 <!ENTITY torPreferences.useBridge "Use uma ponte">
-<!ENTITY torPreferences.requestNewBridge "Solicitar uma nova ponte&amp;#x2026;">
+<!ENTITY torPreferences.requestNewBridge "Solicitar uma nova ponte">
 <!ENTITY torPreferences.provideBridge "Fornecer uma ponte">
 <!ENTITY torPreferences.advanced "Avançado">
 <!ENTITY torPreferences.advancedDescription "Configure como o Navegador Tor se conecta à Internet.">
@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Resolva o CAPTCHA para solicitar uma ponte.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "A solução não está correta. Por favor, tente novamente.">
 <!ENTITY torPreferences.viewTorLogs "Veja os logs do Tor.">
-<!ENTITY torPreferences.viewLogs "Ver Logs&amp;#x2026;">
+<!ENTITY torPreferences.viewLogs "View Logs…">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">

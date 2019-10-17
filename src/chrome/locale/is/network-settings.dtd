@@ -69,7 +69,7 @@
 <!ENTITY torPreferences.bridges "Brýr">
 <!ENTITY torPreferences.bridgesDescription "Brýr hjálpa þér við að fá aðgang að Tor-netkerfinu á stöðum þar sem lokað er á Tor. Það fer eftir því hvar þú ert hvaða brú virkar betur en einhver önnur.">
 <!ENTITY torPreferences.useBridge "Nota brú">
-<!ENTITY torPreferences.requestNewBridge "Biðja um nýja brú&amp;#x2026;">
+<!ENTITY torPreferences.requestNewBridge "Biðja um nýja brú…">
 <!ENTITY torPreferences.provideBridge "Útvega brú">
 <!ENTITY torPreferences.advanced "Ítarlegra">
 <!ENTITY torPreferences.advancedDescription "Stilltu hvernig Tor-vafrinn tengist við internetið.">
@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Leystu CAPTCHA-þrautina til að biðja um brú.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Þessi lausn er ekki rétt. Reyndu aftur.">
 <!ENTITY torPreferences.viewTorLogs "Skoða atvikaskrár Tor.">
-<!ENTITY torPreferences.viewLogs "Skoða atvikaskrár&amp;#x2026;">
+<!ENTITY torPreferences.viewLogs "View Logs…">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor atvikaskrá (log)">

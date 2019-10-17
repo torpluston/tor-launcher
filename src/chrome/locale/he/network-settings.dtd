@@ -69,7 +69,7 @@
 <!ENTITY torPreferences.bridges "גשרים">
 <!ENTITY torPreferences.bridgesDescription "גשרים עוזרים לך להשיג גישה אל רשת Tor במקומות בהם Tor חסום. על סמך המקום שאתה נמצא בו, גשר אחד עשוי לעבוד בצורה טובה יותר מאחד אחר.">
 <!ENTITY torPreferences.useBridge "השתמש בגשר">
-<!ENTITY torPreferences.requestNewBridge "בקש גשר חדש&amp;#x2026;">
+<!ENTITY torPreferences.requestNewBridge "בקש גשר חדש...">
 <!ENTITY torPreferences.provideBridge "סַפֵּק גשר">
 <!ENTITY torPreferences.advanced "מתקדם">
 <!ENTITY torPreferences.advancedDescription "תצר כיצד דפדפן Tor מתחבר אל האינטרנט.">
@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "פתור את ה־CAPTCHA כדי לבקש גשר.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "הפתרון אינו נכון. אנא נסה שוב.">
 <!ENTITY torPreferences.viewTorLogs "הצג את יומני Tor.">
-<!ENTITY torPreferences.viewLogs "הצג יומנים&amp;#x2026;">
+<!ENTITY torPreferences.viewLogs "View Logs…">
 <!ENTITY torPreferences.torLogsDialogTitle "יומני Tor">

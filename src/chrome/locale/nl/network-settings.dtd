@@ -69,7 +69,7 @@
 <!ENTITY torPreferences.bridges "Bridges">
 <!ENTITY torPreferences.bridgesDescription "Bridges helpen u toegang te krijgen tot het Tor-netwerk op plaatsen waar Tor is geblokkeerd. Afhankelijke van waar u zich bevindt, werkt de ene bridge mogelijk beter dan de andere.">
 <!ENTITY torPreferences.useBridge "Een bridge gebruiken">
-<!ENTITY torPreferences.requestNewBridge "Een nieuwe bridge aanvragen&amp;#x2026;">
+<!ENTITY torPreferences.requestNewBridge "Een nieuwe bridge aanvragen…">
 <!ENTITY torPreferences.provideBridge "Een bridge aanbieden">
 <!ENTITY torPreferences.advanced "Geavanceerd">
 <!ENTITY torPreferences.advancedDescription "Configureren hoe Tor Browser verbinding maakt met het internet.">
@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Los de CAPTCHA op om een bridge aan te vragen.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "De oplossing is niet juist. Probeer het opnieuw.">
 <!ENTITY torPreferences.viewTorLogs "De Tor-logboeken weergeven">
-<!ENTITY torPreferences.viewLogs "Logboeken weergeven&amp;#x2026;">
+<!ENTITY torPreferences.viewLogs "Logboeken weergeven…">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor-logboeken">

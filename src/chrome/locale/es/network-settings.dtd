@@ -69,7 +69,7 @@
 <!ENTITY torPreferences.bridges "Puentes">
 <!ENTITY torPreferences.bridgesDescription "Los puentes te ayudan a acceder a la Red Tor en lugares donde Tor está bloqueado. Dependiendo de dónde te encuentres, un puente puede funcionar mejor que otro.">
 <!ENTITY torPreferences.useBridge "Usa un puente">
-<!ENTITY torPreferences.requestNewBridge "Solicite un Nuevo Puente…">
+<!ENTITY torPreferences.requestNewBridge "Solicitar un nuevo puente...">
 <!ENTITY torPreferences.provideBridge "Proporcionar un puente">
 <!ENTITY torPreferences.advanced "Avanzado">
 <!ENTITY torPreferences.advancedDescription "Configura cómo el Navegador Tor se conecta a Internet.">
@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Resuelve el CAPTCHA para solicitar un puente.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "La solución no es correcta. Por favor, inténtalo de nuevo.">
 <!ENTITY torPreferences.viewTorLogs "Ver los registros de Tor.">
-<!ENTITY torPreferences.viewLogs "Ver registros…">
+<!ENTITY torPreferences.viewLogs "ver los registros">
 <!ENTITY torPreferences.torLogsDialogTitle "Registros de Tor">

@@ -69,7 +69,7 @@
 <!ENTITY torPreferences.bridges "ബ്രിഡ്ജുകൾ  ">
 <!ENTITY torPreferences.bridgesDescription "ബ്രിഡ്ജുകൾ ടോർ തടഞ്ഞിട്ടുള്ള സ്ഥലങ്ങളിൽ ടോർ നെറ്റർക് ഉപയോഗിക്കാൻ സഹായിക്കുന്നു . ഒരു ബ്രിഡ്ജ് മറ്റ്റൊന്നിനേക്കാൾ നന്നായി പ്രേവര്തിക്കുന്നത് നിങ്ങൾ എവിടെയാണെന്നതിനെ ആശ്രയിച്ചിരിക്കും .">
 <!ENTITY torPreferences.useBridge "ഒരു ബ്രിഡ്ജ് ഉപയോഗിക്കുക  ">
-<!ENTITY torPreferences.requestNewBridge "ഒരു പുതിയ ബ്രിഡ്ജിനെ ചോദിക്കുക &amp;#x2026;">
+<!ENTITY torPreferences.requestNewBridge "ഒരു പുതിയ ബ്രിഡ്ജിനെ ചോദിക്കുക ...">
 <!ENTITY torPreferences.provideBridge "ഒരു ബ്രിഡ്ജ് നല്‍കുക">
 <!ENTITY torPreferences.advanced "പുരോഗമിച്ച">
 <!ENTITY torPreferences.advancedDescription "ടോർ ബ്രൗസർ എങ്ങനെയാണ് ഇന്റർനെറ്റിലേക്കു ബന്ധപ്പെടുന്നത് എന്ന് കോൺഫിഗർ ചെയ്യുക .">
@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "ബ്രിഡ്ജിനെ കിട്ടാൻ തന്നിരിക്കുന്ന കാപ്ച പരിഹരിക്കുക ">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "പരിഹാരം ശെരിയല്ല . ദയവായി ഒന്നുകൂടെ ശ്രെമിക്കുക ">
 <!ENTITY torPreferences.viewTorLogs "ടോർ ലോഗ്സ് കാണുക .">
-<!ENTITY torPreferences.viewLogs "ലോഗ്സ് കാണുക &amp;#x2026;">
+<!ENTITY torPreferences.viewLogs "View Logs…">
 <!ENTITY torPreferences.torLogsDialogTitle "ടോർ ലോഗ്സ് ">

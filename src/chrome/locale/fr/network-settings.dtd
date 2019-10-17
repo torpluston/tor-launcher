@@ -71,7 +71,7 @@
 <!ENTITY torPreferences.bridgesDescription "Les ponts vous aident à accéder au réseau Tor où il est bloqué. 
 Selon votre position géographique, un pont pourrait fonctionner mieux qu’un autre.">
 <!ENTITY torPreferences.useBridge "Utiliser un pont">
-<!ENTITY torPreferences.requestNewBridge "Demander un nouveau pont&amp;#x2026;">
+<!ENTITY torPreferences.requestNewBridge "Demander un nouveau pont…">
 <!ENTITY torPreferences.provideBridge "Fournir un pont">
 <!ENTITY torPreferences.advanced "Avancé">
 <!ENTITY torPreferences.advancedDescription "Configurer la façon dans le Navigateur Tor se connecte à Internet.">
@@ -81,5 +81,5 @@ Selon votre position géographique, un pont pourrait fonctionner mieux qu’un a
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Résoudre le captcha pour demander un pont.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "La solution est erronée. Veuillez ressayer.">
 <!ENTITY torPreferences.viewTorLogs "Visualiser les journaux Tor.">
-<!ENTITY torPreferences.viewLogs "Visualiser les journaux&amp;#x2026;">
+<!ENTITY torPreferences.viewLogs "View Logs…">
 <!ENTITY torPreferences.torLogsDialogTitle "Journaux Tor">

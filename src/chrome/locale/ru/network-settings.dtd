@@ -69,7 +69,7 @@
 <!ENTITY torPreferences.bridges "Мосты">
 <!ENTITY torPreferences.bridgesDescription "Мосты помогают получить доступ к сети Tor в местах, где он заблокирован. В зависимости от места, где вы находитесь, один мост может работать лучше другого.">
 <!ENTITY torPreferences.useBridge "Использовать мост">
-<!ENTITY torPreferences.requestNewBridge "Запрос нового моста&amp;#x2026;">
+<!ENTITY torPreferences.requestNewBridge "Запрос нового моста…">
 <!ENTITY torPreferences.provideBridge "Предоставить мост">
 <!ENTITY torPreferences.advanced "Дополнительно">
 <!ENTITY torPreferences.advancedDescription "Настройка подключения Tor Browser к интернету.">
@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Решите CAPTCHA для запроса моста.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Решение не является правильным. Попробуйте еще раз.">
 <!ENTITY torPreferences.viewTorLogs "Просмотр журналов Tor.">
-<!ENTITY torPreferences.viewLogs "Просмотр журналов&amp;#x2026;">
+<!ENTITY torPreferences.viewLogs "View Logs…">
 <!ENTITY torPreferences.torLogsDialogTitle "Журналы Tor">

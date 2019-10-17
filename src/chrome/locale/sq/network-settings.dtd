@@ -69,7 +69,7 @@
 <!ENTITY torPreferences.bridges "Urat">
 <!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
 <!ENTITY torPreferences.useBridge "Use a bridge">
-<!ENTITY torPreferences.requestNewBridge "Request a New Bridge&amp;#x2026;">
+<!ENTITY torPreferences.requestNewBridge "Request a New Bridge…">
 <!ENTITY torPreferences.provideBridge "Provide a bridge">
 <!ENTITY torPreferences.advanced "Të mëtejshme">
 <!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Solve the CAPTCHA to request a bridge.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "The solution is not correct. Please try again.">
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
-<!ENTITY torPreferences.viewLogs "View Logs&amp;#x2026;">
+<!ENTITY torPreferences.viewLogs "View Logs…">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">

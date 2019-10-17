@@ -69,7 +69,7 @@
 <!ENTITY torPreferences.bridges "Tinklų tiltai">
 <!ENTITY torPreferences.bridgesDescription "Tinklo tiltai padeda jums pasiekti Tor tinklą, vietose kur Tor užblokuotas. Priklausomai nuo to kur esate, vienas tiltas gali veikti geriau nei kitas.">
 <!ENTITY torPreferences.useBridge "Naudokite tinklo tiltą">
-<!ENTITY torPreferences.requestNewBridge "Pateikite užklausą naujam tinklo tiltui&amp;#x2026;">
+<!ENTITY torPreferences.requestNewBridge "Užklausti naują tinklų tiltą…">
 <!ENTITY torPreferences.provideBridge "Pateikite tinklų tiltą">
 <!ENTITY torPreferences.advanced "Išplėstiniai">
 <!ENTITY torPreferences.advancedDescription "Sukonfigūruokite kaip Tor naršyklė jungsis prie interneto.">
@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Norėdami užklausti tinklų tiltą, išspręskite saugos kodą.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Sprendimas neteisingas. Bandykite dar kartą.">
 <!ENTITY torPreferences.viewTorLogs "Žiūrėti Tor žurnalą.">
-<!ENTITY torPreferences.viewLogs "Žiūrėti žurnalą&amp;#x2026;">
+<!ENTITY torPreferences.viewLogs "View Logs…">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor žurnalas">
