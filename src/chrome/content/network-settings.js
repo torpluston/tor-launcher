@@ -2485,6 +2485,7 @@ function setElemValue(aID, aValue)
         elem.checked = val;
         toggleElemUI(elem);
         break;
+      case "html:textarea":
       case "textbox":
         if (Array.isArray(aValue))
         {
@@ -2534,7 +2535,7 @@ function setBridgeListElemValue(aBridgeArray)
 
 
 // Returns a Boolean (for checkboxes/radio buttons) or a
-// string (textbox and menulist).
+// string (textarea, textbox, and menulist).
 // Leading and trailing white space is trimmed from strings.
 function getElemValue(aID, aDefaultValue)
 {
@@ -2550,6 +2551,7 @@ function getElemValue(aID, aDefaultValue)
       case "radio":
         rv = elem.selected;
         break;
+      case "html:textarea":
       case "textbox":
       case "menulist":
       case "richlistbox":

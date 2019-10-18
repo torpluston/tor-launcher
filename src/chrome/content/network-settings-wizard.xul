@@ -12,6 +12,7 @@
 
 <wizard id="TorNetworkSettings"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html="http://www.w3.org/1999/xhtml"
         defaulttitle="&torsettings.wizard.title.default;"
         windowtype="TorLauncher:NetworkSettings"
         persist="screenX screenY"

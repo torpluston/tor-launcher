@@ -5,6 +5,8 @@
  * vim: set sw=2 sts=2 ts=8 et syntax=css:
  */
 
+@namespace html "http://www.w3.org/1999/xhtml";
+
 dialog {
   width: 45em;
   height: 41em;
@@ -294,13 +296,20 @@ dialog .help {
   max-width: 34em;
 }
 
+html|textarea {
+  padding: 4px !important;
+  margin-top: 4px;
+  font-family: inherit;
+}
+
 /* Increase font size on Windows for readability */
 .os-windows div,
 .os-windows label,
 .os-windows description,
+.os-windows html|textarea,
 .os-windows textbox
 {
-  font-size: 120%;
+  font-size: 120% !important;
 }
 
 .torWarning {

@@ -122,9 +122,9 @@ var bridgeSettings = `
       <vbox id="bridgeCustomEntry">
         <label id="bridgeListLabel" style="margin-top:0px;"
                value="&torsettings.useBridges.label;" control="bridgeList"/>
-        <textbox id="bridgeList" multiline="true" rows="3" wrap="off"
-                 oninput="onCustomBridgesTextInput();"
-                 placeholder="&torsettings.useBridges.placeholder;"/>
+        <html:textarea id="bridgeList" rows="3" wrap="off"
+                       oninput="onCustomBridgesTextInput();"
+                       placeholder="&torsettings.useBridges.placeholder;"/>
       </vbox>
     </groupbox>
   </vbox>

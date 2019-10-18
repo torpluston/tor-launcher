@@ -13,6 +13,7 @@
 
 <dialog id="TorNetworkSettings"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html="http://www.w3.org/1999/xhtml"
         title="&torsettings.dialog.title;"
         windowtype="TorLauncher:NetworkSettings"
         persist="screenX screenY"
