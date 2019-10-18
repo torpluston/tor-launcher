@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Norėdami užklausti tinklų tiltą, išspręskite saugos kodą.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Sprendimas neteisingas. Bandykite dar kartą.">
 <!ENTITY torPreferences.viewTorLogs "Žiūrėti Tor žurnalą.">
-<!ENTITY torPreferences.viewLogs "View Logs…">
+<!ENTITY torPreferences.viewLogs "Rodyti žurnalus…">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor žurnalas">

@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "פתור את ה־CAPTCHA כדי לבקש גשר.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "הפתרון אינו נכון. אנא נסה שוב.">
 <!ENTITY torPreferences.viewTorLogs "הצג את יומני Tor.">
-<!ENTITY torPreferences.viewLogs "View Logs…">
+<!ENTITY torPreferences.viewLogs "הצג יומנים...">
 <!ENTITY torPreferences.torLogsDialogTitle "יומני Tor">

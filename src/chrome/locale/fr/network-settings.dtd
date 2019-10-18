@@ -81,5 +81,5 @@ Selon votre position géographique, un pont pourrait fonctionner mieux qu’un a
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Résoudre le captcha pour demander un pont.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "La solution est erronée. Veuillez ressayer.">
 <!ENTITY torPreferences.viewTorLogs "Visualiser les journaux Tor.">
-<!ENTITY torPreferences.viewLogs "View Logs…">
+<!ENTITY torPreferences.viewLogs "Visualiser les journaux…">
 <!ENTITY torPreferences.torLogsDialogTitle "Journaux Tor">

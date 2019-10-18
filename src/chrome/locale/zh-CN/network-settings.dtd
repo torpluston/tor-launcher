@@ -37,7 +37,7 @@
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "该计算机的防火墙仅允许特定端口的互联网连接">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports">
+<!ENTITY torsettings.firewall.allowedPorts "允许的端口">
 <!ENTITY torsettings.useBridges.checkbox "我所在的国家对 Tor 进行了审查">
 <!ENTITY torsettings.useBridges.default "选择内置网桥">
 <!ENTITY torsettings.useBridges.default.placeholder "选择网桥">
@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "请输入验证码以获取网桥。">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "结果并不正确，请重试。">
 <!ENTITY torPreferences.viewTorLogs "查看 Tor 日志。">
-<!ENTITY torPreferences.viewLogs "View Logs…">
+<!ENTITY torPreferences.viewLogs "查看日志">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor 日志">

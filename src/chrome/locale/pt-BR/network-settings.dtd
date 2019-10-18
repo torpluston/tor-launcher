@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Resolva o CAPTCHA para solicitar uma ponte.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "A solução não está correta. Por favor, tente novamente.">
 <!ENTITY torPreferences.viewTorLogs "Veja os logs do Tor.">
-<!ENTITY torPreferences.viewLogs "View Logs…">
+<!ENTITY torPreferences.viewLogs "Ver registros…">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">

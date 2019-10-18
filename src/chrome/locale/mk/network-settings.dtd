@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Решете ја ЗАДАЧАТА за да побарате мост.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Решението е погрешно. Ве молиме обидете се повторно.">
 <!ENTITY torPreferences.viewTorLogs "Види ги Tor логовите.">
-<!ENTITY torPreferences.viewLogs "View Logs…">
+<!ENTITY torPreferences.viewLogs "Види логови...">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Логови">

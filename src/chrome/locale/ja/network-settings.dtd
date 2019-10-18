@@ -69,7 +69,7 @@
 <!ENTITY torPreferences.bridges "ブリッジ">
 <!ENTITY torPreferences.bridgesDescription "ブリッジは Tor がブロックされる地域から Tor ネットワークにアクセスすることを手助けします。地域によって、あるブリッジが他のものよりうまく動作する可能性があります。">
 <!ENTITY torPreferences.useBridge "ブリッジを使用する">
-<!ENTITY torPreferences.requestNewBridge "新たなブリッジをリクエスト。">
+<!ENTITY torPreferences.requestNewBridge "新しいブリッジを要求…">
 <!ENTITY torPreferences.provideBridge "ブリッジを指定する">
 <!ENTITY torPreferences.advanced "詳細">
 <!ENTITY torPreferences.advancedDescription "Tor Browser がインターネットに接続する方法を設定します。">

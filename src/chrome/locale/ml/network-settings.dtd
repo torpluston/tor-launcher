@@ -26,9 +26,9 @@
 <!ENTITY torsettings.optional "നിര്ബന്ധമില്ലാത്തത് ">
 
 <!ENTITY torsettings.useProxy.checkbox "ഞാൻ ഇന്റർനൈറ്റിലെക് ബന്ധപ്പെടാൻ ഒരു പ്രോക്സി ഉപയോഗിക്കുന്നു ">
-<!ENTITY torsettings.useProxy.type "Proxy Type">
+<!ENTITY torsettings.useProxy.type "പ്രോക്സി തരം">
 <!ENTITY torsettings.useProxy.type.placeholder "ഒരു പ്രോക്സി ഇനം തിരഞ്ഞെടുക്കുക  :">
-<!ENTITY torsettings.useProxy.address "Address">
+<!ENTITY torsettings.useProxy.address "വിലാസം">
 <!ENTITY torsettings.useProxy.address.placeholder "ഐ പി മേൽവിലാസം അല്ലെങ്കിൽ ഹോസ്റ്റ് നെയിം ">
 <!ENTITY torsettings.useProxy.port "പോര്‍ട്ട്">
 <!ENTITY torsettings.useProxy.username "ഉപയോക്താവിന്റെ പേർ ">
@@ -37,7 +37,7 @@
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "എച് ടി ടി പി /എച് ടി ടി പി എസ് ">
 <!ENTITY torsettings.firewall.checkbox "ഈ കംപ്യൂട്ടർ ചില പ്രത്യേക പോർട്ടുകളിലൂടെ മാത്രം ബന്ധം അനുവദിക്കുന്ന ഫയർവാൾ വഴിയാണ് പോകുന്നത്">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports">
+<!ENTITY torsettings.firewall.allowedPorts "അനുവദനീയമായ പോർട്ടുകൾ">
 <!ENTITY torsettings.useBridges.checkbox "എന്റെ രാജ്യത്തു ടോർ സെൻസർ ചെയ്തിട്ടുള്ളതാണ് ">
 <!ENTITY torsettings.useBridges.default "ഇതിനകത്തു തന്നെയുള്ള ഒരു ബ്രിഡ്ജ് തിരഞ്ഞെടുക്കുക ">
 <!ENTITY torsettings.useBridges.default.placeholder "ഒരു ബ്രിഡ്ജ് തിരഞ്ഞെടുക്കുക ">
@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "ബ്രിഡ്ജിനെ കിട്ടാൻ തന്നിരിക്കുന്ന കാപ്ച പരിഹരിക്കുക ">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "പരിഹാരം ശെരിയല്ല . ദയവായി ഒന്നുകൂടെ ശ്രെമിക്കുക ">
 <!ENTITY torPreferences.viewTorLogs "ടോർ ലോഗ്സ് കാണുക .">
-<!ENTITY torPreferences.viewLogs "View Logs…">
+<!ENTITY torPreferences.viewLogs "ലോഗുകൾ കാണുക…">
 <!ENTITY torPreferences.torLogsDialogTitle "ടോർ ലോഗ്സ് ">
