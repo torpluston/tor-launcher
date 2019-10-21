@@ -1487,7 +1487,7 @@ TorProtocolService.prototype =
     if ((idx > 0))
     {
       let eventType = s.substring(0, idx);
-      let msg = s.substr(idx + 1);
+      let msg = s.substr(idx + 1).trim();
       switch (eventType)
       {
         case "WARN":
