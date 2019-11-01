@@ -37,7 +37,7 @@
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Ky kompjuter kalon përmes një muri mbrojtës, që i lejon lidhje vetëm me disa porta.">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports">
+<!ENTITY torsettings.firewall.allowedPorts "Portat e Lejuara">
 <!ENTITY torsettings.useBridges.checkbox "TOR është i çensuruar në vëndin tim">
 <!ENTITY torsettings.useBridges.default "Zgjidh një urë të paracaktuar">
 <!ENTITY torsettings.useBridges.default.placeholder "select a bridge">

@@ -37,7 +37,7 @@
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Tento počítač používá firewall, který povoluje připojení pouze přes některé porty.">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports">
+<!ENTITY torsettings.firewall.allowedPorts "Povolené porty">
 <!ENTITY torsettings.useBridges.checkbox "Tor je v mé zemi cenzurován">
 <!ENTITY torsettings.useBridges.default "Vyberte vestavěný most">
 <!ENTITY torsettings.useBridges.default.placeholder "vyberte most">
@@ -63,21 +63,21 @@
 
 <!-- #31286 about:preferences strings  -->
 <!ENTITY torPreferences.categoryTitle "Tor">
-<!ENTITY torPreferences.torSettings "Tor Settings">
-<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
+<!ENTITY torPreferences.torSettings "Nastavení sítě Tor">
+<!ENTITY torPreferences.torSettingsDescription "Prohlížeč Tor vás připojí k síti Tor, provozované tisíci dobrovolníků po celém světě." >
 <!ENTITY torPreferences.learnMore "Zjistit více">
 <!ENTITY torPreferences.bridges "Bridge">
 <!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
-<!ENTITY torPreferences.useBridge "Use a bridge">
+<!ENTITY torPreferences.useBridge "Použít bridge">
 <!ENTITY torPreferences.requestNewBridge "Požádat o nový most…">
 <!ENTITY torPreferences.provideBridge "Provide a bridge">
 <!ENTITY torPreferences.advanced "Pokročilé">
-<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
-<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
-<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!ENTITY torPreferences.advancedDescription "Nastavení, jak se prohlížeč Tor připojuje k internetu.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Hodnoty oddělené čárkou">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Požádat o most">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Kontaktování BridgeDB. Čekejte prosím.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Pro vyžádání mostu prosím opište kód CAPTCHA.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Neopsali jste kód správně. Zkuste to prosím znovu.">
-<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
-<!ENTITY torPreferences.viewLogs "View Logs…">
-<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+<!ENTITY torPreferences.viewTorLogs "Zobrazit protokol sítě Tor">
+<!ENTITY torPreferences.viewLogs "Zobrazit protokol…">
+<!ENTITY torPreferences.torLogsDialogTitle "Protokol sítě Tor">

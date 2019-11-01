@@ -64,7 +64,7 @@
 <!-- #31286 about:preferences strings  -->
 <!ENTITY torPreferences.categoryTitle "Tor">
 <!ENTITY torPreferences.torSettings "Tor Ayarları">
-<!ENTITY torPreferences.torSettingsDescription "Tor Browser sizi tüm dünyada binlerce gönüllü tarafından işletilen Tor Ağına bağlar." >
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser sizi dünyada binlerce gönüllü tarafından işletilen Tor Ağına bağlar." >
 <!ENTITY torPreferences.learnMore "Ayrıntılı Bilgi Alın">
 <!ENTITY torPreferences.bridges "Köprüler">
 <!ENTITY torPreferences.bridgesDescription "Köprüler Tor bağlantısının engellendiği yerlerden Tor Ağına erişmek için kullanılır.. Bulunduğunuz konuma göre bir köprü türü diğerinden daha uygun olabilir.">

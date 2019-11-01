@@ -37,7 +37,7 @@
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "Este computador liga através de uma firewall que só permite ligações para determinadas portas">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports">
+<!ENTITY torsettings.firewall.allowedPorts "Portas permitidas">
 <!ENTITY torsettings.useBridges.checkbox "O Tor é censurado no meu país">
 <!ENTITY torsettings.useBridges.default "Selecionar uma ponte integrada">
 <!ENTITY torsettings.useBridges.default.placeholder "selecionar uma ponte">
@@ -67,17 +67,17 @@
 <!ENTITY torPreferences.torSettingsDescription "O Tor Browse envia o seu tráfego pela Tor Network, operada por milhares de voluntários em todo o mundo." >
 <!ENTITY torPreferences.learnMore "Saber Mais">
 <!ENTITY torPreferences.bridges "Pontes">
-<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
-<!ENTITY torPreferences.useBridge "Use a bridge">
+<!ENTITY torPreferences.bridgesDescription "Pontes ajudam-no a aceder à Tor Network em sítios onde o Tor está bloqueado. Dependendo de onde estiver, uma ponte pode funcionar melhor que outra.">
+<!ENTITY torPreferences.useBridge "Use uma ponte">
 <!ENTITY torPreferences.requestNewBridge "Solicitar uma Nova Ponte...">
-<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.provideBridge "Forneça uma ponte">
 <!ENTITY torPreferences.advanced "Avançado">
-<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
-<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
-<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!ENTITY torPreferences.advancedDescription "Configure como o Tor Browser se contecta à internet.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Valores separados por vírgula">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Solicitar uma ponte">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "A contactar a BridgeDB. Por favor, aguarde.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Resolva o CAPTCHA para solicitar uma ponte.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "A solução não está correta. Por favor, tente novamente.">
-<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
-<!ENTITY torPreferences.viewLogs "View Logs…">
-<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+<!ENTITY torPreferences.viewTorLogs "Ver os registos do Tor.">
+<!ENTITY torPreferences.viewLogs "Ver os registos...">
+<!ENTITY torPreferences.torLogsDialogTitle "Registos do Tor">

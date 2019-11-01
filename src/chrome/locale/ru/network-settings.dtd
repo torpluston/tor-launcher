@@ -26,7 +26,7 @@
 <!ENTITY torsettings.optional "Необязательно">
 
 <!ENTITY torsettings.useProxy.checkbox "Я использую прокси для подключения к интернету">
-<!ENTITY torsettings.useProxy.type "Тип Прокси">
+<!ENTITY torsettings.useProxy.type "Тип прокси">
 <!ENTITY torsettings.useProxy.type.placeholder "выбор типа прокси">
 <!ENTITY torsettings.useProxy.address "Адрес">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-адрес или имя узла">
@@ -36,9 +36,9 @@
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "Мой сетевой экран позволяет мне подключиться только к определенным портам">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports">
-<!ENTITY torsettings.useBridges.checkbox "Tor запрещен в моей стране">
+<!ENTITY torsettings.firewall.checkbox "Мой сетевой экран позволяет мне подключиться только к определённым портам">
+<!ENTITY torsettings.firewall.allowedPorts "Разрешённые порты">
+<!ENTITY torsettings.useBridges.checkbox "Tor запрещён в моей стране">
 <!ENTITY torsettings.useBridges.default "Выбрать встроенный мост">
 <!ENTITY torsettings.useBridges.default.placeholder "выбор моста">
 <!ENTITY torsettings.useBridges.bridgeDB "Запросить мост от torproject.org">
@@ -56,7 +56,7 @@
 
 <!ENTITY torsettings.bridgeHelpTitle "Помощь по ретрансляторам типа мост">
 <!ENTITY torsettings.bridgeHelp1 "Мосты - это непубличные реле, которые затрудняют блокировку соединений с сетью Tor.&amp;#160 Каждый тип моста использует отличный от других метод, чтобы избежать блокировки цезорами. Мосты типа obfs делают ваш трафик похожим на случайный шум, в то время, как мосты типа meed имитируют подключение к службе, отличной от Tor.">
-<!ENTITY torsettings.bridgeHelp2 "Из-за того, как именно страны пытаются блокировать Tor, определенные мосты работают в одних странах, но не работают в других.&#160; Если вы не уверены в том, какие мосты сработает в вашей стране, посетите torproject.org/about/contact.html#support">
+<!ENTITY torsettings.bridgeHelp2 "Из-за того, как именно страны пытаются блокировать Tor, определённые мосты работают в одних странах, но не работают в других.&#160; Если вы не уверены в том, какие мосты сработает в вашей стране, посетите torproject.org/about/contact.html#support">
 
 <!-- Progress -->
 <!ENTITY torprogress.pleaseWait "Пожалуйста, подождите, пока мы установим подключение к сети Tor.&#160; Это может занять несколько минут.">
@@ -77,7 +77,7 @@
 <!ENTITY torPreferences.requestBridgeDialogTitle "Запрос моста">
 <!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Обращение к BridgeDB. Пожалуйста, подождите.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Решите CAPTCHA для запроса моста.">
-<!ENTITY torPreferences.requestBridgeErrorBadSolution "Решение не является правильным. Попробуйте еще раз.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Решение не является правильным. Попробуйте ещё раз.">
 <!ENTITY torPreferences.viewTorLogs "Просмотр журналов Tor.">
-<!ENTITY torPreferences.viewLogs "View Logs…">
+<!ENTITY torPreferences.viewLogs "Просмотр журналов…">
 <!ENTITY torPreferences.torLogsDialogTitle "Журналы Tor">

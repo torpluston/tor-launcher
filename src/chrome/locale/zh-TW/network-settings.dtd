@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "解決驗證碼來請求橋接">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "解答不正確。請再試一次。">
 <!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
-<!ENTITY torPreferences.viewLogs "View Logs…">
+<!ENTITY torPreferences.viewLogs "查看日誌…">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
