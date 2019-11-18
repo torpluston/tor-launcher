@@ -38,7 +38,7 @@ pref("extensions.torlauncher.control_ipc_path", "");
 // careful).
 pref("extensions.torlauncher.socks_port_use_ipc", false);
 pref("extensions.torlauncher.socks_ipc_path", "");
-pref("extensions.torlauncher.socks_port_flags", "IPv6Traffic PreferIPv6 KeepAliveIsolateSOCKSAuth");
+pref("extensions.torlauncher.socks_port_flags", "ExtendedErrors IPv6Traffic PreferIPv6 KeepAliveIsolateSOCKSAuth");
 
 // The tor_path is relative to the application directory. On Linux and
 // Windows this is the Browser/ directory that contains the firefox
