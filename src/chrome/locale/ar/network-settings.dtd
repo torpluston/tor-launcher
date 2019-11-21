@@ -37,7 +37,7 @@
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "اتصال الإنترنت لهذا الكمبيوتر يمر بجدار حماية يسمح بالاتصال فقط من خلال منافذ معينة">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports">
+<!ENTITY torsettings.firewall.allowedPorts "المنافذ المسموح بها">
 <!ENTITY torsettings.useBridges.checkbox "تور محجوب في بلدي">
 <!ENTITY torsettings.useBridges.default "اختر جسرا مُدمَجا في البرنامج">
 <!ENTITY torsettings.useBridges.default.placeholder "اختر جسرا">
@@ -63,21 +63,21 @@
 
 <!-- #31286 about:preferences strings  -->
 <!ENTITY torPreferences.categoryTitle "تور">
-<!ENTITY torPreferences.torSettings "Tor Settings">
-<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
+<!ENTITY torPreferences.torSettings "إعدادات تور Tor">
+<!ENTITY torPreferences.torSettingsDescription "متصفح Tor Browser يوجه حركة بياناتك عبر شبكة تور Tor Network, التي يشغلها آلاف المتطوعون حول العالم." >
 <!ENTITY torPreferences.learnMore "إعرف/ي أكثر ">
 <!ENTITY torPreferences.bridges "الجسور">
-<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
-<!ENTITY torPreferences.useBridge "Use a bridge">
+<!ENTITY torPreferences.bridgesDescription "تساعدك الجسور على دخول شبكة تور Tor Network في الأماكن التي تحظر تور Tor. وبالاعتماد على مكان تواجدك فإن أحد الجسور قد يعمل بشكل أفضل من غيره.  ">
+<!ENTITY torPreferences.useBridge "استخدم جِسْر">
 <!ENTITY torPreferences.requestNewBridge "اطلب جسرا جديدا…">
-<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.provideBridge "أدخل عنوان جِسْر">
 <!ENTITY torPreferences.advanced "متقدم">
-<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
-<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
-<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!ENTITY torPreferences.advancedDescription "قم بإعداد كيفية اتصال متصفح Tor Browser بالانترنت">
+<!ENTITY torPreferences.firewallPortsPlaceholder "قيم مفصولة بالفاصلة">
+<!ENTITY torPreferences.requestBridgeDialogTitle "اطلب جسراً">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "يتصل بقاعدة بيانات الجسور BridgeDB. يرجى الانتظار.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "حل كاباتشا لطلب جسر.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "الحل ليس سليمًا. يُرجى إعادة المحاولة.">
-<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
-<!ENTITY torPreferences.viewLogs "View Logs…">
-<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+<!ENTITY torPreferences.viewTorLogs "شاهد سجلات تور Tor">
+<!ENTITY torPreferences.viewLogs "شاهد السجلات...">
+<!ENTITY torPreferences.torLogsDialogTitle "سجلات تور Tor">

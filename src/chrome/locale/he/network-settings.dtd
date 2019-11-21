@@ -16,7 +16,7 @@
 
 <!-- Other: -->
 
-<!ENTITY torsettings.startingTor "ממתין אל Tor להתחיל...">
+<!ENTITY torsettings.startingTor "ממתין אל Tor שיתחיל…">
 <!ENTITY torsettings.restartTor "הפעל מחדש את Tor">
 <!ENTITY torsettings.reconfigTor "תצר מחדש">
 
@@ -64,12 +64,12 @@
 <!-- #31286 about:preferences strings  -->
 <!ENTITY torPreferences.categoryTitle "Tor">
 <!ENTITY torPreferences.torSettings "הגדרות Tor">
-<!ENTITY torPreferences.torSettingsDescription "דפדפן Tor מנתב את התעבורה שלך על רשת Tor, המופעלת ע&quot;י אלפי מתנדבים ברחבי העולם." >
+<!ENTITY torPreferences.torSettingsDescription "דפדפן Tor מנתב את התעבורה שלך על רשת Tor, המופעלת ע״י אלפי מתנדבים ברחבי העולם." >
 <!ENTITY torPreferences.learnMore "למד עוד">
 <!ENTITY torPreferences.bridges "גשרים">
 <!ENTITY torPreferences.bridgesDescription "גשרים עוזרים לך להשיג גישה אל רשת Tor במקומות בהם Tor חסום. על סמך המקום שאתה נמצא בו, גשר אחד עשוי לעבוד בצורה טובה יותר מאחד אחר.">
 <!ENTITY torPreferences.useBridge "השתמש בגשר">
-<!ENTITY torPreferences.requestNewBridge "בקש גשר חדש...">
+<!ENTITY torPreferences.requestNewBridge "בקש גשר חדש…">
 <!ENTITY torPreferences.provideBridge "סַפֵּק גשר">
 <!ENTITY torPreferences.advanced "מתקדם">
 <!ENTITY torPreferences.advancedDescription "תצר כיצד דפדפן Tor מתחבר אל האינטרנט.">
@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "פתור את ה־CAPTCHA כדי לבקש גשר.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "הפתרון אינו נכון. אנא נסה שוב.">
 <!ENTITY torPreferences.viewTorLogs "הצג את יומני Tor.">
-<!ENTITY torPreferences.viewLogs "הצג יומנים...">
+<!ENTITY torPreferences.viewLogs "הצג יומנים…">
 <!ENTITY torPreferences.torLogsDialogTitle "יומני Tor">
