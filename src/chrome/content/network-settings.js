@@ -416,6 +416,7 @@ function populateLocaleList(aLangPackAddons)
     "ko"    : "\ud55c\uad6d\uc5b4",
     "lt"    : "Lietuvi\u0173",
     "mk"    : "\u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438",
+    "ms"    : "Melayu",
     "nl"    : "Nederlands",
     "nb"    : "Norsk bokmå\u0345l",
     "pl"    : "Polski",
