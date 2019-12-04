@@ -1,4 +1,4 @@
-// Copyright (c) 2019, The Tor Project, Inc.
+// Copyright (c) 2020, The Tor Project, Inc.
 // See LICENSE for licensing information.
 //
 // vim: set sw=2 sts=2 ts=8 et syntax=javascript:
@@ -571,6 +571,8 @@ let TorLauncherUtil =  // Public
             path = "Tor\\torrc";
           else if ("tordatadir" == aTorFileType)
             path = "Tor";
+          else if ("toronionauthdir" == aTorFileType)
+            path = "Tor\\onion-auth";
           else if ("pt-profiles-dir" == aTorFileType)
             path = "Tor\\PluggableTransports";
         }
@@ -586,6 +588,8 @@ let TorLauncherUtil =  // Public
             path = "Tor/torrc";
           else if ("tordatadir" == aTorFileType)
             path = "Tor";
+          else if ("toronionauthdir" == aTorFileType)
+            path = "Tor/onion-auth";
           else if ("pt-profiles-dir" == aTorFileType)
             path = "Tor/PluggableTransports";
           else if (isIPC)
@@ -603,6 +607,8 @@ let TorLauncherUtil =  // Public
             path = "Tor/torrc";
           else if ("tordatadir" == aTorFileType)
             path = "Tor";
+          else if ("toronionauthdir" == aTorFileType)
+            path = "Tor/onion-auth";
           else if ("pt-profiles-dir" == aTorFileType)
             path = "Tor/PluggableTransports";
           else if (isIPC)
@@ -622,6 +628,8 @@ let TorLauncherUtil =  // Public
           path = "Data\\Tor\\torrc";
         else if ("tordatadir" == aTorFileType)
           path = "Data\\Tor";
+        else if ("toronionauthdir" == aTorFileType)
+          path = "Data\\Tor\\onion-auth";
         else if ("pt-profiles-dir" == aTorFileType)
           path = "Data\\Browser";
         }
@@ -638,6 +646,8 @@ let TorLauncherUtil =  // Public
           path = "Data/Tor/torrc";
         else if ("tordatadir" == aTorFileType)
           path = "Data/Tor";
+        else if ("toronionauthdir" == aTorFileType)
+          path = "Data/Tor/onion-auth";
         else if ("pt-profiles-dir" == aTorFileType)
           path = "Data/Browser";
         else if (isIPC)
@@ -683,6 +693,7 @@ let TorLauncherUtil =  // Public
           try
           {
             if (("tordatadir" == aTorFileType) ||
+                ("toronionauthdir" == aTorFileType) ||
                 ("pt-profiles-dir" == aTorFileType))
             {
               torFile.create(torFile.DIRECTORY_TYPE, 0o700);

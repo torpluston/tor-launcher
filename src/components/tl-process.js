@@ -1,4 +1,4 @@
-// Copyright (c) 2018, The Tor Project, Inc.
+// Copyright (c) 2020, The Tor Project, Inc.
 // See LICENSE for licensing information.
 //
 // vim: set sw=2 sts=2 ts=8 et syntax=javascript:
@@ -372,6 +372,7 @@ TorProcessService.prototype =
       // Get the Tor data directory first so it is created before we try to
       // construct paths to files that will be inside it.
       var dataDir = TorLauncherUtil.getTorFile("tordatadir", true);
+      var onionAuthDir = TorLauncherUtil.getTorFile("toronionauthdir", true);
       var exeFile = TorLauncherUtil.getTorFile("tor", false);
       var torrcFile = TorLauncherUtil.getTorFile("torrc", true);
       var torrcDefaultsFile =
@@ -388,6 +389,8 @@ TorProcessService.prototype =
         detailsKey = "torrc_missing";
       else if (!dataDir)
         detailsKey = "datadir_missing";
+      else if (!onionAuthDir)
+        detailsKey = "onionauthdir_missing";
       else if (!hashedPassword)
         detailsKey = "password_hash_missing";
 
@@ -418,6 +421,8 @@ TorProcessService.prototype =
       args.push(torrcFile.path);
       args.push("DataDirectory");
       args.push(dataDir.path);
+      args.push("ClientOnionAuthDir");
+      args.push(onionAuthDir.path);
       args.push("GeoIPFile");
       args.push(geoipFile.path);
       args.push("GeoIPv6File");
