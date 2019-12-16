@@ -1,6 +1,6 @@
-<!ENTITY torsettings.dialog.title "Definições da Rede Tor">
+<!ENTITY torsettings.dialog.title "Configurações da Rede Tor">
 <!ENTITY torsettings.wizard.title.default "Ligar ao Tor">
-<!ENTITY torsettings.wizard.title.configure "Definições da Rede Tor">
+<!ENTITY torsettings.wizard.title.configure "Configurações da Rede Tor">
 <!ENTITY torsettings.wizard.title.connecting "Estabelecer uma Ligação">
 
 <!-- For locale picker: -->
@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "Clique em &quot;Ligar&quot; para ligar ao Tor.">
-<!ENTITY torSettings.configurePrompt "Clique em “Configurar” para ajustar as definições de rede se estiver num país que censura o Tor (tal como a China, o Egito, a Turquia) ou se estiver a ligar a partir de uma rede privada que requer um proxy.">
+<!ENTITY torSettings.configurePrompt "Clique em “Configurar” para ajustar as definições de rede se estiver num país que censura o Tor (tais como China, Egito, Turquia) ou se estiver a ligar a partir de uma rede privada que requer um proxy.">
 <!ENTITY torSettings.configure "Configurar">
 <!ENTITY torSettings.connect "Ligar">
 

@@ -66,12 +66,12 @@
 <!ENTITY torPreferences.torSettings "Nastavení sítě Tor">
 <!ENTITY torPreferences.torSettingsDescription "Prohlížeč Tor vás připojí k síti Tor, provozované tisíci dobrovolníků po celém světě." >
 <!ENTITY torPreferences.learnMore "Zjistit více">
-<!ENTITY torPreferences.bridges "Bridge">
-<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
-<!ENTITY torPreferences.useBridge "Použít bridge">
+<!ENTITY torPreferences.bridges "Mosty">
+<!ENTITY torPreferences.bridgesDescription "Mosty pomáhají v přístupu k sítě Tor na místech, kde je Tor blokován. Podle toho, kde se nacházíte, mohou některé mosty fungovat lépe než jiné.">
+<!ENTITY torPreferences.useBridge "Použít most">
 <!ENTITY torPreferences.requestNewBridge "Požádat o nový most…">
-<!ENTITY torPreferences.provideBridge "Provide a bridge">
-<!ENTITY torPreferences.advanced "Pokročilé">
+<!ENTITY torPreferences.provideBridge "Poskytnout most">
+<!ENTITY torPreferences.advanced "Rozšířené">
 <!ENTITY torPreferences.advancedDescription "Nastavení, jak se prohlížeč Tor připojuje k internetu.">
 <!ENTITY torPreferences.firewallPortsPlaceholder "Hodnoty oddělené čárkou">
 <!ENTITY torPreferences.requestBridgeDialogTitle "Požádat o most">

@@ -1,0 +1,83 @@
+<!ENTITY torsettings.dialog.title "Nätverksinställningar för Tor">
+<!ENTITY torsettings.wizard.title.default "Anslut till Tor">
+<!ENTITY torsettings.wizard.title.configure "Nätverksinställningar för Tor">
+<!ENTITY torsettings.wizard.title.connecting "Etablerar en anslutning">
+
+<!-- For locale picker: -->
+<!ENTITY torlauncher.localePicker.title "Språk i Tor Browser">
+<!ENTITY torlauncher.localePicker.prompt "Välj ett språk.">
+
+<!-- For "first run" wizard: -->
+
+<!ENTITY torSettings.connectPrompt "Klicka på &quot;Anslut&quot; för att ansluta till Tor.">
+<!ENTITY torSettings.configurePrompt "Klicka &quot;Konfigurera&quot; för att justera nätverks inställningar ifall du är i ett land som censurerar Tor( som Egypten, Kina och Turkiet) eller ifall du ansluter från ett privat nätverk som kräver en proxy.">
+<!ENTITY torSettings.configure "Konfigurera">
+<!ENTITY torSettings.connect "Anslut">
+
+<!-- Other: -->
+
+<!ENTITY torsettings.startingTor "Väntar på att Tor ska starta...">
+<!ENTITY torsettings.restartTor "Starta om Tor">
+<!ENTITY torsettings.reconfigTor "Omkonfigurera">
+
+<!ENTITY torsettings.discardSettings.prompt "Du har konfigurerat Tor-broar eller så har du angett lokala proxyinställningar.&#160; För att göra en direktanslutning till Tor-nätverket måste de här inställningarna tas bort.">
+<!ENTITY torsettings.discardSettings.proceed "Ta bort inställningar och anslut">
+
+<!ENTITY torsettings.optional "Valfritt">
+
+<!ENTITY torsettings.useProxy.checkbox "Jag använder en proxy för att ansluta till internet">
+<!ENTITY torsettings.useProxy.type "Proxy-typ">
+<!ENTITY torsettings.useProxy.type.placeholder "Välj en proxytyp">
+<!ENTITY torsettings.useProxy.address "Adress">
+<!ENTITY torsettings.useProxy.address.placeholder "IP-adress eller värdnamn">
+<!ENTITY torsettings.useProxy.port "Port">
+<!ENTITY torsettings.useProxy.username "Användarnamn">
+<!ENTITY torsettings.useProxy.password "Lösenord">
+<!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
+<!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
+<!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
+<!ENTITY torsettings.firewall.checkbox "Denna dator går genom en brandvägg som bara tillåter anslutningar på vissa specifika portar.">
+<!ENTITY torsettings.firewall.allowedPorts "Tillåtna portar">
+<!ENTITY torsettings.useBridges.checkbox "Tor är censurerat i mitt land">
+<!ENTITY torsettings.useBridges.default "Välj en inbyggd bro">
+<!ENTITY torsettings.useBridges.default.placeholder "Välj en bro">
+<!ENTITY torsettings.useBridges.bridgeDB "Begär en bro från torproject.org">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Ange tecknen från bilden">
+<!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Få en ny utmaning">
+<!ENTITY torsettings.useBridges.captchaSubmit "Skicka">
+<!ENTITY torsettings.useBridges.custom "Använd en egen bro">
+<!ENTITY torsettings.useBridges.label "Ange broinformationen från en betrodd källa">
+<!ENTITY torsettings.useBridges.placeholder "skriv adress:port (en per rad)">
+
+<!ENTITY torsettings.copyLog "Kopiera Tor-logg till urklipp">
+
+<!ENTITY torsettings.proxyHelpTitle "Proxy hjälp">
+<!ENTITY torsettings.proxyHelp1 "En lokal proxy kan behövas när du ansluter via ett företags-, skol- eller universitetsnätverk.&#160;Om du inte är säker på om en proxy behövs, titta på internetinställningarna i en annan webbläsare eller kontrollera systemets nätverksinställningar.">
+
+<!ENTITY torsettings.bridgeHelpTitle "Hjälp om relä-broar">
+<!ENTITY torsettings.bridgeHelp1 "Broar är olistade reläer som gör det svårare att blockera anslutningar till Tor nätverket. &#160; Var typ av bro använder sig av olika metoder för att undvika censur. &#160; Obfs gör att din trafik ser ut som brus och meek gör att din trafik ser ut som att du ansluter till tjänsten istället för Tor.">
+<!ENTITY torsettings.bridgeHelp2 "I och med att vissa länder försöker blockera Tor fungerar inte alla broar i alla länder. &#160; Ifall du är osäker på vilka broar som fungerar i ditt land besök torproject.org/about/contact.html#support">
+
+<!-- Progress -->
+<!ENTITY torprogress.pleaseWait "Var god och vänta medan vi etablerar en anslutning till Tor-nätverket. &#160; Detta kan ta upp till flera minuter.">
+
+<!-- #31286 about:preferences strings  -->
+<!ENTITY torPreferences.categoryTitle "Tor">
+<!ENTITY torPreferences.torSettings "Tor-inställningar">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser dirigerar din trafik över Tor-nätverket, som drivs av tusentals volontärer runt om i världen." >
+<!ENTITY torPreferences.learnMore "Läs mer">
+<!ENTITY torPreferences.bridges "Broar">
+<!ENTITY torPreferences.bridgesDescription "Broar hjälper dig att komma åt Tor-nätverket på platser där Tor är blockerat. Beroende på var du är, kan en bro fungera bättre än en annan.">
+<!ENTITY torPreferences.useBridge "Använd en bro">
+<!ENTITY torPreferences.requestNewBridge "Begär en ny bro...">
+<!ENTITY torPreferences.provideBridge "Tillhandahålla en bro">
+<!ENTITY torPreferences.advanced "Avancerat">
+<!ENTITY torPreferences.advancedDescription "Konfigurera hur Tor Browser ansluter till internet.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Kommaseparerade värden">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Begär bro">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Kontaktar BridgeDB. Vänligen vänta.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Lös CAPTCHA:n för att begära en bro.">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "Lösningen är inte korrekt. Vänligen försök igen.">
+<!ENTITY torPreferences.viewTorLogs "Visa Tor-loggarna.">
+<!ENTITY torPreferences.viewLogs "Visa loggar…">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor-loggar">

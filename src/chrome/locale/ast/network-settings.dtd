@@ -12,7 +12,7 @@
 <!ENTITY torSettings.connectPrompt "Click “Connect” to connect to Tor.">
 <!ENTITY torSettings.configurePrompt "Click “Configure” to adjust network settings if you are in a country that censors Tor (such as Egypt, China, Turkey) or if you are connecting from a private network that requires a proxy.">
 <!ENTITY torSettings.configure "Configure">
-<!ENTITY torSettings.connect "Միացնել">
+<!ENTITY torSettings.connect "Connect">
 
 <!-- Other: -->
 
@@ -31,8 +31,8 @@
 <!ENTITY torsettings.useProxy.address "Address">
 <!ENTITY torsettings.useProxy.address.placeholder "IP address or hostname">
 <!ENTITY torsettings.useProxy.port "Port">
-<!ENTITY torsettings.useProxy.username "Օգտագործողիանուն">
-<!ENTITY torsettings.useProxy.password "Գաղտնագիր">
+<!ENTITY torsettings.useProxy.username "Username">
+<!ENTITY torsettings.useProxy.password "Contraseña">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
@@ -71,7 +71,7 @@
 <!ENTITY torPreferences.useBridge "Use a bridge">
 <!ENTITY torPreferences.requestNewBridge "Request a New Bridge…">
 <!ENTITY torPreferences.provideBridge "Provide a bridge">
-<!ENTITY torPreferences.advanced "Advanced">
+<!ENTITY torPreferences.advanced "Avanzao">
 <!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
 <!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
 <!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">

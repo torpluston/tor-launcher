@@ -74,7 +74,7 @@
 <!ENTITY torPreferences.provideBridge "Bridge ஐ வழங்குக">
 <!ENTITY torPreferences.advanced "மேம்பட்டது">
 <!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
-<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
+<!ENTITY torPreferences.firewallPortsPlaceholder "காற்புள்ளியால் பிரிக்கப்பட்ட தகவுமதிப்புகள்">
 <!ENTITY torPreferences.requestBridgeDialogTitle "Bridge ஐ வேண்டுக">
 <!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Solve the CAPTCHA to request a bridge.">

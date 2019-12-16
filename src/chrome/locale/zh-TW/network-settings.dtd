@@ -37,7 +37,7 @@
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "這台電腦通過某個只允許連接至特定連接埠的防火牆">
-<!ENTITY torsettings.firewall.allowedPorts "Allowed Ports">
+<!ENTITY torsettings.firewall.allowedPorts "允許的連接埠">
 <!ENTITY torsettings.useBridges.checkbox "我的國家中 Tor 受到審查">
 <!ENTITY torsettings.useBridges.default "選擇內建的橋接">
 <!ENTITY torsettings.useBridges.default.placeholder "選擇橋接">
@@ -63,21 +63,21 @@
 
 <!-- #31286 about:preferences strings  -->
 <!ENTITY torPreferences.categoryTitle "Tor">
-<!ENTITY torPreferences.torSettings "Tor Settings">
-<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
+<!ENTITY torPreferences.torSettings "Tor 設定">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser 透過 Tor 網路將您的流量進行路由，而 Tor 網路是由世界上數千名志願者所支持。" >
 <!ENTITY torPreferences.learnMore "了解更多">
 <!ENTITY torPreferences.bridges "橋接器">
 <!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
-<!ENTITY torPreferences.useBridge "Use a bridge">
+<!ENTITY torPreferences.useBridge "使用橋接">
 <!ENTITY torPreferences.requestNewBridge "請求一個新的橋接...">
-<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.provideBridge "提供橋接">
 <!ENTITY torPreferences.advanced "進階的">
-<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
-<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
-<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!ENTITY torPreferences.advancedDescription "設定 Tor Browser 如何連線到網際網路。">
+<!ENTITY torPreferences.firewallPortsPlaceholder "逗點分隔值">
+<!ENTITY torPreferences.requestBridgeDialogTitle "請求橋接">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "正在連接到 BridgeDB，請稍候。">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "解決驗證碼來請求橋接">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "解答不正確。請再試一次。">
-<!ENTITY torPreferences.viewTorLogs "View the Tor logs.">
+<!ENTITY torPreferences.viewTorLogs "查看 Tor 紀錄。">
 <!ENTITY torPreferences.viewLogs "查看日誌…">
-<!ENTITY torPreferences.torLogsDialogTitle "Tor Logs">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor 記錄">

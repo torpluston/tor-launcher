@@ -26,18 +26,18 @@
 <!ENTITY torsettings.optional "ঐচ্ছিক">
 
 <!ENTITY torsettings.useProxy.checkbox "আমি ইন্টারনেটে সংযোগ স্থাপন করতে প্রক্সি ব্যবহার করি">
-<!ENTITY torsettings.useProxy.type "প্রক্সি প্রকার">
+<!ENTITY torsettings.useProxy.type "প্রক্সি প্রকার:">
 <!ENTITY torsettings.useProxy.type.placeholder "একটি প্রক্সি টাইপ নির্বাচন করুন">
-<!ENTITY torsettings.useProxy.address "ঠিকানা">
+<!ENTITY torsettings.useProxy.address "ঠিকানা:">
 <!ENTITY torsettings.useProxy.address.placeholder "আইপি ঠিকানা বা হোস্টনাম">
-<!ENTITY torsettings.useProxy.port "পোর্টঃ">
+<!ENTITY torsettings.useProxy.port "বন্দর">
 <!ENTITY torsettings.useProxy.username "ব্যবহারকারীর নাম">
 <!ENTITY torsettings.useProxy.password "পাসওয়ার্ড">
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
 <!ENTITY torsettings.firewall.checkbox "এই কম্পিউটারটি একটি ফায়ারওয়ালের মাধ্যমে যায় যা কেবলমাত্র কিছু পোর্টের সংযোগের অনুমতি দেয়">
-<!ENTITY torsettings.firewall.allowedPorts "অনুমোদিত পোর্টসমূহ">
+<!ENTITY torsettings.firewall.allowedPorts "অনুমোদিত পোর্টসমূহ:">
 <!ENTITY torsettings.useBridges.checkbox "টর আমার দেশে সেন্সর করা হয়">
 <!ENTITY torsettings.useBridges.default "একটি অন্তর্নির্মিত ব্রিজ নির্বাচন করুন">
 <!ENTITY torsettings.useBridges.default.placeholder "একটি ব্রিজ নির্বাচন করুন">
@@ -59,10 +59,25 @@
 <!ENTITY torsettings.bridgeHelp2 "কিছু দেশ টোরকে বাধা দেওয়ার চেষ্টা করে কেন, কিছু কিছু ব্রিজ নির্দিষ্ট দেশে কাজ করে কিন্তু অন্যদের নয়। &#160; আপনার দেশে কোন ব্রিজগুলি কাজ করে তা যদি আপনি অনিশ্চিত থাকেন, তাহলে torproject.org/about/contact.html#support দেখুন">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "আমরা টর নেটওয়ার্কে একটি সংযোগ স্থাপন করার সময় অনুগ্রহ করে অপেক্ষা করুন। এই কয়েক মিনিট সময় নিতে পারে.">
+<!ENTITY torprogress.pleaseWait "আমরা টর নেটওয়ার্কে একটি সংযোগ স্থাপন করার সময় অনুগ্রহ করে অপেক্ষা করুন। &#160; এই কয়েক মিনিট সময় নিতে পারে.">
 
-<!-- #31286 about:preferences strings -->
+<!-- #31286 about:preferences strings  -->
+<!ENTITY torPreferences.categoryTitle "Tor">
+<!ENTITY torPreferences.torSettings "টর সেটিংস">
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser আপনার ট্র্যাফিকটি সারা বিশ্বে হাজার হাজার স্বেচ্ছাসেবীর দ্বারা পরিচালিত টর নেটওয়ার্কের পথে নিয়ে যায়।" >
+<!ENTITY torPreferences.learnMore "আরও জানুন">
+<!ENTITY torPreferences.bridges "ব্রিজ">
+<!ENTITY torPreferences.bridgesDescription "ব্রিজগুলি যেখানে টরকে অবরুদ্ধ করা হয়েছে সেখানে টর নেটওয়ার্ক অ্যাক্সেস করতে আপনাকে সহায়তা করে। আপনি কোথায় আছেন তার উপর নির্ভর করে একটি সেতু অন্যের চেয়ে ভাল কাজ করতে পারে।">
+<!ENTITY torPreferences.useBridge "একটি ব্রিজ ব্যবহার করুন">
 <!ENTITY torPreferences.requestNewBridge "একটি নতুন ব্রিজ অনুরোধ করুন">
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "ব্রিজডিবি এ যোগাযোগ করা হচ্ছে। অনুগ্রহপূর্বক অপেক্ষা করুন.">
+<!ENTITY torPreferences.provideBridge "একটি ব্রিজ সরবরাহ করুন">
+<!ENTITY torPreferences.advanced "অগ্রবর্তী">
+<!ENTITY torPreferences.advancedDescription "Tor Browser কীভাবে ইন্টারনেটে সংযুক্ত হয় তা কনফিগার করুন।">
+<!ENTITY torPreferences.firewallPortsPlaceholder "কমা পৃথক করা মান">
+<!ENTITY torPreferences.requestBridgeDialogTitle "একটি ব্রিজের জন্য অনুরোধ করুন">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "BridgeDB এর সাথে যোগাযোগ করা হচ্ছে। অনুগ্রহপূর্বক অপেক্ষা করুন.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "একটি ব্রিজ অনুরোধ করার জন্য ক্যাপচা সমাধান করুন।...">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "সমাধান সঠিক নয়। অনুগ্রহপূর্বক আবার চেষ্টা করুন.">
+<!ENTITY torPreferences.viewTorLogs "টর লগগুলি দেখুন।">
+<!ENTITY torPreferences.viewLogs "লগ দেখুন....">
+<!ENTITY torPreferences.torLogsDialogTitle "টর লগ">

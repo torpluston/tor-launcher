@@ -4,8 +4,8 @@
 <!ENTITY torsettings.wizard.title.connecting "Užmezgiamas ryšys">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Tor Browser kalba">
-<!ENTITY torlauncher.localePicker.prompt "Prašome pasirinkti kalbą.">
+<!ENTITY torlauncher.localePicker.title "Tor Naršyklės kalba">
+<!ENTITY torlauncher.localePicker.prompt "Pasirinkite kalbą.">
 
 <!-- For "first run" wizard: -->
 
@@ -16,7 +16,7 @@
 
 <!-- Other: -->
 
-<!ENTITY torsettings.startingTor "Laukiama, kol Tor bus paleistas…">
+<!ENTITY torsettings.startingTor "Laukiama, kol bus paleistas Tor…">
 <!ENTITY torsettings.restartTor "Paleisti Tor iš naujo">
 <!ENTITY torsettings.reconfigTor "Konfigūruoti iš naujo">
 
@@ -64,20 +64,20 @@
 <!-- #31286 about:preferences strings  -->
 <!ENTITY torPreferences.categoryTitle "Tor">
 <!ENTITY torPreferences.torSettings "Tor nustatymai">
-<!ENTITY torPreferences.torSettingsDescription "Tor naršyklė nukreipia jūsų srautą per Tor tinklą, veikiančio po visą pasaulį išsidėsčiusių tūkstančių savanorių dėka." >
+<!ENTITY torPreferences.torSettingsDescription "Tor Naršyklė nukreipia jūsų srautą per Tor tinklą, veikiantį po visą pasaulį išsidėsčiusių tūkstančių savanorių dėka." >
 <!ENTITY torPreferences.learnMore "Sužinokite daugiau">
 <!ENTITY torPreferences.bridges "Tinklų tiltai">
 <!ENTITY torPreferences.bridgesDescription "Tinklo tiltai padeda jums pasiekti Tor tinklą, vietose kur Tor užblokuotas. Priklausomai nuo to kur esate, vienas tiltas gali veikti geriau nei kitas.">
-<!ENTITY torPreferences.useBridge "Naudokite tinklo tiltą">
+<!ENTITY torPreferences.useBridge "Naudoti tinklų tiltą">
 <!ENTITY torPreferences.requestNewBridge "Užklausti naują tinklų tiltą…">
 <!ENTITY torPreferences.provideBridge "Pateikite tinklų tiltą">
 <!ENTITY torPreferences.advanced "Išplėstiniai">
-<!ENTITY torPreferences.advancedDescription "Sukonfigūruokite kaip Tor naršyklė jungsis prie interneto.">
+<!ENTITY torPreferences.advancedDescription "Sukonfigūruokite kaip Tor Naršyklė jungsis prie interneto.">
 <!ENTITY torPreferences.firewallPortsPlaceholder "Kableliais atskirtos reikšmės">
 <!ENTITY torPreferences.requestBridgeDialogTitle "Užklausti tinklų tiltą…">
 <!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Susisiekiama su BridgeDB. Palaukite.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Norėdami užklausti tinklų tiltą, išspręskite saugos kodą.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Sprendimas neteisingas. Bandykite dar kartą.">
-<!ENTITY torPreferences.viewTorLogs "Žiūrėti Tor žurnalą.">
+<!ENTITY torPreferences.viewTorLogs "Rodyti Tor žurnalus.">
 <!ENTITY torPreferences.viewLogs "Rodyti žurnalus…">
-<!ENTITY torPreferences.torLogsDialogTitle "Tor žurnalas">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor žurnalai">
