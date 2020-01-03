@@ -65,7 +65,7 @@ Tässä saattaa kestää muutama minuutti.">
 <!-- #31286 about:preferences strings  -->
 <!ENTITY torPreferences.categoryTitle "Tor">
 <!ENTITY torPreferences.torSettings "Tor-asetukset">
-<!ENTITY torPreferences.torSettingsDescription "Tor Browser routes your traffic over the Tor Network, run by thousands of volunteers around the world." >
+<!ENTITY torPreferences.torSettingsDescription "Tor-selain reitittää liikenteesi Tor-verkon kautta, joka toimii tuhansien ympäri maailmaa olevien vapaaehtoisten ansiosta." >
 <!ENTITY torPreferences.learnMore "Opi lisää">
 <!ENTITY torPreferences.bridges "Sillat">
 <!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
@@ -76,7 +76,7 @@ Tässä saattaa kestää muutama minuutti.">
 <!ENTITY torPreferences.advancedDescription "Määritä kuinka Tor-selain yhdistää internetiin.">
 <!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
 <!ENTITY torPreferences.requestBridgeDialogTitle "Pyydä siltaa">
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Yhdistetään BridgeDB:hen. Odota hetki.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Ratkaise CAPTCHA jotta voit pyytää sillan.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Ratkaisu ei ollut oikein. Yritä uudelleen.">
 <!ENTITY torPreferences.viewTorLogs "Katsele Tor-lokeja.">

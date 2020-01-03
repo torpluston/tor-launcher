@@ -26,7 +26,7 @@
 <!ENTITY torsettings.optional "Facoltativo">
 
 <!ENTITY torsettings.useProxy.checkbox "Uso un proxy per connettermi a internet">
-<!ENTITY torsettings.useProxy.type "Tipo proxy">
+<!ENTITY torsettings.useProxy.type "Tipo di proxy">
 <!ENTITY torsettings.useProxy.type.placeholder "Seleziona un tipo di proxy">
 <!ENTITY torsettings.useProxy.address "Indirizzo">
 <!ENTITY torsettings.useProxy.address.placeholder "Indirizzo IP oppure hostname">
@@ -66,7 +66,7 @@
 <!ENTITY torPreferences.torSettings "Impostazioni di Tor">
 <!ENTITY torPreferences.torSettingsDescription "Tor Browser indirizza il tuo traffico nella rete Tor, gestita da migliaia di volontari in tutto il mondo." >
 <!ENTITY torPreferences.learnMore "Maggiori informazioni">
-<!ENTITY torPreferences.bridges "Ponti">
+<!ENTITY torPreferences.bridges "Bridges">
 <!ENTITY torPreferences.bridgesDescription "I bridge ti aiutano ad accedere alla rete Tor in luoghi dove Tor viene bloccato. A seconda di dove ti trovi, un bridge può funzionare meglio di un altro.">
 <!ENTITY torPreferences.useBridge "Usa un bridge">
 <!ENTITY torPreferences.requestNewBridge "Richiedi un nuovo bridge...">
@@ -75,7 +75,7 @@
 <!ENTITY torPreferences.advancedDescription "Configura come Tor Browser si connette a internet.">
 <!ENTITY torPreferences.firewallPortsPlaceholder "Valori separati da una virgola">
 <!ENTITY torPreferences.requestBridgeDialogTitle "Richiedi bridge">
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contatto BridgeDB. Attendere, prego.">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contattando BridgeDB. Attendere, prego.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Risolvi il CAPTCHA per richiedere un bridge.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "La soluzione è sbagliata. Riprova.">
 <!ENTITY torPreferences.viewTorLogs "Visualizza i log di Tor.">

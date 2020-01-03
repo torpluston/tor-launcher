@@ -25,7 +25,7 @@
 
 <!ENTITY torsettings.optional "Volitelné">
 
-<!ENTITY torsettings.useProxy.checkbox "Používám proxy pro připojení k Internetu">
+<!ENTITY torsettings.useProxy.checkbox "Pro připojení k internetu používám proxy">
 <!ENTITY torsettings.useProxy.type "Typ proxy">
 <!ENTITY torsettings.useProxy.type.placeholder "vyberte typ proxy">
 <!ENTITY torsettings.useProxy.address "Adresa">
