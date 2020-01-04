@@ -424,7 +424,6 @@ function populateLocaleList(aLangPackAddons)
     "ro"    : "Rom\u00e2n\u0103",
     "ru"    : "\u0420\u0443\u0441\u0441\u043a\u0438\u0439",
     "sv"    : "Svenska",
-    "th"    : "\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22",
     "tr"    : "T\u00fcrk\u00e7e",
     "vi"    : "Ti\u1ebfng Vi\u1ec7t",
     "zh-CN" : "\u7b80\u4f53\u5b57",
