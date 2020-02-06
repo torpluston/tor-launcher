@@ -36,8 +36,8 @@
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP / HTTPS">
-<!ENTITY torsettings.firewall.checkbox "Мой сетевой экран позволяет мне подключиться только к определённым портам">
-<!ENTITY torsettings.firewall.allowedPorts "Разрешённые порты">
+<!ENTITY torsettings.firewall.checkbox "Мой брандмауэр разрешает подключения только к определенным портам">
+<!ENTITY torsettings.firewall.allowedPorts "Разрешенные порты">
 <!ENTITY torsettings.useBridges.checkbox "Tor запрещён в моей стране">
 <!ENTITY torsettings.useBridges.default "Выбрать встроенный мост">
 <!ENTITY torsettings.useBridges.default.placeholder "выбор моста">
@@ -47,7 +47,7 @@
 <!ENTITY torsettings.useBridges.captchaSubmit "Передать">
 <!ENTITY torsettings.useBridges.custom "Указать мост, который я знаю">
 <!ENTITY torsettings.useBridges.label "Введите информацию о мосте от доверенного источника.">
-<!ENTITY torsettings.useBridges.placeholder "введите адрес:порт (по одному в строке)">
+<!ENTITY torsettings.useBridges.placeholder "адрес:порт (по одному в строке)">
 
 <!ENTITY torsettings.copyLog "Скопировать журнал Tor в буфер обмена">
 
@@ -64,13 +64,13 @@
 <!-- #31286 about:preferences strings  -->
 <!ENTITY torPreferences.categoryTitle "Tor">
 <!ENTITY torPreferences.torSettings "Настройки Tor">
-<!ENTITY torPreferences.torSettingsDescription "Tor Browser перенаправляет ваш трафик через сеть Tor, управляемую тысячами добровольцев по всему миру." >
+<!ENTITY torPreferences.torSettingsDescription "Tor Browser перенаправляет ваш трафик через сеть Tor. Ее поддерживают тысячи добровольцев по всему миру." >
 <!ENTITY torPreferences.learnMore "Подробнее">
 <!ENTITY torPreferences.bridges "Мосты">
-<!ENTITY torPreferences.bridgesDescription "Мосты помогают получить доступ к сети Tor в местах, где он заблокирован. В зависимости от места, где вы находитесь, один мост может работать лучше другого.">
+<!ENTITY torPreferences.bridgesDescription "Мосты помогают получить доступ к сети Tor там, где он заблокирован. В зависимости от вашего местонахождения один мост может работать лучше другого.">
 <!ENTITY torPreferences.useBridge "Использовать мост">
 <!ENTITY torPreferences.requestNewBridge "Запрос нового моста…">
-<!ENTITY torPreferences.provideBridge "Предоставить мост">
+<!ENTITY torPreferences.provideBridge "Указать свой мост">
 <!ENTITY torPreferences.advanced "Дополнительно">
 <!ENTITY torPreferences.advancedDescription "Настройка подключения Tor Browser к интернету.">
 <!ENTITY torPreferences.firewallPortsPlaceholder "Значения, разделённые запятыми">
@@ -78,6 +78,6 @@
 <!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Обращение к BridgeDB. Пожалуйста, подождите.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Решите CAPTCHA для запроса моста.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Решение не является правильным. Попробуйте ещё раз.">
-<!ENTITY torPreferences.viewTorLogs "Просмотр журналов Tor.">
-<!ENTITY torPreferences.viewLogs "Просмотр журналов…">
-<!ENTITY torPreferences.torLogsDialogTitle "Журналы Tor">
+<!ENTITY torPreferences.viewTorLogs "Просмотр журнала Tor">
+<!ENTITY torPreferences.viewLogs "Просмотр журнала…">
+<!ENTITY torPreferences.torLogsDialogTitle "Журнал Tor">

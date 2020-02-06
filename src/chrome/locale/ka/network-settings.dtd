@@ -79,5 +79,5 @@
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "გაიარეთ CAPTCHA, გადამცემი ხიდის მოთხოვნისთვის.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "გადაწყვეტა არასწორია. გთხოვთ სცადოთ ხელახლა.">
 <!ENTITY torPreferences.viewTorLogs "იხილეთ Tor-ის ჩანაწერები.">
-<!ENTITY torPreferences.viewLogs "იხილეთ ჩანაწერები...">
+<!ENTITY torPreferences.viewLogs "ჩანაწერების ნახვა...">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor-ის ჩანაწერები">

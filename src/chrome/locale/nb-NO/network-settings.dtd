@@ -28,7 +28,7 @@
 <!ENTITY torsettings.useProxy.checkbox "Jeg bruker en mellomtjener for å koble til Internett">
 <!ENTITY torsettings.useProxy.type "Mellomtjeningstype">
 <!ENTITY torsettings.useProxy.type.placeholder "velg en mellomtjenertype">
-<!ENTITY torsettings.useProxy.address "Address">
+<!ENTITY torsettings.useProxy.address " Adresse">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-adresse, eller vertsnavn">
 <!ENTITY torsettings.useProxy.port "Port">
 <!ENTITY torsettings.useProxy.username "Brukernavn">
@@ -72,10 +72,10 @@
 <!ENTITY torPreferences.requestNewBridge "Forespør ny bro…">
 <!ENTITY torPreferences.provideBridge "Provide a bridge">
 <!ENTITY torPreferences.advanced "Avansert">
-<!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
+<!ENTITY torPreferences.advancedDescription "Konfigurer hvordan Tor Browser kobles til internett.">
 <!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
 <!ENTITY torPreferences.requestBridgeDialogTitle "Forespør en bro">
-<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
+<!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Kontakter BridgeDB. Vennligst vent.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Løs CAPTCHA-en for å forespørre en bro.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Løsningen er ikke riktig. Vær så snill, prøv på nytt.">
 <!ENTITY torPreferences.viewTorLogs "Se Tor-loggene.">

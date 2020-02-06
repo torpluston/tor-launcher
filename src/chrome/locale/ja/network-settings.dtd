@@ -66,7 +66,7 @@
 <!ENTITY torPreferences.torSettings "Tor の設定">
 <!ENTITY torPreferences.torSettingsDescription "Tor Browser は通信トラフィックを Tor ネットワークを経由させて送信します。Tor ネットワークは世界中の何千ものボランティアによって運用されています。" >
 <!ENTITY torPreferences.learnMore "詳細情報">
-<!ENTITY torPreferences.bridges "ブリッジ">
+<!ENTITY torPreferences.bridges "Bridge">
 <!ENTITY torPreferences.bridgesDescription "ブリッジは Tor がブロックされる地域から Tor ネットワークにアクセスすることを手助けします。地域によって、あるブリッジが他のものよりうまく動作する可能性があります。">
 <!ENTITY torPreferences.useBridge "ブリッジを使用する">
 <!ENTITY torPreferences.requestNewBridge "新しいブリッジを要求…">
