@@ -64,7 +64,7 @@
 <!-- #31286 about:preferences strings  -->
 <!ENTITY torPreferences.categoryTitle "Tor">
 <!ENTITY torPreferences.torSettings "Cài đặt Tor">
-<!ENTITY torPreferences.torSettingsDescription "Tor Browser dẫn lưu lượng của bạn qua mạng Tor, vận hành bởi hàng ngàn tình nguyện viên khắp thế giới." >
+<!ENTITY torPreferences.torSettingsDescription "Trình duyệt Tor dẫn lưu lượng của bạn qua mạng Tor, vận hành bởi hàng ngàn tình nguyện viên khắp thế giới." >
 <!ENTITY torPreferences.learnMore "Tìm hiểu thêm">
 <!ENTITY torPreferences.bridges "Cầu Nối">
 <!ENTITY torPreferences.bridgesDescription "Cầu nối giúp bạn truy cập mạng Tor ở những nơi mạng Tor bị chặn. Tùy vào vị trí của bạn mà một cầu nối có thể hoạt động tốt hơn cầu nối khác.">
@@ -72,7 +72,7 @@
 <!ENTITY torPreferences.requestNewBridge "Yêu cầu Cầu nối mới...">
 <!ENTITY torPreferences.provideBridge "Cung cấp cầu nối">
 <!ENTITY torPreferences.advanced "Nâng cao">
-<!ENTITY torPreferences.advancedDescription "Cài đặt cách Tor Browser kết nối tới internet.">
+<!ENTITY torPreferences.advancedDescription "Cài đặt cách trình duyệt Tor kết nối tới internet.">
 <!ENTITY torPreferences.firewallPortsPlaceholder "Giá trị ngăn cách bởi dấu phẩy">
 <!ENTITY torPreferences.requestBridgeDialogTitle "Yêu cầu cầu nối">
 <!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Đang kết nối tới BridgeDB. Vui lòng đợi.">

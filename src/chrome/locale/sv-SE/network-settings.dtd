@@ -10,7 +10,7 @@
 <!-- For "first run" wizard: -->
 
 <!ENTITY torSettings.connectPrompt "Klicka på &quot;Anslut&quot; för att ansluta till Tor.">
-<!ENTITY torSettings.configurePrompt "Klicka &quot;Konfigurera&quot; för att justera nätverks inställningar ifall du är i ett land som censurerar Tor( som Egypten, Kina och Turkiet) eller ifall du ansluter från ett privat nätverk som kräver en proxy.">
+<!ENTITY torSettings.configurePrompt "Klicka på &quot;Konfigurera&quot; för att justera nätverksinställningar om du är i ett land som censurerar Tor (som Egypten, Kina eller Turkiet) eller om du ansluter från ett privat nätverk som kräver en proxy.">
 <!ENTITY torSettings.configure "Konfigurera">
 <!ENTITY torSettings.connect "Anslut">
 
@@ -26,7 +26,7 @@
 <!ENTITY torsettings.optional "Valfritt">
 
 <!ENTITY torsettings.useProxy.checkbox "Jag använder en proxy för att ansluta till internet">
-<!ENTITY torsettings.useProxy.type "Proxy-typ">
+<!ENTITY torsettings.useProxy.type "Proxytyp">
 <!ENTITY torsettings.useProxy.type.placeholder "Välj en proxytyp">
 <!ENTITY torsettings.useProxy.address "Adress">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-adress eller värdnamn">
