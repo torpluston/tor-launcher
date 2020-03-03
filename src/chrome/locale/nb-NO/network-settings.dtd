@@ -67,10 +67,10 @@
 <!ENTITY torPreferences.torSettingsDescription "Tor Browser dirigerer trafikken din over Tor-nettverket, drevet av tusenvis av frivillige rundt om i verden." >
 <!ENTITY torPreferences.learnMore "Lær mer">
 <!ENTITY torPreferences.bridges "Broer">
-<!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
+<!ENTITY torPreferences.bridgesDescription "Broer hjelper deg med å få tilgang til Tor-nettverket på steder der Tor er blokkert. Avhengig av hvor du er, kan det hende at en bro fungerer bedre enn en annen.">
 <!ENTITY torPreferences.useBridge "Bruk en bro">
 <!ENTITY torPreferences.requestNewBridge "Forespør ny bro…">
-<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.provideBridge "Gi en bro">
 <!ENTITY torPreferences.advanced "Avansert">
 <!ENTITY torPreferences.advancedDescription "Konfigurer hvordan Tor Browser kobles til internett.">
 <!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
