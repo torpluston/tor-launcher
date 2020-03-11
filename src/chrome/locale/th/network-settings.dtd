@@ -26,7 +26,7 @@
 <!ENTITY torsettings.optional "ไม่จำเป็น">
 
 <!ENTITY torsettings.useProxy.checkbox "ฉันใช้พร็อกซีเพื่อเชื่อมต่อกับอินเทอร์เน็ต">
-<!ENTITY torsettings.useProxy.type "Proxy Type">
+<!ENTITY torsettings.useProxy.type "ชนิดพร็อกซี">
 <!ENTITY torsettings.useProxy.type.placeholder "เลือกชนิดพร็อกซี">
 <!ENTITY torsettings.useProxy.address "ที่อยู่">
 <!ENTITY torsettings.useProxy.address.placeholder "ที่อยู่ IP หรือชื่อโฮสต์">
