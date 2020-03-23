@@ -42,7 +42,7 @@
 <!ENTITY torsettings.useBridges.default "Sélectionner un pont intégré">
 <!ENTITY torsettings.useBridges.default.placeholder "Sélectionner un pont">
 <!ENTITY torsettings.useBridges.bridgeDB "Demander un pont à torproject.org">
-<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Saisir les caractères de l’image">
+<!ENTITY torsettings.useBridges.captchaSolution.placeholder "Saisissez les caractères de l’image">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Obtenir un nouveau test">
 <!ENTITY torsettings.useBridges.captchaSubmit "Envoyer">
 <!ENTITY torsettings.useBridges.custom "Utiliser un pont que je connais">
@@ -78,7 +78,7 @@ Selon votre position géographique, un pont pourrait fonctionner mieux qu’un a
 <!ENTITY torPreferences.firewallPortsPlaceholder "Valeurs séparées par des virgules">
 <!ENTITY torPreferences.requestBridgeDialogTitle "Demander un pont">
 <!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Connexion à BridgeDB. Veuillez patienter.">
-<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Résoudre le captcha pour demander un pont.">
+<!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Résolvez le captcha pour demander un pont.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "La solution est erronée. Veuillez ressayer.">
 <!ENTITY torPreferences.viewTorLogs "Visualiser les journaux Tor.">
 <!ENTITY torPreferences.viewLogs "Visualiser les journaux…">
