@@ -4,7 +4,7 @@
 <!ENTITY torsettings.wizard.title.connecting "Etablerer en forbindelse">
 
 <!-- For locale picker: -->
-<!ENTITY torlauncher.localePicker.title "Tor Browser-sprog">
+<!ENTITY torlauncher.localePicker.title "Sprog for Tor Browser">
 <!ENTITY torlauncher.localePicker.prompt "Vælg venligst et sprog.">
 
 <!-- For "first run" wizard: -->
@@ -20,13 +20,13 @@
 <!ENTITY torsettings.restartTor "Genstart Tor">
 <!ENTITY torsettings.reconfigTor "Genkonfigurer">
 
-<!ENTITY torsettings.discardSettings.prompt "Du har konfigureret Tor-broer eller du har indtastet lokale proxyindstillinger.&#160; For at kunne foretage direkte forbindelse til Tor-netværket, skal disse indstillinger fjernes.">
+<!ENTITY torsettings.discardSettings.prompt "Du har konfigureret Tor-broer eller du har indtastet lokale proxyindstillinger.&#160; For at kunne foretage direkte forbindelse til Tor-netværket, skal indstillingerne fjernes.">
 <!ENTITY torsettings.discardSettings.proceed "Fjern indstillinger og opret forbindelse">
 
 <!ENTITY torsettings.optional "Valgfri">
 
 <!ENTITY torsettings.useProxy.checkbox "Jeg bruger en proxy til at oprette forbindelse til internettet">
-<!ENTITY torsettings.useProxy.type "Proxy-type">
+<!ENTITY torsettings.useProxy.type "Proxytype">
 <!ENTITY torsettings.useProxy.type.placeholder "vælg en proxytype">
 <!ENTITY torsettings.useProxy.address "Adresse">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-adresse eller værtsnavn">
@@ -36,7 +36,7 @@
 <!ENTITY torsettings.useProxy.type.socks4 "SOCKS 4">
 <!ENTITY torsettings.useProxy.type.socks5 "SOCKS 5">
 <!ENTITY torsettings.useProxy.type.http "HTTP/HTTPS">
-<!ENTITY torsettings.firewall.checkbox "Computeren går gennem en firewall som kun tillader forbindelse til bestemte porte">
+<!ENTITY torsettings.firewall.checkbox "Computeren går gennem en firewall som kun tillader forbindelser til bestemte porte">
 <!ENTITY torsettings.firewall.allowedPorts "Tilladte porte">
 <!ENTITY torsettings.useBridges.checkbox "Tor er censureret i mit land">
 <!ENTITY torsettings.useBridges.default "Vælg en indbygget bro">

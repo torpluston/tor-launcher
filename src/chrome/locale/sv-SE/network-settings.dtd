@@ -5,7 +5,7 @@
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Språk i Tor Browser">
-<!ENTITY torlauncher.localePicker.prompt "Välj ett språk.">
+<!ENTITY torlauncher.localePicker.prompt "Vänligen välj ett språk.">
 
 <!-- For "first run" wizard: -->
 
@@ -45,7 +45,7 @@
 <!ENTITY torsettings.useBridges.captchaSolution.placeholder "Ange tecknen från bilden">
 <!ENTITY torsettings.useBridges.reloadCaptcha.tooltip "Få en ny utmaning">
 <!ENTITY torsettings.useBridges.captchaSubmit "Skicka">
-<!ENTITY torsettings.useBridges.custom "Använd en egen bro">
+<!ENTITY torsettings.useBridges.custom "Ange en bro jag vet">
 <!ENTITY torsettings.useBridges.label "Ange broinformationen från en betrodd källa">
 <!ENTITY torsettings.useBridges.placeholder "skriv adress:port (en per rad)">
 
@@ -55,11 +55,11 @@
 <!ENTITY torsettings.proxyHelp1 "En lokal proxy kan behövas när du ansluter via ett företags-, skol- eller universitetsnätverk.&#160;Om du inte är säker på om en proxy behövs, titta på internetinställningarna i en annan webbläsare eller kontrollera systemets nätverksinställningar.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Hjälp om relä-broar">
-<!ENTITY torsettings.bridgeHelp1 "Broar är olistade reläer som gör det svårare att blockera anslutningar till Tor nätverket. &#160; Var typ av bro använder sig av olika metoder för att undvika censur. &#160; Obfs gör att din trafik ser ut som brus och meek gör att din trafik ser ut som att du ansluter till tjänsten istället för Tor.">
+<!ENTITY torsettings.bridgeHelp1 "Broar är olistade reläer som gör det svårare att blockera anslutningar till Tor-nätverket. &#160; Var typ av bro använder sig av olika metoder för att undvika censur. &#160; Obfs gör att din trafik ser ut som brus och meek gör att din trafik ser ut som att du ansluter till tjänsten istället för Tor.">
 <!ENTITY torsettings.bridgeHelp2 "I och med att vissa länder försöker blockera Tor fungerar inte alla broar i alla länder. &#160; Ifall du är osäker på vilka broar som fungerar i ditt land besök torproject.org/about/contact.html#support">
 
 <!-- Progress -->
-<!ENTITY torprogress.pleaseWait "Var god och vänta medan vi etablerar en anslutning till Tor-nätverket. &#160; Detta kan ta upp till flera minuter.">
+<!ENTITY torprogress.pleaseWait "Vänligen vänta medan vi etablerar en anslutning till Tor-nätverket. &#160; Detta kan ta flera minuter.">
 
 <!-- #31286 about:preferences strings  -->
 <!ENTITY torPreferences.categoryTitle "Tor">
@@ -70,7 +70,7 @@
 <!ENTITY torPreferences.bridgesDescription "Broar hjälper dig att komma åt Tor-nätverket på platser där Tor är blockerat. Beroende på var du är, kan en bro fungera bättre än en annan.">
 <!ENTITY torPreferences.useBridge "Använd en bro">
 <!ENTITY torPreferences.requestNewBridge "Begär en ny bro...">
-<!ENTITY torPreferences.provideBridge "Tillhandahålla en bro">
+<!ENTITY torPreferences.provideBridge "Ange en bro">
 <!ENTITY torPreferences.advanced "Avancerat">
 <!ENTITY torPreferences.advancedDescription "Konfigurera hur Tor Browser ansluter till internet.">
 <!ENTITY torPreferences.firewallPortsPlaceholder "Kommaseparerade värden">

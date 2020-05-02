@@ -5,7 +5,7 @@
 
 <!-- For locale picker: -->
 <!ENTITY torlauncher.localePicker.title "Tor Nettleser Språk">
-<!ENTITY torlauncher.localePicker.prompt "Velg språk">
+<!ENTITY torlauncher.localePicker.prompt "Vennligst velg et språk">
 
 <!-- For "first run" wizard: -->
 
@@ -26,8 +26,8 @@
 <!ENTITY torsettings.optional "Valgfritt">
 
 <!ENTITY torsettings.useProxy.checkbox "Jeg bruker en mellomtjener for å koble til Internett">
-<!ENTITY torsettings.useProxy.type "Mellomtjeningstype">
-<!ENTITY torsettings.useProxy.type.placeholder "velg en mellomtjenertype">
+<!ENTITY torsettings.useProxy.type "Mellomtjener-type">
+<!ENTITY torsettings.useProxy.type.placeholder "velg en mellomtjener-type">
 <!ENTITY torsettings.useProxy.address " Adresse">
 <!ENTITY torsettings.useProxy.address.placeholder "IP-adresse, eller vertsnavn">
 <!ENTITY torsettings.useProxy.port "Port">
@@ -52,7 +52,7 @@
 <!ENTITY torsettings.copyLog "Kopier Tor-loggen til utklippstavlen">
 
 <!ENTITY torsettings.proxyHelpTitle "Mellomtjenerhjelp">
-<!ENTITY torsettings.proxyHelp1 "En lokal proxy kan være nødvendig når du kobler deg gjennom et firma, skole eller universitet nettverk.&#160; Hvis du ikke er sikker på om en proxy er nødvendig, kan du se på Internett-innstillingene i en annen nettleser eller kontrollere systemets nettverksinnstillinger.">
+<!ENTITY torsettings.proxyHelp1 "En lokal mellomtjener kan være nødvendig når du kobler deg gjennom et firma, skole eller universitet nettverk.&#160; Hvis du ikke er sikker på om en mellomtjener er nødvendig, kan du se på Internett-innstillingene i en annen nettleser eller kontrollere systemets nettverksinnstillinger.">
 
 <!ENTITY torsettings.bridgeHelpTitle "Hjelp med Bro-rutingsstafettoppsett">
 <!ENTITY torsettings.bridgeHelp1 "Broer er ulistede rutingstafettoppsett som gjør det vanskeligere å blokkere tilkoblinger til Tor-nettverket.&#160; Hver type bro bruker en egen måte å unngå sensur.&#160; Obfs-broene får trafikken din til å se ut som tilfeldig støy, og de ydmyke broene får broene til å se ut som de kobler til en annen tjeneste enn Tor.">
@@ -72,12 +72,12 @@
 <!ENTITY torPreferences.requestNewBridge "Forespør ny bro…">
 <!ENTITY torPreferences.provideBridge "Gi en bro">
 <!ENTITY torPreferences.advanced "Avansert">
-<!ENTITY torPreferences.advancedDescription "Konfigurer hvordan Tor Browser kobles til internett.">
-<!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
+<!ENTITY torPreferences.advancedDescription "Konfigurer hvordan Tor-nettleseren kobles til internett.">
+<!ENTITY torPreferences.firewallPortsPlaceholder "Komma-separerte verdier">
 <!ENTITY torPreferences.requestBridgeDialogTitle "Forespør en bro">
 <!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Kontakter BridgeDB. Vennligst vent.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Løs CAPTCHA-en for å forespørre en bro.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "Løsningen er ikke riktig. Vær så snill, prøv på nytt.">
 <!ENTITY torPreferences.viewTorLogs "Se Tor-loggene.">
 <!ENTITY torPreferences.viewLogs "Vis logger...">
-<!ENTITY torPreferences.torLogsDialogTitle "Tor Logger">
+<!ENTITY torPreferences.torLogsDialogTitle "Tor logger">

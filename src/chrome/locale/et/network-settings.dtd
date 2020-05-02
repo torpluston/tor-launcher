@@ -68,13 +68,13 @@
 <!ENTITY torPreferences.learnMore "Loe lähemalt">
 <!ENTITY torPreferences.bridges "Sillad">
 <!ENTITY torPreferences.bridgesDescription "Bridges help you access the Tor Network in places where Tor is blocked. Depending on where you are, one bridge may work better than another.">
-<!ENTITY torPreferences.useBridge "Use a bridge">
-<!ENTITY torPreferences.requestNewBridge "Taotle uut Silda…">
-<!ENTITY torPreferences.provideBridge "Provide a bridge">
+<!ENTITY torPreferences.useBridge "Kasuta silda">
+<!ENTITY torPreferences.requestNewBridge "Taotle uut silda…">
+<!ENTITY torPreferences.provideBridge "Paku silda">
 <!ENTITY torPreferences.advanced "Peenhäälestus">
 <!ENTITY torPreferences.advancedDescription "Configure how Tor Browser connects to the internet.">
 <!ENTITY torPreferences.firewallPortsPlaceholder "Comma-separated values">
-<!ENTITY torPreferences.requestBridgeDialogTitle "Request Bridge">
+<!ENTITY torPreferences.requestBridgeDialogTitle "Taotle silda">
 <!ENTITY torPreferences.requestBridgeDialogWaitPrompt "Contacting BridgeDB. Please Wait.">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "Lahenda CAPTCHA, et taotleda silda.">
 <!ENTITY torPreferences.requestBridgeErrorBadSolution "The solution is not correct. Please try again.">

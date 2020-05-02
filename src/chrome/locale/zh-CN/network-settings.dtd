@@ -77,7 +77,7 @@
 <!ENTITY torPreferences.requestBridgeDialogTitle "正在请求网桥">
 <!ENTITY torPreferences.requestBridgeDialogWaitPrompt "正在连接到 BridgeDB，请等待。">
 <!ENTITY torPreferences.requestBridgeDialogSolvePrompt "请输入验证码以获取网桥。">
-<!ENTITY torPreferences.requestBridgeErrorBadSolution "结果并不正确，请重试。">
+<!ENTITY torPreferences.requestBridgeErrorBadSolution "输入错误，请重试。">
 <!ENTITY torPreferences.viewTorLogs "查看 Tor 日志。">
 <!ENTITY torPreferences.viewLogs "查看日志">
 <!ENTITY torPreferences.torLogsDialogTitle "Tor 日志">
